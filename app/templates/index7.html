@@ -1,0 +1,779 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+    
+        <!-- Jsvector Maps -->
+        <link rel="stylesheet" href="{% static 'assets/libs/jsvectormap/css/jsvectormap.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start:: row-1 -->
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-body">
+                                    <div class="mb-3 d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <span class="avatar bg-primary-transparent">
+                                                <i class="ti ti-wallet fs-5"></i>
+                                            </span>
+                                        </div>
+                                        <div id="total-revenue1"></div>
+                                    </div>
+                                    <h4 class="fw-semibold mb-2">$73,239</h4>
+                                    <div class="d-flex align-items-center justify-content-between gap-1">
+                                        <span class="">Total Revenue</span>
+                                        <span class="badge bg-success-transparent"><i class="ti ti-trending-up me-1 align-middle"></i>+1.08%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-body">
+                                    <div class="mb-3 d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <span class="avatar bg-info-transparent">
+                                                <i class="ti ti-users fs-5"></i>
+                                            </span>
+                                        </div>
+                                        <div id="total-customers"></div>
+                                    </div>
+                                    <h4 class="fw-semibold mb-2">1,56,290</h4>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="">Total Customers</span>
+                                        <span class="badge bg-danger-transparent"><i class="ti ti-trending-down me-1 align-middle"></i>-0.56%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-body">
+                                    <div class="mb-3 d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <span class="avatar bg-success-transparent">
+                                                <i class="ti ti-wave-square fs-5"></i>
+                                            </span>
+                                        </div>
+                                        <div id="conversion-ratio"></div>
+                                    </div>
+                                    <h4 class="fw-semibold mb-2">16.87%</h4>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="">Conversion Ratio</span>
+                                        <span class="badge bg-success-transparent"><i class="ti ti-trending-up me-1 align-middle"></i>+4.63%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-body">
+                                    <div class="mb-3 d-flex align-items-start justify-content-between">
+                                        <div>
+                                            <span class="avatar bg-danger-transparent">
+                                                <i class="ti ti-briefcase fs-5"></i>
+                                            </span>
+                                        </div>
+                                        <div id="total-deals"></div>
+                                    </div>
+                                    <h4 class="fw-semibold mb-2">$73,239</h4>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="">Total Deals</span>
+                                        <span class="badge bg-success-transparent"><i class="ti ti-trending-up me-1 align-middle"></i>+12.67%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-1 -->
+
+                    <!-- Start:: row-2 -->
+                    <div class="row">
+                        <div class="col-xl-12 col-xxl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Performance</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="performance"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-xxl-3">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Revenue By Countries
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="revenue-target"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-xxl-3">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Lead Source Opportunities
+                                    </div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <div id="lead_source"></div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row gy-4">
+                                        <div class="col-xl-6">
+                                            <div class="d-flex align-items-start gap-3 flex-wrap">
+                                                <div>
+                                                    <span class="avatar bg-primary-transparent">
+                                                        <i class="ri-phone-line fs-15"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="d-block  fs-13">Call</span>
+                                                    <span class="d-block fw-semibold fs-16">1,754</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="d-flex align-items-start gap-3 flex-wrap">
+                                                <div>
+                                                    <span class="avatar bg-primary-transparent">
+                                                        <i class="ri-mail-line fs-15"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="d-block  fs-13">Email</span>
+                                                    <span class="d-block fw-semibold fs-16">634</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="d-flex align-items-start gap-3 flex-wrap">
+                                                <div>
+                                                    <span class="avatar bg-primary-transparent">
+                                                        <i class="ri-pages-line fs-15"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="d-block  fs-13">Website</span>
+                                                    <span class="d-block fw-semibold fs-16">878</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="d-flex align-items-start gap-3 flex-wrap">
+                                                <div>
+                                                    <span class="avatar bg-primary-transparent">
+                                                        <i class="ri-user-search-line fs-15"></i>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="d-block  fs-13">Organic</span>
+                                                    <span class="d-block fw-semibold fs-16">470</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-2 -->
+
+                    <!-- Start:: row-3 -->
+                    <div class="row">
+                        <div class="col-xl-12 col-xxl-4">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Top Deals
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless table-striped text-nowrap"> 
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Deal Value</th>
+                                                <th>Company</th>
+                                                <th>Sales</th>
+                                            </tr> 
+                                        </thead> 
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    1
+                                                </td>
+                                                <td>$2.11923M</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="avatar avatar-xs"><img src="{% static 'assets/images/company-logos/2.png'%}" alt=""></div>
+                                                        Stellar Solutions
+                                                    </div>
+                                                    </td>
+                                                <td>18,293</td>
+                                            </tr>
+                                            <tr>
+                                                <td> 
+                                                    2
+                                                </td>
+                                                <td>$1.07324M</td>
+                                                <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="avatar avatar-xs"><img src="{% static 'assets/images/company-logos/5.png'%}" alt=""></div>
+                                                            Nexus Dynamics
+                                                        </div>
+                                                    </td>
+                                                <td>17,556</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3
+                                                </td>
+                                                <td>$3.01153M</td>
+                                                <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="avatar avatar-xs"><img src="{% static 'assets/images/company-logos/7.png'%}" alt=""></div>
+                                                            Velocity Ventures
+                                                        </div>
+                                                    </td>
+                                                <td>15,895</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    4
+                                                </td>
+                                                <td>$2.14915M</td>
+                                                <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="avatar avatar-xs"><img src="{% static 'assets/images/company-logos/4.png'%}" alt=""></div>
+                                                            Fusion Innovate
+                                                        </div>
+                                                    </td>
+                                                <td>15,229</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    5
+                                                </td>
+                                                <td>$5.08923M</td>
+                                                <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="avatar avatar-xs"><img src="{% static 'assets/images/company-logos/3.png'%}" alt=""></div>
+                                                            Nebula Nexus
+                                                        </div>
+                                                    </td>
+                                                <td>14,253</td>
+                                            </tr>
+                                            <tr>
+                                                <td> 
+                                                    6
+                                                </td>
+                                                <td>$1.11923M</td>
+                                                <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="avatar avatar-xs"><img src="{% static 'assets/images/company-logos/1.png'%}" alt=""></div>
+                                                            Horizon Hub
+                                                        </div>
+                                                    </td>
+                                                <td>12,763</td>
+                                            </tr> 
+                                            <tr>
+                                                <td> 
+                                                    7
+                                                </td>
+                                                <td>$3.28911M</td>
+                                                <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="avatar avatar-xs"><img src="{% static 'assets/images/company-logos/6.png'%}" alt=""></div>
+                                                            Spruko Tech
+                                                        </div>
+                                                    </td>
+                                                <td>10,543</td>
+                                            </tr> 
+                                        </tbody>
+                                    </table> 
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-xxl-5">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Customers By Countries
+                                    </div>
+                                </div>
+                                <div class="card-body p-5">
+                                    <div id="visitors-countries"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-xxl-3">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Recent Leads
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled crm-top-deals mb-0">
+                                        <li>
+                                            <div class="d-flex align-items-center flex-wrap">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-sm bg-primary-transparent">
+                                                        <img src="{% static 'assets/images/faces/10.jpg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <span class="fs-14 d-block mb-0">Michael Jordan</span>
+                                                    <span class=" fs-12 d-block">michael.jordan@example.com</span>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-primary-transparent">Warm Leads</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center flex-wrap">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-sm bg-primary-transparent">
+                                                        <img src="{% static 'assets/images/faces/6.jpg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <span class="fs-14 d-block mb-0">Emigo Kiaren</span>
+                                                    <span class=" fs-12 d-block">emigo.kiaren@gmail.com</span>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-primary-transparent">Hot Leads</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center flex-wrap">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-sm bg-primary-transparent">
+                                                        <img src="{% static 'assets/images/faces/12.jpg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <span class="fs-14 d-block mb-0">Randy Origoan</span>
+                                                    <span class=" fs-12 d-block">randy.origoan@gmail.com</span>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-primary-transparent">Cold Leads</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center flex-wrap">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-sm bg-primary-transparent">
+                                                        GP
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <span class="fs-14 d-block mb-0">George Pieterson</span>
+                                                    <span class=" fs-12 d-block">george.pieterson@gmail.com</span>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-primary-transparent">Lost Leads</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center flex-wrap">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-sm bg-primary-transparent">
+                                                        <img src="{% static 'assets/images/faces/5.jpg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <span class="fs-14 d-block mb-0">Kiara Advain</span>
+                                                    <span class=" fs-12 d-block">kiaraadvain214@gmail.com</span>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-primary-transparent">New Leads</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center flex-wrap">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-sm bg-primary-transparent">
+                                                    <img src="{% static 'assets/images/faces/14.jpg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <span class="fs-14 d-block mb-0">Martin Roy</span>
+                                                    <span class=" fs-12 d-block">Martinroy2132@gmail.com</span>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-primary-transparent">Cold Leads</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-3 -->
+
+                    <!-- Start:: row-4 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header pb-3">
+                                    <div class="card-title">
+                                        Deals Statistics
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap table-borderless table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">S.No </th>
+                                                    <th scope="col">Deal </th>
+                                                    <th scope="col">Sales Rep</th>
+                                                    <th scope="col">Mail</th>
+                                                    <th scope="col">Amount</th>
+                                                    <th scope="col">Location</th>
+                                                    <th scope="col">Sales Cycle length</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            1
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold">	Xenon Tech. Ed.</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/15.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Ayyan Cowall</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        mayorkelly@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$4320.29</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-inline-flex align-items-center">
+                                                            <i class="ri-map-pin-fill text-primary fs-10"></i>
+                                                            <span class="ms-1">Germany</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">43 Days</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            2
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold">Ideal IT Sol.</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/4.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Meisha Kerr</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Kevingarfield@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$6745.99</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-inline-flex align-items-center">
+                                                            <i class="ri-map-pin-fill text-primary fs-10"></i>
+                                                            <span class="ms-1">Canada</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">45 Days</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            3
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold">Inferno Xo</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/5.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Jessica</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Ayyancowel234@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$1176.89</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-inline-flex align-items-center">
+                                                            <i class="ri-map-pin-fill text-primary fs-10"></i>
+                                                            <span class="ms-1">Singapore</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">50 Days</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            4
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold">Myami Group & Tech.</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/6.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Arunima A</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        mirindahers@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$1899.99</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-inline-flex align-items-center">
+                                                            <i class="ri-map-pin-fill text-primary fs-10"></i>
+                                                            <span class="ms-1">USA</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">55 Days</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            5
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold">Mevengo Tech Et Sed</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/11.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Martin Miles</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        jacobsmith@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$1867.29</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-inline-flex align-items-center">
+                                                            <i class="ri-map-pin-fill text-primary fs-10"></i>
+                                                            <span class="ms-1">Europe</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">30 Days</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            6
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold">Lackme Info Et.</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/13.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Khabib Hussain</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Hussain@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$2439.99</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-inline-flex align-items-center">
+                                                            <i class="ri-map-pin-fill text-primary fs-10"></i>
+                                                            <span class="ms-1">Canada</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">35 Days</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ENd:: row-4 -->
+
+                </div>
+            </div> 
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+
+        <!-- JSVector Maps JS -->
+        <script src="{% static 'assets/libs/jsvectormap/js/jsvectormap.min.js'%}"></script>
+
+        <!-- JSVector Maps MapsJS -->
+        <script src="{% static 'assets/libs/jsvectormap/maps/world-merc.js'%}"></script>
+        
+        <!-- CRM Dashboard --> 
+        <script src="{% static 'assets/js/crm-dashboard.js'%}"></script>
+    
+{% endblock %}

@@ -1,0 +1,430 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start:: row-1 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="h5 fw-medium">Team</div>
+                                <div>
+                                    <button class="btn btn-sm btn-success-light btn-wave" data-bs-toggle="modal" data-bs-target="#add-member"><i class="ri-add-line me-2"></i> Add Member</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xxl-3 col-lg-6"> 
+                                    <div class="card custom-card border rounded">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-4 text-center">
+                                            <span class="avatar avatar-xl team-avatar p-1 mb-3">
+                                                <img src="{% static 'assets/images/faces/11.jpg'%}" alt="">
+                                            </span>
+                                            <div class="team-member-details">
+                                                <span class="mb-0 fw-medium fs-16 text-truncate d-block">
+                                                    <a href="javascript:void(0);">NoahFisher</a>
+                                                </span>
+                                                <span class="mb-0 fs-13 text-muted d-block">noahfisher041@gmail.com</span>
+                                                <div class="btn-list mt-2">
+                                                    <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-facebook-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-twitter-x-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-instagram-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-github-line fw-bold"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-block-start-dashed border-top text-center p-0">
+                                            <div class="d-flex">
+                                                <div class="text-center p-3 border-end border-inline-end-dashed flex-fill">
+                                                    <a href="javascript:void(0);" class="text-secondary fs-13"><i class="ri-eye-line me-1 d-inline-block"></i> View</a>
+                                                </div>
+                                                <div class="text-center p-3 flex-fill">
+                                                    <a href="javascript:void(0);" class="text-primary fs-13"><i class="ri-file-list-line me-1 d-inline-block"></i> Assign</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-lg-6">
+                                    <div class="card custom-card border rounded">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-4 text-center">
+                                            <span class="avatar avatar-xl team-avatar p-1 mb-3">
+                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="">
+                                            </span>
+                                            <div class="team-member-details">
+                                                <span class="mb-0 fw-medium fs-16 text-truncate d-block">
+                                                    <a href="javascript:void(0);">Isabella Rose</a>
+                                                </span>
+                                                <span class="mb-0 fs-13 text-muted d-block">isabellarose98@gmail.com</span>
+                                                <div class="btn-list mt-2">
+                                                    <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-facebook-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-twitter-x-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-instagram-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-github-line fw-bold"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-block-start-dashed border-top text-center p-0">
+                                            <div class="d-flex">
+                                                <div class="text-center p-3 border-end border-inline-end-dashed flex-fill">
+                                                    <a href="javascript:void(0);" class="text-secondary fs-13"><i class="ri-eye-line me-1 d-inline-block"></i> View</a>
+                                                </div>
+                                                <div class="text-center p-3 flex-fill">
+                                                    <a href="javascript:void(0);" class="text-primary fs-13"><i class="ri-file-list-line me-1 d-inline-block"></i> Assign</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-lg-6">
+                                    <div class="card custom-card border rounded">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-4 text-center">
+                                            <span class="avatar avatar-xl team-avatar p-1 mb-3">
+                                                <img src="{% static 'assets/images/faces/4.jpg'%}" alt="">
+                                            </span>
+                                            <div class="team-member-details">
+                                                <span class="mb-0 fw-medium fs-16 text-truncate d-block">
+                                                    <a href="javascript:void(0);">Nitheri Morgan</a>
+                                                </span>
+                                                <span class="mb-0 fs-13 text-muted d-block">Nitherimorgan45@gmail.com</span>
+                                                <div class="btn-list mt-2">
+                                                    <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-facebook-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-twitter-x-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-instagram-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-github-line fw-bold"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-block-start-dashed border-top text-center p-0">
+                                            <div class="d-flex">
+                                                <div class="text-center p-3 border-end border-inline-end-dashed flex-fill">
+                                                    <a href="javascript:void(0);" class="text-secondary fs-13"><i class="ri-eye-line me-1 d-inline-block"></i> View</a>
+                                                </div>
+                                                <div class="text-center p-3 flex-fill">
+                                                    <a href="javascript:void(0);" class="text-primary fs-13"><i class="ri-file-list-line me-1 d-inline-block"></i> Assign</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-lg-6">
+                                    <div class="card custom-card border rounded">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-4 text-center">
+                                            <span class="avatar avatar-xl team-avatar p-1 mb-3">
+                                                <img src="{% static 'assets/images/faces/10.jpg'%}" alt="">
+                                            </span>
+                                            <div class="team-member-details">
+                                                <span class="mb-0 fw-medium fs-16 text-truncate d-block">
+                                                    <a href="javascript:void(0);">EthanClark</a>
+                                                </span>
+                                                <span class="mb-0 fs-13 text-muted d-block">ethanclark111@gmail.com</span>
+                                                <div class="btn-list mt-2">
+                                                    <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-facebook-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-twitter-x-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-instagram-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-github-line fw-bold"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-block-start-dashed border-top text-center p-0">
+                                            <div class="d-flex">
+                                                <div class="text-center p-3 border-end border-inline-end-dashed flex-fill">
+                                                    <a href="javascript:void(0);" class="text-secondary fs-13"><i class="ri-eye-line me-1 d-inline-block"></i> View</a>
+                                                </div>
+                                                <div class="text-center p-3 flex-fill">
+                                                    <a href="javascript:void(0);" class="text-primary fs-13"><i class="ri-file-list-line me-1 d-inline-block"></i> Assign</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-lg-6">
+                                    <div class="card custom-card border rounded">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-4 text-center">
+                                            <span class="avatar avatar-xl team-avatar p-1 mb-3">
+                                                <img src="{% static 'assets/images/faces/13.jpg'%}" alt="">
+                                            </span>
+                                            <div class="team-member-details">
+                                                <span class="mb-0 fw-medium fs-16 text-truncate d-block">
+                                                    <a href="javascript:void(0);">Jackson Taylor</a>
+                                                </span>
+                                                <span class="mb-0 fs-13 text-muted d-block">jacksontaylor00@gmail.com</span>
+                                                <div class="btn-list mt-2">
+                                                    <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-facebook-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-twitter-x-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-instagram-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-github-line fw-bold"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-block-start-dashed border-top text-center p-0">
+                                            <div class="d-flex">
+                                                <div class="text-center p-3 border-end border-inline-end-dashed flex-fill">
+                                                    <a href="javascript:void(0);" class="text-secondary fs-13"><i class="ri-eye-line me-1 d-inline-block"></i> View</a>
+                                                </div>
+                                                <div class="text-center p-3 flex-fill">
+                                                    <a href="javascript:void(0);" class="text-primary fs-13"><i class="ri-file-list-line me-1 d-inline-block"></i> Assign</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-lg-6">
+                                    <div class="card custom-card border rounded">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-4 text-center">
+                                            <span class="avatar avatar-xl team-avatar p-1 mb-3">
+                                                <img src="{% static 'assets/images/faces/5.jpg'%}" alt="">
+                                            </span>
+                                            <div class="team-member-details">
+                                                <span class="mb-0 fw-medium fs-16 text-truncate d-block">
+                                                    <a href="javascript:void(0);">Amelia Grace</a>
+                                                </span>
+                                                <span class="mb-0 fs-13 text-muted d-block">ameliagrace16@gmail.com</span>
+                                                <div class="btn-list mt-2">
+                                                    <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-facebook-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-twitter-x-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-instagram-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-github-line fw-bold"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-block-start-dashed border-top text-center p-0">
+                                            <div class="d-flex">
+                                                <div class="text-center p-3 border-end border-inline-end-dashed flex-fill">
+                                                    <a href="javascript:void(0);" class="text-secondary fs-13"><i class="ri-eye-line me-1 d-inline-block"></i> View</a>
+                                                </div>
+                                                <div class="text-center p-3 flex-fill">
+                                                    <a href="javascript:void(0);" class="text-primary fs-13"><i class="ri-file-list-line me-1 d-inline-block"></i> Assign</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-lg-6"> 
+                                    <div class="card custom-card border rounded">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-4 text-center">
+                                            <span class="avatar avatar-xl team-avatar p-1 mb-3">
+                                                <img src="{% static 'assets/images/faces/8.jpg'%}" alt="">
+                                            </span>
+                                            <div class="team-member-details">
+                                                <span class="mb-0 fw-medium fs-16 text-truncate d-block">
+                                                    <a href="javascript:void(0);">Natalie Miller</a>
+                                                </span>
+                                                <span class="mb-0 fs-13 text-muted d-block">nataliemiller2135@gmail.com</span>
+                                                <div class="btn-list mt-2">
+                                                    <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-facebook-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-twitter-x-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-instagram-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-github-line fw-bold"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-block-start-dashed border-top text-center p-0">
+                                            <div class="d-flex">
+                                                <div class="text-center p-3 border-end border-inline-end-dashed flex-fill">
+                                                    <a href="javascript:void(0);" class="text-secondary fs-13"><i class="ri-eye-line me-1 d-inline-block"></i> View</a>
+                                                </div>
+                                                <div class="text-center p-3 flex-fill">
+                                                    <a href="javascript:void(0);" class="text-primary fs-13"><i class="ri-file-list-line me-1 d-inline-block"></i> Assign</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-lg-6"> 
+                                    <div class="card custom-card border rounded">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-4 text-center">
+                                            <span class="avatar avatar-xl team-avatar p-1 mb-3">
+                                                <img src="{% static 'assets/images/faces/15.jpg'%}" alt="">
+                                            </span>
+                                            <div class="team-member-details">
+                                                <span class="mb-0 fw-medium fs-16 text-truncate d-block">
+                                                    <a href="javascript:void(0);">Evelyn Anna</a>
+                                                </span>
+                                                <span class="mb-0 fs-13 text-muted d-block">liamanderson52@gmail.com</span>
+                                                <div class="btn-list mt-2">
+                                                    <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-facebook-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-twitter-x-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-instagram-line fw-bold"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                        <i class="ri-github-line fw-bold"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-block-start-dashed border-top text-center p-0">
+                                            <div class="d-flex">
+                                                <div class="text-center p-3 border-end border-inline-end-dashed flex-fill">
+                                                    <a href="javascript:void(0);" class="text-secondary fs-13"><i class="ri-eye-line me-1 d-inline-block"></i> View</a>
+                                                </div>
+                                                <div class="text-center p-3 flex-fill">
+                                                    <a href="javascript:void(0);" class="text-primary fs-13"><i class="ri-file-list-line me-1 d-inline-block"></i> Assign</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            <nav aria-label="...">
+                                <ul class="pagination justify-content-end">
+                                    <li class="page-item disabled">
+                                        <span class="page-link">Previous</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">2</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0);">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- End:: row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+            <!-- Start:: add-members modals -->
+            <div class="modal fade" id="add-member" tabindex="-1" aria-labelledby="addmemberLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="addmemberLabel">Add Member</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-4">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <label for="team-name01" class="form-label">Name</label>
+                                    <input type="text" class="form-control mb-3" id="team-name01" placeholder="Enter Name">
+                                </div>
+                                <div class="col-xl-12">
+                                    <label for="team-mail01" class="form-label">Mail ID</label>
+                                    <input type="text" class="form-control" id="team-mail01" placeholder="Enter Mail Address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-sm btn-light" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-sm btn-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- End:: add-members modals -->
+
+{% endblock %}
+
+{% block scripts %}
+
+
+
+{% endblock %}

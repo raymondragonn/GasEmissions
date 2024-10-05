@@ -1,0 +1,600 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-8">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">
+                                        Project Details
+                                    </div> 
+                                    <div>
+                                        <a href="projects-create" class="btn btn-sm btn-secondary btn-wave"><i class="ri-add-line align-middle me-1 fw-medium"></i>Create Project</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="fw-medium mb-4 task-title">
+                                        Enhancing the Design for the Landing page
+                                    </h5>
+                                    <div class="fs-14 fw-medium mb-2">Project Manager :
+                                        <span class="text-muted task-description">Kevin Richie</span>
+                                    </div>
+                                    <div class="fs-15 fw-medium mb-2">
+                                        <div class="avatar-list-stacked">
+                                            <span class="fs-14 fw-medium">Assigned Team :</span>
+                                            <span class="avatar avatar-sm avatar-rounded" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" data-bs-original-title="Ayyan">
+                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                            </span>
+                                            <span class="avatar avatar-sm avatar-rounded" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" data-bs-original-title="Sasha">
+                                                <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                            </span>
+                                            <span class="avatar avatar-sm avatar-rounded" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" data-bs-original-title="Anagha">
+                                                <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                            </span>
+                                            <span class="avatar avatar-sm avatar-rounded" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" data-bs-original-title="Hishen">
+                                                <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                            </span>
+                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black fw-medium" href="javascript:void(0);">
+                                                +5
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-2 flex-wrap align-items-center fs-14 fw-medium mb-2">End Date : 
+                                        <span class="badge bg-warning fw-medium align-middle">10 Days Left !</span>
+                                        <span class="text-muted task-description fs-13 fw-nomal">21, Jan 2024</span> 
+                                    </div>
+                                    <div class="fs-14 fw-medium mb-2">Project Description :</div>
+                                    <p class="text-muted task-description">Landing Page Analytics and Performance Review involves a comprehensive examination of the key metrics and data associated with a specific landing page. This process includes analyzing user interactions, bounce rates, conversion rates, and other relevant data points. 
+                                    </p>
+                                    <div class="fs-14 fw-medium mb-2">Key tasks :</div>
+                                    <div class="mb-3">
+                                        <ul class="task-details-key-tasks mb-0">
+                                            <li>Evaluate the source and volume of traffic to the landing page.</li>
+                                            <li>Examine user interactions, such as clicks, scrolls, and navigation patterns.</li>
+                                            <li>Analyze conversion rates to understand the effectiveness of call-to-action elements.</li>
+                                            <li>Check the page load times and optimize for faster performance.</li>
+                                            <li>Evaluate how the landing page performs on various devices and screen sizes.</li>
+                                            <li> Assess the achievement of predefined goals and objectives for the landing page.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="fs-14 fw-medium mb-2">Skills :</div>
+                                    <div>
+                                        <span class="badge bg-primary-transparent border">Web Designing</span>
+                                        <span class="badge bg-primary-transparent border">Front-End Development</span>
+                                        <span class="badge bg-primary-transparent border">JavaScript and jQuery</span>
+                                        <span class="badge bg-primary-transparent border">Responsive Design</span>
+                                        <span class="badge bg-primary-transparent border">Web Security</span>
+                                        <span class="badge bg-primary-transparent border">UI/UX</span>
+                                        <span class="badge bg-primary-transparent border">Web Analytics Tools </span>
+                                        <span class="badge bg-primary-transparent border">Coding Standards</span>
+                                    </div>
+                                </div>
+                                <div class="px-3 border-top border-block-start-dashed py-1">
+                                    <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                        <div>
+                                            <div class="text-muted fs-12 mb-2">Start Date :
+                                                <span class="text-muted task-description fs-14">15,Nov 2023</span>
+                                            </div>
+                                            <div class="text-muted fs-12 mb-2">Priority :
+                                                <span class="badge bg-secondary ms-2">Medium</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div>
+                                                <span class="d-block text-muted fs-12 mb-1"> Project Status:</span>
+                                                <div class="fs-12 fw-medium">
+                                                    <div class="mb-1"><i class="ri-square-fill fs-12 text-secondary me-2 d-inline-block"></i> Completed Tasks</div>
+                                                    <div><i class="ri-square-fill fs-12 text-light me-2 d-inline-block"></i> Incomplete Tasks</div>
+                                                </div>
+                                            </div>
+                                            <div id="project-status"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header justify-content-between">
+                                            <div class="card-title">Project Goals</div>
+                                            <div class="btn btn-sm btn-light btn-wave"><i class="ri-add-line align-middle me-1 fw-medium"></i>Add Goal</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2"><input class="form-check-input form-checked-success" type="checkbox" value="" id="successChecked1" checked=""></div>
+                                                        <div class="fw-medium fs-14">Modernize Visual Appeal</div>
+                                                        <div class="avatar-list-stacked ms-auto">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2"><input class="form-check-input form-checked-success" type="checkbox" value="" id="successChecked3"></div>
+                                                        <div class="fw-medium fs-14">Improve User Engagement</div>
+                                                        <div class="avatar-list-stacked ms-auto">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/1.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/15.jpg'%}" alt="img">
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2"><input class="form-check-input form-checked-success" type="checkbox" value="" id="successChecked4"></div>
+                                                        <div class="fw-medium fs-14">Implement UI/UX Best Practices</div>
+                                                        <div class="avatar-list-stacked ms-auto">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/7.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black"
+                                                                href="javascript:void(0);">
+                                                                +5
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2"><input class="form-check-input form-checked-success" type="checkbox" value="" id="successChecked5" checked=""></div>
+                                                        <div class="fw-medium fs-14">Accessibility Integration</div>
+                                                        <div class="avatar-list-stacked ms-auto">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/15.jpg'%}" alt="img">
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2"><input class="form-check-input form-checked-success" type="checkbox" value="" id="successChecked6" checked=""></div>
+                                                        <div class="fw-medium fs-14">Source High-Quality Visual Assets</div>
+                                                        <div class="avatar-list-stacked ms-auto">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/1.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black"
+                                                                href="javascript:void(0);">
+                                                                +3
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4 text-center">
+                                                <button class="btn btn-success btn-sm btn-wave w-100">View All</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                Project Documents
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0 pt-1">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center flex-wrap gap-2">
+                                                        <div class="lh-1">
+                                                            <span class="avatar p-2 bg-light">
+                                                                <img src="{% static 'assets/images/media/file-manager/1.png'%}" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex-fill">
+                                                            <a href="javascript:void(0);"><span class="d-block fw-medium fs-14">Complete Project</span></a>
+                                                            <span class="d-block text-muted fs-12 fw-normal">0.65MB</span>
+                                                        </div>
+                                                        <div class="btn-list">
+                                                            <button class="btn btn-sm btn-icon btn-info-light btn-wave"><i class="ri-edit-line"></i></button>
+                                                            <button class="btn btn-sm btn-icon btn-danger-light btn-wave"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center flex-wrap gap-2">
+                                                        <div class="lh-1">
+                                                            <span class="avatar bg-light">
+                                                                <img src="{% static 'assets/images/media/file-manager/3.png'%}" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex-fill">
+                                                            <a href="javascript:void(0);"><span class="d-block fw-medium fs-14">MiniFiles.zip</span></a>
+                                                            <span class="d-block text-muted fs-12 fw-normal">0.52MB</span>
+                                                        </div>
+                                                        <div class="btn-list">
+                                                            <button class="btn btn-sm btn-icon btn-info-light btn-wave"><i class="ri-edit-line"></i></button>
+                                                            <button class="btn btn-sm btn-icon btn-danger-light btn-wave"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center flex-wrap gap-2">
+                                                        <div class="lh-1">
+                                                            <span class="avatar p-2 bg-light">
+                                                                <img src="{% static 'assets/images/media/file-manager/1.png'%}" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex-fill">
+                                                            <a href="javascript:void(0);"><span class="d-block fw-medium fs-14">image-145.png</span></a>
+                                                            <span class="d-block text-muted fs-12 fw-normal">287KB</span>
+                                                        </div>
+                                                        <div class="btn-list">
+                                                            <button class="btn btn-sm btn-icon btn-info-light btn-wave"><i class="ri-edit-line"></i></button>
+                                                            <button class="btn btn-sm btn-icon btn-danger-light btn-wave"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center flex-wrap gap-2">
+                                                        <div class="lh-1">
+                                                            <span class="avatar bg-light">
+                                                                <img src="{% static 'assets/images/media/file-manager/3.png'%}" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex-fill">
+                                                            <a href="javascript:void(0);"><span class="d-block fw-medium fs-14">BackupFile.zip</span></a>
+                                                            <span class="d-block text-muted fs-12 fw-normal">3MB</span>
+                                                        </div>
+                                                        <div class="btn-list">
+                                                            <button class="btn btn-sm btn-icon btn-info-light btn-wave"><i class="ri-edit-line"></i></button>
+                                                            <button class="btn btn-sm btn-icon btn-danger-light btn-wave"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-center flex-wrap gap-2">
+                                                        <div class="lh-1">
+                                                            <span class="avatar bg-light">
+                                                                <img src="{% static 'assets/images/media/file-manager/3.png'%}" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex-fill">
+                                                            <a href="javascript:void(0);"><span class="d-block fw-medium fs-14">SinglePages.zip</span></a>
+                                                            <span class="d-block text-muted fs-12 fw-normal">1.06MB</span>
+                                                        </div>
+                                                        <div class="btn-list">
+                                                            <button class="btn btn-sm btn-icon btn-info-light btn-wave"><i class="ri-edit-line"></i></button>
+                                                            <button class="btn btn-sm btn-icon btn-danger-light btn-wave"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between pb-3">
+                                    <div class="card-title">
+                                        Project Team
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light btn-sm btn-wave"><i class="ri-add-line align-middle me-1 fw-medium"></i>Add Member</button>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Designation</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-xs avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/2.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium fs-13">Ayyan Conway</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">UI Designer</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="fe fe-more-vertical align-middle"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line align-middle me-1 d-inline-block"></i>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line align-middle me-1 d-inline-block"></i>Edit</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-xs avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/8.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium fs-13">Sasha Banks</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-pink-transparent">UX Designer</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="fe fe-more-vertical align-middle"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line align-middle me-1 d-inline-block"></i>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line align-middle me-1 d-inline-block"></i>Edit</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-xs avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/5.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium fs-13">Anagha May</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-warning-transparent">Tester</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="fe fe-more-vertical align-middle"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line align-middle me-1 d-inline-block"></i>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line align-middle me-1 d-inline-block"></i>Edit</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-xs avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/10.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium fs-13">Hishen Stuart</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Fullstack Developer</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="fe fe-more-vertical align-middle"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line align-middle me-1 d-inline-block"></i>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line align-middle me-1 d-inline-block"></i>Edit</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card project-team-chat">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Team Chat</div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled profile-timeline">
+                                        <li>
+                                            <div>
+                                                <span class="avatar avatar-sm bg-primary-transparent avatar-rounded profile-timeline-avatar">
+                                                    E
+                                                </span>
+                                                <p class="mb-2 fs-14">
+                                                    <span class="fw-medium">Quick update, team!</span>
+                                                    <span class="float-end fs-11 text-muted  op-6"><i class="ri-time-line me-1 d-inline-block align-middle"></i>10,Dec 2023 - 14:21</span>
+                                                </p>
+                                                <p class="text-muted mb-0 fs-14">
+                                                    We're on track with our milestones.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="avatar avatar-sm avatar-rounded profile-timeline-avatar">
+                                                    <img src="{% static 'assets/images/faces/11.jpg'%}" alt="">
+                                                </span>
+                                                <p class="text-muted mb-2 fs-14">
+                                                    <span class="fw-medium">Feedback Request</span>
+                                                    <span class="float-end fs-11 text-muted  op-6"><i class="ri-time-line me-1 d-inline-block align-middle"></i>16,Dec 2023 - 08:14</span>
+                                                </p>
+                                                <p class="text-muted mb-0 fs-14">
+                                                    Working on ID <span class="text-success">#1451</span>. Submit your feedback before moving forward.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="avatar avatar-sm avatar-rounded profile-timeline-avatar">
+                                                    <img src="{% static 'assets/images/faces/4.jpg'%}" alt="">
+                                                </span>
+                                                <p class="text-muted mb-2 fs-14"> Sent You a File for Review.
+                                                    <span class="text-default"><b>Amelia Davis</b> Sent You Files for<b>Review</b></span>.<span class="float-end fs-11 text-muted  op-6"><i class="ri-time-line me-1 d-inline-block align-middle"></i>03,Dec 2023 - 17:32</span>
+                                                </p>
+                                                <p class="profile-activity-media mb-0">
+                                                    <a href="javascript:void(0);">
+                                                        <img src="{% static 'assets/images/media/file-manager/3.png'%}" alt="">
+                                                    </a>  
+                                                    <span class="fs-11 text-muted">542.07KB</span>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="avatar avatar-sm bg-success-transparent avatar-rounded profile-timeline-avatar">
+                                                    L
+                                                </span>
+                                                <p class="text-muted mb-2 fs-14">
+                                                    <span class="text-default"><b>You</b> shared with 5 Recipients <b>Harvey,Jorge,Tracey,Arunima,Vidhanth</b></span>.<span class="float-end fs-11 text-muted  op-6"><i class="ri-time-line me-1 d-inline-block align-middle"></i>18,Nov 2023 - 07:41</span>
+                                                </p>
+                                                <p class="profile-activity-media mb-2">
+                                                    <a href="javascript:void(0);">
+                                                        <img src="{% static 'assets/images/media/media-75.jpg'%}" alt="">
+                                                    </a>   
+                                                    <a href="javascript:void(0);">
+                                                        <img src="{% static 'assets/images/media/media-76.jpg'%}" alt="">
+                                                    </a>   
+                                                </p>
+                                                <div>
+                                                    <div class="avatar-list-stacked">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="avatar avatar-sm avatar-rounded profile-timeline-avatar">
+                                                    <img src="{% static 'assets/images/media/media-39.jpg'%}" alt="">
+                                                </span>
+                                                <p class="mb-1 fs-14">
+                                                    <b>You</b> Commented on <b>Philip Jimmi</b> post <a class="text-secondary" href="javascript:void(0);"><u>#winter</u></a>.
+                                                    <span class="float-end fs-11 text-muted  op-6"><i class="ri-time-line me-1 d-inline-block align-middle"></i>26,Dec 2023 - 18:46</span>
+                                                </p>
+                                                <p class="text-muted fs-14">Coming Seasons are so horrible pay attention</p>
+                                                <p class="profile-activity-media mb-0">
+                                                    <a href="javascript:void(0);">
+                                                        <img src="{% static 'assets/images/media/media-26.jpg'%}" alt="">
+                                                    </a>    
+                                                    <a href="javascript:void(0);">
+                                                        <img src="{% static 'assets/images/media/media-29.jpg'%}" alt="">
+                                                    </a>    
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-sm-flex align-items-center lh-1">
+                                        <div class="me-sm-3 mb-2 mb-sm-0">
+                                            <img src="{% static 'assets/images/faces/9.jpg'%}" alt="" class="avatar avatar-md avatar-rounded">
+                                        </div>
+                                        <div class="flex-fill">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Post Anything" aria-label="Recipient's username with two button addons">
+                                                <button class="btn btn-outline-light btn-wave waves-effect waves-light" type="button"><i class="bi bi-emoji-smile"></i></button>
+                                                <button class="btn btn-outline-light btn-wave waves-effect waves-light" type="button"><i class="bi bi-paperclip"></i></button>
+                                                <button class="btn btn-outline-light btn-wave waves-effect waves-light" type="button"><i class="bi bi-camera"></i></button>
+                                                <button class="btn btn-primary btn-wave waves-effect waves-light" type="button">Post</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+        
+        <!-- Project overview JS -->
+        <script src="{% static 'assets/js/project-overview.js'%}"></script>
+
+{% endblock %}

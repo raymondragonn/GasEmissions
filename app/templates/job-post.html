@@ -1,0 +1,228 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-4">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Assign To Employer</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="col-xl-12">
+                                        <label class="form-label">Employer Name</label> 
+                                        <select class="form-control" data-trigger name="Category-select">
+                                            <option value="Choice 1">Quantum Innovations Inc.</option>
+                                            <option value="Choice 2">Horizon Enterprises</option>
+                                            <option value="Choice 3">SwiftSynergy.pvt.ltd</option>
+                                            <option value="Choice 4">Innovatepix Co.in</option>
+                                        </select>
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Company Details</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-12">
+                                            <label for="Company-Name" class="form-label">Company Name</label> 
+                                            <input type="text" class="form-control" id="Company-Name" placeholder="Company Name" value="Quantum Innovations Inc">
+                                        </div>                                 
+                                        <div class="col-xl-12">
+                                            <label for="Company-Website" class="form-label">Company Website</label> 
+                                            <input type="text" class="form-control" id="Company-Website" placeholder="Company Website" value="http//www.quantuminnovations.com">
+                                        </div>  
+                                        <div class="col-xl-12"> 
+                                            <label class="form-label">Country</label> 
+                                            <select class="form-control" data-trigger name="Country">
+                                                <option value="Choice 2">India</option> 
+                                                <option value="Choice 3">USA</option>
+                                                <option value="Choice 4">Germany</option>
+                                                <option value="Choice 5">Spain</option>
+                                                <option value="Choice 6">Urgentina</option>
+                                            </select>
+                                        </div> 
+                                        <div class="col-xl-12">
+                                            <label for="Company-Address" class="form-label">Address</label> 
+                                            <input type="text" class="form-control" id="Company-Address" placeholder="Company Address" value="USA">
+                                        </div>   
+                                        <div class="col-xl-12">
+                                            <label for="Company-email" class="form-label">Email Address</label> 
+                                            <input type="text" class="form-control" id="Company-email" placeholder="Company Email Address" value="quantuminnovations1@mail.com">
+                                        </div>   
+                                        <div class="col-xl-12">
+                                            <label for="Company-Phone-Number" class="form-label">Phone Number</label> 
+                                            <input type="text" class="form-control" id="Company-Phone-Number" placeholder="Company Phone Number" value="+121-1400-559858">
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-9 col-xl-8">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">
+                                        Post New Job
+                                    </div>                       
+                                </div>
+                                <div class="card-body">
+                                    <div class="row gy-4 mb-4"> 
+                                        <div class="col-xl-6">
+                                            <label for="job-title" class="form-label">Job Title</label>
+                                            <input type="text" class="form-control" id="job-title" placeholder="Job Title" value="React Developer">
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Job Category</label> 
+                                            <select class="form-control" data-trigger name="Category-select">
+                                                <option value="Choice 1">Development</option>
+                                                <option value="Choice 2">Marketing</option>
+                                                <option value="Choice 3">IT Software</option>
+                                            </select>
+                                        </div> 
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Working Experience</label> 
+                                            <select class="form-control" data-trigger name="Experience">
+                                                <option value="Choice 1">0 - 2 Years</option>
+                                                <option value="Choice 2">1 - 3 Years</option>
+                                                <option value="Choice 3">3 - 5 Years</option>
+                                            </select>
+                                        </div> 
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Job Type</label> 
+                                            <select class="form-control" data-trigger name="jobtype">
+                                                <option value="Choice 1">Contract</option>
+                                                <option value="Choice 2">Freelance</option>
+                                                <option value="Choice 3">Full Time</option>
+                                                <option value="Choice 4">Part Time</option>
+                                                <option value="Choice 5">Internship</option>
+                                            </select>
+                                        </div> 
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Priority</label> 
+                                            <select class="form-control" data-trigger name="Priority">
+                                                <option value="Choice 1">Normal</option>
+                                                <option value="Choice 2">Urgent</option>
+                                            </select>
+                                        </div>  
+                                        <div class="col-xl-6"> 
+                                            <label class="form-label">Vacancies</label> 
+                                            <select class="form-control" data-trigger name="Vacancies">
+                                                <option value="Choice 2">12</option> 
+                                                <option value="Choice 3">20</option>
+                                                <option value="Choice 4">30</option>
+                                                <option value="Choice 5">40</option>
+                                            </select>
+                                        </div> 
+                                        <div class="col-xl-6"> 
+                                            <label class="form-label">Salary</label> 
+                                            <select class="form-control" data-trigger name="Salary">
+                                                <option value="Choice 2">0 - $1,50,000 / Year</option> 
+                                                <option value="Choice 3">$1,00,000 - $3,00,000 / Year</option>
+                                                <option value="Choice 4">$3,00,000 - $5,00,000 / Year</option>
+                                            </select>
+                                        </div> 
+                                        <div class="col-xl-6">
+                                            <label for="JobLocation" class="form-label">Job Location :</label>
+                                            <select class="form-control" data-trigger name="JobLocation" id="JobLocation">
+                                                <option value="Choice 1">Hyderabad</option>
+                                                <option value="Choice 2">Chennai</option>
+                                                <option value="Choice 3">Bangalore</option>
+                                                <option value="Choice 4">Vizag</option>
+                                            </select>
+                                        </div> 
+                                        <div class="col-xl-12">
+                                            <label for="skills" class="form-label">Skills :</label>
+                                            <select class="form-control" name="skills" id="skills" multiple>
+                                            <option value="Choice 1" selected>HTML</option>
+                                            <option value="Choice 2" selected>CSS</option>
+                                            <option value="Choice 3" selected>JavaScript</option>
+                                            <option value="Choice 4">React</option>
+                                            </select>
+                                        </div>           
+                                        <div class="col-xl-6">
+                                            <label for="job-deadline" class="form-label">Job Deadline</label>
+                                            <input type="text" class="form-control" id="job-deadline" placeholder="Job Deadline">
+                                        </div>  
+                                        <div class="col-xl-6"> 
+                                            <label class="form-label">Gender Requirement</label> 
+                                            <select class="form-control" data-trigger name="gender">
+                                                <option value="Choice 2">No Preferences</option> 
+                                                <option value="Choice 3">Male Only</option>
+                                                <option value="Choice 4">Female Only</option>
+                                            </select>
+                                        </div>                                      
+                                        <div class="col-xl-6">
+                                            <label for="language" class="form-label">Languages :</label>
+                                            <select class="form-control" name="language" id="language" multiple>
+                                            <option value="Choice 1" selected>English</option>
+                                            <option value="Choice 2">French</option>
+                                            <option value="Choice 3">Arabic</option>
+                                            <option value="Choice 4" selected>Hindi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label for="qualification" class="form-label">Qualification :</label>
+                                            <select class="form-control" name="Qualification" id="qualification" multiple>
+                                            <option value="Choice 1" selected>Graduate</option>
+                                            <option value="Choice 2">Diploma</option>
+                                            <option value="Choice 3" selected>MBA</option>
+                                            <option value="Choice 4" selected>MCA</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label for="job-description" class="form-label">Job Description :</label>
+                                            <textarea class="form-control" id="job-description" rows="4">Lorem In dapibus molestie odio eget tincidunt.Suada dignissim, egestas vel mi. Vestibulum vitae turpis ex. Nunc dictum et tortor et dapibus.</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end">
+                                    <a href="javascript:void(0);" class="btn btn-primary btn-wave waves-effect waves-light">
+                                        <i class="bi bi-plus-circle"></i> Post Job
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Date & Time Picker JS -->
+        <script src="{% static 'assets/libs/flatpickr/flatpickr.min.js'%}"></script>
+        
+        <!-- Job Post JS -->
+        <script src="{% static 'assets/js/jobs-post.js'%}"></script>
+
+{% endblock %}

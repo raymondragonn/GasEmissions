@@ -1,0 +1,74 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- GLightbox CSS -->
+        <link rel="stylesheet" href="{% static 'assets/libs/glightbox/css/glightbox.min.css'%}">
+        
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <a href="{% static 'assets/images/media/media-40.jpg'%}" class="glightbox card" data-gallery="gallery1">
+                                <img src="{% static 'assets/images/media/media-40.jpg'%}" alt="image" >
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <a href="{% static 'assets/images/media/media-41.jpg'%}" class="glightbox card" data-gallery="gallery1">
+                                <img src="{% static 'assets/images/media/media-41.jpg'%}" alt="image" >
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <a href="{% static 'assets/images/media/media-42.jpg'%}" class="glightbox card" data-gallery="gallery1">
+                                <img src="{% static 'assets/images/media/media-42.jpg'%}" alt="image" >
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <a href="{% static 'assets/images/media/media-43.jpg'%}" class="glightbox card" data-gallery="gallery1">
+                                <img src="{% static 'assets/images/media/media-43.jpg'%}" alt="image" >
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <a href="{% static 'assets/images/media/media-44.jpg'%}" class="glightbox card" data-gallery="gallery1">
+                                <img src="{% static 'assets/images/media/media-44.jpg'%}" alt="image" >
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <a href="{% static 'assets/images/media/media-45.jpg'%}" class="glightbox card" data-gallery="gallery1">
+                                <img src="{% static 'assets/images/media/media-45.jpg'%}" alt="image" >
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <a href="{% static 'assets/images/media/media-46.jpg'%}" class="glightbox card" data-gallery="gallery1">
+                                <img src="{% static 'assets/images/media/media-46.jpg'%}" alt="image" >
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <a href="{% static 'assets/images/media/media-60.jpg'%}" class="glightbox card" data-gallery="gallery1">
+                                <img src="{% static 'assets/images/media/media-60.jpg'%}" alt="image" >
+                            </a>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+            
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Gallery JS -->
+        <script src="{% static 'assets/libs/glightbox/js/glightbox.min.js'%}"></script>
+        <script src="{% static 'assets/js/gallery.js'%}"></script>
+        
+{% endblock %}

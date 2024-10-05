@@ -1,0 +1,790 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- nouislider Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/nouislider/nouislider.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <div class="my-4">
+
+                        <!-- Start::row-1 -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card custom-card">
+                                    <div class="top-left"></div>
+                                    <div class="top-right"></div>
+                                    <div class="bottom-left"></div>
+                                    <div class="bottom-right"></div>
+                                    <div class="card-body p-0">
+                                        <nav class="navbar navbar-expand-xxl">
+                                            <div class="container-fluid">
+                                                <a class="navbar-brand" href="javascript:void(0);">
+                                                    <img src="{% static 'assets/images/brand-logos/toggle-dark.png'%}" alt="" class="d-inline-block align-text-top">
+                                                </a>
+                                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#navbarSupportedContent"
+                                                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                                                    aria-label="Toggle navigation">
+                                                    <span class="navbar-toggler-icon"></span>
+                                                </button>
+                                                <div class="collapse navbar-collapse navbar-justified flex-wrap gap-2" id="navbarSupportedContent">
+                                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-xxl-center">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" aria-current="page" href="javascript:void(0);">Men</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="javascript:void(0);">Women</a>
+                                                        </li>
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown"
+                                                                role="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Kids
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Another action</a>
+                                                                </li>
+                                                                <li>
+                                                                    <hr class="dropdown-divider">
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Today Deals</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Electronics</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Fashion</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link"><i class="ri-customer-service-line me-2 align-middle d-inline-block"></i>Customer Service</a>
+                                                        </li>
+                                                        <li class="nav-item mb-xxl-0 mb-2 ms-xxl-0 ms-3">
+                                                            <div class="btn-group d-xxl-flex d-block">
+                                                                <button class="btn btn-sm btn-primary-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Sort By
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="javascript:void(0);">Featured</a></li>
+                                                                    <li><a class="dropdown-item" href="javascript:void(0);">Price: High to Low</a></li>
+                                                                    <li><a class="dropdown-item active" href="javascript:void(0);">Price: Low to High</a></li>
+                                                                    <li><a class="dropdown-item" href="javascript:void(0);">Newest</a></li>
+                                                                    <li><a class="dropdown-item" href="javascript:void(0);">Ratings</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="nav-item mb-xxl-0 mb-2 ms-xxl-3 ms-3">
+                                                            <div class="btn-group">
+                                                                <button class="btn btn-sm btn-primary">IV</button>
+                                                                <button class="btn btn-sm btn-primary">III</button>
+                                                                <button class="btn btn-sm btn-primary">II</button>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="d-flex" role="search">
+                                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                                            aria-label="Search">
+                                                        <button class="btn btn-light"
+                                                            type="submit">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-md-12">
+                                <div class="card custom-card products-navigation-card">
+                                    <div class="top-left"></div>
+                                    <div class="top-right"></div>
+                                    <div class="bottom-left"></div>
+                                    <div class="bottom-right"></div>
+                                    <div class="card-body p-0">
+                                        <div class="p-4 border-bottom">
+                                            <p class="fw-medium mb-0 text-muted">BRANDS</p>
+                                            <div class="px-2 py-3 pb-0">
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Jimmy-Lolfiger" checked>
+                                                    <label class="form-check-label" for="Jimmy-Lolfiger">
+                                                        TrendFlex Pro
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">512</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="dapzem1" checked>
+                                                    <label class="form-check-label" for="dapzem1">
+                                                        LuxeBlend
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">2,186</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="denim-winjo1" checked>
+                                                    <label class="form-check-label" for="denim-winjo1">
+                                                        SwiftGlow
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">734</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Louie-Phillippe">
+                                                    <label class="form-check-label" for="Louie-Phillippe">
+                                                        PinnacleStyle
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">16</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="garage-clothing">
+                                                    <label class="form-check-label" for="garage-clothing">
+                                                        EliteTech
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">1,432</span>
+                                                </div>
+                                                <div class="collapse" id="brands-more">
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="blueberry" checked>
+                                                        <label class="form-check-label" for="blueberry">
+                                                            UrbanEra
+                                                        </label>
+                                                        <span class="badge bg-primary-transparent float-end">257</span>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="aus-polo-assn" checked>
+                                                        <label class="form-check-label" for="aus-polo-assn">
+                                                            HarmonyLife 
+                                                        </label>
+                                                        <span class="badge bg-primary-transparent float-end">1,845</span>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="denim-corp" checked>
+                                                        <label class="form-check-label" for="denim-corp">
+                                                            QuantumSelect
+                                                        </label>
+                                                        <span class="badge bg-primary-transparent float-end">5,893</span>
+                                                    </div>
+                                                </div>
+                                                <a class="ecommerce-more-link" data-bs-toggle="collapse" href="#brands-more" role="button" aria-expanded="false" aria-controls="brands-more">MORE</a>
+                                            </div>
+                                        </div>
+                                        <div class="p-4 border-bottom">
+                                            <p class="fw-medium mb-0 text-muted">CATEGORIES</p>
+                                            <div class="px-2 py-3 pb-0">
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="electronics">
+                                                    <label class="form-check-label" for="electronics">
+                                                        Electronics
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">3,417</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="HomeDecor">
+                                                    <label class="form-check-label" for="HomeDecor">
+                                                        Home Decor
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">536</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="clothing" checked>
+                                                    <label class="form-check-label" for="clothing">
+                                                        Clothing
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">18,289</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Accesories">
+                                                    <label class="form-check-label" for="Accesories">
+                                                        Accesories
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">536</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="fashion">
+                                                    <label class="form-check-label" for="fashion">
+                                                        Fashion
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">3,453</span>
+                                                </div>
+                                                <div class="collapse" id="category-more">
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="furniture">
+                                                        <label class="form-check-label" for="furniture">
+                                                            Furniture
+                                                        </label>
+                                                        <span class="badge bg-primary-transparent float-end">7,165</span>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="footwear">
+                                                        <label class="form-check-label" for="footwear">
+                                                            Footwear
+                                                        </label>
+                                                        <span class="badge bg-primary-transparent float-end">5,964</span>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="mobiles">
+                                                        <label class="form-check-label" for="mobiles">
+                                                            Mobiles
+                                                        </label>
+                                                        <span class="badge bg-primary-transparent float-end">2,123</span>
+                                                    </div>
+                                                </div>
+                                                <a class="ecommerce-more-link" data-bs-toggle="collapse" href="#category-more" role="button" aria-expanded="false" aria-controls="category-more">MORE</a>
+                                            </div>
+                                        </div>
+                                        <div class="p-4 border-bottom">
+                                            <p class="fw-medium mb-0 text-muted">PRICE</p>
+                                            <div class="px-2 py-3 pb-0">
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="low">
+                                                    <label class="form-check-label" for="low">
+                                                        $0 - $499
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">21,451</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="low1" checked>
+                                                    <label class="form-check-label" for="low1">
+                                                        $499 - $1199
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">12,124</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="medium">
+                                                    <label class="form-check-label" for="medium">
+                                                        $1,199 - $2,299
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">5,154</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="high">
+                                                    <label class="form-check-label" for="high">
+                                                        $2,299 - $3,599
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">4,245</span>
+                                                </div>
+                                                <div class="form-check mb-4">
+                                                    <input class="form-check-input" type="checkbox" value="" id="high1">
+                                                    <label class="form-check-label" for="high1">
+                                                        $3,599 & Above
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">2,478</span>
+                                                </div>
+                                                <p class="fw-medium mb-0 text-muted">PRICE RANGE</p>
+                                                <div class="mt-5 mx-3" id="product-price-range"></div>
+                                            </div>
+                                        </div>
+                                        <div class="p-4 border-bottom">
+                                            <p class="fw-medium mb-0 text-muted">DISCOUNT</p>
+                                            <div class="px-2 py-3 pb-0">
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Jimmy-Lolfiger1">
+                                                    <label class="form-check-label" for="Jimmy-Lolfiger1">
+                                                        0% - 20%
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">14,475</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="dapzem2">
+                                                    <label class="form-check-label" for="dapzem2">
+                                                        20% - 40%
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">13,148</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="denim-winjo">
+                                                    <label class="form-check-label" for="denim-winjo">
+                                                        40% - 60%
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">5,784</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="Louie-Phillippe1" checked>
+                                                    <label class="form-check-label" for="Louie-Phillippe1">
+                                                        60% - 80%
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">2,781</span>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="garage-clothing1">
+                                                    <label class="form-check-label" for="garage-clothing1">
+                                                        80% - 90%
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">1,785</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-4">
+                                            <p class="fw-medium mb-0 text-muted">SIZES</p>
+                                            <div class="px-2 py-3 pb-0">
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="extra-small">
+                                                    <label class="form-check-label" for="extra-small">
+                                                        Extra Small (XS)
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">35,845</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="small">
+                                                    <label class="form-check-label" for="small">
+                                                        Small (SM)
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">13,577</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="medium1">
+                                                    <label class="form-check-label" for="medium1">
+                                                        Medium (MD)
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">12,852</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="large" checked>
+                                                    <label class="form-check-label" for="large">
+                                                        Large (L)
+                                                    </label>
+                                                    <span class="badge bg-primary-transparent float-end">3,451</span>
+                                                </div>
+                                                <div class="collapse" id="sizes-more">
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="extra-large">
+                                                        <label class="form-check-label" for="extra-large">
+                                                            Extra Large (XL)
+                                                        </label>
+                                                        <span class="badge bg-primary-transparent float-end">1,155</span>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="double-extralarge">
+                                                        <label class="form-check-label" for="double-extralarge">
+                                                            XXL
+                                                        </label>
+                                                        <span class="badge bg-primary-transparent float-end">1,025</span>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" value="" id="triple-extralarge">
+                                                        <label class="form-check-label" for="triple-extralarge">
+                                                            XXL
+                                                        </label>
+                                                        <span class="badge bg-primary-transparent float-end">875</span>
+                                                    </div>
+                                                </div>
+                                                <a class="ecommerce-more-link" data-bs-toggle="collapse" href="#sizes-more" role="button" aria-expanded="false" aria-controls="sizes-more">MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-9 col-xl-8 col-md-12">
+                                <div class="row">
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/7.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                    <span class="badge bg-secondary top-left-badge">60% Off</span>
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Mini Chair</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Compact and versatile, stylish seating</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$144<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$247</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $144 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/10.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">T-Shirt Half sleeves</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Casual wear and everyday comfort</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$229<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$1,799</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $229 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/8.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Ceramic pot</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Greenery with Ceramic Pot</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$540<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$660</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $540 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/12.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                    
+                                                    <span class="badge bg-success top-left-badge">60% Off</span>
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Ear Buds</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Wireless ultimate audio </p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$1,525<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$1,899</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $1,525 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/9.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Drone</p>
+                                                <p class="product-description fs-11 text-muted mb-2"> Capturing aerial views and adventures</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$559<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$599</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $5,559 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/13.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Back Pack</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Carry Your essentials in style</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$549<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$625</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $549 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/14.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                    <span class="badge bg-danger top-left-badge">60% Off</span>
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Analog Watches</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Times elegance with Watches</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$245<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$349</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $245 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/15.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Handy Bag</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Effortlessly carry your essentials</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$474<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$649</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $474 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/17.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                    <span class="badge bg-info top-left-badge">60% Off</span>
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Laptop</p>
+                                                <p class="product-description fs-11 text-muted mb-2"> Companion for work</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$1,484<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$1,142</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $1,142 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/16.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Girls Heels </p>
+                                                <p class="product-description fs-11 text-muted mb-2">Step into sophistication with heels</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$548<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$759</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $548 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/18.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Watch</p>
+                                                <p class="product-description fs-11 text-muted mb-2">fashion for a bold look</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$1,544<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$1,899</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $1,544 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="card custom-card product-card">
+                                            <div class="top-left"></div>
+                                            <div class="top-right"></div>
+                                            <div class="bottom-left"></div>
+                                            <div class="bottom-right"></div>
+                                            <div class="card-body text-center">
+                                                <a href="product-details" class="product-image">
+                                                    <img src="{% static 'assets/images/ecommerce/jpg/11.jpg'%}" class="card-img rounded-0 mb-3" alt="...">
+                                                </a>
+                                                <div class="product-icons">
+                                                    <a href="wishlist" class="wishlist"><i class="ri-heart-line"></i></a>
+                                                    <a href="cart" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                                                    <a href="product-details" class="view"><i class="ri-eye-line"></i></a>
+                                                </div>
+                                                <p class="product-name fw-medium mb-0">Digital Camera</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Prefect high-quality photography</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$5,899<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$6,899</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $5,899 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End::row-1 -->
+
+                        <!-- Pagination -->
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                                <a class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0);">Next</a>
+                            </li>
+                        </ul>
+                        <!-- Pagination -->
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+            
+{% endblock %}
+
+{% block scripts %}
+       
+        <!-- noUiSlider JS -->
+        <script src="{% static 'assets/libs/nouislider/nouislider.min.js'%}"></script>
+        <script src="{% static 'assets/libs/wnumb/wNumb.min.js'%}"></script>
+        
+        <!-- Internal Products JS -->
+        <script src="{% static 'assets/js/products.js'%}"></script>
+        
+{% endblock %}

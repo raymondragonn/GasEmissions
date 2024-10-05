@@ -1,0 +1,497 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <a href="javascript:void(0);">
+                                            <img src="{% static 'assets/images/media/media-23.jpg'%}" class="card-img rounded-0 blog-details-img p-3" alt="...">
+                                        </a>
+                                        <div class="card-body pb-2">
+                                            <div class="mt-sm-0 mb-2">
+                                                <span class="badge bg-secondary fs-12">Mountain Bike</span>
+                                            </div>
+                                            <p class="fs-22 fw-semibold mb-1">Exploring the Great Outdoors on Two Wheels: Riding the Wild - Follow a lone cyclist through winding trails</p>
+                                            <div class="d-sm-flex align-items-cneter">
+                                                <div class="d-flex align-items-center flex-fill">
+                                                    <span class="avatar avatar-sm me-3">
+                                                        <img src="{% static 'assets/images/faces/15.jpg'%}" alt="">
+                                                    </span>
+                                                    <div>
+                                                        <p class="mb-0 fw-medium">James Lucas - <span class="fs-11 text-muted fw-normal"><i class="fe fe-calendar"></i> Tue, 25 Dec 2023 - <i class="fe fe-clock"></i>  11:45</span></p>
+                                                        <p class="mb-0 text-muted"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="fw-medium">
+                                                Facing the unknown : 'On Two Wheels to the Unknown' 
+                                            </h6>
+                                            <p class="mb-4 text-muted">
+                                                Lone cyclist sets out on a journey into the unknown, pedaling through trails that wind and meander through dense forests and open meadows. Each turn unravels a new facet of the wilderness, inviting both excitement and a sense of serene discovery.
+                                                Riding the wild isn't just about the scenic beauty; it's about overcoming challenges and relishing the thrill of adventure. Our lone cyclist tackles varying terrains, from rocky ascents to exhilarating descents, providing a true test of skill and determination.
+                                            </p>
+                                            <p class="mb-5 text-muted">
+                                                As the wheels turn, experience the enchanting soundtrack of nature—birdsong, rustling leaves, and the distant murmur of a flowing stream. Riding through the wild becomes a symphony for the senses, a harmonious blend of man and nature.
+                                            </p>
+                                            <div class="card custom-card bg-primary-transparent blockquote-card mb-5 shadow-none">
+                                                <a href="javascript:void(0);" class="card-anchor"></a>
+                                                <div class="card-body px-5">
+                                                <blockquote class="blockquote mb-0">
+                                                    <p class="fs-16 fw-medium mb-2 text-dark">"Amidst the twists and turns of life's journey, find solace in the simplicity of two wheels on untamed trails. Riding the Wild' is a testament to the thrill of the unknown, where a lone cyclist becomes a poet, writing verses.."</p>
+                                                    <footer class="blockquote-footer mt-2 fs-14 op-7 float-end">Someone famous as <cite title="Source Title">-Lauren Daisy</cite></footer>
+                                                </blockquote>
+                                                </div>
+                                            </div>
+                                            <p class="mb-4 text-muted">
+                                                In the heart of the wilderness, find solitude and tranquility. The lone cyclist pauses at scenic spots, immersing in the peaceful embrace of nature. It's a moment of reflection and connection with the earth.The winding trails lead to breathtaking panoramic views of towering mountains. Stop with us, catch your breath, and savor the awe-inspiring scenery that stretches as far as the eye can see. It's a visual feast that rewards every pedal stroke.
+                                            </p>
+                                        </div>
+                                        <div class="card-body border-top border-block-start-dashed">
+                                            <div class="d-sm-flex d-block align-items-center justify-content-between">
+                                                <div class="d-flex align-items-cener">
+                                                    <span class="badge bg-success-transparent me-3">
+                                                        <i class="ri-thumb-up-line me-1 align-middle d-inline-block"></i> 32 Likes
+                                                    </span>
+                                                    <span class="badge bg-info-transparent me-3">
+                                                        <i class="ri-chat-4-line me-1 align-middle d-inline-block"></i> 10 Comments
+                                                    </span>
+                                                </div>
+                                                <div class="btn-list mt-sm-0 mt-2">
+                                                    <button class="btn btn-sm btn-primary-light" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Like"><i class="ri-thumb-up-line"></i> Like</button>
+                                                    <button class="btn btn-sm btn-primary-light" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="ri-share-line"></i> Share</button>
+                                                    <button class="btn btn-sm btn-secondary-light"><i class="ri-chat-4-line me-1 align-middle d-inline-block"></i>Comment</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                Post Your Comment
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row gy-3">
+                                                <div class="col-xl-6">
+                                                    <label for="blog-first-name" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="blog-first-name" placeholder="Enter Name">
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <label for="blog-last-name" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="blog-last-name" placeholder="Enter Name">
+                                                </div>
+                                                <div class="col-xl-12"> 
+                                                    <label for="blog-email" class="form-label">Email ID</label>
+                                                    <input type="text" class="form-control" id="blog-email" placeholder="Enter Email">
+                                                </div>
+                                                <div class="col-xl-12">
+                                                    <label for="blog-comment" class="form-label">Write Comment</label>
+                                                    <textarea class="form-control" id="blog-comment" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="text-end">
+                                                <button class="btn btn-primary-light">Post Comment</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body d-flex p-4">
+                                            <span class="avatar avatar-xxl mb-0 flex-shrink-0">
+                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                            </span>
+                                            <div class=" ps-3">
+                                                <p class="mb-1 fs-15 fw-medium text-dark lh-1">Angela Janet</p>
+                                                <p class="text-muted mb-0 fs-13">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary combined with a handful of model sentence structures.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-top border-block-start-dashed">
+                                            <div class=" d-flex gap-5">
+                                                <span class="fw-medium">Mail Id:</span>
+                                                <div class="btn-list flex-fill">
+                                                    <span class="fs-12 text-muted fw-normal">angelajanet5500@gmail.com</span>
+                                                </div>
+                                            </div><div class=" d-flex gap-5 mt-2">
+                                                <span class="fw-medium">Follow:</span>
+                                                <div class="btn-list flex-fill">
+                                                    <div class="btn-list">
+                                                        <button class="btn btn-sm btn-icon btn-primary-light btn-wave waves-effect waves-light">
+                                                            <i class="ri-facebook-line"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-icon btn-info-light btn-wave waves-effect waves-light">
+                                                            <i class="ri-twitter-x-line"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                            <i class="ri-instagram-line"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                            <i class="ri-github-line"></i>
+                                                        </button>
+                                                        <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                            <i class="ri-youtube-line"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                Trending Categories
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <span class="avatar avatar-xs bg-secondary">
+                                                                        D
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="fw-medium ms-2">UX Designing</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <span class="badge bg-primary-transparent">21</span>
+                                                            </div>
+                                                        </div>    
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <span class="avatar avatar-xs bg-success">
+                                                                        H
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="fw-medium ms-2">Health</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <span class="badge bg-primary-transparent">16</span>
+                                                            </div>
+                                                        </div>    
+                                                    </a>                                           
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <span class="avatar avatar-xs bg-warning">
+                                                                        F
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="fw-medium ms-2">Photography</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <span class="badge bg-primary-transparent">06</span>
+                                                            </div>
+                                                        </div>    
+                                                    </a>       
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <span class="avatar avatar-xs bg-danger">
+                                                                    D
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="fw-medium ms-2">Development</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <span class="badge bg-primary-transparent">18</span>
+                                                            </div>
+                                                        </div>    
+                                                    </a>      
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <span class="avatar avatar-xs bg-primary">
+                                                                    G
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="fw-medium ms-2">Gaming Apps</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <span class="badge bg-primary-transparent">09</span>
+                                                            </div>
+                                                        </div>    
+                                                    </a>      
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <div>
+                                                                    <span class="avatar avatar-xs bg-secondary">
+                                                                    C
+                                                                    </span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="fw-medium ms-2">Cosmetics</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <span class="badge bg-primary-transparent">11</span>
+                                                            </div>
+                                                        </div>    
+                                                    </a>      
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                Latest Posts
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-start">
+                                                        <span class="avatar avatar-xxl me-3 flex-shrink-0">
+                                                            <img src="{% static 'assets/images/media/media-39.jpg'%}" class="img-fluid" alt="...">
+                                                        </span>
+                                                        <div class="flex-fill my-auto">
+                                                            <a href="javascript:void(0);" class="fs-10 fw-medium mb-2 text-primary badge bg-primary-transparent">Travelling</a>
+                                                            <p class="mb-1">
+                                                                There are many variations of passages...
+                                                            </p>
+                                                            <span class="text-muted fs-11"> <i class="fe fe-calendar"></i> 20,Oct 2023 - <i class="fe fe-clock"></i> 03:34</span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-auto fs-12 text-decoration-underline text-primary text-end align-self-end">View</a>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-start">
+                                                        <span class="avatar avatar-xxl me-3 flex-shrink-0">
+                                                            <img src="{% static 'assets/images/media/media-54.jpg'%}" class="img-fluid" alt="...">
+                                                        </span>
+                                                        <div class="flex-fill my-auto">
+                                                            <a href="javascript:void(0);" class="fs-10 fw-medium mb-2 text-primary badge bg-primary-transparent">Photography</a>
+                                                            <p class="mb-1">
+                                                                There are many variations of passages...
+                                                            </p>
+                                                            <span class="text-muted fs-11"> <i class="fe fe-calendar"></i> 12,Nov 2023 - <i class="fe fe-clock"></i> 14:05</span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-auto fs-12 text-decoration-underline text-primary text-end align-self-end">View</a>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-start">
+                                                        <span class="avatar avatar-xxl me-3 flex-shrink-0">
+                                                            <img src="{% static 'assets/images/media/media-25.jpg'%}" class="img-fluid" alt="...">
+                                                        </span>
+                                                        <div class="flex-fill my-auto">
+                                                            <a href="javascript:void(0);" class="fs-10 fw-medium mb-2 text-primary badge bg-primary-transparent">Flowers</a>
+                                                            <p class="mb-1">
+                                                                There are many variations of passages...
+                                                            </p>
+                                                            <span class="text-muted fs-11"> <i class="fe fe-calendar"></i> 05,Dec 2023 - <i class="fe fe-clock"></i> 20:00</span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-auto fs-12 text-decoration-underline text-primary text-end align-self-end">View</a>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="d-flex align-items-start">
+                                                        <span class="avatar avatar-xxl me-3 flex-shrink-0">
+                                                            <img src="{% static 'assets/images/media/media-52.jpg'%}" class="img-fluid" alt="...">
+                                                        </span>
+                                                        <div class="flex-fill my-auto">
+                                                            <a href="javascript:void(0);" class="fs-10 fw-medium mb-2 text-primary badge bg-primary-transparent"> Light Energy</a>
+                                                            <p class="mb-1">
+                                                                There are many variations of passages...
+                                                            </p>
+                                                            <span class="text-muted fs-11"> <i class="fe fe-calendar"></i> 01,Jan 2024 - <i class="fe fe-clock"></i> 08:20</span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-auto fs-12 text-decoration-underline text-primary text-end align-self-end">View</a>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item text-center">
+                                                    <button class="btn btn-primary-light">Load more</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                Subscribe to Newsletter
+                                            </div>    
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="text-start">
+                                                <h6 class="mb-3 fs-14 text-muted"> Subscribe to receive the latest blog updates</h6>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="Email Here" aria-label="blog-email" aria-describedby="blog-subscribe">
+                                                    <button class="btn btn-primary" type="button" id="blog-subscribe">Subscribe</button>
+                                                </div>
+                                                <label class="form-check-label">
+                                                    By Subscribing you accept to <a href="javascript:void(0);" class="text-success"><u>privacy policy</u></a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                Related Tags
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="blog-popular-tags">
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Mountain</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Hill Bike</span>
+                                                </a>    
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Hiking</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Nature</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Trees</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#waterfall</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Vehicle</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Forest</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#landscape</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Nature Beauty</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Beautify Photos</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#Photography</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#passion for nature</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#trending</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#lifestyle</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#nature art</span>
+                                                </a>
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge bg-primary-transparent text-muted">#artist</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+
+{% endblock %}
+
+{% block scripts %}
+
+
+
+{% endblock %}

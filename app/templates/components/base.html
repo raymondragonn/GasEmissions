@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-vertical-style="detached" data-toggled="detached-close" data-theme-mode="dark" data-header-styles="dark" data-menu-styles="dark" data-card-style="style1" data-card-background="background1" >
+
+    <head>
+
+        <!-- Meta Data -->
+		<meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Description" content="SciFi - Django Premium Bootstrap 5 Admin Dashboard Template">
+        <meta name="Author" content="Spruko Technologies Private Limited">
+        <meta name="keywords" content="django, django admin, django framework, dashboard, django admin template, admin, django admin panel, django bootstrap, django and bootstrap, django bootstrap 5, dashboard template, django html, admin panel template, bootstrap admin template, admin panel django">
+        
+        <!-- TITLE -->
+		<title>SciFi - Django Premium Bootstrap 5 Admin &amp; Dashboard Template </title>
+
+        <!-- FAVICON -->
+        <link rel="icon" href="{% static 'assets/images/brand-logos/favicon.ico'%}" type="image/x-icon">
+
+        <!-- BOOTSTRAP CSS -->
+	    <link  id="style" href="{% static 'assets/libs/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+        <!-- ICONS CSS -->
+        <link href="{% static 'assets/css/icons.css'%}" rel="stylesheet">
+        
+        <!-- STYLES CSS -->
+        <link href="{% static 'assets/css/styles.css'%}" rel="stylesheet">
+
+        <!-- MAIN JS -->
+        <script src="{% static 'assets/js/main.js'%}"></script>
+
+        {% include 'components/layouts/styles.html' %}
+        {% block styles %}
+
+        {% endblock %}
+
+	</head>
+
+    <body>
+
+        <!-- SWITCHER -->
+        {% include 'components/layouts/switcher.html' %}
+        <!-- END SWITCHER -->
+
+        <!-- LOADER -->
+        <div id="loader">
+            <img src="{% static 'assets/images/media/loader.svg'%}" alt="">
+        </div>
+        <!-- END LOADER -->
+
+        <!-- PAGE -->
+        <div class="page">
+
+            <!-- HEADER -->
+            {% include 'components/layouts/header.html' %}
+            <!-- END HEADER -->
+
+            <!-- SIDEBAR -->
+            {% include 'components/layouts/sidebar.html' %}
+            <!-- END SIDEBAR -->
+
+            <!-- MAIN-CONTENT -->
+            {% block content %}
+                    
+            {% endblock %}
+            <!-- END MAIN-CONTENT -->
+
+            <!-- SEARCH-MODAL -->
+            {% include 'components/layouts/search-modal.html' %}
+            <!-- END SEARCH-MODAL -->
+
+            <!-- Offcanvas -->
+            {% include 'components/layouts/offcanvas.html' %}
+            <!-- END Offcanvas -->
+
+            <!-- FOOTER -->
+            {% include 'components/layouts/footer.html' %}
+            <!-- END FOOTER -->
+
+        </div>
+        <!-- END PAGE-->
+
+        <!-- SCRIPTS -->
+        {% include 'components/layouts/scripts.html' %}
+        {% block scripts %}
+
+        {% endblock %}
+        <!-- STICKY JS -->
+        <script src="{% static 'assets/js/sticky.js'%}"></script>
+
+        <!-- DEFAULTMENU JS -->
+        <script src="{% static 'assets/js/defaultmenu.js'%}"></script>
+
+        <!-- CUSTOM JS -->
+        <script src="{% static 'assets/js/custom.js'%}"></script>
+
+        <!-- CUSTOM-SWITCHER JS -->
+        <script src="{% static 'assets/js/custom-switcher.js'%}"></script>
+
+        <!-- END SCRIPTS -->
+
+    </body>
+</html>

@@ -1,0 +1,742 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start:: row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-9 col-lg-7">
+                            <div class="row align-items-center mb-4">
+                                <div class="col-lg-12">
+                                    <div class="input-group companies-search-input">
+                                        <input type="text" class="form-control w-25" aria-label="Text input with segmented dropdown button" placeholder="Enter your keyword here">
+                                        <select class="form-select rounded-0" data-trigger name="choices-single-default" id="choices-single-default">
+                                            <option value="">All Categories</option>
+                                            <option value="Choice 1">Software Dveloper</option>
+                                            <option value="Choice 2">Web Developer</option>
+                                            <option value="Choice 3">Software Architect</option>
+                                            <option value="Choice 4">IT Hardware</option>
+                                            <option value="Choice 5">Network Engineer</option>
+                                            <option value="Choice 6">Angular Developer</option>
+                                            <option value="Choice 7">React Developer</option>
+                                        </select>
+                                        <input type="text" class="form-control w-25" aria-label="Text input with segmented dropdown button" placeholder="Search by location">
+                                        <button type="button" class="btn btn-primary"><i class="ri-search-line"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                                <h5 class="fw-medium mb-0 flex-grow-1">2134 <span class="fw-normal fs-18">Companies match for your search</span> </h5>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-outline-light border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Sort By
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Premium</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Newest</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Most Relevant</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Fresher</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Experienced</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Bond Agreement</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Flexible Shift</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Day Shift</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar bg-danger-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line align-middle fs-14 text-danger"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar bg-info-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Share" title="Share"><span><i class="ri-share-line align-middle fs-14 text-info"></i></span></a>
+                                            </div>
+                                            <div class="d-flex align-items-start flex-wrap gap-2">
+                                                <span class="avatar avatar-xl bg-white shadow-sm border p-1 avatar-rounded">
+                                                    <img src="{% static 'assets/images/company-logos/1.png'%}" alt="">
+                                                </span>
+                                                <div class="ms-2">
+                                                    <h5 class="fw-medium mb-1 d-flex align-items-center"><a href="javascript:void(0);"> Innovatepix Co.in <span class="fs-13 text-success ms-1 d-inline-block"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2">
+                                                        <a href="javascript:void(0);"><i class="bi bi-geo-alt fs-11"></i> Paris, France </a>
+                                                        <p class="mb-0 text-muted">Establishment year - 1996</p>
+                                                        <span class="fs-13 fw-medium ms-2"><i class="ri-subtract-fill text-success me-1 d-inline-block fs-7 align-middle"></i>Posted 3 Days ago</span>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(138)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                                <div class="flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-info-transparent" data-bs-toggle="tooltip" title="No of employees"><i class="bi bi-people me-1"></i>No. of Emp : 241</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Vacancies : 13</a>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-wave btn-primary">
+                                                    View Profile <i class="ri-arrow-right-line align-middle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar bg-danger-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line align-middle fs-14 text-danger"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar bg-info-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Share" title="Share"><span><i class="ri-share-line align-middle fs-14 text-info"></i></span></a>
+                                            </div>
+                                            <div class="d-flex align-items-start flex-wrap gap-2">
+                                                <span class="avatar avatar-xl bg-white shadow-sm border p-1 avatar-rounded">
+                                                    <img src="{% static 'assets/images/company-logos/2.png'%}" alt="">
+                                                </span>
+                                                <div class="ms-2">
+                                                    <h5 class="fw-medium mb-1 d-flex align-items-center"><a href="javascript:void(0);"> FutureBud Solutions <span class="fs-13 text-success ms-1 d-inline-block"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 fs-14">
+                                                        <a href="javascript:void(0);"><i class="bi bi-geo-alt fs-11"></i> Dubai, UAE </a>
+                                                        <p class="mb-0 text-muted">Establishment year - 2001</p>
+                                                        <span class="fs-13 fw-medium ms-2"><i class="ri-subtract-fill text-success me-1 d-inline-block fs-7 align-middle"></i>Posted 3 Days ago</span>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(134)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                                <div class="flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-info-transparent" data-bs-toggle="tooltip" title="No of employees"><i class="bi bi-people me-1"></i>No. of Emp : 182</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Vacancies : 42</a>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-wave btn-primary">
+                                                    View Profile <i class="ri-arrow-right-line align-middle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar bg-danger-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line align-middle fs-14 text-danger"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar bg-info-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Share" title="Share"><span><i class="ri-share-line align-middle fs-14 text-info"></i></span></a>
+                                            </div>
+                                            <div class="d-flex align-items-start flex-wrap gap-2">
+                                                <span class="avatar avatar-xl bg-white shadow-sm border p-1 avatar-rounded">
+                                                    <img src="{% static 'assets/images/company-logos/3.png'%}" alt="">
+                                                </span>
+                                                <div class="ms-2">
+                                                    <h5 class="fw-medium mb-1 d-flex align-items-center"><a href="javascript:void(0);"> TechicGen PVT LTD <span class="fs-13 text-success ms-1 d-inline-block"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 fs-14">
+                                                        <a href="javascript:void(0);"><i class="bi bi-geo-alt fs-11"></i> London, UK, </a>
+                                                        <p class="mb-0 text-muted">Establishment year - 2000</p>
+                                                        <span class="fs-13 fw-medium ms-2"><i class="ri-subtract-fill text-success me-1 d-inline-block fs-7 align-middle"></i>Posted 3 Days ago</span>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(234)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                                <div class="flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-info-transparent" data-bs-toggle="tooltip" title="No of employees"><i class="bi bi-people me-1"></i>No. of Emp : 32</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Vacancies : 13</a>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-wave btn-primary">
+                                                    View Profile <i class="ri-arrow-right-line align-middle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar bg-danger-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line align-middle fs-14 text-danger"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar bg-info-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Share" title="Share"><span><i class="ri-share-line align-middle fs-14 text-info"></i></span></a>
+                                            </div>
+                                            <div class="d-flex align-items-start flex-wrap gap-2">
+                                                <span class="avatar avatar-xl bg-white shadow-sm border p-1 avatar-rounded">
+                                                    <img src="{% static 'assets/images/company-logos/7.png'%}" alt="">
+                                                </span>
+                                                <div class="ms-2">
+                                                    <h5 class="fw-medium mb-1 d-flex align-items-center"><a href="javascript:void(0);"> Pinnacle Apex Solutions <span class="fs-13 text-success ms-1 d-inline-block"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 fs-14">
+                                                        <a href="javascript:void(0);"><i class="bi bi-geo-alt fs-11"></i> Sydney, Australia, </a>
+                                                        <p class="mb-0 text-muted">Establishment year - 2005</p>
+                                                        <span class="fs-13 fw-medium ms-2"><i class="ri-subtract-fill text-success me-1 d-inline-block fs-7 align-middle"></i>Posted 2 Days ago</span>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(239)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                                <div class="flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-info-transparent" data-bs-toggle="tooltip" title="No of employees"><i class="bi bi-people me-1"></i>No. of Emp : 127</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Vacancies : 22</a>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-wave btn-primary">
+                                                    View Profile <i class="ri-arrow-right-line align-middle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar bg-danger-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line align-middle fs-14 text-danger"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar bg-info-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Share" title="Share"><span><i class="ri-share-line align-middle fs-14 text-info"></i></span></a>
+                                            </div>
+                                            <div class="d-flex align-items-start flex-wrap gap-2">
+                                                <span class="avatar avatar-xl bg-white shadow-sm border p-1 avatar-rounded">
+                                                    <img src="{% static 'assets/images/company-logos/5.png'%}" alt="">
+                                                </span>
+                                                <div class="ms-2">
+                                                    <h5 class="fw-medium mb-1 d-flex align-items-center"><a href="javascript:void(0);"> Renith Innovations Corp. <span class="fs-13 text-success ms-1 d-inline-block"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 fs-14">
+                                                        <a href="javascript:void(0);"><i class="bi bi-geo-alt fs-11"></i> Sydney, Australia, </a>
+                                                        <p class="mb-0 text-muted">Establishment year - 2020</p>
+                                                        <span class="fs-13 fw-medium ms-2"><i class="ri-subtract-fill text-success me-1 d-inline-block fs-7 align-middle"></i>Posted 2 Days ago</span>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(239)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                                <div class="flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-info-transparent" data-bs-toggle="tooltip" title="No of employees"><i class="bi bi-people me-1"></i>No. of Emp : 127</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Vacancies : 22</a>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-wave btn-primary">
+                                                    View Profile <i class="ri-arrow-right-line align-middle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar bg-danger-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line align-middle fs-14 text-danger"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar bg-info-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Share" title="Share"><span><i class="ri-share-line align-middle fs-14 text-info"></i></span></a>
+                                            </div>
+                                            <div class="d-flex align-items-start flex-wrap gap-2">
+                                                <span class="avatar avatar-xl bg-white shadow-sm border p-1 avatar-rounded">
+                                                    <img src="{% static 'assets/images/company-logos/6.png'%}" alt="">
+                                                </span>
+                                                <div class="ms-2">
+                                                    <h5 class="fw-medium mb-1 d-flex align-items-center"><a href="javascript:void(0);"> Vista Nexus Technologies <span class="fs-13 text-success ms-1 d-inline-block"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 fs-14">
+                                                        <a href="javascript:void(0);"><i class="bi bi-geo-alt fs-11"></i> Tokyo, Japan </a>
+                                                        <p class="mb-0 text-muted">Establishment year - 2000</p>
+                                                        <span class="fs-13 fw-medium ms-2"><i class="ri-subtract-fill text-success me-1 d-inline-block fs-7 align-middle"></i>Posted 1 Day ago</span>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(764)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                                <div class="flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-info-transparent" data-bs-toggle="tooltip" title="No of employees"><i class="bi bi-people me-1"></i>No. of Emp : 127</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Vacancies : 22</a>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-wave btn-primary">
+                                                    View Profile <i class="ri-arrow-right-line align-middle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar bg-danger-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line align-middle fs-14 text-danger"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar bg-info-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Share" title="Share"><span><i class="ri-share-line align-middle fs-14 text-info"></i></span></a>
+                                            </div>
+                                            <div class="d-flex align-items-start flex-wrap gap-2">
+                                                <span class="avatar avatar-xl bg-white shadow-sm border p-1 avatar-rounded">
+                                                    <img src="{% static 'assets/images/company-logos/10.png'%}" alt="">
+                                                </span>
+                                                <div class="ms-2">
+                                                    <h5 class="fw-medium mb-1 d-flex align-items-center"><a href="javascript:void(0);">Innovatepix Co.in <span class="fs-13 text-success ms-1 d-inline-block"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 fs-14">
+                                                        <a href="javascript:void(0);"><i class="bi bi-geo-alt fs-11"></i> Paris, France,</a>
+                                                        <p class="mb-0 text-muted">Establishment year - 1996</p>
+                                                        <span class="fs-13 fw-medium ms-2"><i class="ri-subtract-fill text-success me-1 d-inline-block fs-7 align-middle"></i>Posted 1 Day ago</span>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-half"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(138)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                                <div class="flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-info-transparent" data-bs-toggle="tooltip" title="No of employees"><i class="bi bi-people me-1"></i>No. of Emp : 241</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Vacancies : 13</a>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-wave btn-primary">
+                                                    View Profile <i class="ri-arrow-right-line align-middle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar bg-danger-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line align-middle fs-14 text-danger"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar bg-info-transparent text-default avatar-sm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Share" title="Share"><span><i class="ri-share-line align-middle fs-14 text-info"></i></span></a>
+                                            </div>
+                                            <div class="d-flex align-items-start flex-wrap gap-2">
+                                                <span class="avatar avatar-xl bg-white shadow-sm border p-1 avatar-rounded">
+                                                    <img src="{% static 'assets/images/company-logos/9.png'%}" alt="">
+                                                </span>
+                                                <div class="ms-2">
+                                                    <h5 class="fw-medium mb-1 d-flex align-items-center"><a href="javascript:void(0);"> FutureBud Solutions <span class="fs-13 text-success ms-1 d-inline-block"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 fs-14">
+                                                        <a href="javascript:void(0);"><i class="bi bi-geo-alt fs-11"></i> Mumbai, India, </a>
+                                                        <p class="mb-0 text-muted">Establishment year - 2001</p>
+                                                        <span class="fs-13 fw-medium ms-3"><i class="ri-subtract-fill text-success me-1 d-inline-block fs-7 align-middle"></i>Posted 4hrs ago</span>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="bi bi-star"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(134)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                                <div class="flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-info-transparent" data-bs-toggle="tooltip" title="No of employees"><i class="bi bi-people me-1"></i>No. of Emp : 182</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md rounded-pill bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Vacancies : 42</a>
+                                                </div>
+                                                <a href="javascript:void(0);" class="btn btn-wave btn-primary">
+                                                    View Profile <i class="ri-arrow-right-line align-middle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="pagination mb-4 justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="javascript:void(0);">
+                                        Prev
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link text-primary" href="javascript:void(0);">
+                                        next
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xxl-3 col-lg-5">
+                            <div class="card custom-card products-navigation-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">
+                                        Search Filter
+                                    </div>
+                                    <a href="javascript:void(0);" class="text-info fw-medium badge bg-info-transparent">
+                                        Reset All
+                                    </a>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="p-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Industry Type</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-1" checked>
+                                                <label class="form-check-label" for="c-1">
+                                                    IT
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">3,417</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-2">
+                                                <label class="form-check-label" for="c-2">
+                                                    Finance 
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">536</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-3" checked>
+                                                <label class="form-check-label" for="c-3">
+                                                    Marketing
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">18,289</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-4" checked>
+                                                <label class="form-check-label" for="c-4">
+                                                    Transportation
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">3,453</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-5">
+                                                <label class="form-check-label" for="c-5">
+                                                    Telecom
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">7,165</span>
+                                            </div>
+                                            <div class="collapse" id="category-more">
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="cc-6">
+                                                    <label class="form-check-label" for="cc-6">
+                                                        Aerospace
+                                                    </label>
+                                                    <span class="badge bg-light text-default  float-end">5,964</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="cc-7">
+                                                    <label class="form-check-label" for="cc-7">
+                                                        Marketing
+                                                    </label>
+                                                    <span class="badge bg-light text-default  float-end">2,123</span>
+                                                </div>
+                                            </div>
+                                            <a class="ecommerce-more-link" data-bs-toggle="collapse" href="#category-more" role="button" aria-expanded="false" aria-controls="category-more">MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Location</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="available-1" checked>
+                                                <label class="form-check-label" for="available-1">
+                                                    France
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">512</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="available-2">
+                                                <label class="form-check-label" for="available-2">
+                                                    Uk
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">2,186</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="available-3">
+                                                <label class="form-check-label" for="available-3">
+                                                    UAE
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">734</span>
+                                            </div>
+                                            <div class="collapse" id="location-more">
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="c-6">
+                                                    <label class="form-check-label" for="c-6">
+                                                        Australia
+                                                    </label>
+                                                    <span class="badge bg-light text-default  float-end">5,964</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="c-7">
+                                                    <label class="form-check-label" for="c-7">
+                                                        USA
+                                                    </label>
+                                                    <span class="badge bg-light text-default  float-end">2,123</span>
+                                                </div>
+                                            </div>
+                                            <a class="ecommerce-more-link" data-bs-toggle="collapse" href="#location-more" role="button" aria-expanded="false" aria-controls="location-more">MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Company Size</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="bond-1" checked>
+                                                <label class="form-check-label" for="bond-1">
+                                                    0-50
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">145</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="bond-2">
+                                                <label class="form-check-label" for="bond-2">
+                                                    50 - 100
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">432</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="bond-3">
+                                                <label class="form-check-label" for="bond-3">
+                                                    100 - 150
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">123</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Recruiter Type</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="Recruiter-1" checked>
+                                                <label class="form-check-label" for="Recruiter-1">
+                                                    Direct Company
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">13</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="Recruiter-2">
+                                                <label class="form-check-label" for="Recruiter-2">
+                                                    Agency
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">67</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Job Vacancies</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="vacancies-1" checked>
+                                                <label class="form-check-label" for="vacancies-1">
+                                                    0 -10
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">13</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="vacancies-2">
+                                                <label class="form-check-label" for="vacancies-2">
+                                                    10 - 20 
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">67</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="vacancies-3">
+                                                <label class="form-check-label" for="vacancies-3">
+                                                    20 +above 
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">67</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Type of Employement</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-1" checked>
+                                                <label class="form-check-label" for="j-1">
+                                                    Full Time
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">512</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-2" checked>
+                                                <label class="form-check-label" for="j-2">
+                                                    Part Time
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">2,186</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-3" checked>
+                                                <label class="form-check-label" for="j-3">
+                                                    Internship
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">734</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-4">
+                                                <label class="form-check-label" for="j-4">
+                                                    Freelancer
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">16</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-5">
+                                                <label class="form-check-label" for="j-5">
+                                                    Remote Job
+                                                </label>
+                                                <span class="badge bg-light text-default  float-end">1,432</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+
+
+{% endblock %}

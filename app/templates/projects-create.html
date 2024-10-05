@@ -1,0 +1,154 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Quill Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/quill/quill.snow.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/libs/quill/quill.bubble.css'%}">
+
+        <!-- Filepond Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/filepond/filepond.min.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/libs/filepond-plugin-image-edit/filepond-plugin-image-edit.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Create Project
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-12">
+                                            <label for="input-label" class="form-label">Project Name :</label>
+                                            <input type="text" class="form-control" id="input-label" placeholder="Enter Project Name">
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Start Date :</label>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+                                                    <input type="text" class="form-control" id="startDate" placeholder="Choose date and time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">End Date :</label>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+                                                    <input type="text" class="form-control" id="endDate" placeholder="Choose date and time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Status :</label>
+                                            <select class="form-control" data-trigger name="choices-single-default1" id="choices-single-default1">
+                                                <option value="Inprogress" selected>Inprogress</option>
+                                                <option value="On-hold">On-hold</option>
+                                                <option value="Completed">Completed</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Priority :</label>
+                                            <select class="form-control" data-trigger name="choices-single-default" id="choices-single-default">
+                                                <option value="High">High</option>
+                                                <option value="Medium">Medium</option>
+                                                <option value="Low">Low</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Assign To :</label>
+                                            <select class="form-control" name="assigned-team-members" id="assigned-team-members" multiple>
+                                                <option value="Choice 1" selected>Angelina May</option>
+                                                <option value="Choice 2">Kiara advain</option>
+                                                <option value="Choice 3">Hercules Jhon</option>
+                                                <option value="Choice 4">Mayor Kim</option>
+                                                <option value="Choice 4" selected>Alexa Biss</option>
+                                                <option value="Choice 4">Karley Dia</option>
+                                                <option value="Choice 4">Kim Jong</option>
+                                                <option value="Choice 4">Darren Sami</option>
+                                                <option value="Choice 4">Elizabeth</option>
+                                                <option value="Choice 4">Bear Gills</option>
+                                                <option value="Choice 4" selected>Reva Shaan</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Tags :</label>
+                                            <input class="form-control" id="choices-text-unique-values" type="text" value="Marketing, Sales, Development, Design, Research" placeholder="This is a placeholder">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label class="form-label">Project Description :</label>
+                                            <div id="project-descriptioin-editor">
+                                                <p>lorem ipsum Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur semper ipsum lacus, sit amet faucibus nibh semper accumsan. Duis purus dui, cursus eu imperdiet eget, auctor non ligula. Morbi interdum imperdiet libero at pulvinar. Suspendisse quis vestibulum turpis. Suspendisse potenti. Nunc at libero ut sem elementum laoreet. Suspendisse potenti. Cras lacinia erat augue, quis blandit enim tincidunt eu. Proin posuere luctus tempus.</p>
+                                                <p><br></p>
+                                                <ol>
+                                                    <li class="ql-size-normal">Define the project's purpose, objectives,</li>
+                                                    <li class="">Create a detailed plan outlining tasks, milestones, timelines, and resource allocation.</li>
+                                                    <li class="">Break down project tasks into a detailed list, including dependencies and priorities.</li>
+                                                    <li class="">Define each team member's role and responsibilities to avoid confusion.</li>
+                                                    <li class="">Develop a plan for testing and quality assurance</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label class="form-label">Attachments :</label>
+                                            <input type="file" class="multiple-filepond" name="filepond" multiple data-allow-reorder="true" data-max-file-size="3MB" data-max-files="6">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-primary-light btn-wave ms-auto float-end">Create Project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Quill Editor JS -->
+        <script src="{% static 'assets/libs/quill/quill.min.js'%}"></script>
+
+        <!-- Filepond JS -->
+        <script src="{% static 'assets/libs/filepond/filepond.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-edit/filepond-plugin-image-edit.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-crop/filepond-plugin-image-crop.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-resize/filepond-plugin-image-resize.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-transform/filepond-plugin-image-transform.min.js'%}"></script>
+
+        <!-- Flat Picker JS -->
+        <script src="{% static 'assets/libs/flatpickr/flatpickr.min.js'%}"></script>
+        
+        <!-- Create Project JS -->
+        <script src="{% static 'assets/js/create-project.js'%}"></script>
+        
+{% endblock %}

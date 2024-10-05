@@ -1,0 +1,139 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                <!-- Start::row-1 -->
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="top-left"></div>
+                            <div class="top-right"></div>
+                            <div class="bottom-left"></div>
+                            <div class="bottom-right"></div>
+                            <div class="card-header">
+                                <div class="card-title">Basic Pie Chart</div>
+                            </div>
+                            <div class="card-body">
+                                <div id="pie-basic"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="top-left"></div>
+                            <div class="top-right"></div>
+                            <div class="bottom-left"></div>
+                            <div class="bottom-right"></div>
+                            <div class="card-header">
+                                <div class="card-title">Simple Donut Chart</div>
+                            </div>
+                            <div class="card-body">
+                                <div id="donut-simple"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="top-left"></div>
+                            <div class="top-right"></div>
+                            <div class="bottom-left"></div>
+                            <div class="bottom-right"></div>
+                            <div class="card-header">
+                                <div class="card-title">Updating Donut Chart</div>
+                            </div>
+                            <div class="card-body">
+                                <div id="donut-update"></div>
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary btn-sm m-1" id="randomize">Randomize</button>
+                                    <button class="btn btn-primary btn-sm m-1" id="add">Add</button>
+                                    <button class="btn btn-primary btn-sm m-1" id="remove">Remove</button>
+                                    <button class="btn btn-primary btn-sm m-1" id="reset">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="top-left"></div>
+                            <div class="top-right"></div>
+                            <div class="bottom-left"></div>
+                            <div class="bottom-right"></div>
+                            <div class="card-header">
+                                <div class="card-title">Monochrome Pie Chart</div>
+                            </div>
+                            <div class="card-body">
+                                <div id="pie-monochrome"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="top-left"></div>
+                            <div class="top-right"></div>
+                            <div class="bottom-left"></div>
+                            <div class="bottom-right"></div>
+                            <div class="card-header">
+                                <div class="card-title">Gradient Donut Chart</div>
+                            </div>
+                            <div class="card-body">
+                                <div id="donut-gradient"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="top-left"></div>
+                            <div class="top-right"></div>
+                            <div class="bottom-left"></div>
+                            <div class="bottom-right"></div>
+                            <div class="card-header">
+                                <div class="card-title">Donut Chart With Patterns</div>
+                            </div>
+                            <div class="card-body">
+                                <div id="donut-pattern"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card custom-card">
+                            <div class="top-left"></div>
+                            <div class="top-right"></div>
+                            <div class="bottom-left"></div>
+                            <div class="bottom-right"></div>
+                            <div class="card-header">
+                                <div class="card-title">Image Filled Pie Chart</div>
+                            </div>
+                            <div class="card-body">
+                                <div id="pie-image"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+        
+        <!-- Internal Apex Pie Charts JS -->
+        <script src="{% static 'assets/js/apexcharts-pie.js'%}"></script>
+        
+{% endblock %}

@@ -1,0 +1,436 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-xl-12">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-6">
+                                    <div class="text-center p-3 faq-header mb-4">
+                                        <h5 class="mb-1 text-primary op-5 fw-medium">FAQ's</h5>
+                                        <h4 class="mb-1 fw-medium">Frequently Asked Questions</h4>
+                                        <p class="fs-15 text-muted op-7">We have put together a list of common questions to
+                                            assist you in finding the information you require. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-10">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div
+                                    class="card-header d-sm-flex d-block border-block-end-dashed justify-content-center text-center">
+                                    <ul class="nav nav-tabs nav-tabs-header mb-0 d-sm-flex d-block" role="tablist">
+                                        <li class="nav-item m-1">
+                                            <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page"
+                                                href="#general-faqs" aria-selected="true">General</a>
+                                        </li>
+                                        <li class="nav-item m-1">
+                                            <a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page"
+                                                href="#support-faqs" aria-selected="true">Support</a>
+                                        </li>
+                                        <li class="nav-item m-1">
+                                            <a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page"
+                                                href="#others-faqs" aria-selected="true">Others</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane pb-0 border-0 show active" id="general-faqs" role="tabpanel">
+                                            <div class="card-header">
+                                                <div class="card-title">
+                                                    General Topics ?
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="accordion accordion-customicon1 accordion-primary"
+                                                    id="accordionFAQ1">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon2One">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon2One"
+                                                                aria-expanded="true"
+                                                                aria-controls="collapsecustomicon2One">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>How
+                                                                do I integrate the template into my project?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon2One"
+                                                            class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingcustomicon2One"
+                                                            data-bs-parent="#accordionFAQ1">
+                                                            <div class="accordion-body">
+                                                                Integration <strong>instructions </strong> are usually
+                                                                provided in the template's documentation.
+                                                                Follow the step-by-step guide to include the necessary
+                                                                <code>.css</code> files, scripts, and html files in your
+                                                                project.You can manually integrate the admin template by
+                                                                downloading the template files and adding them to your
+                                                                project directory.
+                                                                Follow the step-by-step instructions provided in the
+                                                                documentation for a seamless integration process.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon2Two">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon2Two"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapsecustomicon2Two">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>Can
+                                                                I customize the appearance of the template?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon2Two"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="headingcustomicon2Two"
+                                                            data-bs-parent="#accordionFAQ1">
+                                                            <div class="accordion-body">
+                                                                Yes, most admin templates are designed to be
+                                                                customizable. You can modify colors, fonts, layouts, and
+                                                                styles according to your project's branding guidelines.
+                                                                Refer to the documentation for customization options.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon2Three">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon2Three"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapsecustomicon2Three">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>How
+                                                                frequently is the admin template updated?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon2Three"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="headingcustomicon2Three"
+                                                            data-bs-parent="#accordionFAQ1">
+                                                            <div class="accordion-body">
+                                                                Check the template provider's website or documentation
+                                                                for information on updates. Regular updates may include
+                                                                bug fixes, new features, or compatibility improvements.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon2Four">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon2Four"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapsecustomicon2Four">
+                                                                <i class="ri-question-line me-2 text-primary fs-16"></i>
+                                                                How do I track the performance a page?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon2Four"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="headingcustomicon2Four"
+                                                            data-bs-parent="#accordionFAQ1">
+                                                            <div class="accordion-body">
+                                                                Donec ornare, lectus vitae sollicitudin faucibus, diam
+                                                                sem efficitur lorem, eu elementum ipsum leo in tellus.
+                                                                Pellentesque nulla ex, mollis eu suscipit ut, commodo.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane pb-0 border-0" id="support-faqs" role="tabpanel">
+                                            <div class="card-header">
+                                                <div class="card-title">
+                                                    Customer Support ?
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="accordion accordion-customicon1 accordion-primary"
+                                                    id="accordionFAQ3">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon3One">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon3One"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapsecustomicon3One">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>Is
+                                                                there a policy for subscriptions?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon3One"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="headingcustomicon3One"
+                                                            data-bs-parent="#accordionFAQ3">
+                                                            <div class="accordion-body">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Vestibulum lobortis ante eget diam euismod, eu
+                                                                condimentum mauris tempus. Suspendisse elementum ac diam
+                                                                sit amet
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon3Two">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon3Two"
+                                                                aria-expanded="true"
+                                                                aria-controls="collapsecustomicon3Two">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>Are
+                                                                there pre-built data visualization components?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon3Two"
+                                                            class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingcustomicon3Two"
+                                                            data-bs-parent="#accordionFAQ3">
+                                                            <div class="accordion-body">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Vestibulum lobortis ante eget diam euismod, eu
+                                                                condimentum mauris tempus. Suspendisse elementum ac diam
+                                                                sit amet
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon3Three">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon3Three"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapsecustomicon3Three">
+                                                                <i class="ri-question-line me-2 text-primary fs-16"></i>
+                                                                Is there a free trial available?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon3Three"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="headingcustomicon3Three"
+                                                            data-bs-parent="#accordionFAQ3">
+                                                            <div class="accordion-body">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Vestibulum lobortis ante eget diam euismod, eu
+                                                                condimentum mauris tempus. Suspendisse elementum ac diam
+                                                                sit amet
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon3Four">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon3Four"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapsecustomicon3Four">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>What
+                                                                support options are available for landing page services?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon3Four"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="headingcustomicon3Four"
+                                                            data-bs-parent="#accordionFAQ3">
+                                                            <div class="accordion-body">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Vestibulum lobortis ante eget diam euismod, eu
+                                                                condimentum mauris tempus. Suspendisse elementum ac diam
+                                                                sit amet
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane pb-0 border-0" id="others-faqs" role="tabpanel">
+                                            <div class="card-header">
+                                                <div class="card-title">
+                                                    Others ?
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="accordion accordion-customicon1 accordion-primary"
+                                                    id="accordionFAQ4">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon4Two">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon4Two"
+                                                                aria-expanded="true"
+                                                                aria-controls="collapsecustomicon4Two">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>What
+                                                                if I have specific customization needs for my page?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon4Two"
+                                                            class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingcustomicon4Two"
+                                                            data-bs-parent="#accordionFAQ4">
+                                                            <div class="accordion-body">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Vestibulum lobortis ante eget diam euismod, eu
+                                                                condimentum mauris tempus. Suspendisse elementum ac diam
+                                                                sit amet
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon4One">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon4One"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapsecustomicon4One">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>How
+                                                                do I get technical assistance for issues with my page?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon4One"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="headingcustomicon4One"
+                                                            data-bs-parent="#accordionFAQ4">
+                                                            <div class="accordion-body">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Vestibulum lobortis ante eget diam euismod, eu
+                                                                condimentum mauris tempus. Suspendisse elementum ac diam
+                                                                sit amet
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon4Three">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon4Three"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapsecustomicon4Three">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>What
+                                                                is included in the subscription service?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon4Three"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="headingcustomicon4Three"
+                                                            data-bs-parent="#accordionFAQ4">
+                                                            <div class="accordion-body">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Vestibulum lobortis ante eget diam euismod, eu
+                                                                condimentum mauris tempus. Suspendisse elementum ac diam
+                                                                sit amet
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingcustomicon4Four">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapsecustomicon4Four"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapsecustomicon4Four">
+                                                                <i
+                                                                    class="ri-question-line me-2 text-primary fs-16"></i>How
+                                                                to know the subscription plan?
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapsecustomicon4Four"
+                                                            class="accordion-collapse collapse"
+                                                            aria-labelledby="headingcustomicon4Four"
+                                                            data-bs-parent="#accordionFAQ4">
+                                                            <div class="accordion-body">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                                Vestibulum lobortis ante eget diam euismod, eu
+                                                                condimentum mauris tempus. Suspendisse elementum ac diam
+                                                                sit amet
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center border-block-start-dashed border-top">
+                                    <a href="javascript:void(0);"
+                                        class="text-decoration-underline text-primary text-center"> Load More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-10">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-center">
+                                    <div class="card-title mb-3 text-center">
+                                        Do you still have any questions ?
+                                        <span class="subtitle fw-normal text-muted d-block fs-12">
+                                            Drop your questions here, Our support team is ready to assist you.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-body pb-4">
+                                    <div class="row gy-3 justify-content-center">
+                                        <div class="col-xl-8">
+                                            <div class="p-3 border mb-2">
+                                                <label for="user-name" class="form-label">Your Name</label>
+                                                <input type="text" class="form-control" id="user-name"
+                                                    placeholder="Enter Your Name">
+                                                <label for="user-email" class="form-label mt-3">Email Id</label>
+                                                <input type="text" class="form-control" id="user-email"
+                                                    placeholder="Enter Email">
+                                                <label for="text-area" class="form-label mt-3">Textarea</label>
+                                                <textarea class="form-control" placeholder="Enter your question here"
+                                                    id="text-area" rows="2"></textarea>
+                                                <button class="btn btn-primary btn-wave mt-3">Post Your Question</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+            
+{% endblock %}
+
+{% block scripts %}
+
+
+
+{% endblock %}

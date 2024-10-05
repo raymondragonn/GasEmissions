@@ -1,0 +1,695 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-7">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header d-flex justify-content-between">
+                                    <div class="card-title">Candidates Performance</div>
+                                    <button type="button" class="ms-auto btn btn-sm btn-primary btn-wave d-inline-flex">
+                                        <span><i class="ri-download-2-line"></i></span>
+                                        <span class="ms-2">Download</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <div id="candidatePerformance"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-5">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="top-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <p class="fw-medium mb-2">Total Job Posted</p>
+                                                    <h4 class="fw-semibold mb-0">248 <span class="fw-normal fs-10">THIS
+                                                            MONTH</span></h4>
+                                                </div>
+                                                <div class="avatar avatar-lg bg-primary-transparent ms-auto">
+                                                    <i class="ri-git-repository-private-line fs-20"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-2">
+                                                <a href="javascript:void(0);"
+                                                    class="fs-12 text-primary d-inline-flex align-items-center"><span>Show
+                                                        full status</span><i
+                                                        class="ti ti-chevron-right rtl-icon-transform ms-1"></i></a>
+                                                <span class="badge bg-primary-transparent ms-auto"><i
+                                                        class="ti ti-caret-up me-1 align-middle"></i>16%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="top-left"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="top-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <p class="fw-medium mb-2">Applied Candidates</p>
+                                                    <h4 class="fw-semibold mb-0">2K <span class="fw-normal fs-10">THIS
+                                                            MONTH</span></h4>
+                                                </div>
+                                                <div class="avatar avatar-lg bg-primary-transparent ms-auto">
+                                                    <i class="ri-parent-line fs-20"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-2">
+                                                <a href="javascript:void(0);"
+                                                    class="fs-12 text-primary d-inline-flex align-items-center"><span>Show
+                                                        full status</span><i
+                                                        class="ti ti-chevron-right rtl-icon-transform ms-1"></i></a>
+                                                <span class="badge bg-primary-transparent ms-auto"><i
+                                                        class="ti ti-caret-up me-1 align-middle"></i>2.03%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="top-left"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="top-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <p class="fw-medium mb-2">Got Hired</p>
+                                                    <h4 class="fw-semibold mb-0">120 <span class="fw-normal fs-10">THIS
+                                                            MONTH</span></h4>
+                                                </div>
+                                                <div class="avatar avatar-lg bg-primary-transparent ms-auto">
+                                                    <i class="ri-bell-line fs-20"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-2">
+                                                <a href="javascript:void(0);"
+                                                    class="fs-12 text-primary d-inline-flex align-items-center"><span>Show
+                                                        full status</span><i
+                                                        class="ti ti-chevron-right rtl-icon-transform ms-1"></i></a>
+                                                <span class="badge bg-primary-transparent ms-auto"><i
+                                                        class="ti ti-caret-up me-1"></i>0.04%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="top-left"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="top-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <p class="fw-medium mb-2">Today Interviews</p>
+                                                    <h4 class="fw-semibold mb-0">56 <span
+                                                            class="fw-normal fs-10">TODAY</span></h4>
+                                                </div>
+                                                <div class="avatar avatar-lg bg-primary-transparent ms-auto">
+                                                    <i class="ri-stack-line fs-20"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-2">
+                                                <a href="javascript:void(0);"
+                                                    class="fs-12 text-primary d-inline-flex align-items-center"><span>Show
+                                                        full status</span><i
+                                                        class="ti ti-chevron-right rtl-icon-transform ms-1"></i></a>
+                                                <span class="badge bg-primary-transparent ms-auto"><i
+                                                        class="ti ti-caret-up me-1"></i>0.12%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="top-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex mb-3">
+                                                <div class="fw-semibold fs-15 mb-0">Applicants Summary</div>
+                                                <a href="javascript:void(0);" class="d-inline-flex ms-auto text-primary">
+                                                    <span><i class="ri-alarm-line"></i></span>
+                                                    <span class="ms-1 fw-semibold fs-13">Send reminder</span>
+                                                </a>
+                                            </div>
+                                            <div
+                                                class="d-block d-sm-inline-flex justify-content-between w-100 align-items-center">
+                                                <span class="fw-semibold fs-13 marker text-gray-700 me-5">Full Time</span>
+                                                <span class="fw-semibold fs-13 marker2 text-gray-700 me-5">Part Time</span>
+                                                <span class="fw-semibold fs-13 marker3 text-gray-700">Internship</span>
+                                            </div>
+                                            <div class="progress progress-xl bg-white">
+                                                <div class="progress-bar progress-border bg-primary-transparent border-end"
+                                                    role="progressbar" style="width: 25%" aria-valuenow="25"
+                                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                <div class="progress-bar progress-border bg-primary-transparent border-end"
+                                                    role="progressbar" style="width: 35%" aria-valuenow="35"
+                                                    aria-valuemin="0" aria-valuemax="100">35%</div>
+                                                <div class="progress-bar progress-border bg-primary-transparent"
+                                                    role="progressbar" style="width: 40%" aria-valuenow="40"
+                                                    aria-valuemin="0" aria-valuemax="100">40%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                    <!-- Start::row-2 -->
+                    <div class="row">
+                        <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Job Statistics</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="candidates-chart"></div>
+                                </div>
+                                <div class="card-footer p-0 border-top-0">
+                                    <div class="row row-cols-12 border-top border-block-start-dashed">
+                                        <div class="col">
+                                            <div class="p-3 border-end border-inline-end-dashed">
+                                                <div class="text-muted fs-12 text-center mb-1">Male Candidates </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="me-3 fs-26 fw-semibold">1,234</span>
+                                                    <span class="text-success fw-semibold"><i
+                                                            class="ri-arrow-up-s-fill align-middle me-1"></i>0.3%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="p-3">
+                                                <div class="text-muted fs-12 text-center mb-1">Female Candidates </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="me-3 fs-26 fw-semibold">1,754</span>
+                                                    <span class="text-danger fw-semibold"><i
+                                                            class="ri-arrow-down-s-fill align-middle me-1"></i>0.11%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Recent Applicants</div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled mb-0 recent-applications-list">
+                                        <li>
+                                            <div class="d-flex align-items-start gap-1">
+                                                <div class="avatar avatar-sm me-2">
+                                                    <img src="{% static 'assets/images/faces/15.jpg'%}" alt="img">
+                                                </div>
+                                                <div class="flex-fill lh-1">
+                                                    <p class="mb-1 fw-medium">Mackeil Jepf</p>
+                                                    <span class="fs-11">Designer</span>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);"
+                                                        class="btn btn-sm btn-outline-primary">Schedule</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-start gap-1">
+                                                <div class="avatar avatar-sm me-2">
+                                                    <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                </div>
+                                                <div class="flex-fill lh-1">
+                                                    <p class="mb-1 fw-medium">Rosen Begh</p>
+                                                    <span class="fs-11">Project Manager</span>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);"
+                                                        class="btn btn-sm btn-primary">Scheduled</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-start gap-1">
+                                                <div class="avatar avatar-sm me-2">
+                                                    <img src="{% static 'assets/images/faces/4.jpg'%}" alt="img">
+                                                </div>
+                                                <div class="flex-fill lh-1">
+                                                    <p class="mb-1 fw-medium">Rojesh Marfph</p>
+                                                    <span class="fs-11">Team Lead</span>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);"
+                                                        class="btn btn-sm btn-outline-primary">Schedule</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-start gap-1">
+                                                <div class="avatar avatar-sm me-2">
+                                                    <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                </div>
+                                                <div class="flex-fill lh-1">
+                                                    <p class="mb-1 fw-medium">Joseph George</p>
+                                                    <span class="fs-11">senior Developer</span>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);"
+                                                        class="btn btn-sm btn-primary">Scheduled</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-start gap-1">
+                                                <div class="avatar avatar-sm me-2">
+                                                    <img src="{% static 'assets/images/faces/16.jpg'%}" alt="img">
+                                                </div>
+                                                <div class="flex-fill lh-1">
+                                                    <p class="mb-1 fw-medium">Daniel Jackson</p>
+                                                    <span class="fs-11">Designer</span>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);"
+                                                        class="btn btn-sm btn-outline-primary">Schedule</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-start gap-1">
+                                                <div class="avatar avatar-sm me-2">
+                                                    <img src="{% static 'assets/images/faces/15.jpg'%}" alt="img">
+                                                </div>
+                                                <div class="flex-fill lh-1">
+                                                    <p class="mb-1 fw-medium">Mackeil Jepf</p>
+                                                    <span class="fs-11">Designer</span>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);"
+                                                        class="btn btn-sm btn-outline-primary">Schedule</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-md-12 col-sm-12">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Recent Hirings</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped text-nowrap table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row" class="text-center ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel02" value="" aria-label="...">
+                                                    </th>
+                                                    <th scope="col" class="ps-3">Interviewer</th>
+                                                    <th scope="col">Job Title</th>
+                                                    <th scope="col">Shortlisted</th>
+                                                    <th scope="col">Date of Joing</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="text-center ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel03" value="" aria-label="..."
+                                                            checked></th>
+                                                    <td class="ps-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-3">
+                                                                <img src="{% static 'assets/images/faces/6.jpg'%}" alt="img">
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-semibold">Joanna Smith</p>
+                                                                <span class="fs-12 ">joannasmith14@gmail.com</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge bg-primary-transparent">Product Manager</span>
+                                                    </td>
+                                                    <td>
+                                                        16
+                                                    </td>
+                                                    <td class="pe-3">
+                                                        02.10.2024
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text-center ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel01" value="" aria-label="...">
+                                                    </th>
+                                                    <td class="ps-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-3">
+                                                                <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-semibold">Nada Wael</p>
+                                                                <span class="fs-12 ">nadawael20@gmail.com</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge bg-primary-transparent">Lead Developer</span>
+                                                    </td>
+                                                    <td>
+                                                        04
+                                                    </td>
+                                                    <td class="pe-3">
+                                                        14.02.2024
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text-center ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel04" value="" aria-label="..."
+                                                            checked></th>
+                                                    <td class="ps-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-3">
+                                                                <img src="{% static 'assets/images/faces/4.jpg'%}" alt="img">
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-semibold">Sara Ahmed</p>
+                                                                <span class="fs-12 ">saraahmed08@gmail.com</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge bg-primary-transparent">Manager</span></td>
+                                                    <td>
+                                                        12
+                                                    </td>
+                                                    <td class="pe-3">
+                                                        12.04.2024
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="text-center ps-4"><input class="form-check-input"
+                                                            type="checkbox" id="checkboxNoLabel05" value="" aria-label="..."
+                                                            checked></th>
+                                                    <td class="ps-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-3">
+                                                                <img src="{% static 'assets/images/faces/14.jpg'%}" alt="img">
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-semibold">Ghone Doe</p>
+                                                                <span class="fs-12 ">ghonedoe10@gmail.com</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge bg-primary-transparent">Lead UI/UX
+                                                            Designer</span></td>
+                                                    <td>
+                                                        05
+                                                    </td>
+                                                    <td class="pe-3">
+                                                        24.10.2024
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-2 -->
+
+                    <!-- Start::row-3 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header d-flex justify-content-between">
+                                    <div class="card-title">Pending Request Approvals</div>
+                                    <button type="button" class="btn btn-sm btn-primary-light btn-wave">
+                                        View All
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap table-striped table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="w-15">Position</th>
+                                                    <th scope="col" class="w-15">Experience</th>
+                                                    <th scope="col">Department</th>
+                                                    <th scope="col" class="w-15">Profile Rating</th>
+                                                    <th scope="col" class="w-15">No.of Vacancies</th>
+                                                    <th scope="col">Apply Date</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col" class="w-10">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-2 bg-primary-transparent">
+                                                                <i class="ri-global-line fs-14"></i>
+                                                            </div>
+                                                            <div class="lh-1">
+                                                                <p class="fw-semibold mb-0">.Net Developer</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>02 Years</td>
+                                                    <td>Development</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-primary">Good</span>
+                                                    </td>
+                                                    <td>12</td>
+                                                    <td>14.10.2020</td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Open</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-primary-light btn-wave">Reject</button>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-primary btn-wave">Accept</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-2 bg-secondary-transparent">
+                                                                <i class="ri-exchange-funds-line fs-14"></i>
+                                                            </div>
+                                                            <div class="lh-1">
+                                                                <p class="fw-semibold mb-0">Graphic Designer</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>05 Years</td>
+                                                    <td>Designing</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-primary">Excellent</span>
+                                                    </td>
+                                                    <td>24</td>
+                                                    <td>10.08.2020</td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">Closed</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-primary-light btn-wave">Reject</button>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-primary btn-wave">Accept</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-2 bg-success-transparent">
+                                                                <i class="ri-honor-of-kings-line fs-14"></i>
+                                                            </div>
+                                                            <div class="lh-1">
+                                                                <p class="fw-semibold mb-0">Java Developer</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>0 Years</td>
+                                                    <td>Development</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-primary">Excellent</span>
+                                                    </td>
+                                                    <td>08</td>
+                                                    <td>16.12.2020</td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Open</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-primary-light btn-wave">Reject</button>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-primary btn-wave">Accept</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-2 bg-info-transparent">
+                                                                <i class="ri-a-b fs-14"></i>
+                                                            </div>
+                                                            <div class="lh-1">
+                                                                <p class="fw-semibold mb-0">QA Tester</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>04 Years</td>
+                                                    <td>Quality & Control</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-primary">Good</span>
+                                                    </td>
+                                                    <td>26</td>
+                                                    <td>05.11.2020</td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Open</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-primary-light btn-wave">Reject</button>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-primary btn-wave">Accept</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-2 bg-danger-transparent">
+                                                                <i class="ri-exchange-funds-line fs-14"></i>
+                                                            </div>
+                                                            <div class="lh-1">
+                                                                <p class="fw-semibold mb-0">Graphic Designer</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>05 Years</td>
+                                                    <td>Designing</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-primary">Excellent</span>
+                                                    </td>
+                                                    <td>24</td>
+                                                    <td>10.08.2020</td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">Closed</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-primary-light btn-wave">Reject</button>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-primary btn-wave">Accept</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="avatar avatar-sm me-2 bg-warning-transparent">
+                                                                <i class="ri-android-line fs-14"></i>
+                                                            </div>
+                                                            <div class="lh-1">
+                                                                <p class="fw-semibold mb-0">Android Developer</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>02 Years</td>
+                                                    <td>Development</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-primary">Good</span>
+                                                    </td>
+                                                    <td>06</td>
+                                                    <td>05.12.2020</td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">Closed</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-primary-light btn-wave">Reject</button>
+                                                            <button type="button"
+                                                                class="btn btn-sm btn-outline-primary btn-wave">Accept</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-3 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+        
+        <!-- Jobs Dashboard -->
+        <script src="{% static 'assets/js/jobs-dashboard.js'%}"></script>
+
+{% endblock %}

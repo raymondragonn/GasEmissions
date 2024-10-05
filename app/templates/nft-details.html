@@ -1,0 +1,481 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Swiper Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/swiper/swiper-bundle.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row justify-content-center">
+                        <div class="col-xl-12">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="row gx-5">
+                                        <div class="col-xxl-4 col-xl-12">
+                                            <div class="row">
+                                                <div class="col-xxl-12 col-sm-12 mb-md-5 mb-3">
+                                                    <div class="swiper swiper-preview-details bg-light product-details-page">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide" id="img-container">
+                                                                <img class="img-fluid" src="{% static 'assets/images/nft-images/32.png'%}" alt="img">
+                                                            </div>
+                                                            <div class="swiper-slide image-container">
+                                                                <img class="img-fluid" src="{% static 'assets/images/nft-images/31.png'%}" alt="img">
+                                                            </div>
+                                                            <div class="swiper-slide image-container">
+                                                                <img class="img-fluid" src="{% static 'assets/images/nft-images/30.png'%}" alt="img">
+                                                            </div>
+                                                            <div class="swiper-slide image-container">
+                                                                <img class="img-fluid" src="{% static 'assets/images/nft-images/33.png'%}" alt="img">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </div>
+                                                    <div class="swiper swiper-view-details mt-2">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <img class="img-fluid" src="{% static 'assets/images/nft-images/32.png'%}" alt="img">
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <img class="img-fluid" src="{% static 'assets/images/nft-images/31.png'%}" alt="img">
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <img class="img-fluid" src="{% static 'assets/images/nft-images/30.png'%}" alt="img">
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <img class="img-fluid" src="{% static 'assets/images/nft-images/33.png'%}" alt="img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-grid mt-4">
+                                                        <button class="btn btn-primary btn-wave">Place a bid</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-12 col-sm-12 d-md-block d-none">
+                                                    <p class="fs-15 fw-medium mb-2">Top Collections :</p>
+                                                    <div class="table-responsive overflow-hidden">
+                                                        <table class="table table-bordered text-nowrap">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="javascript:void(0);">
+                                                                            <div class="d-flex align-items-top">
+                                                                                <div class="avatar me-2">
+                                                                                    <img src="{% static 'assets/images/nft-images/16.png'%}" alt="">
+                                                                                </div>
+                                                                                <div class="flex-fill">
+                                                                                    <p class="mb-1 fs-14 fw-medium similar-product-name text-truncate">Heavenly Place</p>
+                                                                                    <p class="mb-0">
+                                                                                        <span class="badge bg-success">10.3k<i class="ri-heart-3-fill align-middle ms-1"></i></span>
+                                                                                        <span class="text-muted ms-1">(12,564)</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <p class="mb-0 fs-16 fw-medium">
+                                                                                        <span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>2.241
+                                                                                    </p>
+                                                                                    <p class="mb-0 text-muted">
+                                                                                        <s><span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>5.777</s>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="javascript:void(0);">
+                                                                            <div class="d-flex align-items-top">
+                                                                                <div class="avatar me-2">
+                                                                                    <img src="{% static 'assets/images/nft-images/17.png'%}" alt="">
+                                                                                </div>
+                                                                                <div class="flex-fill">
+                                                                                    <p class="mb-1 fs-14 fw-medium similar-product-name text-truncate">Freeze Location</p>
+                                                                                    <p class="mb-0">
+                                                                                        <span class="badge bg-success">8.15k<i class="ri-heart-3-fill align-middle ms-1"></i></span>
+                                                                                        <span class="text-muted ms-1">(8,578)</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <p class="mb-0 fs-16 fw-medium">
+                                                                                        <span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>6.88
+                                                                                    </p>
+                                                                                    <p class="mb-0 text-muted">
+                                                                                        <s><span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>11.66</s>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="javascript:void(0);">
+                                                                            <div class="d-flex align-items-top">
+                                                                                <div class="avatar me-2">
+                                                                                    <img src="{% static 'assets/images/nft-images/18.png'%}" alt="">
+                                                                                </div>
+                                                                                <div class="flex-fill">
+                                                                                    <p class="mb-1 fw-medium similar-product-name text-truncate">Color Abstract</p>
+                                                                                    <p class="mb-0">
+                                                                                        <span class="badge bg-success">16.1k<i class="ri-heart-3-fill align-middle ms-1"></i></span>
+                                                                                        <span class="text-muted ms-1">(1,669)</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <p class="mb-0 fs-16 fw-medium">
+                                                                                        <span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>2.598
+                                                                                    </p>
+                                                                                    <p class="mb-0 text-muted">
+                                                                                        <s><span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>3.699</s>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="javascript:void(0);">
+                                                                            <div class="d-flex align-items-top">
+                                                                                <div class="avatar me-2">
+                                                                                    <img src="{% static 'assets/images/nft-images/19.png'%}" alt="">
+                                                                                </div>
+                                                                                <div class="flex-fill">
+                                                                                    <p class="mb-1 fw-medium similar-product-name text-truncate">Dinosur Skeleton</p>
+                                                                                    <p class="mb-0">
+                                                                                        <span class="badge bg-success">1.05k<i class="ri-heart-3-fill align-middle ms-1"></i></span>
+                                                                                        <span class="text-muted ms-1">(1,003)</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <p class="mb-0 fs-16 fw-medium">
+                                                                                        <span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>1.154
+                                                                                    </p>
+                                                                                    <p class="mb-0 text-muted">
+                                                                                        <s><span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>2.398</s>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="javascript:void(0);">
+                                                                            <div class="d-flex align-items-top">
+                                                                                <div class="avatar me-2">
+                                                                                    <img src="{% static 'assets/images/nft-images/20.png'%}" alt="">
+                                                                                </div>
+                                                                                <div class="flex-fill">
+                                                                                    <p class="mb-1 fw-medium similar-product-name text-truncate">Radium view</p>
+                                                                                    <p class="mb-0">
+                                                                                        <span class="badge bg-success">16.07k<i class="ri-heart-3-fill align-middle ms-1"></i></span>
+                                                                                        <span class="text-muted ms-1">(5,222)</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <p class="mb-0 fs-16 fw-medium">
+                                                                                        <span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>7.88
+                                                                                    </p>
+                                                                                    <p class="mb-0 text-muted">
+                                                                                        <s><span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>11.88</s>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="javascript:void(0);">
+                                                                            <div class="d-flex align-items-top">
+                                                                                <div class="avatar me-2">
+                                                                                    <img src="{% static 'assets/images/nft-images/21.png'%}" alt="">
+                                                                                </div>
+                                                                                <div class="flex-fill">
+                                                                                    <p class="mb-1 fw-medium similar-product-name text-truncate">Teleidoscope Design</p>
+                                                                                    <p class="mb-0">
+                                                                                        <span class="badge bg-success">5.4k<i class="ri-heart-3-fill align-middle ms-1"></i></span>
+                                                                                        <span class="text-muted ms-1">(354)</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <p class="mb-0 fs-16 fw-medium">
+                                                                                        <span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>2.877
+                                                                                    </p>
+                                                                                    <p class="mb-0 text-muted">
+                                                                                        <s><span class="avatar avatar-xs avatar-rounded p-1"><img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt=""></span>1.588</s>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="d-grid">
+                                                                        <button class="btn btn-primary-light">View All NFT's</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-8 col-xl-12">
+                                            <div class="row gx-5">
+                                                <div class="col-xl-12 mt-xxl-0 mt-3">
+                                                    <div>
+                                                        <div class="d-flex justify-content-between gap-2 mb-4">
+                                                            <h4 class="fw-medium mb-0 text-primary">Digital Brain-by Quantum Mindscape - NFT Digital Art</h4>
+                                                            <div class="btn-list">
+                                                                <a href="javascript:void(0);" class="btn btn-danger-light btn-sm btn-icon"><i class="ri-heart-3-line align-middle"></i></a>
+                                                                <a href="javascript:void(0);" class="btn btn-info-light btn-sm btn-icon"><i class="ri-share-line align-middle"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3 align-items-center gy-2">
+                                                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="d-flex gap-2 align-items-center">
+                                                                    <p class="mb-0 lh-1 fs-13 fw-medium text-muted">Versions :</p>
+                                                                    <p class="mb-0 fs-14 mb-0 align-middle">12 Versions Avaliable</p>
+                                                                </div>
+                                                                <div class="d-flex gap-2 align-items-center">
+                                                                    <p class="mb-0 lh-1 fs-13 fw-medium text-muted">Published On :</p>
+                                                                    <p class="mb-0 fs-14 mb-0 align-middle">08, Sep 2023 - 03:45PM</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="d-flex gap-2 align-items-center">
+                                                                    <span class="avatar avatar-sm"><img src="{% static 'assets/images/faces/11.jpg'%}" alt=""></span>
+                                                                    <div>
+                                                                        <p class="mb-0 lh-1 fs-11 op-8 fw-medium text-muted">Created By :</p>
+                                                                        <p class="fs-14 mb-0 align-middle">James Lucas</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="d-flex gap-2 align-items-center">
+                                                                    <span class="avatar avatar-sm"><img src="{% static 'assets/images/faces/16.jpg'%}" alt=""></span>
+                                                                    <div>
+                                                                        <p class="mb-0 lh-1 fs-11 op-8 fw-medium text-muted">Owned By :</p>
+                                                                        <p class="fs-14 mb-0 align-middle">Mateo Daniel </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xxl-12 col-xl-12 mb-1 mt-3">
+                                                                <div class="d-flex gap-2 align-items-center mb-3">
+                                                                    <p class="mb-0 lh-1 fs-13 fw-medium text-muted">Price :</p>
+                                                                    <p class="mb-1">
+                                                                        <span class="h5">
+                                                                            <i class="ri-eth-line"></i> 
+                                                                            <span class=" text-success">0.578ETH 
+                                                                                <span class="mb-0 text-muted fs-13 op-8">
+                                                                                    <s>0.869ETH</s>
+                                                                                </span>
+                                                                            </span>
+                                                                            <span>- Highest Bid</span>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="d-flex gap-4 align-items-center">
+                                                                    <p class="mb-0 lh-1 fs-13 fw-medium text-muted">Aution Ends In :</p>
+                                                                    <div class="d-flex gap-2 border p-2 border-dashed">
+                                                                        <div>
+                                                                            <h4 class="mb-0">48 <span class="fs-13 fw-normal text-warning">Hrs</span></h4>
+                                                                        </div>
+                                                                        <div class="mx-2">:</div>
+                                                                        <div>
+                                                                            <h4 class="mb-0">25 <span class="fs-13 fw-normal text-warning">Mins</span></h4>
+                                                                        </div>
+                                                                        <div class="mx-2">:</div>
+                                                                        <div>
+                                                                            <h4 class="mb-0">15 <span class="fs-13 fw-normal text-warning">Sec</span></h4>
+                                                                        
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <p class="fs-15 fw-medium mb-1">Description :</p>
+                                                            <p class="text-muted mb-0 fs-14">
+                                                                Dive into the intricate complexities of the mind with 'The Digital Brain,' an exclusive NFT artwork crafted by the visionary digital artist, Quantum Mindscape. This piece is a visual representation of the synapses firing and neural networks connecting within the vast expanse of the digital realm. Quantum Mindscape skillfully combines geometric patterns and vibrant hues to create a mesmerizing portrayal of the interplay between technology and cognition.
+                                                            </p>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <p class="fs-15 fw-medium mb-2">Additional Details :</p>
+                                                            <div class="row">
+                                                                <div class="col-xl-10">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table table-bordered text-nowrap">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th scope="row" class="fw-medium">
+                                                                                        Artist Name
+                                                                                    </th>
+                                                                                    <td>James Lucas</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row" class="fw-medium">
+                                                                                        Artwork Type
+                                                                                    </th>
+                                                                                    <td>
+                                                                                        Digital Collage
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row" class="fw-medium">
+                                                                                        Edition
+                                                                                    </th>
+                                                                                    <td>
+                                                                                        2 of 12
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row" class="fw-medium">
+                                                                                        Current Owner
+                                                                                    </th>
+                                                                                    <td>
+                                                                                        Nikki Jones
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row" class="fw-medium">
+                                                                                        Dimensions
+                                                                                    </th>
+                                                                                    <td>
+                                                                                        2048 x 2048 pixels
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row" class="fw-medium">
+                                                                                        Platform
+                                                                                    </th>
+                                                                                    <td>
+                                                                                        Solana blockchain
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row" class="fw-medium">
+                                                                                        File Format
+                                                                                    </th>
+                                                                                    <td>
+                                                                                        GIF
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <p class="fs-15 fw-medium mb-2">Features :</p>
+                                                            <div class="row">
+                                                                <div class="col-xl-6">
+                                                                    <ul class="mb-0 ps-3 fs-14">
+                                                                        <li class="text-muted mb-2">
+                                                                            NFT Title: "The Digital Brain"
+                                                                        </li>
+                                                                        <li class="text-muted mb-2">
+                                                                            Edition: 2 of 12
+                                                                        </li>
+                                                                        <li class="text-muted mb-2">
+                                                                            Medium: Digital Collage
+                                                                        </li>
+                                                                        <li class="text-muted mb-2">
+                                                                            Smart Contract Address: ABCD@011
+                                                                        </li>
+                                                                        <li class="text-muted mb-2">
+                                                                            Minting Date: January 1, 2024
+                                                                        </li>
+                                                                        <li class="text-muted mb-2">
+                                                                            Average Rating: 4.7/5
+                                                                        </li>
+                                                                        <li class="text-muted">
+                                                                            Dimensions: 2048 x 2048 pixels
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <ul class="mb-0 fs-14">
+                                                                        <li class="text-muted mb-2">
+                                                                            Animation: 60 frames per second (fps)
+                                                                        </li>
+                                                                        <li class="text-muted mb-2">
+                                                                            Tags: #digital, #brain, #digitalCatch, #mindful
+                                                                        </li>
+                                                                        <li class="text-muted mb-2">
+                                                                            Country of origin: Canada
+                                                                        </li>
+                                                                        <li class="text-muted">
+                                                                            Exhibition History: Digital Art Expo 2023 - Gallery XYZ, New York City
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-0">
+                                                            <p class="fs-15 fw-medium mb-3">Ratings :</p>
+                                                            <div class="row">
+                                                                <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                                    <div class="d-flex align-items-top mb-3">
+                                                                        <div class="me-2 lh-1">
+                                                                            <i class="ri-star-fill fs-25 text-warning"></i>
+                                                                        </div>
+                                                                        <div class="lh-1">
+                                                                            <p class="mb-1">4.3 out of 5</p>
+                                                                            <p class="mb-0 text-muted fs-11">Overall Rating</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-3">
+                                                                        <div class="progress progress-xs flex-fill">
+                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-muted ms-2 fs-12">(10K Rated)</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Swiper JS -->
+        <script src="{% static 'assets/libs/swiper/swiper-bundle.min.js'%}"></script>
+        
+        <!-- Internal NFT-Details JS -->
+        <script src="{% static 'assets/js/nft-details.js'%}"></script>
+
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends 'components/custom-base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+{% block errorbody %}
+<body class="bg-white">
+{% endblock %}
+
+        <div class="row authentication mx-0">
+            <div class="col-xxl-6 col-xl-7 col-lg-7 d-xl-block d-none px-0">
+                <div class="authentication-cover bg-primary">
+                    <div class="authentication-cover-image">
+                        <div class="text-start">
+                            <h1 class="text-fixed-white mb-1 fw-medium">Welcome!</h1>
+                            <p class="text-fixed-white mb-1">Let's get Started with our product just sign up with simple process and make your requirements .There are many variations of passages of Lorem Ipsum available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-5 col-lg-12">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-xxl-6 col-xl-9 col-lg-6 col-md-6 col-sm-8 col-12">
+                        <div class="card custom-card shadow-none my-4">
+                            <div class="top-left"></div>
+                            <div class="top-right"></div>
+                            <div class="bottom-left"></div>
+                            <div class="bottom-right"></div>
+                            <div class="card-body p-5">
+                                <div class="mb-3 d-flex justify-content-center">
+                                    <a href="index">
+                                        <img src="{% static 'assets/images/brand-logos/desktop-logo.png'%}" alt="logo" class="authentication-brand desktop-logo">
+                                        <img src="{% static 'assets/images/brand-logos/desktop-dark.png'%}" alt="logo" class="authentication-brand desktop-dark">
+                                    </a>
+                                </div>
+                                <p class="h5 mb-2 text-center">Verification Code</p>
+                                <p class="mb-4 text-muted op-7 fw-normal text-center fs-14">Enter the 4 digit code sent to the moble number ******850.</p>
+                                <div class="row gy-3">
+                                    <div class="col-xl-12 mb-2">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <input type="text" class="form-control text-center" id="one" maxlength="1" onkeyup="clickEvent(this,'two')">
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="text" class="form-control text-center" id="two" maxlength="1" onkeyup="clickEvent(this,'three')">
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="text" class="form-control text-center" id="three" maxlength="1" onkeyup="clickEvent(this,'four')">
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="text" class="form-control text-center" id="four" maxlength="1">
+                                            </div>
+                                        </div>
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label fs-14" for="defaultCheck1">
+                                                Didn't recieve a code ?<a href="mail" class="text-primary ms-2 d-inline-block">Resend</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 d-grid mt-2">
+                                        <a href="index" class="btn btn-primary">Verify</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Internal Two Step Verification JS -->
+        <script src="{% static 'assets/js/two-step-verification.js'%}"></script>
+
+{% endblock %}

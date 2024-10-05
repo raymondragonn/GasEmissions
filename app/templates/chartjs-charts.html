@@ -1,0 +1,161 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Chartjs Line Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chartjs-line" class="chartjs-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Chartjs Bar Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chartjs-bar" class="chartjs-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Chartjs Pie Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chartjs-pie" class="chartjs-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Chartjs Doughnut Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chartjs-doughnut" class="chartjs-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Chartjs Mixed Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chartjs-mixed" class="chartjs-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Chartjs Polar Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chartjs-polar" class="chartjs-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Chartjs Radial Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chartjs-radar" class="chartjs-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Chartjs Scatter Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chartjs-scatter" class="chartjs-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Chartjs Bubble Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chartjs-bubble" class="chartjs-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+           
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Chartjs Chart JS -->
+        <script src="{% static 'assets/libs/chart.js/chart.umd.js'%}"></script>
+        
+        <!-- Imternal Chartjs JS -->
+        <script src="{% static 'assets/js/chartjs-charts.js'%}"></script>
+
+{% endblock %}

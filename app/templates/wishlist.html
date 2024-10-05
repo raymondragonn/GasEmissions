@@ -1,0 +1,488 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Choices Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/sweetalert2/sweetalert2.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0)" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/8.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">Ceramic pot</p>
+                                    <p class="product-description fs-11 text-muted mb-2">Greenery with Ceramic Pot</p>
+                                    <p class="fs-12 mb-2">
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star-half text-warning align-center"></i>
+                                        <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                    </p>
+                                    <p class="mb-0 fw-medium fs-18"><span>$540<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$660</span></span></p>
+                                    <span class="fs-11 text-success fw-medium"> Offer Price $540 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/10.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">T-Shirt Half sleeves</p>
+                                    <p class="product-description fs-11 text-muted mb-2">Casual wear and everyday comfort</p>
+                                    <p class="fs-12 mb-2">
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star-half text-warning align-center"></i>
+                                        <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                    </p>
+                                    <p class="mb-0 fw-medium fs-18"><span>$229<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$1,799</span></span></p>
+                                    <span class="fs-11 text-success fw-medium"> Offer Price $229 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/9.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">Drone</p>
+                                    <p class="product-description fs-11 text-muted mb-2"> Capturing aerial views and adventures</p>
+                                    <p class="fs-12 mb-2">
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star-half text-warning align-center"></i>
+                                        <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                    </p>
+                                    <p class="mb-0 fw-medium fs-18"><span>$5,559<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$6,599</span></span></p>
+                                    <span class="fs-11 text-success fw-medium"> Offer Price $5,559 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/13.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">Back Pack</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Carry Your essentials in style</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$549<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$625</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $549 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/15.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">Handy Bag</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Effortlessly carry your essentials</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$474<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$649</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $474 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/7.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">Mini Chair</p>
+                                                <p class="product-description fs-11 text-muted mb-2">Compact and versatile, stylish seating</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$144<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$247</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $144 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/16.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">Girls Heels </p>
+                                                <p class="product-description fs-11 text-muted mb-2">Step into sophistication with heels</p>
+                                                <p class="fs-12 mb-2">
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star text-warning align-center"></i>
+                                                    <i class="bx bxs-star-half text-warning align-center"></i>
+                                                    <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                                </p>
+                                                <p class="mb-0 fw-medium fs-18"><span>$548<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$759</span></span></p>
+                                                <span class="fs-11 text-success fw-medium"> Offer Price $548 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/17.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    
+                                    <p class="product-name fw-medium mb-0">Laptop</p>
+                                    <p class="product-description fs-11 text-muted mb-2"> Companion for work</p>
+                                    <p class="fs-12 mb-2">
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star-half text-warning align-center"></i>
+                                        <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                    </p>
+                                    <p class="mb-0 fw-medium fs-18"><span>$15,484<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$18,799</span></span></p>
+                                    <span class="fs-11 text-success fw-medium"> Offer Price $15,484 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/12.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    
+                                    <p class="product-name fw-medium mb-0">Ear Buds</p>
+                                    <p class="product-description fs-11 text-muted mb-2">Wireless ultimate audio </p>
+                                    <p class="fs-12 mb-2">
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star-half text-warning align-center"></i>
+                                        <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                    </p>
+                                    <p class="mb-0 fw-medium fs-18"><span>$1,525<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$1,899</span></span></p>
+                                    <span class="fs-11 text-success fw-medium"> Offer Price $1,525 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/18.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">Watch</p>
+                                    <p class="product-description fs-11 text-muted mb-2">fashion and functionality for a bold look</p>
+                                    <p class="fs-12 mb-2">
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star-half text-warning align-center"></i>
+                                        <span class="fw-600 text-muted ms-1">4.3<a class="text-info"
+                                                href="javascript:void(0);"> (2.4k)</a></span>
+                                    </p>
+                                    <p class="mb-0 fw-medium fs-18">
+                                        <span>$1,544
+                                            <span
+                                                class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$1,899</span>
+                                        </span>
+                                    </p>
+                                    <span class="fs-11 text-success fw-medium"> Offer Price $1,544 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/png/10.png'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">Long lengthy Chair</p>
+                                    <p class="product-description fs-11 text-muted mb-2">Compact and versatile, stylish seating</p>
+                                    <p class="fs-12 mb-2">
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star-half text-warning align-center"></i>
+                                        <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                    </p>
+                                    <p class="mb-0 fw-medium fs-18"><span>$144<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$247</span></span></p>
+                                    <span class="fs-11 text-success fw-medium"> Offer Price $144 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card custom-card product-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <a href="javascript:void(0);" class="product-image">
+                                        <img src="{% static 'assets/images/ecommerce/jpg/14.jpg'%}" class="card-img mb-3" alt="...">
+                                    </a>
+                                    <div class="product-icons">
+                                        <a href="javascript:void(0);" class="wishlist btn-delete"><i
+                                                class="ri-close-line"></i></a>
+                                    </div>
+                                    <p class="product-name fw-medium mb-0">Analog Watches</p>
+                                    <p class="product-description fs-11 text-muted mb-2">Times elegance with Watches</p>
+                                    <p class="fs-12 mb-2">
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star text-warning align-center"></i>
+                                        <i class="bx bxs-star-half text-warning align-center"></i>
+                                        <span class="fw-600 text-muted ms-1">4.3<a class="text-info" href="javascript:void(0);"> (2.4k)</a></span>
+                                    </p>
+                                    <p class="mb-0 fw-medium fs-18"><span>$245<span class="text-muted text-decoration-line-through ms-1 d-inline-block op-6">$349</span></span></p>
+                                    <span class="fs-11 text-success fw-medium"> Offer Price $245 </span>
+                                </div>
+                                <div class="card-footer text-center d-flex gap-1 flex-wrap">
+                                    <a href="cart" class="btn btn-outline-primary flex-fill"><i
+                                            class="ri-shopping-cart-2-line me-2 align-middle d-inline-block"></i>Move To
+                                        Cart</a>
+                                    <a href="product-details" class="btn btn-outline-success flex-fill"><i
+                                            class="ri-eye-line me-2 align-middle d-inline-block"></i>View Product</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="javascript:void(0);">Next</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Sweetalerts JS -->
+        <script src="{% static 'assets/libs/sweetalert2/sweetalert2.min.js'%}"></script>
+        
+        <!-- Wishlist JS -->
+        <script src="{% static 'assets/js/wishlist.js'%}"></script>
+
+{% endblock %}

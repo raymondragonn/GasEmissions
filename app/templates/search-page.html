@@ -1,0 +1,864 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start:: row-1 -->
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-9">
+                            <div class="card custom-card search-page">
+                                <div class="card-body pb-lg-0">
+                                    <div class="input-group mb-2">
+                                        <input type="text" class="form-control" placeholder="Searching.....">
+                                        <button class="btn ripple btn-primary" type="button">Search</button>
+                                    </div>
+                                    <p class="text-muted op-7">Results Shows: 5,150 found from 2,75,841 results</p>
+                                    <div class="d-flex justify-content-between gap-2 flex-wrap align-items-center">
+                                        <ul class="nav nav-style-1 nav-pills search-nav-tabs gap-1" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link active" data-bs-toggle="tab" role="tab" href="#searchtab1" aria-selected="true">All</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#searchtab2" aria-selected="false" tabindex="-1">Images</a>
+                                            </li>
+                                            <li class="nav-item active" role="presentation">
+                                                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#searchtab3" aria-selected="false" tabindex="-1">Books</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#searchtab4" aria-selected="false" tabindex="-1">Videos</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#searchtab5" aria-selected="false" tabindex="-1">News</a>
+                                            </li>
+                                        </ul>
+                                        <div class="ms-auto d-flex gap-2">
+                                            <div class="btn-group d-xxl-flex d-block">
+                                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Filter By
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Images</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Videos</a></li>
+                                                    <li><a class="dropdown-item active" href="javascript:void(0);">Websites</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Newest</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Ratings</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group d-xxl-flex d-block">
+                                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Sort By
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Date</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Time</a></li>
+                                                    <li><a class="dropdown-item active" href="javascript:void(0);">Rating</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane text-muted p-0 border-0 active" id="searchtab1" role="tabpanel">
+                                    <div class="card custom-card search-tabs">
+                                        <div class=" border-top p-4 ">
+                                            <div class="mb-2 d-flex align-items-center gap-2 mb-2">
+                                                <span class="avatar avatar-sm bg-secondary-transparent avatar-rounded flex-shrink-0"><img src="{% static 'assets/images/company-logos/4.png'%}" alt=""></span>
+                                                <a href="javascript:void(0);" class="h6 mb-0 text-truncate">HTML5 Admin Template Dashboard Design...</a>
+                                                <div class="dropdown ms-auto"> 
+                                                    <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                        <i class="fe fe-more-vertical"></i>
+                                                    </a> 
+                                                    <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                    </ul> 
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);"
+                                                class="fs-14 text-primary">https://themeforest.net/user/spruko/portfolio</a>
+                                            <p class="text-muted mt-2 mb-2 op-8 fs-14">Nemo enim ipsam voluptatem quia voluptas sit
+                                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                                ipsum
+                                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                                                modi
+                                                tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                                <div class="fs-13">
+                                                    <i class="fe fe-calendar me-1"></i>
+                                                    <span>Published On: 05 March 2024</span>
+                                                </div>
+                                                <div class="d-inline-flex align-items-center">
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-half-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);" class="ms-2 fs-13"> (48) Reviews</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" border-top p-4">
+                                            <div class="mb-2 d-flex align-items-center gap-2 mb-2">
+                                                <span class="avatar avatar-sm bg-secondary-transparent avatar-rounded flex-shrink-0"><img src="{% static 'assets/images/company-logos/2.png'%}" alt=""></span>
+                                                <a href="javascript:void(0);" class="h6 mb-0 text-truncate">Admin Responsive Bootstrap HTML Dashboard Template...</a>
+                                                <div class="dropdown ms-auto"> 
+                                                    <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                        <i class="fe fe-more-vertical"></i>
+                                                    </a> 
+                                                    <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                    </ul> 
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);"
+                                                class="text-primary">https://www.spruko.com/demo/html/</a>
+                                            <p class="text-muted mt-2 mb-1 op-8 fs-14">Treal Template included in 30 versions. In the
+                                                demo
+                                                30 versions is shown in 4 floders. And In the final each version has single
+                                                floder corresponding to that ...</p>
+                                            <p class="text-muted  mb-2 op-8 text-truncate fs-14">Tags: admin, admin dashboard, admin panel, admin
+                                                template, backright, bootstrap, bootstrap 4, clean, dashboard, flat, jquery,
+                                                modern, premium admin templates ...</p>
+                                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                                <div class="fs-13">
+                                                    <i class="fe fe-calendar me-1"></i>
+                                                    <span>Published On: 05 March 2024</span>
+                                                </div>
+                                                <div class="d-inline-flex align-items-center">
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-half-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);" class="ms-2 fs-13"> (48) Reviews</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" border-top p-4">
+                                            <div class="mb-2 d-flex align-items-center gap-2 mb-2">
+                                                <span class="avatar avatar-sm bg-secondary-transparent avatar-rounded flex-shrink-0"><img src="{% static 'assets/images/company-logos/7.png'%}" alt=""></span>
+                                                <a href="javascript:void(0);" class="h6 mb-0 text-truncate">New Website Templates from Innovatepix</a>
+                                                <div class="dropdown ms-auto"> 
+                                                    <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                        <i class="fe fe-more-vertical"></i>
+                                                    </a> 
+                                                    <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                    </ul> 
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);"
+                                                class="text-primary">https://spruko.com/demo/html/</a>
+                                            <p class="text-muted mt-2 mb-2 op-8 fs-14">Nemo enim ipsam voluptatem quia voluptas sit
+                                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                                ipsum
+                                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                                                modi
+                                                tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                                <div class="fs-13">
+                                                    <i class="fe fe-calendar me-1"></i>
+                                                    <span>Published On: 05 March 2024</span>
+                                                </div>
+                                                <div class="d-inline-flex align-items-center">
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);"><i
+                                                            class="ri-star-half-fill align-middle text-warning fs-14"></i></a>
+                                                    <a href="javascript:void(0);" class="ms-2 fs-13"> (48) Reviews</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" border-top p-4">
+                                            <div class="mb-2 d-flex align-items-center gap-2 mb-2">
+                                                <span class="avatar avatar-sm bg-secondary-transparent avatar-rounded flex-shrink-0"><img src="{% static 'assets/images/company-logos/6.png'%}" alt=""></span>
+                                                <a href="javascript:void(0);" class="h6 mb-0 text-truncate">Web Hosting HTML Creative Responsive Clean Template From DigitalIntech</a>
+                                                <div class="dropdown ms-auto"> 
+                                                    <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                        <i class="fe fe-more-vertical"></i>
+                                                    </a> 
+                                                    <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                    </ul> 
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);"
+                                                class="text-primary">https://www.spruko.com/demo/html/</a>
+                                            <p class="text-muted mt-2 mb-1 op-8 fs-14"> HostOne - Web Hosting HTML Creative Responsive
+                                                Clean Template by sprukosoft HostOne -HTML Templates is a Clean, Simple
+                                                Responsive Template Design.</p>
+                                            <p class="text-muted  mb-2 op-8 text-truncate fs-14">Neque porro quisquam est, qui dolorem ipsum quia
+                                                dolor
+                                                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                                                tempora
+                                                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+                                                minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                                laboriosam,
+                                                nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                                                reprehrighterit qui in ea voluptate velit esse quam nihil molestiae
+                                                consequatur,
+                                                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                                                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                                    <div class="fs-13">
+                                                        <i class="fe fe-calendar me-1"></i>
+                                                        <span>Published On: 05 March 2024</span>
+                                                    </div>
+                                                    <div class="d-inline-flex align-items-center">
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-half-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);" class="ms-2 fs-13"> (48) Reviews</a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div class="text-center border-top">
+                                            <div class="my-4">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item page-prev disabled">
+                                                        <a class="page-link" href="javascript:void(0);" tabindex="-1">Prev</a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a>
+                                                    </li>
+                                                    <li class="page-item page-next">
+                                                        <a class="page-link" href="javascript:void(0);">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane text-muted p-0 border-0" id="searchtab2" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6 col-12">
+                                            <div class="mb-3 border p-3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="{% static 'assets/images/media/media-40.jpg'%}" alt="image" class="img-fluid">
+                                                </a>
+                                                <div class="d-flex gap-1 align-items-center mt-2">
+                                                    <span class="avatar avatar-sm me-2 bg-primary-transparent flex-shrink-0">PX</span>
+                                                    <div class="text-truncate">
+                                                        <p class="mb-0 fs-12">InfoPix.pvt.Ltd</p>
+                                                        <p class="text-muted fs-13 mb-0 op-8 text-truncate">http://www.InfoPix.pvt.Ltd/</p>
+                                                    </div>
+                                                    <div class="dropdown ms-auto"> 
+                                                        <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a> 
+                                                        <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6 col-12">
+                                            <div class="mb-3 border p-3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="{% static 'assets/images/media/media-41.jpg'%}" alt="image" class="img-fluid">
+                                                </a>
+                                                <div class="d-flex gap-1 align-items-center mt-2">
+                                                    <span class="avatar avatar-sm me-2 bg-primary-transparent flex-shrink-0">CE</span>
+                                                    <div class="text-truncate">
+                                                        <p class="mb-0 fs-12">InfoPix.pvt.Ltd</p>
+                                                        <p class="text-muted fs-13 mb-0 op-8 text-truncate">http://www.InfoPix.pvt.Ltd/</p>
+                                                    </div>
+                                                    <div class="dropdown ms-auto"> 
+                                                        <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a> 
+                                                        <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6 col-12">
+                                            <div class="mb-3 border p-3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="{% static 'assets/images/media/media-42.jpg'%}" alt="image" class="img-fluid">
+                                                </a>
+                                                <div class="d-flex gap-1 align-items-center mt-2">
+                                                    <span class="avatar avatar-sm me-2 bg-primary-transparent flex-shrink-0">EL</span>
+                                                    <div class="text-truncate">
+                                                        <p class="mb-0 fs-12">InfoPix.pvt.Ltd</p>
+                                                        <p class="text-muted fs-13 mb-0 op-8 text-truncate">http://www.InfoPix.pvt.Ltd/</p>
+                                                    </div>
+                                                    <div class="dropdown ms-auto"> 
+                                                        <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a> 
+                                                        <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6 col-12">
+                                            <div class="mb-3 border p-3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="{% static 'assets/images/media/media-43.jpg'%}" alt="image" class="img-fluid">
+                                                </a>
+                                                <div class="d-flex gap-1 align-items-center mt-2">
+                                                    <span class="avatar avatar-sm me-2 bg-primary-transparent flex-shrink-0">PO</span>
+                                                    <div class="text-truncate">
+                                                        <p class="mb-0 fs-12">InfoPix.pvt.Ltd</p>
+                                                        <p class="text-muted fs-13 mb-0 op-8 text-truncate">http://www.InfoPix.pvt.Ltd/</p>
+                                                    </div>
+                                                    <div class="dropdown ms-auto"> 
+                                                        <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a> 
+                                                        <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6 col-12">
+                                            <div class="mb-3 border p-3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="{% static 'assets/images/media/media-44.jpg'%}" alt="image" class="img-fluid">
+                                                </a>
+                                                <div class="d-flex gap-1 align-items-center mt-2">
+                                                    <span class="avatar avatar-sm me-2 bg-primary-transparent flex-shrink-0">SO</span>
+                                                    <div class="text-truncate">
+                                                        <p class="mb-0 fs-12">InfoPix.pvt.Ltd</p>
+                                                        <p class="text-muted fs-13 mb-0 op-8 text-truncate">http://www.InfoPix.pvt.Ltd/</p>
+                                                    </div>
+                                                    <div class="dropdown ms-auto"> 
+                                                        <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a> 
+                                                        <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6 col-12">
+                                            <div class="mb-3 border p-3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="{% static 'assets/images/media/media-45.jpg'%}" alt="image" class="img-fluid">
+                                                </a>
+                                                <div class="d-flex gap-1 align-items-center mt-2">
+                                                    <span class="avatar avatar-sm me-2 bg-primary-transparent flex-shrink-0">MR</span>
+                                                    <div class="text-truncate">
+                                                        <p class="mb-0 fs-12">InfoPix.pvt.Ltd</p>
+                                                        <p class="text-muted fs-13 mb-0 op-8 text-truncate">http://www.InfoPix.pvt.Ltd/</p>
+                                                    </div>
+                                                    <div class="dropdown ms-auto"> 
+                                                        <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a> 
+                                                        <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6 col-12">
+                                            <div class="mb-3 border p-3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="{% static 'assets/images/media/media-46.jpg'%}" alt="image" class="img-fluid">
+                                                </a>
+                                                <div class="d-flex gap-1 align-items-center mt-2">
+                                                    <span class="avatar avatar-sm me-2 bg-primary-transparent flex-shrink-0">AZ</span>
+                                                    <div class="text-truncate">
+                                                        <p class="mb-0 fs-12">InfoPix.pvt.Ltd</p>
+                                                        <p class="text-muted fs-13 mb-0 op-8 text-truncate">http://www.InfoPix.pvt.Ltd/</p>
+                                                    </div>
+                                                    <div class="dropdown ms-auto"> 
+                                                        <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a> 
+                                                        <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-lg-4 col-sm-6 col-12">
+                                            <div class="mb-3 border p-3">
+                                                <a href="javascript:void(0);">
+                                                    <img src="{% static 'assets/images/media/media-60.jpg'%}" alt="image" class="img-fluid">
+                                                </a>
+                                                <div class="d-flex gap-1 align-items-center mt-2">
+                                                    <span class="avatar avatar-sm me-2 bg-primary-transparent flex-shrink-0">TR</span>
+                                                    <div class="text-truncate">
+                                                        <p class="mb-0 fs-12">InfoPix.pvt.Ltd</p>
+                                                        <p class="text-muted fs-13 mb-0 op-8 text-truncate">http://www.InfoPix.pvt.Ltd/</p>
+                                                    </div>
+                                                    <div class="dropdown ms-auto"> 
+                                                        <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a> 
+                                                        <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-4">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item page-prev disabled">
+                                                <a class="page-link" href="javascript:void(0);" tabindex="-1">Prev</a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="page-item page-next">
+                                                <a class="page-link" href="javascript:void(0);">Next</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane text-muted p-0 border-0" id="searchtab3" role="tabpanel">
+                                    <div class="card custom-card">
+                                        <div class=" border-top p-4 ">
+                                            <div class="row">
+                                                <div class="col-xl-2 col-md-2 col-sm-3">
+                                                    <img src="{% static 'assets/images/media/media-78.jpg'%}" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-xl-10 col-md-10 col-sm-9 mt-3 mt-sm-0">
+                                                    <div class="mb-2 d-flex align-items-center gap-2 mb-2">
+                                                        <a href="javascript:void(0);" class="h6 mb-0 text-primary">Admin Bliss:A Guide to Sleek Dashboard Designs</a>
+                                                        <div class="dropdown ms-auto"> 
+                                                            <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                                <i class="fe fe-more-vertical"></i>
+                                                            </a> 
+                                                            <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                            </ul> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex gap-2 align-items-center mb-1 op-9">
+                                                        <div class="fs-13">
+                                                            <i class="ri-book-2-line d-inline-block"></i>
+                                                            <span>Author: William Sam</span>
+                                                        </div>
+                                                        <div class="fs-13">
+                                                            <i class="fe fe-calendar me-1"></i>
+                                                            <span>Published On: 05 March 2024</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-inline-flex align-items-center mb-1">
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-half-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);" class="ms-2 fs-13"> 4.1</a>
+                                                    </div>
+                                                    <p class="text-muted mb-0 op-8 fs-14">Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                                                        modi
+                                                        tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" border-top p-4 ">
+                                            <div class="row">
+                                                <div class="col-xl-2 col-md-2 col-sm-3">
+                                                    <img src="{% static 'assets/images/media/media-77.jpg'%}" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-xl-10 col-md-10 col-sm-9 mt-3 mt-sm-0">
+                                                    <div class="mb-2 d-flex align-items-center gap-2 mb-2">
+                                                        <a href="javascript:void(0);" class="h6 mb-0 text-primary">Dashboard Dazzle: Mastering Admin Template Aesthetics</a>
+                                                        <div class="dropdown ms-auto"> 
+                                                            <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                                <i class="fe fe-more-vertical"></i>
+                                                            </a> 
+                                                            <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                            </ul> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex gap-2 align-items-center mb-1 op-9">
+                                                        <div class="fs-13">
+                                                            <i class="ri-book-2-line d-inline-block"></i>
+                                                            <span>Author: William Sam</span>
+                                                        </div>
+                                                        <div class="fs-13">
+                                                            <i class="fe fe-calendar me-1"></i>
+                                                            <span>Published On: 05 March 2024</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-inline-flex align-items-center mb-1">
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);"><i
+                                                                class="ri-star-half-fill align-middle text-warning fs-14"></i></a>
+                                                        <a href="javascript:void(0);" class="ms-2 fs-13"> 4.1</a>
+                                                    </div>
+                                                    <p class="text-muted mb-0 op-8 fs-14">Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                                                        modi
+                                                        tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center border-top">
+                                            <div class="my-4">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item page-prev disabled">
+                                                        <a class="page-link" href="javascript:void(0);" tabindex="-1">Prev</a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                                    </li>
+                                                    <li class="page-item page-next">
+                                                        <a class="page-link" href="javascript:void(0);">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane text-muted p-0 border-0" id="searchtab4" role="tabpanel">
+                                    <div class="card custom-card">
+                                        <div class=" border-top p-4 ">
+                                            <div class="d-flex gap-3 flex-xl-nowrap flex-wrap">
+                                                <iframe style="border:0;height:130px; width:250px" src="https://www.youtube.com/embed/JP_os1DC1MQ?si=qyUJRBl7ZJBhR_P5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                <div class="text-wrap">
+                                                    <div class="mb-2 d-flex align-items-center gap-2 mb-2">
+                                                        <a href="javascript:void(0);" class="h6 mb-0 text-primary">Admin Template Showcase and Features Overview</a>
+                                                        <div class="dropdown ms-auto"> 
+                                                            <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                                <i class="fe fe-more-vertical"></i>
+                                                            </a> 
+                                                            <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                                <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                            </ul> 
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-muted mb-0 op-8 fs-14">Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                                        quia dolor sit amet.</p>
+                                                    <div class="fs-13 mb-3">
+                                                        <span>Posted By: <span class="text-fixed-white fw-medium">Vincy Harvey</span> </span>
+                                                    </div>
+                                                    <div class="d-flex gap-2 align-items-center op-9">
+                                                        <div class="fs-13">
+                                                            <i class="fe fe-calendar me-1"></i>
+                                                            <span>Published On: 05 March 2024</span>
+                                                        </div>
+                                                        <div class="d-inline-flex align-items-center ms-auto">
+                                                            <a href="javascript:void(0);"><i class="ri-star-fill align-middle text-warning fs-14"></i></a>
+                                                            <a href="javascript:void(0);" class="ms-2 fs-13"> 4.1</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center border-top">
+                                            <div class="my-4">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item page-prev disabled">
+                                                        <a class="page-link" href="javascript:void(0);" tabindex="-1">Prev</a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                                    </li>
+                                                    <li class="page-item page-next">
+                                                        <a class="page-link" href="javascript:void(0);">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane text-muted p-0 border-0" id="searchtab5" role="tabpanel">
+                                    <div class="card custom-card">
+                                        <div class=" border-top p-4 ">
+                                            <div class="mb-2 d-flex align-items-center gap-2 mb-2">
+                                                <a href="javascript:void(0);" class="h5 mb-0 text-primary">Admins Stunned as Admin Template Introduces 4D Graphs <span class="badge bg-warning">Latest</span></a>
+                                                <div class="dropdown ms-auto"> 
+                                                    <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                        <i class="fe fe-more-vertical"></i>
+                                                    </a> 
+                                                    <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                    </ul> 
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                                <div class="fs-13">
+                                                    <i class="fe fe-calendar me-1"></i>
+                                                    <span>Published On: 1 Day Ago</span>
+                                                </div>
+                                            </div>
+                                            <p class="text-muted mt-2 mb-2 op-8 fs-14">Nemo enim ipsam voluptatem quia voluptas sit
+                                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                                ipsum
+                                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                                                modi
+                                                tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                        </div>
+                                        <div class=" border-top p-4 ">
+                                            <div class="mb-2 d-flex align-items-center gap-2 mb-2">
+                                                <a href="javascript:void(0);" class="h5 mb-0 text-primary">New Font Added to Admin Dashboard!</a>
+                                                <div class="dropdown ms-auto"> 
+                                                    <a aria-label="anchor" href="javascript:void(0);" data-bs-toggle="dropdown" class="p-1 border lh-1 fs-13"> 
+                                                        <i class="fe fe-more-vertical"></i>
+                                                    </a> 
+                                                    <ul class="dropdown-menu dropdown-menu-end" role="menu"> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Something</a></li> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Anything</a></li> 
+                                                    </ul> 
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                                <div class="fs-13">
+                                                    <i class="fe fe-calendar me-1"></i>
+                                                    <span>Published On: 2 Days Ago</span>
+                                                </div>
+                                            </div>
+                                            <p class="text-muted mt-2 mb-2 op-8 fs-14">Nemo enim ipsam voluptatem quia voluptas sit
+                                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                                ipsum
+                                                quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                                                modi
+                                                tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                        </div>
+                                        <div class="text-center border-top">
+                                            <div class="my-4">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item page-prev disabled">
+                                                        <a class="page-link" href="javascript:void(0);" tabindex="-1">Prev</a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                                    </li>
+                                                    <li class="page-item page-next">
+                                                        <a class="page-link" href="javascript:void(0);">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Related Searches
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="">
+                                        <div class="border p-2 mb-2">
+                                            <a href="javascript:void(0);">
+                                                <span class="fs-13"><i class="fe fe-search me-2 fs-13 op-3 d-inline-block"></i>Lorem Ipsum is simply dummy text</span>
+                                            </a>
+                                        </div>
+                                        <div class="border p-2 mb-2">
+                                            <a href="javascript:void(0);">
+                                                <span class="fs-13"><i class="fe fe-search me-2 fs-13 op-3 d-inline-block"></i>Words which don't look</span>
+                                            </a> 
+                                        </div>
+                                        <div class="border p-2 mb-2">   
+                                            <a href="javascript:void(0);">
+                                                <span class="fs-13"><i class="fe fe-search me-2 fs-13 op-3 d-inline-block"></i>There are many variations..</span>
+                                            </a>
+                                        </div>
+                                        <div class="border p-2 mb-2">
+                                            <a href="javascript:void(0);">
+                                                <span class="fs-13"><i class="fe fe-search me-2 fs-13 op-3 d-inline-block"></i>Where can I get some?</span>
+                                            </a>
+                                        </div>
+                                        <div class="border p-2 mb-2">
+                                            <a href="javascript:void(0);">
+                                                <span class="fs-13"><i class="fe fe-search me-2 fs-13 op-3 d-inline-block"></i>The standard Lorem Ipsum passage</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card products-navigation-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body p-0">
+                                    <div class="p-4 border-bottom">
+                                        <p class="fw-medium text-muted">Related Tags</p>
+                                        <div class="text-muted fs-12 d-flex gap-1 align-items-center flex-wrap">
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">Templates<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">Designs<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">Tailwind Template<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">UI/UX Designs<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">Ui designs<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">Web Page<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">HTML Template<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1"> Dashbord Designs<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">Advanced Designs<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">Creative Concepts<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                            <a href="javascript:void(0);">
+                                                <span class="badge bg-light text-muted p-1">Web Page<i class="fe fe-x ms-2 fs-13 op-3 d-inline-block"></i></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+            <!-- Start:: add-members modals -->
+            <div class="modal fade" id="add-member" tabindex="-1" aria-labelledby="addmemberLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="addmemberLabel">Add Member</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-4">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <label for="team-name01" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="team-name01" placeholder="Enter Name">
+                                </div>
+                                <div class="col-xl-12">
+                                    <label for="team-mail01" class="form-label">Mail ID</label>
+                                    <input type="text" class="form-control" id="team-mail01" placeholder="Enter Mail Address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-sm btn-light" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-sm btn-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End:: add-members modals -->
+        
+{% endblock %}
+
+{% block scripts %}
+
+
+
+{% endblock %}

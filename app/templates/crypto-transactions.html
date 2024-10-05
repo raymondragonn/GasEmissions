@@ -1,0 +1,622 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body p-0">
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-primary-transparent text-primary mx-auto"> 
+                                            <i class="ri-calendar-check-fill fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">New Transactions</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="548">548</span><span class="badge bg-primary fw-normal ms-2 fs-10 align-middle">
+                                                        15,487
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-success me-1 fw-medium">
+                                                            <i class="ri-arrow-up-s-line me-1 align-middle"></i>3.25%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-success-transparent text-success mx-auto"> 
+                                            <i class="ri-checkbox-circle-fill fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">Completed Transactions</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="451">451</span><span class="badge bg-success fw-normal ms-2 fs-10 align-middle">
+                                                        5,221
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-danger me-1 fw-medium">
+                                                            <i class="ri-arrow-down-s-line me-1 align-middle"></i>1.16%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-warning-transparent text-warning mx-auto"> 
+                                            <i class="ri-hourglass-fill fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">Pending Transactions</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="124">124</span><span class="badge bg-warning fw-normal ms-2 fs-10 align-middle">
+                                                        12,115
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-success me-1 fw-medium">
+                                                            <i class="ri-arrow-up-s-line me-1 align-middle"></i>0.25%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-secondary-transparent text-secondary mx-auto"> 
+                                            <i class="ri-progress-5-line fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">Ongoing Transactions</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="124">124</span><span class="badge bg-secondary fw-normal ms-2 fs-10 align-middle">
+                                                        2,457
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-danger me-1 fw-medium">
+                                                            <i class="ri-arrow-down-s-line me-1 align-middle"></i>0.46%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 pb-2">
+                                        <p class="fs-15 fw-medium px-3 mb-1">Transaction Statistics <span class="text-muted fw-normal">(Last 6 months) :</span></p>
+                                        <div id="transactions"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between pb-3">
+                                    <div class="card-title">
+                                        Transaction History
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <div>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Search Here" aria-label=".form-control-sm example">
+                                        </div>
+                                        <div class="dropdown">
+                                            <a href="javascript:void(0);" class="btn btn-primary btn-sm btn-wave waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Sort By<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">This Week</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">This Month</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">This Year</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-secondary btn-sm btn-wave">View All</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th scope="col">Sender</th>
+                                                    <th scope="col">Transaction Hash</th>
+                                                    <th scope="col">Coin</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Amount</th>
+                                                    <th scope="col">Receiver</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-up text-success fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/10.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">James Lucas</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>#5242232601</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/Bitcoin.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Bitcoin</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>24,Nov 2023 - 4:23PM</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-success">+0.041</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>Maniv Convert</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Success</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-down text-danger fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/5.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Lile Alice</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>#5242232602</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/Dash.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Dashcoin</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>20,Nov 2023 - 12:47PM</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-danger">-0.284</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>David Luca</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-warning-transparent">Pending</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-up text-success fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/12.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Owen Jhon</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>#5242232603</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/Euro.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Euro</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>14,Aug 2023 - 10:25AM</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-success">+0.943</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>Amelia Mia</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Success</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-up text-success fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/15.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Evelyn Anna</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>#5242232604</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/Ethereum.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Ethereum</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>10,Nov 2023 - 4:14PM</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-success">+0.582</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>Christopher Kio</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">Failed</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-up text-success fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/4.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Noviana Brown</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>#5242232605</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/Golem.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Golem</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>19,Aug 2023 - 11:35AM</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-success">+0.290</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>Cameron Jack</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Success</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-down text-danger fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/7.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Nitheri Lee</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>#5242232606</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/litecoin.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Litecoin</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>12,Jun 2023 - 2:45PM</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-danger">-0.147</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>Weston Robert</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Success</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-up text-success fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/6.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Evelyn Ada</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>#5242232607</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/Ripple.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Ripple</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>27,Nov 2023 - 10:18AM</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-success">+1.05</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>Inaya Sol</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Success</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-up text-success fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/11.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Evelyn Anna</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>#5242232608</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/monero.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Monero</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>16,Aug 2023 - 9:25PM</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-success">+0.625</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>Aurora Isla</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-info-transparent">Inprogress</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-down text-danger fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Lipsy Taylor</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>#5242232609</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/Zcash.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Zcash</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>24,Nov 2023 - 12:47PM</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-danger">-0.293</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>Camila Ava</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-info-transparent">Inprogress</span>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border-bottom-0">
+                                                        <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                            <i class="ti ti-arrow-narrow-up text-success fw-medium fs-16"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/16.jpg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Matthew Elias</div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <span>#1242232410</span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/crypto-currencies/regular/Decred.svg'%}" alt="">
+                                                            </span>
+                                                            <div class="fw-medium">Decred</div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <span>24,Nov 2023 - 12:47PM</span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <span class="text-success">+0.893</span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <span>Harrison luis</span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <span class="badge bg-success-transparent">Success</span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="download"><i class="ri-download-2-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>  
+                                <div class="card-footer">
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination mb-0 float-end">
+                                            <li class="page-item disabled">
+                                                <a class="page-link">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="javascript:void(0);">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+    
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+        
+        <!-- Internal Invoice List JS -->
+        <script src="{% static 'assets/js/crypto-transactions-list.js'%}"></script>
+
+{% endblock %}

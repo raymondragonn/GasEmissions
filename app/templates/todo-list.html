@@ -1,0 +1,1059 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                        <!-- Start::row-1 -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card custom-card">
+                                    <div class="top-left"></div>
+                                    <div class="top-right"></div>
+                                    <div class="bottom-left"></div>
+                                    <div class="bottom-right"></div>
+                                    <div class="card-body p-0">
+                                        <div class="p-3">
+                                            <div class="d-sm-flex gap-3">
+                                                <div class="input-group mb-2 mb-sm-0">
+                                                    <input type="text" class="form-control" placeholder="Search Task Here" aria-describedby="button-addon01">
+                                                    <button class="btn btn-ghost-light border" type="button" id="button-addon01"><i class="ri-search-line text-muted"></i></button>
+                                                </div>
+                                                <button class="btn btn-primary d-flex align-items-center justify-content-center flex-shrink-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                                    <i class="ri-add-circle-line fs-16 align-middle me-1"></i>Create New Task
+                                                </button>
+                                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                                aria-labelledby="offcanvasExampleLabel">
+                                                    <div class="offcanvas-header border-bottom border-block-end-dashed">
+                                                        <h6 class="offcanvas-title" id="offcanvasExampleLabel">Create Task</h6>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="offcanvas-body">
+                                                        <div class="row gy-2 mb-4">
+                                                            <div class="col-xl-12">
+                                                                <label for="task-name" class="form-label">Task Name</label>
+                                                                <input type="text" class="form-control" id="task-name" placeholder="Task Name">
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <label class="form-label">Assigned To</label>
+                                                                <select class="form-control" name="choices-multiple-remove-button" id="choices-multiple-remove-button" multiple>
+                                                                    <option value="Choice 1" selected>Angelina May</option>
+                                                                    <option value="Choice 2">Kiara advain</option>
+                                                                    <option value="Choice 3">Hercules Jhon</option>
+                                                                    <option value="Choice 4">Mayor Kim</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <label class="form-label">Assigned Date</label>
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+                                                                        <input type="text" class="form-control" id="addignedDate" placeholder="Choose date and time">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <label class="form-label">End Date</label>
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+                                                                        <input type="text" class="form-control" id="targetDate" placeholder="Choose date and time">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12">
+                                                                <label class="form-label">Priority</label>
+                                                                <select class="form-control" data-trigger name="choices-single-default" id="choices-single-default">
+                                                                    <option value="">Select</option>
+                                                                    <option value="Critical">Critical</option>
+                                                                    <option value="High">High</option>
+                                                                    <option value="Medium">Medium</option>
+                                                                    <option value="Low">Low</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn btn-light"
+                                                            data-bs-dismiss="offcanvas">Cancel</button>
+                                                        <button type="button" class="btn btn-primary">Create</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="d-flex pb-3 align-items-center justify-content-between gap-1 flex-wrap">
+                                            <div>
+                                                <ul class="nav nav-tabs nav-tabs-header mb-0 d-flex flex-wrap" role="tablist">
+                                                    <li class="nav-item m-1">
+                                                        <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page"
+                                                        href="#all-tasks" aria-selected="true">All Tasks</a>
+                                                    </li>
+                                                    <li class="nav-item m-1">
+                                                        <a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page"
+                                                        href="#pending" aria-selected="true">Pending</a>
+                                                    </li>
+                                                    <li class="nav-item m-1">
+                                                        <a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page"
+                                                        href="#in-progress" aria-selected="true">In Progress</a>
+                                                    </li>
+                                                    <li class="nav-item m-1">
+                                                        <a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page"
+                                                        href="#completed" aria-selected="true">Completed</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-sm btn-secondary-light btn-wave waves-light waves-effect" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        More <i class="ti ti-chevron-down ms-1 align-middle"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Select All</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Share All</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Delete All</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content task-tabs-container">
+                                        <div class="tab-pane show active p-0" id="all-tasks"
+                                            role="tabpanel">
+                                            <div class="row" id="tasks-container">
+                                                <div class="col-xl-4 task-card">
+                                                    <div class="card custom-card task-pending-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Design new wireframe</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">40% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">13,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-warning align-middle">High</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +8
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card custom-card task-inprogress-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Plugin Implementation</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">20% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">13,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-success align-middle">Low</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +8
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card custom-card task-completed-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Plugin Implementation</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">15% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">13,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-secondary align-middle">medium</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +2
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 task-card">
+                                                    <div class="card custom-card task-inprogress-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: All pages validation</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">15% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">28,Dec 2023</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-secondary align-middle">medium</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/1.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/15.jpg'%}" alt="img">
+                                                                    </span>
+                                                                </div>
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card custom-card task-completed-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Design and update project</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">Not Started</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">21,Dec 2023</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-success align-middle">Low</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/9.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +1
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card custom-card task-completed-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Adding policies in main Landing page</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">10% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">03,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-danger align-middle">Critical</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +4
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 task-card">
+                                                    <div class="card custom-card task-pending-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Update all Plugins</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">80% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">07,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-warning align-middle">High</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/14.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/21.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/16.jpg'%}" alt="img">
+                                                                    </span>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card custom-card task-completed-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Update Images in a new Template</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">30% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">01,Dec 2023</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-success align-middle">Low</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/1.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/6.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +5
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card custom-card task-inprogress-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Update Images in a new Template</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">30% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">26,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-secondary align-middle">medium</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/9.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                                    </span>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                        <div class="tab-pane p-0" id="pending"
+                                            role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <div class="card custom-card task-pending-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Design new wireframe</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">10% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">12,Nov 2023</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-warning align-middle">High</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                                    </span>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="card custom-card task-pending-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title:Update all Plugins</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">10% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">03,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-warning align-middle">High</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/14.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/21.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/16.jpg'%}" alt="img">
+                                                                    </span>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane p-0" id="in-progress"
+                                            role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <div class="card custom-card task-inprogress-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Adding policies in main Landing page</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">10% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">15,Dec 2023</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-secondary align-middle">medium</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/1.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                                    </span>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="card custom-card task-inprogress-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Integrate Wireframes for New Projects</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">20% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">18,Nov 2023</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-success align-middle">Low</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/6.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/15.jpg'%}" alt="img">
+                                                                    </span>
+                                                                </div>
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="card custom-card task-inprogress-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Design new wireframe</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">40% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">26,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-secondary align-middle">medium</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/9.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +6
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                        <div class="tab-pane p-0" id="completed"
+                                            role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <div class="card custom-card task-completed-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Adding policies in main Landing page</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">40% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">26,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-success align-middle">Low</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/9.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +3
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="card custom-card task-completed-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Adding policies in main Landing page</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">40% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">18,Dec 2023</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-danger align-middle">Critical</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +1
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="card custom-card task-completed-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Plugin Implementation</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">60% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">05,Dec 2023</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-secondary align-middle">medium</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +2
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="card custom-card task-completed-card">
+                                                        <div class="top-left"></div>
+                                                        <div class="top-right"></div>
+                                                        <div class="bottom-left"></div>
+                                                        <div class="bottom-right"></div>
+                                                        <div class="card-body">
+                                                            <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                                                                <div>
+                                                                    <p class="fw-medium mb-2 d-flex align-items-center">Title: Update Images in a new Template</p>
+                                                                    <p class="mb-0 fs-14">Status : <span class="badge bg-success-transparent align-middle fs-10">40% Completed</span></p>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="btn-list">
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-primary-light"><i class="ri-edit-line"></i></button>
+                                                                        <button class="btn btn-sm btn-icon btn-wave btn-danger-light me-0"><i class="ri-delete-bin-line"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                                                <p class="mb-0 fs-14">End Date : <span class="fs-12 mb-1 text-muted">03,Jan 2024</span></p>
+                                                                <p class="mb-0">
+                                                                    <span class="fs-14">Priority :</span> <span class="badge bg-success align-middle">Low</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer border-top border-block-start-dashed">
+                                                            <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                                                <div class="avatar-list-stacked">
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/1.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                        <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                                    </span>
+                                                                    <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                        +3
+                                                                    </a>
+                                                                </div>
+
+                                                                <p class="mb-0 fs-14">
+                                                                Assign Team
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>        
+                                </div>
+                                <ul class="pagination justify-content-end">
+                                    <li class="page-item disabled">
+                                        <a class="page-link">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0);">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Flat Picker JS -->
+        <script src="{% static 'assets/libs/flatpickr/flatpickr.min.js'%}"></script>
+        
+        <!-- Internal To-Do-List JS -->
+        <script src="{% static 'assets/js/todolist.js'%}"></script>
+  
+{% endblock %}

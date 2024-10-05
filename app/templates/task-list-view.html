@@ -1,0 +1,671 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-4">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body p-0">
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-primary-transparent text-primary mx-auto"> 
+                                            <i class="ri-calendar-check-fill fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">New Tasks</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="548">548</span><span class="badge bg-primary fw-normal ms-2 fs-10 align-middle">
+                                                        15,487
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-success me-1 fw-medium">
+                                                            <i class="ri-arrow-up-s-line me-1 align-middle"></i>3.25%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-success-transparent text-success mx-auto"> 
+                                            <i class="ri-checkbox-circle-fill fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">Completed Tasks</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="451">451</span><span class="badge bg-success fw-normal ms-2 fs-10 align-middle">
+                                                        5,221
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-danger me-1 fw-medium">
+                                                            <i class="ri-arrow-down-s-line me-1 align-middle"></i>1.16%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-warning-transparent text-warning mx-auto"> 
+                                            <i class="ri-hourglass-fill fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">Pending Tasks</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="124">124</span><span class="badge bg-warning fw-normal ms-2 fs-10 align-middle">
+                                                        12,115
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-success me-1 fw-medium">
+                                                            <i class="ri-arrow-up-s-line me-1 align-middle"></i>0.25%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-secondary-transparent text-secondary mx-auto"> 
+                                            <i class="ri-progress-5-line fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">Ongoing Tasks</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="457">457</span><span class="badge bg-secondary fw-normal ms-2 fs-10 align-middle">
+                                                        2,457
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-danger me-1 fw-medium">
+                                                            <i class="ri-arrow-down-s-line me-1 align-middle"></i>0.46%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 pb-2">
+                                    <p class="fs-15 fw-medium px-3">Tasks Statistics <span class="text-muted fw-normal">(Last 6 months) :</span></p>
+                                    <div id="task-list-stats"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-9 col-xl-8">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between pb-3">
+                                    <div class="card-title">
+                                        Total Tasks
+                                    </div>
+                                    <div class="d-flex">
+                                        <button class="btn btn-sm btn-primary btn-wave waves-light" data-bs-toggle="modal" data-bs-target="#create-task"><i class="ri-add-line fw-medium align-middle me-1"></i> Create Task</button>
+                                    
+                                        <div class="dropdown ms-2">
+                                            <button class="btn btn-icon btn-secondary-light btn-sm btn-wave waves-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="ti ti-dots-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">New Tasks</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Pending Tasks</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Completed Tasks</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Inprogress Tasks</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <input class="form-check-input check-all" type="checkbox" id="all-tasks" value="" aria-label="...">
+                                                    </th>
+                                                    <th scope="col">Task</th>
+                                                    <th scope="col">Task ID</th>
+                                                    <th scope="col">Assigned Date</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Due Date</th>
+                                                    <th scope="col">Priority</th>
+                                                    <th scope="col">Assigned To</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <span class="fw-medium">Redesign E-commerce Pages.</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 31</span>
+                                                    </td>
+                                                    <td>
+                                                        18-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-primary">New</span>
+                                                    </td>
+                                                    <td>
+                                                        02-01-2024
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-secondary-transparent">Medium</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                +2
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..." checked></td>
+                                                    <td>
+                                                        <span class="fw-medium">Implementation of New Pages.</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 34</span>
+                                                    </td>
+                                                    <td>
+                                                        06-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-secondary">Inprogress</span>
+                                                    </td>
+                                                    <td>
+                                                        12-01-2024
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">High</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                +4
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <span class="fw-medium">Redesign E-commerce Pages.</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 51</span>
+                                                    </td>
+                                                    <td>
+                                                        12-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-warning">Pending</span>
+                                                    </td>
+                                                    <td>
+                                                        18-01-2024
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Low</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/9.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                +5
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <span class="fw-medium">Design and update project</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 44</span>
+                                                    </td>
+                                                    <td>
+                                                        19-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-success">Completed</span>
+                                                    </td>
+                                                    <td>
+                                                        06-01-2024
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Low</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                +2
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..." checked></td>
+                                                    <td>
+                                                        <span class="fw-medium">Integrate Wireframes for New Project</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 56</span>
+                                                    </td>
+                                                    <td>
+                                                        08-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-secondary">Inprogress</span>
+                                                    </td>
+                                                    <td>
+                                                        19-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-secondary-transparent">Medium</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/15.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                +3
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..." checked></td>
+                                                    <td>
+                                                        <span class="fw-medium">Adding policies in main Landing page</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 37</span>
+                                                    </td>
+                                                    <td>
+                                                        12-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-primary">New</span>
+                                                    </td>
+                                                    <td>
+                                                        22-01-2024
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">High</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <span class="fw-medium">Implemetation of Reponsive Tables</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 53</span>
+                                                    </td>
+                                                    <td>
+                                                        20-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-success">Completed</span>
+                                                    </td>
+                                                    <td>
+                                                        12-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Low</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/1.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                +1
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..." checked></td>
+                                                    <td>
+                                                        <span class="fw-medium">Plugin Implementations</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 40</span>
+                                                    </td>
+                                                    <td>
+                                                        30-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-warning">Pending</span>
+                                                    </td>
+                                                    <td>
+                                                        02-01-2024
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">High</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/9.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                +2
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <span class="fw-medium">Bug fixing Functinality</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 46</span>
+                                                    </td>
+                                                    <td>
+                                                        16-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-success">Completed</span>
+                                                    </td>
+                                                    <td>
+                                                        05-01-2024
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-secondary-transparent">Medium</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/14.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                +1
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="task-list">
+                                                    <td class="task-checkbox"><input class="form-check-input" type="checkbox" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <span class="fw-medium">Designing Sales Dashboard</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">TSK - 32</span>
+                                                    </td>
+                                                    <td>
+                                                        08-12-2023
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium text-secondary">Inprogress</span>
+                                                    </td>
+                                                    <td>
+                                                        15-01-2024
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Low</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-sm avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/6.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                                +4
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit"><i class="ri-edit-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm task-delete-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-top-0">
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination mb-0 float-end">
+                                            <li class="page-item disabled">
+                                                <a class="page-link">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="javascript:void(0);">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+            <!-- Start::add task modal -->
+            <div class="modal fade" id="create-task" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title">Add Task</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-4">
+                            <div class="row gy-2">
+                                <div class="col-xl-6">
+                                    <label for="task-name" class="form-label">Task Name</label>
+                                    <input type="text" class="form-control" id="task-name" placeholder="Task Name">
+                                </div>
+                                <div class="col-xl-6">
+                                    <label for="task-id" class="form-label">Task ID</label>
+                                    <input type="text" class="form-control" id="task-id" placeholder="Task ID">
+                                </div>
+                                <div class="col-xl-6">
+                                    <label class="form-label">Assigned Date</label>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+                                            <input type="text" class="form-control" id="assignedDate" placeholder="Choose date and time">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <label class="form-label">Due Date</label>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+                                            <input type="text" class="form-control" id="dueDate" placeholder="Choose date and time">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <label class="form-label">Status</label>
+                                    <select class="form-control" data-trigger name="choices-single-default" id="choices-single-default">
+                                        <option value="New">New</option>
+                                        <option value="Completed">Completed</option>
+                                        <option value="Inprogress">Inprogress</option>
+                                        <option value="Pending">Pending</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-6">
+                                    <label class="form-label">Priority</label>
+                                    <select class="form-control" data-trigger name="choices-single-default" id="choices-single-default1">
+                                        <option value="High">High</option>
+                                        <option value="Medium">Medium</option>
+                                        <option value="Low">Low</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-12">
+                                    <label class="form-label">Assigned To</label>
+                                    <select class="form-control" name="choices-multiple-remove-button1" id="choices-multiple-remove-button1" multiple>
+                                        <option value="Choice 1">Angelina May</option>
+                                        <option value="Choice 2">Kiara advain</option>
+                                        <option value="Choice 3">Hercules Jhon</option>
+                                        <option value="Choice 4">Mayor Kim</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Add Task</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End::add task modal -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+
+        <!-- Flat Picker JS -->
+        <script src="{% static 'assets/libs/flatpickr/flatpickr.min.js'%}"></script>
+        
+        <!-- Internal Invoice List JS -->
+        <script src="{% static 'assets/js/task-list.js'%}"></script>
+
+{% endblock %}
