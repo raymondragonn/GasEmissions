@@ -5,6 +5,8 @@
 
         <!-- Jsvector Maps -->
         <link rel="stylesheet" href="{% static 'assets/libs/jsvectormap/css/jsvectormap.min.css'%}">
+        <!-- Choices Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/apexcharts/apexcharts.css'%}">
 
 {% endblock %}
 
@@ -82,11 +84,25 @@
                                     <div class="card-title" style="font-size: 30px">US Map</div>
                                 </div>
                                 <div class="card-body">
-                                    <div style="display: none;" id="lines-map"></div>
+                                    <div style="display: none;" id="lines-map" style="height:  100%;"></div>
                                     <div id="us-map"></div>
+                                    
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Basic Line Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="line-chart"></div>
+                                </div>
+                            </div>
                         <!--<div class="col-xl-6">
                             <div class="card custom-card">
                                 <div class="top-left"></div>
@@ -151,4 +167,15 @@
         <script src="{% static 'assets/js/canada.js'%}"></script>-->
         <script src="{% static 'assets/js/jsvectormap.js'%}"></script>
 
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+
+        <!-- Used In Zoomable TIme Series Chart -->
+        <script src="{% static 'assets/js/dataseries.js'%}"></script>
+          
+        <!---Used In Annotations Chart-->
+        <script src="{% static 'assets/js/apexcharts-stock-prices.js'%}"></script>
+          
+        <!-- Internal Apex Line Charts JS -->
+        <script src="{% static 'assets/js/apexcharts-line.js'%}"></script>
 {% endblock %}
