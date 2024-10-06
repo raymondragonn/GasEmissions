@@ -1,5 +1,4 @@
 
-
 (function () {
 
     "use strict";
@@ -28,7 +27,7 @@
         const years = filteredData.map(item => item.year);
     
         // Intentamos obtener el gráfico por su ID
-        const chart = ApexCharts.getChartByID('reversed-bar-chart'); // Asegúrate de que este ID es correcto
+        const chart = ApexCharts.getChartByID('bar-r'); // Asegúrate de que este ID es correcto
     
         if (chart) {
             chart.updateOptions({
@@ -48,7 +47,7 @@
     }
     
     function getEmissionsCarbonByState(stateName) {
-        console.log("Carbon");
+        console.log("Metano");
         fetch('http://127.0.0.1:8000/api/emisiones/')
             .then(response => response.json())
             .then(data => {
@@ -57,25 +56,24 @@
                 console.log(`Datos filtrados para ${stateName}:`, filteredData);
     
                 // Aquí es donde puedes actualizar la gráfica con los datos filtrados
-                updateBasicBarChart(filteredData);
+                updateReversedBarChart2(filteredData);
             })
             .catch(error => console.error('Error al obtener los datos:', error));
     }
     
     /* Función de actualización de la gráfica */
-    function updateBasicBarChart(filteredData) {
+    function updateReversedBarChart2(filteredData) {
         // Extraemos los valores y las categorías para el chart
         const emissionsData = filteredData.map(item => item.co2e_emission);
         const years = filteredData.map(item => item.year);
-        
-        // Obtenemos el gráfico por su ID
-        const chart = ApexCharts.getChartByID('bar-basic'); // Asegúrate de que este ID es correcto
-        
-        // Verificamos si el gráfico está definido
+    
+        // Intentamos obtener el gráfico por su ID
+        const chart = ApexCharts.getChartByID('reversed-bar-chart'); // Asegúrate de que este ID es correcto
+    
         if (chart) {
             chart.updateOptions({
                 series: [{
-                    name: 'Emisiones de Carbono', // Nombre de la serie
+                    name: 'Emisiones de Metano', // Nombre de la serie
                     data: emissionsData  // Nuevos datos para el gráfico
                 }],
                 xaxis: {
@@ -85,9 +83,10 @@
     
             console.log("Gráfica actualizada con los siguientes datos:", emissionsData, years);
         } else {
-            console.error('El gráfico de carbono no está definido. Asegúrate de que el ID sea correcto y que el gráfico haya sido creado.');
+            console.error('El gráfico de metano no está definido. Asegúrate de que el ID sea correcto y que el gráfico haya sido creado.');
         }
     }
+    
     
     
     /* map with markers */
@@ -277,6 +276,25 @@
             },
         },
     })
+    
+
+    // window.ia = function(){
+    //     console.log('hola')
+    //       const client = new Groq({
+    //           apiKey: process.env['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'], // This is the default and can be omitted
+    //         });
+          
+    //         async function main() {
+    //           const chatCompletion = await client.chat.completions.create({
+    //             messages: [{ role: 'user', content: 'Explain the importance of low latency LLMs' }],
+    //             model: 'llama3-8b-8192',
+    //           });
+          
+    //           console.log(chatCompletion.choices[0].message.content);
+    //      }
+    //      main();
+
+    // }
 
     /* us vector map */
     var map = new jsVectorMap({
@@ -292,6 +310,9 @@
         },
         zoomOnScroll: false,
         zoomButtons: false,
+
+        
+
         onRegionClick: function(event, code) {
             
             var states = {
@@ -378,6 +399,9 @@
                 requestAnimationFrame(scroll);
             }
             smoothScrollTo(document.body.scrollHeight, 2000);
+
+
+            
         }
     }
 );

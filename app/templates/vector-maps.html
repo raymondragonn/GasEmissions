@@ -49,21 +49,22 @@
         </div>
         <div class="row">
             <h1 id="state-title-3" style="text-align: center;">State</h1>
-            <h5 id="state-title-3" style="text-align: center;">Views per Year</h5>
+            <h5  style="text-align: center;">Views per Year</h5>
         </div>
         <!--tabla 1-->
         <div class="row">
             <div class="col-xl-6">
-                <div class="card custom-card">
+                <div class="card custom-card" id="state-card">
                     <div class="top-left"></div>
                     <div class="top-right"></div>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
-                    <div class="card-header">
-                        <div class="card-title"  style="text-align: center; width: 100%;">Carbon Dioxide Emissons</div>
+                    <div class="card-header" style="justify-content: space-around;">
+                        <!-- <div class="card-title" id="state-title-2">Reversed Bar Chart</div> -->
+                        <div class="card-title">Carbone Dioxide Emission</div>
                     </div>
                     <div class="card-body">
-                        <div id="bar-basic"></div>
+                        <div id="bar-reversed"></div>
                     </div>
                 </div>
             </div>
@@ -79,13 +80,15 @@
                         <div class="card-title">Methane Emission</div>
                     </div>
                     <div class="card-body">
-                        <div id="bar-reversed"></div>
+                        <div id="bar-r"></div>
                     </div>
                 </div>
             </div>
             <div>
                 <h1 style="text-align: center;">IA</h1>
-                <div></div>
+                <div>
+                    <button onclick="ia()">Generar IA</button>
+                </div>
 
             </div>
         </div>
@@ -95,7 +98,7 @@
 
 {% endblock %} {% block scripts %}
 <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
-<script src="{% static 'assets/libs/apexcharts/ia.js'%}"></script>
+<script  src="{% static 'assets/libs/apexcharts/ia.js'%}"></script>
 
 <!-- Apex Charts JS -->
 <<<<<<< HEAD
@@ -128,7 +131,7 @@
 <!--<script src="{% static 'assets/js/russia.js'%}"></script>
         <script src="{% static 'assets/js/spain.js'%}"></script>
         <script src="{% static 'assets/js/canada.js'%}"></script>-->
-<script src="{% static 'assets/js/jsvectormap.js'%}"></script>
+<script  src="{% static 'assets/js/jsvectormap.js'%}"></script>
 
 <!-- Apex Charts JS -->
 <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
