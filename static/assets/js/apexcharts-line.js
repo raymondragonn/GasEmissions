@@ -6,7 +6,7 @@
         /* basic line chart */
         var options = {
             series: [{
-                name: "Desktops",
+                name: "CO2",
                 data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
             }],
             chart: {
@@ -22,13 +22,13 @@
             },
             stroke: {
                 curve: 'straight',
-                width: 3,
+                width: 3SvgjsTspan1499,
             },
             grid: {
                 borderColor: '#f2f5f7',
             },
             title: {
-                text: 'Product Trends by Month',
+                text: 'ppm',
                 align: 'left',
                 style: {
                     fontSize: '13px',
@@ -37,7 +37,7 @@
                 },
             },
             xaxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                categories: ['2010', '2012', '2014', '2016', '2018', '2019', '2020', '2021', '2022'],
                 labels: {
                     show: true,
                     style: {

@@ -563,7 +563,7 @@
         /* reversed bar chart */
         var options = {
             series: [{
-                data: [400, 430, 448, 470, 540, 580, 690]
+                data: ['8', '7', '5', '4', '3', '2', '1']
             }],
             chart: {
                 type: 'bar',
@@ -586,7 +586,7 @@
                     y: 'July',
                     y2: 'September',
                     label: {
-                        text: 'Y annotation'
+                        text: ' '
                     }
                 }]
             },
@@ -603,7 +603,7 @@
                 enabled: true
             },
             xaxis: {
-                categories: ['June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                categories: ['2022', '2021', '2020', '2018', '2016', '2014', '2012', '2010'],
                 labels: {
                     show: true,
                     style: {
