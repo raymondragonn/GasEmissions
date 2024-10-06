@@ -1,5 +1,9 @@
 from django.shortcuts import render
-
+#Mis importaciones - Richy
+import json
+from django.http import JsonResponse
+from rest_framework.views import APIView
+from .serializers import EmisionesSerializer
 # Create your views here.
 
 def accordions_collapse (request): 
@@ -364,3 +368,28 @@ def widgets (request):
     return render(request, 'widgets.html')
 def wishlist (request): 
     return render(request, 'wishlist.html')
+
+#Mis modificaciones (Richy backend y generación de api rest)
+
+class EmisionesAPIView(APIView):
+    def get(self, request):
+        # Carga los datos desde el archivo JSON
+        with open('data.json', 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        
+        # Extraer los datos relevantes de las emisiones
+        emisiones_data = [
+            {
+                "co2e_emission": item["fields"]["co2e_emission"],
+                "gas_name": item["fields"]["gas_name"],
+                "year": item["fields"]["year"],
+                "state_name": item["fields"]["state_name"]
+            }
+            for item in data
+            if item["model"] == "app.emisiones"  # Filtrar por modelo
+        ]
+        
+        # Serializa los datos
+        serializer = EmisionesSerializer(emisiones_data, many=True)
+        
+        return JsonResponse(serializer.data, safe=False)

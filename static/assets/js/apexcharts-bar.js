@@ -49,6 +49,7 @@
                 }
             }
         };
+        //modificar
         var chart = new ApexCharts(document.querySelector("#bar-basic"), options);
         chart.render();
 
@@ -61,7 +62,8 @@
             }],
             chart: {
                 type: 'bar',
-                height: 320
+                height: 320,
+                id: 'barra basica'
             },
             plotOptions: {
                 bar: {
@@ -559,13 +561,16 @@
         chart.render();
 
         /* reversed bar chart */
+        /*ESTO ES LO QUE MODIFICAREMOS CON RESPECTO A CADA CLICK DE CADA ESTADO*/
         var options = {
             series: [{
                 data: ['8', '7', '5', '4', '3', '2', '1']
             }],
             chart: {
                 type: 'bar',
-                height: 320
+                height: 320,
+                id: 'reversed-bar-chart'
+                //Aquí es donde hemos agregado el id para poder modificar el chart
             },
             annotations: {
                 xaxis: [{
@@ -645,7 +650,8 @@
             }],
             chart: {
                 type: 'bar',
-                height: 320
+                height: 320,
+                id: 'bar-r'
             },
             annotations: {
                 xaxis: [{
