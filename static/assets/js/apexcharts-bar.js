@@ -49,6 +49,7 @@
                 }
             }
         };
+        //modificar
         var chart = new ApexCharts(document.querySelector("#bar-basic"), options);
         chart.render();
 
@@ -61,7 +62,8 @@
             }],
             chart: {
                 type: 'bar',
-                height: 320
+                height: 320,
+                id: 'barra basica'
             },
             plotOptions: {
                 bar: {

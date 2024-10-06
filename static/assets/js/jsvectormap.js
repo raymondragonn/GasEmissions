@@ -6,46 +6,90 @@
     // const fs = require('fs');
     /* basic vector map */
 
-    function getEmissionsByState(stateName) {
+    function getEmissionsMethaneByState(stateName) {
+        console.log("Metano");
         fetch('http://127.0.0.1:8000/api/emisiones/')
             .then(response => response.json())
             .then(data => {
                 const filteredData = data.filter(item => item.state_name.toLowerCase() === stateName.toLowerCase() && item.gas_name === "Methane");
                 
                 console.log(`Datos filtrados para ${stateName}:`, filteredData);
-
+    
                 // Aquí es donde puedes actualizar la gráfica con los datos filtrados
-                updateBarChart(filteredData);
+                updateReversedBarChart(filteredData);
             })
             .catch(error => console.error('Error al obtener los datos:', error));
     }
-
+    
     /* Función de actualización de la gráfica */
-    function updateBarChart(filteredData) {
+    function updateReversedBarChart(filteredData) {
         // Extraemos los valores y las categorías para el chart
-    const emissionsData = filteredData.map(item => item.co2e_emission);
-    const years = filteredData.map(item => item.year);
-
-    // Actualizamos las opciones de la gráfica
-    const chart = ApexCharts.getChartByID('reversed-bar-chart'); // Obtenemos el gráfico por su ID
-
-    chart.updateOptions({
-        series: [{
-            data: emissionsData  // Nuevos datos para el gráfico
-        }],
-        xaxis: {
-            categories: years  // Nuevas categorías (años) para el eje X
+        const emissionsData = filteredData.map(item => item.co2e_emission);
+        const years = filteredData.map(item => item.year);
+    
+        // Intentamos obtener el gráfico por su ID
+        const chart = ApexCharts.getChartByID('reversed-bar-chart'); // Asegúrate de que este ID es correcto
+    
+        if (chart) {
+            chart.updateOptions({
+                series: [{
+                    name: 'Emisiones de Metano', // Nombre de la serie
+                    data: emissionsData  // Nuevos datos para el gráfico
+                }],
+                xaxis: {
+                    categories: years  // Nuevas categorías (años) para el eje X
+                }
+            });
+    
+            console.log("Gráfica actualizada con los siguientes datos:", emissionsData, years);
+        } else {
+            console.error('El gráfico de metano no está definido. Asegúrate de que el ID sea correcto y que el gráfico haya sido creado.');
         }
-    });
-
-    console.log("Gráfica actualizada con los siguientes datos:", emissionsData, years);
     }
-
-    var map = new jsVectorMap({
-        selector: "#vector-map",
-        map: "world_merc",
-    });
-
+    
+    function getEmissionsCarbonByState(stateName) {
+        console.log("Carbon");
+        fetch('http://127.0.0.1:8000/api/emisiones/')
+            .then(response => response.json())
+            .then(data => {
+                const filteredData = data.filter(item => item.state_name.toLowerCase() === stateName.toLowerCase() && item.gas_name === "Carbon Dioxide");
+                
+                console.log(`Datos filtrados para ${stateName}:`, filteredData);
+    
+                // Aquí es donde puedes actualizar la gráfica con los datos filtrados
+                updateBasicBarChart(filteredData);
+            })
+            .catch(error => console.error('Error al obtener los datos:', error));
+    }
+    
+    /* Función de actualización de la gráfica */
+    function updateBasicBarChart(filteredData) {
+        // Extraemos los valores y las categorías para el chart
+        const emissionsData = filteredData.map(item => item.co2e_emission);
+        const years = filteredData.map(item => item.year);
+        
+        // Obtenemos el gráfico por su ID
+        const chart = ApexCharts.getChartByID('bar-basic'); // Asegúrate de que este ID es correcto
+        
+        // Verificamos si el gráfico está definido
+        if (chart) {
+            chart.updateOptions({
+                series: [{
+                    name: 'Emisiones de Carbono', // Nombre de la serie
+                    data: emissionsData  // Nuevos datos para el gráfico
+                }],
+                xaxis: {
+                    categories: years  // Nuevas categorías (años) para el eje X
+                }
+            });
+    
+            console.log("Gráfica actualizada con los siguientes datos:", emissionsData, years);
+        } else {
+            console.error('El gráfico de carbono no está definido. Asegúrate de que el ID sea correcto y que el gráfico haya sido creado.');
+        }
+    }
+    
+    
     /* map with markers */
     var markers = [{
         name: 'Russia',
@@ -308,7 +352,8 @@
                 console.log("El estado es:"+stateName);
                 document.getElementById('state-title-3').textContent = stateName;
                 //AQUÍ DEBEMOS MANDAR A LLAMAR LA FUNCIÓN QUE MODIFICARÁ LA GRÁFICA
-                getEmissionsByState(stateName);
+                getEmissionsMethaneByState(stateName);
+                getEmissionsCarbonByState(stateName);
             } else {
                 console.log("Estado no encontrado");
             }
