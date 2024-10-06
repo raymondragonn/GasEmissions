@@ -1,6 +1,7 @@
 (function () {
     "use strict"
 
+
     // for color selection
     const multipleCancelButton = new Choices(
         '#product-color-add',

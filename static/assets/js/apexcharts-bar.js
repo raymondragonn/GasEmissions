@@ -638,6 +638,86 @@
         var chart = new ApexCharts(document.querySelector("#bar-reversed"), options);
         chart.render();
 
+        /* reversed bar chart 2 INTENTO */
+        var options = {
+            series: [{
+                data: ['8', '7', '5', '4', '3', '2', '1']
+            }],
+            chart: {
+                type: 'bar',
+                height: 320
+            },
+            annotations: {
+                xaxis: [{
+                    x: 500,
+                    borderColor: '#00E396',
+                    label: {
+                        borderColor: '#00E396',
+                        style: {
+                            color: '#fff',
+                            background: '#00E396',
+                        },
+                        text: 'X annotation',
+                    }
+                }],
+                yaxis: [{
+                    y: 'July',
+                    y2: 'September',
+                    label: {
+                        text: ' '
+                    }
+                }]
+            },
+            grid: {
+                borderColor: '#f2f5f7',
+            },
+            colors: ["#00ffbe"],
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                }
+            },
+            dataLabels: {
+                enabled: true
+            },
+            xaxis: {
+                categories: ['2022', '2021', '2020', '2018', '2016', '2014', '2012', '2010'],
+                labels: {
+                    show: true,
+                    style: {
+                        colors: "#8c9097",
+                        fontSize: '11px',
+                        fontWeight: 600,
+                        cssClass: 'apexcharts-xaxis-label',
+                    },
+                }
+            },
+            grid: {
+                xaxis: {
+                    lines: {
+                        show: true
+                    }
+                }
+            },
+            yaxis: {
+                labels: {
+                    show: true,
+                    style: {
+                        colors: "#8c9097",
+                        fontSize: '11px',
+                        fontWeight: 600,
+                        cssClass: 'apexcharts-yaxis-label',
+                    },
+                },
+                reversed: false,
+                axisTicks: {
+                    show: true
+                }
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#bar-r"), options);
+        chart.render();
+
         /* bar with categories as data labels */
         var options = {
             series: [{
