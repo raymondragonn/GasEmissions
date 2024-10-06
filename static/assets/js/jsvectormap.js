@@ -1,7 +1,46 @@
+
+
 (function () {
+
     "use strict";
     // const fs = require('fs');
     /* basic vector map */
+
+    function getEmissionsByState(stateName) {
+        fetch('http://127.0.0.1:8000/api/emisiones/')
+            .then(response => response.json())
+            .then(data => {
+                const filteredData = data.filter(item => item.state_name.toLowerCase() === stateName.toLowerCase() && item.gas_name === "Methane");
+                
+                console.log(`Datos filtrados para ${stateName}:`, filteredData);
+
+                // Aquí es donde puedes actualizar la gráfica con los datos filtrados
+                updateBarChart(filteredData);
+            })
+            .catch(error => console.error('Error al obtener los datos:', error));
+    }
+
+    /* Función de actualización de la gráfica */
+    function updateBarChart(filteredData) {
+        // Extraemos los valores y las categorías para el chart
+    const emissionsData = filteredData.map(item => item.co2e_emission);
+    const years = filteredData.map(item => item.year);
+
+    // Actualizamos las opciones de la gráfica
+    const chart = ApexCharts.getChartByID('reversed-bar-chart'); // Obtenemos el gráfico por su ID
+
+    chart.updateOptions({
+        series: [{
+            data: emissionsData  // Nuevos datos para el gráfico
+        }],
+        xaxis: {
+            categories: years  // Nuevas categorías (años) para el eje X
+        }
+    });
+
+    console.log("Gráfica actualizada con los siguientes datos:", emissionsData, years);
+    }
+
     var map = new jsVectorMap({
         selector: "#vector-map",
         map: "world_merc",
@@ -263,23 +302,13 @@
                 "US-WI": "Wisconsin",
                 "US-WY": "Wyoming"
             };
-            console.log(code);
-            
+            console.log("El codigo es:"+code);
             if (states.hasOwnProperty(code)) {
-
                 var stateName = states[code];
-                // getStateInfo(stateName, (err, stateInfo) => {
-                //     if (err) {
-                //         console.error(err.message);
-                //     } else {
-                //         console.log(stateInfo);
-                //     }
-                // });
-
-                console.log(stateName);
-                // document.getElementById('state-title-1').textContent = stateName;
-                // document.getElementById('state-title-2').textContent = stateName;
+                console.log("El estado es:"+stateName);
                 document.getElementById('state-title-3').textContent = stateName;
+                //AQUÍ DEBEMOS MANDAR A LLAMAR LA FUNCIÓN QUE MODIFICARÁ LA GRÁFICA
+                getEmissionsByState(stateName);
             } else {
                 console.log("Estado no encontrado");
             }
