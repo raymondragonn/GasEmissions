@@ -17,3 +17,6 @@ venv/
 ENV/
 env.bak/
 app/__pycache__/urls.cpython-312.pyc
+app/__pycache__/admin.cpython-312.pyc
+app/__pycache__/models.cpython-312.pyc
+app/__pycache__/views.cpython-312.pyc

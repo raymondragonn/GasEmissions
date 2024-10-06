@@ -13,7 +13,7 @@
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
+        display: flex;
         font-size: 12px;
         margin: 4px 2px;
         cursor: pointer;
@@ -114,7 +114,9 @@
             <div>
                 <h3 style="text-align: center;">Artificial Intelligence</h3>
                 <div>
-                    <button onclick="ia()">Tell me a Climate Story</button>
+                    <div style="display: flex;justify-content: center;">
+                        <button onclick="ia()">Tell me a Climate Story</button>
+                    </div>
                     <div class="row" class="card custom-card" id="state-card">
                         <p style="text-align: -webkit-left; font-size: large;" id="ia-output"> </p>
                     </div>
@@ -131,11 +133,9 @@
 <script  src="{% static 'assets/js/ia.js'%}"></script>
 
 <!-- Apex Charts JS -->
-<<<<<<< HEAD
 <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
 <!--MIS SCRIPTS-->
 <script src="{% static 'assets/libs/js/funciones.min.js'%}"></script>
-=======
 <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script
 <!-- Used In Zoomable TIme Series Chart -->
 <script src="{% static 'assets/js/dataseries.js'%}"></script>
@@ -147,7 +147,6 @@
 <!-- Used In Zoomable TIme Series Chart -->
 <script src="{% static 'assets/js/dataseries.js'%}"></script>
 
->>>>>>> dbe178c7de435d071a261bf26e991690b06bd5f6
 <!-- Internal Apex Bar Charts JS -->
 <script src="{% static 'assets/js/apexcharts-bar.js'%}"></script>
 <script src="{% static 'assets/js/apexcharts-scatter.js'%}"></script>

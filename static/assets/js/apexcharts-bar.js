@@ -582,7 +582,7 @@
                             color: '#fff',
                             background: '#00E396',
                         },
-                        text: 'X annotation',
+                        text: 'ppm',
                     }
                 }],
                 yaxis: [{
@@ -663,7 +663,7 @@
                             color: '#fff',
                             background: '#00E396',
                         },
-                        text: 'X annotation',
+                        text: 'ppm',
                     }
                 }],
                 yaxis: [{
