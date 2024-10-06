@@ -39,7 +39,7 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 .jvm-zoom-btn {
   border-radius: 3px;
   background-color: #292929;
-  padding: 3px;
+  padding: 4px;
   box-sizing: border-box;
   position: absolute;
   line-height: 10px;

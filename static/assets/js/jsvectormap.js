@@ -1,6 +1,6 @@
 (function () {
     "use strict";
-
+    // const fs = require('fs');
     /* basic vector map */
     var map = new jsVectorMap({
         selector: "#vector-map",
@@ -207,8 +207,10 @@
                 fillOpacity: 1
             }
         },
-        
+        zoomOnScroll: false,
+        zoomButtons: false,
         onRegionClick: function(event, code) {
+            
             var states = {
                 "US-AL": "Alabama",
                 "US-AK": "Alaska",
@@ -264,7 +266,16 @@
             console.log(code);
             
             if (states.hasOwnProperty(code)) {
+
                 var stateName = states[code];
+                // getStateInfo(stateName, (err, stateInfo) => {
+                //     if (err) {
+                //         console.error(err.message);
+                //     } else {
+                //         console.log(stateInfo);
+                //     }
+                // });
+
                 console.log(stateName);
                 // document.getElementById('state-title-1').textContent = stateName;
                 // document.getElementById('state-title-2').textContent = stateName;
@@ -273,8 +284,33 @@
                 console.log("Estado no encontrado");
             }
 
+            function smoothScrollTo(endY, duration) {
+                var startY = window.scrollY;
+                var distance = endY - startY;
+                var startTime = new Date().getTime();
+            
+                function scroll() {
+                    var currentTime = new Date().getTime();
+                    var time = Math.min(1, (currentTime - startTime) / duration);
+                    var easedTime = (time * (2 - time));
+            
+                    window.scrollTo(0, startY + (distance * easedTime));
+            
+                    if (time < 1) {
+                        requestAnimationFrame(scroll);
+                    }
+                }
+            
+                requestAnimationFrame(scroll);
+            }
+            smoothScrollTo(document.body.scrollHeight, 2000);
         }
-    });
+        
+        
+    }
+);
+
+    
 
     /* russia vector map */
     var map = new jsVectorMap({

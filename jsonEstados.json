@@ -1,0 +1,8168 @@
+[
+    {
+        "co2e_emission": 8176818.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 9327615.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 8643846.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 8077732.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 8242695.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 7075494.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 6904421.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 7026226.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 4500323.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 3892773.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 2545871.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 3729633.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 3732339.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 3917424.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 3096660.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 2491385.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 3600194.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 3049393.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 2296610.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 1829659.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 1700983.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 1501542.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 2524717.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 1685981.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 1711240.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 1528576.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 16236752.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 16188685.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 16181570.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 16072921.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 15557345.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 12660594.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 10774004.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 11059626.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 11503891.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 10460875.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 7206235.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 7209136.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 5417511.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 1177524.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 1171648.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 1142274.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 762815.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 756564.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 923779.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 899640.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 1154220.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 1080842.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 996882.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 827834.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 843329.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 853835.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 3334310.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 2636777.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 2876939.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 2969270.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 2859885.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 1584187.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 2239245.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 2257179.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 2519012.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 2812164.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 1883918.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 1876613.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 2171850.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 14518055.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 14002944.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 12819113.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 12349274.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 11589131.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 9059548.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 10343157.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 8451825.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 9699570.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 8490250.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 6612914.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 7690687.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 7630957.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 13269342.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 12226877.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 14058848.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 13565518.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 13685496.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 13035199.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 12475191.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 9537723.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 10106578.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 9134835.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 9428862.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 10634278.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 7632585.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 5888750.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 6332532.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 7115151.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 6329157.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 6476265.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 5923780.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 6356691.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 6745095.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 6318090.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 5334088.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 5660918.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 5147843.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 4794196.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 11917433.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 11752377.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 8847882.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 11347197.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 11272821.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 10763025.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 7766234.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 8201712.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 8061647.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 8470468.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 7906869.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 9164332.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 7458034.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 9784883.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 5579968.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 4121859.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 7488677.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 7388702.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 5619677.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 5054396.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 5955749.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 6049289.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 7937671.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 5798775.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 3456999.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 3922552.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 38572.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 38191.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 35243.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 38539.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 41014.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 41663.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 37712.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 36297.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 39253.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 40257.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 37637.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 37863.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 39350.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 7144594.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 6093779.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 4533874.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 6947279.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 7165099.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 7514777.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 7024575.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 4527042.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 3157585.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 3490347.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 3805580.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 4051623.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 3893381.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 8064232.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7210440.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7836262.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 8742881.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7082555.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7528972.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7238348.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7423464.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7902384.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7563388.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7025684.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7035313.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 5296685.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 14382636.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 14438293.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 11850122.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 13277965.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 12198854.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 12855855.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 13623002.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 13352669.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 12439417.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 11726782.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 10157367.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 11436356.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 11600466.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 8064232.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7210440.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7836262.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 8742881.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7082555.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7528972.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7238348.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7423464.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7902384.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7563388.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7025684.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 7035313.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 5296685.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 14767803.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 13535395.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 13604408.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 14611428.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 13425043.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 13134373.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 11643811.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 11761610.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 11749072.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 11483291.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 11137048.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 10746003.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 11434453.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 198898.02855,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 953364.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 1606204.75,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 1299561.25,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 1390901.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 1162146.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 962434.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 1083491.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 1166398.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 998663.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 660341.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 473612.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 293361.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "OKLAHOMA"
+    },
+    {
+        "co2e_emission": 171952.34485,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 248432.84485,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 244041.3946,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 191823.25,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 243848.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 301777.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 164510.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 160678.0,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 240678.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 262779.5,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 299396.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 226457.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 278631.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "OREGON"
+    },
+    {
+        "co2e_emission": 504060.0,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2086944.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2150032.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2852824.75,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2038283.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 1922422.75,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 1966019.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2391785.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2904523.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2889246.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2164886.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2268589.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 2527353.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "PENNSYLVANIA"
+    },
+    {
+        "co2e_emission": 263840.0,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 303140.0,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 62900.0,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 183496.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 137870.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 59350.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 253952.75,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 204849.75,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 64460.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 171707.0,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 187062.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 53647.75,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 166007.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 245145.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 375924.0,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 158629.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 245229.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 55020.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 153301.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 231337.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 50813.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 148238.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 181567.75,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 47248.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 143640.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 175471.75,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 49512.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 142333.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 161515.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 50448.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 137228.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 188284.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 51600.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 133190.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 229978.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 70991.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 126400.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "RHODE ISLAND"
+    },
+    {
+        "co2e_emission": 246753.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "SOUTH CAROLINA"
+    },
+    {
+        "co2e_emission": 60842.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "SOUTH DAKOTA"
+    },
+    {
+        "co2e_emission": 915297.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 836986.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 763460.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 515285.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 495930.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 485939.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 481628.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 442710.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 426793.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 410867.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 387676.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 387202.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 384018.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 380906.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 374631.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 361994.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 343318.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 328541.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 325416.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 319680.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 312877.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TEXAS"
+    },
+    {
+        "co2e_emission": 233419.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 232880.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 229070.97,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 166773.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 157795.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 130910.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 128792.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 113198.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 110582.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 89742.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 87754.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 79115.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 77194.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 65651.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 57058.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 56310.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 54422.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 52871.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 52413.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 48598.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 44334.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 39213.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 31719.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 31506.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 30989.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "TENNESSEE"
+    },
+    {
+        "co2e_emission": 1001498.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 959689.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 267777.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 230404.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 212548.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 141098.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 138944.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 118793.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 109948.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 105167.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 102124.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 101585.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 98222.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 97920.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 97753.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 97676.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 93664.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 93216.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 89605.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 88951.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 83578.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 82609.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 76239.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 74665.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 74623.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 70948.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 70718.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 70170.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 69275.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VERMONT"
+    },
+    {
+        "co2e_emission": 68765.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 66877.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 65776.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 63512.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 61403.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 59663.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 58226.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 58025.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 56702.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 56554.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 53985.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 53725.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 52990.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 52113.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 51960.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 51010.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 49691.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 48859.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 48018.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 46656.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 44115.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 44033.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 43193.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 41860.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 39732.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 39701.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 38958.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "UTAH"
+    },
+    {
+        "co2e_emission": 34364.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 31488.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 31327.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 30060.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "VIRGINIA"
+    },
+    {
+        "co2e_emission": 2101900.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 2089930.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 1862864.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 1777126.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 1557701.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 1355977.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 1315987.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 1079612.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 1033347.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 1021519.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 995083.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 801173.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 796995.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 773475.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 766712.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 708943.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 698553.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 685946.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 679714.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 648335.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 612664.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 581738.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 447089.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 379684.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 357035.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 290550.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 288248.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 279140.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 278882.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 269372.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 267077.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 257717.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 246935.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 244862.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 244325.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 240539.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 239253.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 233019.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 221953.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 213748.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 208224.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 201525.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 196980.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 178969.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 177758.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 174450.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 174396.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 165648.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 162320.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 156800.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 150949.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 146245.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 143957.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 142894.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WISCONSIN"
+    },
+    {
+        "co2e_emission": 139148.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 138607.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 135418.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 131514.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 131058.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 130211.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 129972.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 128455.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WASHINGTON"
+    },
+    {
+        "co2e_emission": 127024.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 126840.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 124846.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WEST VIRGINIA"
+    },
+    {
+        "co2e_emission": 124637.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 124232.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 121785.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 121648.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 120800.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 119872.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 118178.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 117724.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 115998.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 115493.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 113261.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 112907.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 111246.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 111132.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 109842.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 108104.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 106083.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 104479.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 101898.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 100788.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "WYOMING"
+    },
+    {
+        "co2e_emission": 7229590.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 6258295.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 4828551.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 4946096.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 5685711.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 5236672.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 5050721.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 4123393.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 5010881.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 2560545.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 2023049.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 2582686.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 2201023.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 5810450.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 3724224.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 3390632.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 3289848.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 2429342.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 2267398.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 2862638.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 2885328.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 1939066.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 1767101.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 1339685.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 1418113.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 1409985.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 17714051.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 15812163.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 15097872.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 15328968.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 15028118.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 15360956.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 13935216.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 15391539.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 16272490.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 15026168.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 12956978.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 14266625.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 14791461.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 13518537.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 13119124.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 8417116.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 8976386.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 13439954.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 12294370.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 12130429.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 12532773.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 12883588.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 11152132.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 9206961.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 9725015.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 10414413.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 7641740.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 5375401.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 4906296.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 4751794.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 6544917.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 5699896.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 5206433.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 5476146.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 5815506.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 5454638.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 5808049.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 6143941.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 5990970.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 17233323.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 18091197.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 14074466.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 15210062.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 13546563.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 14638702.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 13856668.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 15088100.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 14730396.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 14069023.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 15587488.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 15636623.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 15736417.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 16994687.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 13991414.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 13395792.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 13577421.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 14796150.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 15854040.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 14281357.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 13826006.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 13211678.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 14167992.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 8274559.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 9954519.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 10653537.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 9342817.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 9180442.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 9000329.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 9266095.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 8535087.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 8363459.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 8359768.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 8476525.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 8823810.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 7924845.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 7957110.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 6817770.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 7072971.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 3102344.74502,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2571806.50223,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2512545.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2593464.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2670414.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2875670.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2521141.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2520373.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2679489.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2666403.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2527049.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2495304.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2200028.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 2554413.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 2011115.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1908399.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1367389.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1392494.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1804074.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1304421.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1068829.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 843094.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1165164.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1216570.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1240250.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 1325535.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 2548759.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2442533.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2470377.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2499028.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2619149.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2974470.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2533833.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2498076.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2771754.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2762711.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2638330.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2798807.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 2707012.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 13063044.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 13143588.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 13740137.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 13389396.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 11198643.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 10818832.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 11270238.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 12211468.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 7656872.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 8774118.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 7464685.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 7784511.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 9734482.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 3991038.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 3421422.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2582658.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2271682.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2567435.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2640741.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2862707.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2309408.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2581292.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2449765.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2198821.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2368056.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 2909466.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 14490335.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 13491337.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 13204370.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 10852627.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 11489240.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 10716676.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 9493635.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 8499314.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 7895917.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 7334965.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 5547548.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 6915081.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 5895070.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 9028126.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 8886222.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 9544861.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 9149962.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 9171426.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 9198022.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 8291611.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 8115561.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 9484828.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 8596253.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 8659659.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 9379767.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 8717895.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 16744942.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 17516740.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 16508246.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 14305498.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 15451055.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 13712487.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 13191192.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 14031382.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 14356709.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 12940205.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 13677730.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 13370355.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 11208104.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 282755.25,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 253619.5,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 249052.75,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 245079.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 240496.25,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 234776.75,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 228968.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 218646.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 209375.75,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 200179.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 190463.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 182033.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 176462.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "MARYLAND"
+    },
+    {
+        "co2e_emission": 48438.5,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 440979.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 428380.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 420903.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 409965.0,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 400892.25,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 389319.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 373441.75,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 367341.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 356177.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 348076.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 367193.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 356304.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "MASSACHUSETTS"
+    },
+    {
+        "co2e_emission": 503503.855775,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 520680.25,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 422838.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 632023.25,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 636136.25,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 576774.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 564424.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 581882.0,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 478184.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 458378.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 507603.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 505545.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 357427.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "MICHIGAN"
+    },
+    {
+        "co2e_emission": 110750.0,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 135525.3515,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 148837.0382,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 125161.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 353144.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 415685.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 260290.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 267872.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 275435.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 317948.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 381170.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 442606.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 224599.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "MINNESOTA"
+    },
+    {
+        "co2e_emission": 186802.889925,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 195022.755675,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 186457.052975,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 184432.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 197730.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 180424.25,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 184037.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 212017.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 247701.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 236171.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 168045.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 176986.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 186411.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "MISSISSIPPI"
+    },
+    {
+        "co2e_emission": 290040.0,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 181645.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 156837.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 161303.75,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 159451.0,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 176079.75,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 231835.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 239700.0,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 226528.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 244653.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 241903.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 376856.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 224593.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "MISSOURI"
+    },
+    {
+        "co2e_emission": 483284.25,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 114356.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 110759.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 91434.25,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 93065.75,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 113367.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 107950.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 83538.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 98465.5,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 112978.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 117905.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 132607.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 137523.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "MONTANA"
+    },
+    {
+        "co2e_emission": 253549.5,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 220984.5,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 115700.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 183104.0,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 131810.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 160174.75,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 110004.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 120635.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 206837.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 159379.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 150576.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 128621.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 106636.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "NEBRASKA"
+    },
+    {
+        "co2e_emission": 150043.707025,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 87852.25,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 218543.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 184336.25,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 230232.75,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 166814.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 216902.5,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 89538.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 111331.5,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 209459.5,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 205861.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 196798.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 181756.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "NEVADA"
+    },
+    {
+        "co2e_emission": 112215.932175,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 177581.5,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 110240.404925,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 116582.0,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 82338.75,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 88283.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 90844.5,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 97794.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 109722.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 135101.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 118760.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 138168.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 128919.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "NEW HAMPSHIRE"
+    },
+    {
+        "co2e_emission": 364213.75,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 792395.5,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 774189.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 758868.75,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 750530.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 725207.75,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 694460.5,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 668163.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 633756.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 591100.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 564714.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 525494.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 488486.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "NEW JERSEY"
+    },
+    {
+        "co2e_emission": 160376.75,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 827340.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 922511.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 812846.0,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 837405.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 1080389.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 809667.5,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 699815.0,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 744907.75,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 565185.5,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 286915.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 724563.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 373005.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "NEW MEXICO"
+    },
+    {
+        "co2e_emission": 284163.41705,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 333918.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 324765.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 315035.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 308946.75,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 304070.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 286079.5,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 279350.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 304393.5,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 281103.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 682390.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 294043.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 364241.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "NEW YORK"
+    },
+    {
+        "co2e_emission": 339490.0,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 321307.25,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 332181.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 289638.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 358410.25,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 408345.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 533913.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 279215.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 282115.75,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 275454.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 204257.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 209997.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 206466.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "NORTH CAROLINA"
+    },
+    {
+        "co2e_emission": 114722.5,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 88671.65725,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 86052.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 106778.0,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 203827.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 128548.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 123368.5,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 123780.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 124779.5,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 205665.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 129860.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 171701.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 233136.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "NORTH DAKOTA"
+    },
+    {
+        "co2e_emission": 974909.25,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 1031867.25,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 1108883.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 1088963.0,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 1035939.25,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 976135.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 657317.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 637682.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 619373.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 602699.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 589087.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 634660.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 627055.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "OHIO"
+    },
+    {
+        "co2e_emission": 2400854.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 2724574.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 2620008.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 2830186.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 2854150.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 2748364.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 3025113.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 3416160.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 3108672.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 3348406.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 2972286.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 2986542.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 3113878.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 322900.0,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 364336.25,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 342187.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 439832.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 515508.0,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 500004.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 533815.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 631851.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 219188.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 210820.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 203518.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 203956.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 211921.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "ALASKA"
+    },
+    {
+        "co2e_emission": 133527.5,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 119660.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 132469.25,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 169137.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 171626.0,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 150976.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 178535.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 121008.75,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 138632.75,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 149604.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 114275.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 123523.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 174229.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 16149633.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 16800132.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 15354830.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 16165262.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 17110250.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 14055478.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 12672377.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 14418776.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 13848855.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 10812713.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 7963034.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 8432617.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 7439182.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "ARIZONA"
+    },
+    {
+        "co2e_emission": 11305964.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 10792891.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 10705646.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 11364171.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 10805320.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 6535399.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 7472756.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 8295528.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 9604828.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 7621582.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 4377738.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 7339384.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 5665280.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 171547.317625,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 1743825.5,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 1310961.25,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 1085530.0,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 277766.25,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 263555.25,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 263852.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 177451.75,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 177633.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 192576.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 191351.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 184651.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 176745.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "ARKANSAS"
+    },
+    {
+        "co2e_emission": 445917.75,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1348724.5,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1383427.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1355778.25,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1331947.25,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1329460.75,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1328405.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1317346.75,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1312253.5,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1305435.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1307488.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1254285.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 1250314.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 3937245.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 3908005.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 3653036.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 3634104.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 5270629.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 5099874.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 5291043.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 5308572.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 5509678.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 5032636.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 4853892.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 5101104.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 5316326.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "CALIFORNIA"
+    },
+    {
+        "co2e_emission": 9749564.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 9080581.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 8970349.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 8707059.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 9203044.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 8380123.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 8757508.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 8946291.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 9269567.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 8329578.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 7651501.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 7923504.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 7896002.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 191647.75,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 1336632.5,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 1151883.25,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 752127.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 1045493.25,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 1069330.75,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 1272903.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 1290725.0,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 1256323.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 1335735.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 849152.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 846483.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 816676.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "COLORADO"
+    },
+    {
+        "co2e_emission": 128446.5,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 116995.25,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 115677.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 110398.75,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 91947.0,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 107463.25,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 105007.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 105264.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 105251.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 105239.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 100489.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 100582.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 96023.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 1457434.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 2056464.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 1756712.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 1795019.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 1795125.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 1917168.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 2137874.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 1943398.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 2064016.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 2089403.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 2144132.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 2056861.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 2186898.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "CONNECTICUT"
+    },
+    {
+        "co2e_emission": 2124693.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 2016737.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3469866.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3187943.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3313425.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3651288.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3709649.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3050375.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3465605.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3170962.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3015731.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3114320.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 3505439.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 53570.25,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 60638.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 105689.25,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 139421.75,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 184471.75,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 216100.75,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 188399.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 149865.75,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 184813.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 189301.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 174565.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 213309.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 230874.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "DELAWARE"
+    },
+    {
+        "co2e_emission": 581253.75,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 409082.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 483174.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 489310.0,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 638118.25,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 765632.25,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 930479.5,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 1080030.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 1063226.75,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 1223260.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 532061.75,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 554933.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 650870.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 12060179.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 11033427.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 10439566.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 10925541.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 12325730.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 10419905.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 9432343.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 9643148.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 10040129.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 8277014.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 7763039.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 9146943.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 8726815.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "FLORIDA"
+    },
+    {
+        "co2e_emission": 22800874.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 21897641.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 21644582.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 22118625.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 20321943.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 17851672.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 17518622.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 15245856.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 16564369.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 13656567.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 7885908.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 9420083.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 8407224.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 388582.5,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 342862.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 447875.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 378066.25,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 544311.25,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 601670.25,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 456802.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 498204.75,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 698001.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 748887.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 788658.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 772982.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 409289.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "GEORGIA"
+    },
+    {
+        "co2e_emission": 95177.25,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 89904.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 84922.75,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 84615.75,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 84643.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 85415.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 86246.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 86915.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 87642.5,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 88558.5,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 88178.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 83292.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 78677.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 2510212.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 2625624.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 2399403.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 2211301.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 2125576.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 2011871.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 2023819.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 1999212.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 1988622.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 1860401.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 1883775.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 1718576.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 2011223.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "HAWAII"
+    },
+    {
+        "co2e_emission": 535462.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 445568.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 446519.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 630009.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 545641.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 618647.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 537302.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 556433.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 606870.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 684438.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 645039.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 721438.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 638274.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 165013.0,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 74799.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 77877.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 185160.75,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 139280.75,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 138525.25,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 113178.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 120638.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 123125.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 130400.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 137700.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 140712.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 148308.75,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "IDAHO"
+    },
+    {
+        "co2e_emission": 219721.253975,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 1050452.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 1155285.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 1193333.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 888035.75,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 1179678.5,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 1498325.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 1371250.0,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 972861.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 755779.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 663567.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 521655.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 719299.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 11736574.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 12718087.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 12432074.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 12163235.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 11337599.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 10494114.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 10403546.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 10933106.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 12000790.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 12573293.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 11782980.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 12330277.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 10836733.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "ILLINOIS"
+    },
+    {
+        "co2e_emission": 17853899.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 15700385.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 17754448.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 15846229.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 16164178.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 13350950.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 15323974.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 16331848.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 16194973.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 11484688.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 11299796.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 10324475.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 10300727.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 319997.25,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 463719.25,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 546374.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 627109.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 713003.0,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 519896.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 730658.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 746591.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 955831.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 1273634.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 722318.0,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 736777.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 1085939.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "INDIANA"
+    },
+    {
+        "co2e_emission": 11564179.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 11436682.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 10696285.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 10191625.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 10139535.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 8821344.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 7944448.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 8083998.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 9673186.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 7972823.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 4977347.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 6389961.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 6550298.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 88260.392325,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 388737.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 131792.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 135183.0,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 140175.75,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 145054.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 150792.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 153759.0,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 156943.0,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 160878.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 164287.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 167365.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 170383.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "IOWA"
+    },
+    {
+        "co2e_emission": 967559.75,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 607034.0,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 739318.5,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 836050.25,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 893511.5,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 311636.75,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 320152.0,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 206513.75,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 353982.75,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 208661.75,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 205319.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 196379.75,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 190637.0,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 14482342.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 14677060.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 12591661.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 14625378.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 12491468.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 12552783.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 10848197.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 11433794.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 9957528.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 7262070.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 7390323.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 8714010.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 9400656.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "KANSAS"
+    },
+    {
+        "co2e_emission": 13562004.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 12367849.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 14850256.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 12623418.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 13558577.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 11964880.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 11018445.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 10865114.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 10637618.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 9819610.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 9568192.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 10302400.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 9808560.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 145290.5,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 414401.5,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 429475.25,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 306680.75,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 348526.0,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 408053.0,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 298428.25,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 313484.25,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 313521.25,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 522660.0,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 373512.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 350027.5,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 332095.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "KENTUCKY"
+    },
+    {
+        "co2e_emission": 441185.75,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 324207.5,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 289426.25,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 352785.5,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 385145.75,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 298366.25,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 376763.75,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 510233.75,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 884274.5,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 353503.25,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 303993.25,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 403100.25,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 437055.25,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 12435240.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 12364280.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 10010815.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 10776235.9,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 10624054.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 7030777.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 6427879.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 7787715.1,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 7484069.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 8016286.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 7649699.4,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 7206879.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 7827402.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "LOUISIANA"
+    },
+    {
+        "co2e_emission": 1028592.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2010",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 981869.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2011",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 925357.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2012",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 918243.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2013",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 705056.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2014",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 708128.8,
+        "gas_name": "Carbon Dioxide",
+        "year": "2015",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 833741.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2016",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 520795.7,
+        "gas_name": "Carbon Dioxide",
+        "year": "2017",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 561836.6,
+        "gas_name": "Carbon Dioxide",
+        "year": "2018",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 520100.5,
+        "gas_name": "Carbon Dioxide",
+        "year": "2019",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 466362.2,
+        "gas_name": "Carbon Dioxide",
+        "year": "2020",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 701989.3,
+        "gas_name": "Carbon Dioxide",
+        "year": "2021",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 919874.0,
+        "gas_name": "Carbon Dioxide",
+        "year": "2022",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 82777.25,
+        "gas_name": "Methane",
+        "year": "2010",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 106950.75,
+        "gas_name": "Methane",
+        "year": "2011",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 101130.0,
+        "gas_name": "Methane",
+        "year": "2012",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 79545.475,
+        "gas_name": "Methane",
+        "year": "2013",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 75781.15,
+        "gas_name": "Methane",
+        "year": "2014",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 72367.675,
+        "gas_name": "Methane",
+        "year": "2015",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 69228.175,
+        "gas_name": "Methane",
+        "year": "2016",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 66130.5,
+        "gas_name": "Methane",
+        "year": "2017",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 63139.4,
+        "gas_name": "Methane",
+        "year": "2018",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 60291.55,
+        "gas_name": "Methane",
+        "year": "2019",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 59475.5,
+        "gas_name": "Methane",
+        "year": "2020",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 59219.0,
+        "gas_name": "Methane",
+        "year": "2021",
+        "state_name": "MAINE"
+    },
+    {
+        "co2e_emission": 58845.5,
+        "gas_name": "Methane",
+        "year": "2022",
+        "state_name": "MAINE"
+    }
+]
