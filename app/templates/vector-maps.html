@@ -4,6 +4,33 @@
 <link rel="stylesheet" href="{% static 'assets/libs/jsvectormap/css/jsvectormap.min.css'%}" />
 <!-- Choices Css -->
 <link rel="stylesheet" href="{% static 'assets/libs/apexcharts/apexcharts.css'%}">
+<style>
+    /* Estilos para el botón "Tell me a Climate Story" */
+    button {
+        background-color: #006803; /* Verde */
+        border-bottom: black;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #45a049; /* Verde oscuro */
+        transform: scale(1.05);
+    }
+
+    button:active {
+        background-color: #3e8e41; /* Verde más oscuro */
+        transform: scale(0.95);
+    }
+</style>
 {% endblock %} {% block content %}
 
 <!-- Start::app-content -->
@@ -85,11 +112,13 @@
                 </div>
             </div>
             <div>
-                <h1 style="text-align: center;">IA</h1>
+                <h3 style="text-align: center;">Artificial Intelligence</h3>
                 <div>
-                    <button onclick="ia()">Generar IA</button>
+                    <button onclick="ia()">Tell me a Climate Story</button>
+                    <div class="row" class="card custom-card" id="state-card">
+                        <p style="text-align: -webkit-left; font-size: large;" id="ia-output"> </p>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -98,7 +127,8 @@
 
 {% endblock %} {% block scripts %}
 <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
-<script  src="{% static 'assets/libs/apexcharts/ia.js'%}"></script>
+<!-- <script  src="{% static 'assets/libs/apexcharts/ia.js'%}"></script> -->
+<script  src="{% static 'assets/js/ia.js'%}"></script>
 
 <!-- Apex Charts JS -->
 <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script
