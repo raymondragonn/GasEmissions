@@ -6,7 +6,7 @@
         /* basic area chart */
         var options = {
             series: [{
-                name: "STOCK ABC",
+                name: "CO2",
                 data: series.monthDataSeries1.prices
             }],
             chart: {
@@ -23,7 +23,7 @@
                 curve: 'straight',
             },
             subtitle: {
-                text: 'Price Movements',
+                text: ' ',
                 align: 'left'
             },
             grid: {
@@ -31,7 +31,7 @@
             },
             labels: series.monthDataSeries1.dates,
             title: {
-                text: 'Fundamental Analysis of Stocks',
+                text: ' ',
                 align: 'left',
                 style: {
                     fontSize: '13px',

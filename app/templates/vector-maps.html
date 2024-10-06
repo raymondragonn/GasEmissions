@@ -3,8 +3,7 @@
 <!-- Jsvector Maps -->
 <link rel="stylesheet" href="{% static 'assets/libs/jsvectormap/css/jsvectormap.min.css'%}" />
 <!-- Choices Css -->
-<link rel="stylesheet" href="{% static 'assets/libs/apexcharts/apexcharts.css'%}" />
-
+<link rel="stylesheet" href="{% static 'assets/libs/apexcharts/apexcharts.css'%}">
 {% endblock %} {% block content %}
 
 <!-- Start::app-content -->
@@ -55,17 +54,16 @@
         <!--tabla 1-->
         <div class="row">
             <div class="col-xl-6">
-                <div class="card custom-card" id="state-card">
+                <div class="card custom-card">
                     <div class="top-left"></div>
                     <div class="top-right"></div>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
-                    <div class="card-header" style="justify-content: space-around;">
-                        <!-- <div class="card-title" id="state-title-1">Basic Line Chart</div> -->
-                        <div class="card-title">Carbon Dioxide Emission</div>
+                    <div class="card-header">
+                        <div class="card-title"  style="text-align: center; width: 100%;">Carbon Dioxide Emissons</div>
                     </div>
                     <div class="card-body">
-                        <div id="line-chart"></div>
+                        <div id="bar-basic"></div>
                     </div>
                 </div>
             </div>
@@ -85,19 +83,36 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <h1 style="text-align: center;">IA</h1>
+                <div></div>
+
+            </div>
         </div>
     </div>
 </div>
 <!-- End::app-content -->
 
 {% endblock %} {% block scripts %}
+<script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+<script src="{% static 'assets/libs/apexcharts/ia.js'%}"></script>
 
 <!-- Apex Charts JS -->
-<script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+<script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script
+<!-- Used In Zoomable TIme Series Chart -->
+<script src="{% static 'assets/js/dataseries.js'%}"></script>
+
+
+<!-- Internal Apex Line Charts JS -->
+<script src="{% static 'assets/js/apexcharts-line.js'%}"></script>
+
+<!-- Used In Zoomable TIme Series Chart -->
+<script src="{% static 'assets/js/dataseries.js'%}"></script>
 
 <!-- Internal Apex Bar Charts JS -->
 <script src="{% static 'assets/js/apexcharts-bar.js'%}"></script>
 <script src="{% static 'assets/js/apexcharts-scatter.js'%}"></script>
+
 <!-- JSVector Maps JS -->
 <script src="{% static 'assets/libs/jsvectormap/js/jsvectormap.min.js'%}"></script>
 
@@ -111,14 +126,15 @@
 
 <!-- Apex Charts JS -->
 <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
-
-<!-- Used In Zoomable TIme Series Chart -->
-<script src="{% static 'assets/js/dataseries.js'%}"></script>
-
-<!---Used In Annotations Chart-->
+<!---Used In Basic Area Chart-->
 <script src="{% static 'assets/js/apexcharts-stock-prices.js'%}"></script>
+<!-- Used For Secection-Github Style Chart -->
+<script src="{% static 'assets/js/apex-github-data.js'%}"></script>
+<!-- Used For Irregular Time Series Chart -->
+<script src="{% static 'assets/js/apexcharts-irregulardata.js'%}"></script>
+<script src="{% static 'assets/libs/moment/moment.js'%}"></script>
 
-<!-- Internal Apex Line Charts JS -->
-<script src="{% static 'assets/js/apexcharts-line.js'%}"></script>
+<!-- Internal Apex Area Charts JS -->
+<script src="{% static 'assets/js/apexcharts-area.js'%}"></script>
 
 \ {% endblock %}

@@ -305,8 +305,6 @@
             }
             smoothScrollTo(document.body.scrollHeight, 2000);
         }
-        
-        
     }
 );
 

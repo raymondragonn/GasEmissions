@@ -26,9 +26,7 @@
                 enabled: false
             },
             xaxis: {
-                categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-                    'United States', 'China', 'Germany'
-                ],
+                categories: ['2022', '2020', '2018', '2016', '2014', '2012', '2010'],
                 labels: {
                     show: true,
                     style: {
