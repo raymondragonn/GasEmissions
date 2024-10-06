@@ -1,6 +1,6 @@
 from . import views
 from django.urls import path
-
+from .views import EmisionesAPIView
 app_name = 'app'
 
 urlpatterns = [
@@ -185,4 +185,6 @@ urlpatterns = [
     path('vector-maps', views.vector_maps, name='vector-maps'),
     path('widgets', views.widgets, name='widgets'),
     path('wishlist', views.wishlist, name='wishlist'),
+    #Mi api
+    path('api/emisiones/', EmisionesAPIView.as_view(), name='emisiones-api'),
 ]
