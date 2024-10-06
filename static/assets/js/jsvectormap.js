@@ -207,6 +207,9 @@
                 fillOpacity: 1
             }
         },
+        onRegionClick: function(event, code) {
+            console.log(code);
+        }
     });
 
     /* russia vector map */

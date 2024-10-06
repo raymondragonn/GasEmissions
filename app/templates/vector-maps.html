@@ -18,49 +18,7 @@
 
                     <!-- Start::row-1 -->
                     <div class="row">
-                        <!--<div class="col-xl-6">
-                                <div class="card custom-card">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <div class="bottom-left"></div>
-                                <div class="bottom-right"></div>
-                                <div class="card-header">
-                                    <div class="card-title">Basic Vector Map</div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="vector-map"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="card custom-card">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <div class="bottom-left"></div>
-                                <div class="bottom-right"></div>
-                                <div class="card-header">
-                                    <div class="card-title">Map With Markers</div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="marker-map"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="card custom-card">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <div class="bottom-left"></div>
-                                <div class="bottom-right"></div>
-                                <div class="card-header">
-                                    <div class="card-title">Map With Image Markers</div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="marker-image-map"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
+                                                {% comment %} <div class="col-xl-6">
                             <div class="card custom-card">
                                 <div class="top-left"></div>
                                 <div class="top-right"></div>
@@ -73,7 +31,7 @@
                                     <div id="lines-map"></div>
                                 </div>
                             </div>
-                        </div>-->
+                        </div> {% endcomment %}
                         <div class="col-12">
                             <div class="card custom-card">
                                 <div class="top-left"></div>
@@ -90,6 +48,10 @@
                                 </div>
                             </div>
                         </div>
+                        
+                    </div>     
+                    <div class="row">
+                        
                         <div class="col-xl-6">
                             <div class="card custom-card">
                                 <div class="top-left"></div>
@@ -97,57 +59,14 @@
                                 <div class="bottom-left"></div>
                                 <div class="bottom-right"></div>
                                 <div class="card-header">
-                                    <div class="card-title">Basic Line Chart</div>
+                                    <div class="card-title">Datetime Scatter Chart</div>
                                 </div>
                                 <div class="card-body">
-                                    <div id="line-chart"></div>
-                                </div>
-                            </div>
-                        <!--<div class="col-xl-6">
-                            <div class="card custom-card">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <div class="bottom-left"></div>
-                                <div class="bottom-right"></div>
-                                <div class="card-header">
-                                    <div class="card-title">Russia Vector Map</div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="russia-map"></div>
+                                    <div id="scatter-datetime"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6">
-                            <div class="card custom-card">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <div class="bottom-left"></div>
-                                <div class="bottom-right"></div>
-                                <div class="card-header">
-                                    <div class="card-title">Spain Vector Map</div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="spain-map"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="card custom-card">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <div class="bottom-left"></div>
-                                <div class="bottom-right"></div>
-                                <div class="card-header">
-                                    <div class="card-title">Canada Vector Map</div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="canada-map"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-                    <!--End::row-1 -->
-
+                    </div>
                 </div>
             </div>
             <!-- End::app-content -->
@@ -155,7 +74,7 @@
 {% endblock %}
 
 {% block scripts %}
-
+        <script src="{% static 'assets/js/apexcharts-scatter.js'%}"></script>
         <!-- JSVector Maps JS -->
         <script src="{% static 'assets/libs/jsvectormap/js/jsvectormap.min.js'%}"></script>
 

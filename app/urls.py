@@ -4,7 +4,7 @@ from django.urls import path
 app_name = 'app'
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.vector_maps, name='index'),
     path('index', views.index, name='index'),
     path('index2', views.index2, name='index2'),
     path('index3', views.index3, name='index3'),
