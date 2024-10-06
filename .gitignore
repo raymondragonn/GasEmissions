@@ -10,6 +10,8 @@ __pycache__/
 # C extensions
 *.so
 
+app/__pycache__/urls.cpython-312.pyc
+
 # Distribution / packaging
 .Python
 env/
