@@ -16,3 +16,4 @@ env/
 venv/
 ENV/
 env.bak/
+app/__pycache__/urls.cpython-312.pyc
