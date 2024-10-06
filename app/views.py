@@ -374,7 +374,7 @@ def wishlist (request):
 class EmisionesAPIView(APIView):
     def get(self, request):
         # Carga los datos desde el archivo JSON
-        with open('ruta/a/tu/data.json', 'r', encoding='utf-8') as file:
+        with open('data.json', 'r', encoding='utf-8') as file:
             data = json.load(file)
         
         # Extraer los datos relevantes de las emisiones

@@ -151,7 +151,7 @@
 						}
 					}
 
-					// highlight code
+					// highlight 
 					code.textContent = text;
 					Prism.highlightElement(code);
 				},

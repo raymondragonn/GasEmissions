@@ -1,100 +1,111 @@
-{% extends 'components/base.html' %}
-{% load static %}
+{% extends 'components/base.html' %} {% load static %} {% block styles %}
 
-{% block styles %}
+<!-- Jsvector Maps -->
+<link rel="stylesheet" href="{% static 'assets/libs/jsvectormap/css/jsvectormap.min.css'%}" />
+<!-- Choices Css -->
+<link rel="stylesheet" href="{% static 'assets/libs/apexcharts/apexcharts.css'%}" />
 
-        <!-- Jsvector Maps -->
-        <link rel="stylesheet" href="{% static 'assets/libs/jsvectormap/css/jsvectormap.min.css'%}">
-        <!-- Choices Css -->
-        <link rel="stylesheet" href="{% static 'assets/libs/apexcharts/apexcharts.css'%}">
+{% endblock %} {% block content %}
 
-{% endblock %}
-
-{% block content %}
-
-            <!-- Start::app-content -->
-            <div class="main-content app-content">
-                <div class="container-fluid">
-
-                    <!-- Start::row-1 -->
-                    <div class="row">
-                                                {% comment %} <div class="col-xl-6">
-                            <div class="card custom-card">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <div class="bottom-left"></div>
-                                <div class="bottom-right"></div>
-                                <div class="card-header">
-                                    <div class="card-title">Map With Lines</div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="lines-map"></div>
-                                </div>
-                            </div>
-                        </div> {% endcomment %}
-                        <div class="col-12">
-                            <div class="card custom-card">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <div class="bottom-left"></div>
-                                <div class="bottom-right"></div>
-                                <div class="card-header">
-                                    <div class="card-title" style="font-size: 30px">US Map</div>
-                                </div>
-                                <div class="card-body">
-                                    <div style="display: none;" id="lines-map" style="height:  100%;"></div>
-                                    <div id="us-map"></div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>     
-                    <div class="row">
-                        
-                        <div class="col-xl-6">
-                            <div class="card custom-card">
-                                <div class="top-left"></div>
-                                <div class="top-right"></div>
-                                <div class="bottom-left"></div>
-                                <div class="bottom-right"></div>
-                                <div class="card-header">
-                                    <div class="card-title">Datetime Scatter Chart</div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="scatter-datetime"></div>
-                                </div>
-                            </div>
-                        </div>
+<!-- Start::app-content -->
+<div class="main-content app-content">
+    <div class="container-fluid">
+        <!-- Start::row-1 -->
+        <div class="row">
+            {% comment %}
+            <div class="col-xl-6">
+                <div class="card custom-card">
+                    <div class="top-left"></div>
+                    <div class="top-right"></div>
+                    <div class="bottom-left"></div>
+                    <div class="bottom-right"></div>
+                    <div class="card-header">
+                        <div class="card-title">Map With Lines</div>
+                    </div>
+                    <div class="card-body">
+                        <div id="lines-map"></div>
                     </div>
                 </div>
             </div>
-            <!-- End::app-content -->
+            {% endcomment %}
+            <div class="col-xl-12" style="margin: auto; height: 80vh">
+                <!--<div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                <div class="card-header">
+                                    <div class="card-title" style="font-size: 30px">US Map</div>
+                                </div>-->
+                <div class="card-body" style="height: 100%; padding: 0">
+                    <div style="display: none" id="lines-map"></div>
+                    <div id="us-map" style="height: 100%; width: 100%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="card custom-card">
+                    <div class="top-left"></div>
+                    <div class="top-right"></div>
+                    <div class="bottom-left"></div>
+                    <div class="bottom-right"></div>
+                    <div class="card-header">
+                        <div class="card-title">Basic Line Chart</div>
+                    </div>
+                    <div class="card-body">
+                        <div id="line-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card custom-card">
+                    <div class="top-left"></div>
+                    <div class="top-right"></div>
+                    <div class="bottom-left"></div>
+                    <div class="bottom-right"></div>
+                    <div class="card-header">
+                        <div class="card-title">Reversed Bar Chart</div>
+                    </div>
+                    <div class="card-body">
+                        <div id="bar-reversed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End::app-content -->
 
-{% endblock %}
+{% endblock %} {% block scripts %}
 
-{% block scripts %}
-        <script src="{% static 'assets/js/apexcharts-scatter.js'%}"></script>
-        <!-- JSVector Maps JS -->
-        <script src="{% static 'assets/libs/jsvectormap/js/jsvectormap.min.js'%}"></script>
+ <!-- Apex Charts JS -->
+ <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+        
+ <!-- Internal Apex Bar Charts JS -->
+ <script src="{% static 'assets/js/apexcharts-bar.js'%}"></script>
+<script src="{% static 'assets/js/apexcharts-scatter.js'%}"></script>
+<!-- JSVector Maps JS -->
+<script src="{% static 'assets/libs/jsvectormap/js/jsvectormap.min.js'%}"></script>
 
-        <!-- JSVector Maps MapsJS -->
-        <script src="{% static 'assets/libs/jsvectormap/maps/world-merc.js'%}"></script>
-        <script src="{% static 'assets/js/us-merc-en.js'%}"></script>
-        <!--<script src="{% static 'assets/js/russia.js'%}"></script>
+<!-- JSVector Maps MapsJS -->
+<script src="{% static 'assets/libs/jsvectormap/maps/world-merc.js'%}"></script>
+<script src="{% static 'assets/js/us-merc-en.js'%}"></script>
+<!--<script src="{% static 'assets/js/russia.js'%}"></script>
         <script src="{% static 'assets/js/spain.js'%}"></script>
         <script src="{% static 'assets/js/canada.js'%}"></script>-->
-        <script src="{% static 'assets/js/jsvectormap.js'%}"></script>
+<script src="{% static 'assets/js/jsvectormap.js'%}"></script>
 
-        <!-- Apex Charts JS -->
-        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+<!-- Apex Charts JS -->
+<script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
 
-        <!-- Used In Zoomable TIme Series Chart -->
-        <script src="{% static 'assets/js/dataseries.js'%}"></script>
-          
-        <!---Used In Annotations Chart-->
-        <script src="{% static 'assets/js/apexcharts-stock-prices.js'%}"></script>
-          
-        <!-- Internal Apex Line Charts JS -->
-        <script src="{% static 'assets/js/apexcharts-line.js'%}"></script>
-{% endblock %}
+<!-- Used In Zoomable TIme Series Chart -->
+<script src="{% static 'assets/js/dataseries.js'%}"></script>
+
+<!---Used In Annotations Chart-->
+<script src="{% static 'assets/js/apexcharts-stock-prices.js'%}"></script>
+
+<!-- Internal Apex Line Charts JS -->
+<script src="{% static 'assets/js/apexcharts-line.js'%}"></script>
+
+\ {% endblock %}
