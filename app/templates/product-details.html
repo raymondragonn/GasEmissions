@@ -1,0 +1,470 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Swiper Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/swiper/swiper-bundle.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="row gx-5">
+                                        <div class="col-xxl-6 col-xl-12">
+                                            <div class="row productdetails-leftsection">
+                                                <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="swiper-gallery-container">
+                                                        <div class="swiper swiper-preview-details product-details-page">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide" id="img-container">
+                                                                    <img class="img-fluid" src="{% static 'assets/images/ecommerce/png/1.png'%}" alt="img">
+                                                                </div>
+                                                                <div class="swiper-slide image-container">
+                                                                    <img class="img-fluid" src="{% static 'assets/images/ecommerce/png/2.png'%}" alt="img">
+                                                                </div>
+                                                                <div class="swiper-slide image-container">
+                                                                    <img class="img-fluid" src="{% static 'assets/images/ecommerce/png/3.png'%}" alt="img">
+                                                                </div>
+                                                                <div class="swiper-slide image-container">
+                                                                    <img class="img-fluid" src="{% static 'assets/images/ecommerce/png/4.png'%}" alt="img">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-button-next"></div>
+                                                            <div class="swiper-button-prev"></div>
+                                                        </div>
+                                                        <div class="swiper swiper-view-details mt-2">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <img class="img-fluid" src="{% static 'assets/images/ecommerce/png/1.png'%}" alt="img">
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <img class="img-fluid" src="{% static 'assets/images/ecommerce/png/2.png'%}" alt="img">
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <img class="img-fluid" src="{% static 'assets/images/ecommerce/png/3.png'%}" alt="img">
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <img class="img-fluid" src="{% static 'assets/images/ecommerce/png/4.png'%}" alt="img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-md-4 mt-3">
+                                                        <div class="mb-4">
+                                                            <p class="fs-15 fw-medium mb-1">Description :</p>
+                                                            <p class="text-muted mb-0 fs-14">
+                                                                Elevate your seating experience with the SereneComfort Premium Ball Chair, designed for optimal comfort and posture support. Its innovative ball-shaped structure promotes active sitting, enhancing core strength and relaxation, making it an ideal choice for a balanced and comfortable seating solution.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="fs-15 fw-medium mb-3">Specifications :</p>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered text-nowrap">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row" class="fw-medium">
+                                                                        Brand
+                                                                    </th>
+                                                                    <td>SereneComfort</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row" class="fw-medium">
+                                                                        Model Name
+                                                                    </th>
+                                                                    <td>
+                                                                        Ball Chair
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row" class="fw-medium">
+                                                                        Color
+                                                                    </th>
+                                                                    <td>
+                                                                        Lemon Yellow
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row" class="fw-medium">
+                                                                        Style
+                                                                    </th>
+                                                                    <td>
+                                                                        Rounded
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row" class="fw-medium">
+                                                                        Special Features
+                                                                    </th>
+                                                                    <td>
+                                                                        Satin Serenity
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-12">
+                                            <div class="row gx-5">
+                                                <div class="col-xl-12 mt-xxl-0 mt-3">
+                                                    <div>
+                                                        <p class="fs-3 fw-medium mb-2 productdetail-title">SereneComfort Premium Ball Chair with Flat and soft Cushion for Convenient Support and Stylish Comfort</p>
+                                                        <p class="fs-18 mb-4">
+                                                            <i class="ri-star-s-fill text-warning align-middle"></i>
+                                                            <i class="ri-star-s-fill text-warning align-middle"></i>
+                                                            <i class="ri-star-s-fill text-warning align-middle"></i>
+                                                            <i class="ri-star-s-fill text-warning align-middle"></i>
+                                                            <i class="ri-star-half-s-fill text-warning align-middle"></i>
+                                                            <span class="fw-medium text-muted ms-1">4.4<a class="text-secondary" href="javascript:void(0);"> (3.2k Reviews)</a></span>
+                                                        </p>
+                                                        <div class="row mb-3 gx-3">
+                                                            <div class="col-xxl-12 col-xl-12">
+                                                                <div class="d-flex gap-3 align-items-center mb-3 flex-wrap">
+                                                                    <p class="fs-15 fw-medium mb-0">Price :</p>
+                                                                    <p class="mb-0"><span class="h2"><sup class="fs-14">$</sup>3,499<sup class="fs-14">.00</sup></span></p>
+                                                                    <p class="mb-0 text-muted fs-13">M.R.P-<s>$2,599.00</s></p>
+                                                                    <p class="lh-1 fs-11 badge bg-success-transparent fw-medium mb-0">Special Offer: 30% off on Category</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xxl-12 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                                                <div class="d-flex gap-3">
+                                                                    <p class="fs-15 fw-medium mb-2">Colors :</p>
+                                                                    <p class="mb-0 d-flex">
+                                                                        <a class="color-1 product-colors selected" href="javascript:void(0)">
+                                                                            <i class="ri-checkbox-blank-fill"></i>
+                                                                        </a>
+                                                                        <a class="color-2 product-colors" href="javascript:void(0)">
+                                                                            <i class="ri-checkbox-blank-fill"></i>
+                                                                        </a>
+                                                                        <a class="color-3 product-colors" href="javascript:void(0)">
+                                                                            <i class="ri-checkbox-blank-fill"></i>
+                                                                        </a>
+                                                                        <a class="color-4 product-colors" href="javascript:void(0)">
+                                                                            <i class="ri-checkbox-blank-fill"></i>
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="d-flex gap-3 mt-3">
+                                                                    <p class="fs-15 fw-medium mb-1">Number of Chairs :</p>
+                                                                    <p class="mb-0">1</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                                                                    <p class="fs-15 fw-medium mb-0"><i class="ri-truck-line text-primary me-2"></i>Free Shipping Available</p>
+                                                                </div>
+                                                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 mt-sm-0 mt-3">
+                                                                    <p class="fs-15 fw-medium mb-0"><i class="ri-secure-payment-line text-primary me-2"></i>100% Secure Payment</p>
+                                                                </div>
+                                                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 mt-sm-0 mt-3">
+                                                                    <p class="fs-15 fw-medium mb-0"><i class="ri-shake-hands-line text-primary me-2"></i>Guaranteed Quality</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-4 btn-list">
+                                                            <a href="checkout" class="btn btn-primary btn-w-lg mb-2">Buy Now</a>
+                                                            <a href="cart" class="btn btn-secondary-transparent btn-w-lg mb-2">Add To Cart</a>
+                                                            <a href="wishlist" class="btn btn-outline-danger mb-2"><i class="ri-heart-line"></i> Add to wishlist</a>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <p class="fs-15 fw-medium mb-3">Features :</p>
+                                                            <div class="row">
+                                                                <div class="col-xl-6">
+                                                                    <ul class="mb-0 list-unstyled">
+                                                                        <li class="text-muted mb-3 d-flex gap-2">
+                                                                            <span>Material</span> - Plastic
+                                                                        </li>
+                                                                        <li class="text-muted mb-3 d-flex gap-2">
+                                                                        <span>Dimensions</span> - 50 cm x 70 cm x 78 cm
+                                                                        </li>
+                                                                        <li class="text-muted mb-3 d-flex gap-2">
+                                                                        <span>Wheels</span> - Available at Bottom
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xl-6">
+                                                                    <ul class="mb-0 list-unstyled">
+                                                                        <li class="text-muted mb-3 d-flex gap-2">
+                                                                            <span>Weight</span> - 2.1kg
+                                                                        </li>
+                                                                        <li class="text-muted mb-3 d-flex gap-2">
+                                                                        <span>Cushion Dimensions</span> - 20 cm x 40 cm (2)
+                                                                        </li>
+                                                                        <li class="text-muted mb-3 d-flex gap-2">
+                                                                        <span>Cushion Weight</span> - 1.5kg
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xl-6">
+                                                                <div class="mb-4">
+                                                                    <div class="offer-promotion mb-4 rounded-2 border border-warning border-opacity-10">
+                                                                        <div class="d-xxl-flex d-lg-block d-sm-flex flex-wrap justify-content-between align-items-center gap-2">
+                                                                            <div class="text-warning my-auto">Use Code <span class="promotion-code fw-medium">ONBUY</span><a class="fs-10 text-warning ms-1 d-inline-block" href="javascript:void(0);">T&C.</a></div>
+                                                                            <div class="my-2">
+                                                                                <span class="bg-warning-transparent text-default fs-12 offer-details mb-0 rounded-2">Get it for <span class="text-success fw-medium">$2,199</span></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-4">
+                                                                        <p class="text-danger mb-0 fs-16 fw-medium">Only 3 left in stock.</p>
+                                                                        <p class="mb-0 fs-12 lh-lg">Sold by <span class="text-primary me-1"><u>Elegance Home Decor LTD</u></span>and quality checked by <span class="text-primary"><u>Spruko SOFTWARE</u>.</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="alert alert-primary mb-4 fs-12 text-muted rounded-0" role="alert">
+                                                                    <a href="javascript:void(0);"><i class="ri-map-pin-line me-1 align-middle text-primary fs-15 d-inline-block"></i></a>Choose a destination to determine the estimated delivery date.
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="mb-4">
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item">
+                                                                            <div class="lh-1">
+                                                                                <span class="text-success fw-medium fs-14 d-flex align-items-center"><i class="ti ti-discount-2 fs-18 me-1"></i>3 Available offers</span>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="list-group-item">
+                                                                            <div class="fs-12 text-default">
+                                                                                <span class="text-success me-1 fw-medium d-inline-block">Bank Offer:</span><span class="flex-fill">6% off upto 700 on min purchase of $1,999<a href="javascript:void(0);" class="text-primary ms-1 d-inline-block">View.</a></span>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="list-group-item">
+                                                                            <div class="fs-12 text-default">
+                                                                                <span class="text-success me-1 fw-medium d-inline-block">Emi:</span><span class="flex-fill">No cost EMI on selected bank card on min purchase of $599<a href="javascript:void(0);" class="text-primary ms-1 d-inline-block">View.</a></span>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="list-group-item p-0">
+                                                                            <ul class="collapse list-group" id="offers-more">
+                                                                                <li class="list-group-item border-0">
+                                                                                    <div class="fs-12 text-default">
+                                                                                        <span class="text-success me-1 fw-medium d-inline-block">Promotion:</span><span class="flex-fill">Offer upto 25% on Home products on purchase of this item<a href="javascript:void(0);" class="text-primary ms-1 d-inline-block">T&C.</a></span>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="list-group-item border-top-0">
+                                                                            <a class="text-success fs-12" data-bs-toggle="collapse" href="#offers-more" role="button" aria-expanded="false" aria-controls="offers-more"><u>More Offers</u></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <p class="mb-0 fw-medium">Returns:</p>
+                                                            <p class="fs-12 text-muted">Please be informed that our return and exchange policy entails a minimum duration of 7 days. It's important to note that return policies may vary depending on the specific products and ongoing promotions. For a detailed understanding of our returns policies, kindly refer to the full details available  <a href="javascript:void(0);" class="text-primary">click here</a>․</p>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <p class="fs-15 fw-medium mb-3">Reviews & Ratings :</p>
+                                                            <div class="row">
+                                                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-4">
+                                                                    <div class="d-flex align-items-top mb-3">
+                                                                        <div class="me-2 lh-1">
+                                                                            <i class="ri-star-fill fs-25 text-warning"></i>
+                                                                        </div>
+                                                                        <div class="lh-1">
+                                                                            <p class="mb-1">4.2 out of 5</p>
+                                                                            <p class="mb-0 text-muted fs-11">Based on (23,435) ratings</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-3">
+                                                                        <div class="fs-12 me-2 fw-medium">5 <i class="ri-star-fill fs-10"></i></div>
+                                                                        <div class="progress progress-xs flex-fill">
+                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-muted ms-2 fs-12">(10,893)</div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-3">
+                                                                        <div class="fs-12 me-2 fw-medium">4 <i class="ri-star-fill fs-10"></i></div>
+                                                                        <div class="progress progress-xs flex-fill">
+                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-muted ms-2 fs-12">(6,534)</div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-3">
+                                                                        <div class="fs-12 me-2 fw-medium">3 <i class="ri-star-fill fs-10"></i></div>
+                                                                        <div class="progress progress-xs flex-fill">
+                                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-muted ms-2 fs-12">(4,342)</div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center mb-3">
+                                                                        <div class="fs-12 me-2 fw-medium">2 <i class="ri-star-fill fs-10"></i></div>
+                                                                        <div class="progress progress-xs flex-fill">
+                                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-muted ms-2 fs-12">(1,432)</div>
+                                                                    </div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="fs-12 me-2 fw-medium">1 <i class="ri-star-fill fs-10"></i></div>
+                                                                        <div class="progress progress-xs flex-fill">
+                                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 6%" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-muted ms-2 fs-12">(1,453)</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-xxl-0">
+                                                                    <div class="border rounded p-3">
+                                                                        <div class="d-sm-flex d-block align-items-top mb-3">
+                                                                            <div class="d-flex flex-fill">
+                                                                                <div class="me-2">
+                                                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                                                        <img src="{% static 'assets/images/faces/15.jpg'%}" alt="">
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="lh-1 me-2">
+                                                                                    <p class="mb-1 fw-medium fs-14">Reva Shaan</p>
+                                                                                    <div class="mb-1">
+                                                                                        <i class="ri-star-s-fill text-warning align-middle fs-12"></i>
+                                                                                        <i class="ri-star-s-fill text-warning align-middle fs-12"></i>
+                                                                                        <i class="ri-star-s-fill text-warning align-middle fs-12"></i>
+                                                                                        <i class="ri-star-s-fill text-warning align-middle fs-12"></i>
+                                                                                        <i class="ri-star-s-line text-warning align-middle fs-12"></i>
+                                                                                    </div>
+                                                                                    <div class="fs-11 text-muted">
+                                                                                        Reviewed on 24 Nov,2023
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ps-sm-0 mt-sm-0 mt-3 ps-sm-0 ps-2">
+                                                                                <span class="badge bg-success">Verified Purchase</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="ps-sm-4 ps-0 mb-3">
+                                                                            <p class="fw-medium mb-1 ps-2">Absolutely delighted with the Premium Ball Chair!&#128512;</p>
+                                                                            <p class="mb-0 fs-11 text-muted ps-2"> The craftsmanship is superb, ensuring durability for daily use. 
+                                                                                The unparalleled support it offers, especially in promoting a healthy posture, is truly exceptional. A remarkable addition to my home office – 
+                                                                                providing both comfort and effectiveness. Highly recommended!&#128077;  </p>
+                                                                        </div>
+                                                                        <div class="product-images ps-sm-4 ps-0 mb-3">
+                                                                            <div class="row">
+                                                                                <div class="col-xl-6">
+                                                                                    <div class="products-review-images">
+                                                                                        <a href="javascript:void(0);">
+                                                                                            <img src="{% static 'assets/images/ecommerce/png/13.png'%}" alt="">
+                                                                                        </a>
+                                                                                        <a href="javascript:void(0);">
+                                                                                            <img src="{% static 'assets/images/ecommerce/png/15.png'%}" alt="">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-xl-6 d-flex align-items-end justify-content-sm-end mt-sm-0 mt-2">
+                                                                                    <button class="btn btn-sm btn-light me-2">Report abuse</button>
+                                                                                    <button class="btn btn-sm btn-icon btn-primary-light me-2">
+                                                                                        <i class="ri-thumb-up-line"></i>
+                                                                                    </button>
+                                                                                    <button class="btn btn-sm btn-icon btn-primary-light">
+                                                                                        <i class="ri-thumb-down-line"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a href="javascript:void(0);" class="text-primary text-decoration-underline text-center ps-sm-4 ps-0">See More Reviews</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="fs-15 fw-medium mb-4">Similar Products :<a href="javascript:void(0);" class="text-primary float-end text-decoration-underline">View More Products</a></p>
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-xl-4 col-lg-6 col-md-6 mb-3 mb-xl-0">
+                                                                <div class="text-center position-relative p-2 border">
+                                                                    <a href="javascript:void(0);" class="stretched-link"></a>
+                                                                    <div class="similar-products-image mb-3"> 
+                                                                        <img src="{% static 'assets/images/ecommerce/png/7.png'%}" class="img-fluid" alt=""> 
+                                                                    </div> 
+                                                                    <h5 class="mb-2 fs-14 fw-medium mt-1"> Haven Lounge Chair</h5>
+                                                                        <h5 class="mb-0 fw-medium"> $766 </h5> 
+                                                                    <div class="d-flex justify-content-center align-items-center gap-1"> 
+                                                                        <p class="mb-0 text-muted"> <span class="text-success fs-11 ms-1">25% off</span> 
+                                                                        </p>
+                                                                        <div class="badge bg-warning align-middle">4.3
+                                                                            <i class="ri-star-s-fill align-middle"></i>
+                                                                        </div> 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-4 col-lg-6 col-md-6 mb-3 mb-xl-0">
+                                                                <div class="text-center position-relative p-2 border">
+                                                                    <a href="javascript:void(0);" class="stretched-link"></a>
+                                                                    <div class="similar-products-image mb-3"> 
+                                                                        <img src="{% static 'assets/images/ecommerce/png/9.png'%}" class="img-fluid" alt=""> 
+                                                                    </div> 
+                                                                    <h5 class="mb-2 fs-14 fw-medium mt-1">Essen Living Chair</h5> 
+                                                                    <h5 class="mb-0 fw-medium"> $1,548 </h5> 
+                                                                    <div class="d-flex justify-content-center align-items-center gap-1"> 
+                                                                        <p class="mb-0 text-muted"> <span class="text-success fs-11 ms-1">25% off</span> 
+                                                                        </p>
+                                                                        <div class="badge bg-warning align-middle">4.3
+                                                                            <i class="ri-star-s-fill align-middle"></i>
+                                                                        </div> 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-4 col-lg-6 col-md-6 mb-3 mb-xl-0">
+                                                                <div class="text-center position-relative p-2 border">
+                                                                    <a href="javascript:void(0);" class="stretched-link"></a>
+                                                                    <div class="similar-products-image mb-3"> 
+                                                                        <img src="{% static 'assets/images/ecommerce/png/8.png'%}" class="img-fluid" alt=""> 
+                                                                    </div> 
+                                                                    <h5 class="mb-2 fs-14 fw-medium mt-1">Modern Chair</h5> 
+                                                                    <h5 class="mb-0 fw-medium"> $1,366 </h5> 
+                                                                    <div class="d-flex justify-content-center align-items-center gap-1"> 
+                                                                        <p class="mb-0 text-muted"> <span class="text-success fs-11 ms-1">25% off</span> 
+                                                                        </p>
+                                                                        <div class="badge bg-warning align-middle">4.3
+                                                                            <i class="ri-star-s-fill align-middle"></i>
+                                                                        </div> 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+    
+        <!-- Swiper JS -->
+        <script src="{% static 'assets/libs/swiper/swiper-bundle.min.js'%}"></script>
+        
+        <!-- Internal Product-Details JS -->
+        <script src="{% static 'assets/js/product-details.js'%}"></script>
+
+{% endblock %} 

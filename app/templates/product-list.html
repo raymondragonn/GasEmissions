@@ -1,0 +1,347 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">   
+                        <div class="col-xl-12">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Products List
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive mb-4">
+                                        <table class="table text-nowrap table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <input class="form-check-input check-all" type="checkbox" id="all-products" value="" aria-label="...">
+                                                    </th>
+                                                    <th scope="col">Product</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Category</th>
+                                                    <th scope="col">Stock</th>
+                                                    <th scope="col">Gender</th>
+                                                    <th scope="col">Seller</th>
+                                                    <th scope="col">Published</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="product-list">
+                                                    <td class="product-checkbox"><input class="form-check-input" type="checkbox" id="product1" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2">
+                                                                <span class="avatar avatar-md border border-light bg-light">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/11.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium">
+                                                                Full Sleeves T-shirt
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>$1,356</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-default">Clothing</span>
+                                                    </td>
+                                                    <td>457</td>
+                                                    <td>Male</td>
+                                                    <td>PrimeFlare Products</td>
+                                                    <td>24,Nov 2023 - 04:42PM</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a href="edit-products" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="product-list">
+                                                    <td class="product-checkbox"><input class="form-check-input" type="checkbox" id="product2" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2">
+                                                                <span class="avatar avatar-md border border-light bg-light">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/14.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium">
+                                                                Nikkis Digital Camera
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>$895</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-default">Gadgets</span>
+                                                    </td>
+                                                    <td>451</td>
+                                                    <td>Male</td>
+                                                    <td>SparkShift Co.</td>
+                                                    <td>14, Dec 2023 - 02:45AM</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a href="edit-products" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="product-list">
+                                                    <td class="product-checkbox"><input class="form-check-input" type="checkbox" id="product3" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2">
+                                                                <span class="avatar avatar-md border border-light bg-light">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/15.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium">
+                                                                Easy Chair
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>$475</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-default">Furniture</span>
+                                                    </td>
+                                                    <td>2,487</td>
+                                                    <td>Male,Female</td>
+                                                    <td>Tech Company</td>
+                                                    <td>26,Sep 2023 - 12:23AM</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a href="edit-products" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="product-list">
+                                                    <td class="product-checkbox"><input class="form-check-input" type="checkbox" id="product8" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2">
+                                                                <span class="avatar avatar-md border border-light bg-light">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/16.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium">
+                                                                Smart Watch(30mm) Pink
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>$1,566</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-default">Watches</span>
+                                                    </td>
+                                                    <td>475</td>
+                                                    <td>Female</td>
+                                                    <td>NexaSync.in.com</td>
+                                                    <td>08,Aug 2023 - 12:15PM</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a href="edit-products" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="product-list">
+                                                    <td class="product-checkbox"><input class="form-check-input" type="checkbox" id="product4" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2">
+                                                                <span class="avatar avatar-md border border-light bg-light">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/10.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium">
+                                                                Slings chairs
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>$457</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-default">Furniture</span>
+                                                    </td>
+                                                    <td>245</td>
+                                                    <td>Everyone</td>
+                                                    <td>OmniWave.in</td>
+                                                    <td>18,Aug 2023 - 06:12AM</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a href="edit-products" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="product-list">
+                                                    <td class="product-checkbox"><input class="form-check-input" type="checkbox" id="product6" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2">
+                                                                <span class="avatar avatar-md border border-light bg-light">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/13.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium">
+                                                                Long lengthy Chair
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>$895</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-default">Furniture</span>
+                                                    </td>
+                                                    <td>454</td>
+                                                    <td>Anyone</td>
+                                                    <td>Furniture.co.in</td>
+                                                    <td>12,Jul 2023 - 03:45PM</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a href="edit-products" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="product-list">
+                                                    <td class="product-checkbox"><input class="form-check-input" type="checkbox" id="product7" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2">
+                                                                <span class="avatar avatar-md border border-light bg-light">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/12.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium">
+                                                                Hang bag For Women
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>$1,298</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-default">Accessories</span>
+                                                    </td>
+                                                    <td class="text-warning">Out of Stock</td>
+                                                    <td>Female</td>
+                                                    <td>Anthony Lanes</td>
+                                                    <td>02,Jan 2024 - 02:55PM</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a href="edit-products" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="product-list">
+                                                    <td class="product-checkbox"><input class="form-check-input" type="checkbox" id="product5" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2">
+                                                                <span class="avatar avatar-md border border-light bg-light">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/4.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium">
+                                                                Rounded Ball Chair
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>$3,499</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-default">Furniture</span>
+                                                    </td>
+                                                    <td>346</td>
+                                                    <td>Anyone</td>
+                                                    <td>SwiftSphere.co.in</td>
+                                                    <td>19,Oct 2023 - 05:47AM</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a href="edit-products" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="product-list">
+                                                    <td class="product-checkbox"><input class="form-check-input" type="checkbox" id="product9" value="" aria-label="..."></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2">
+                                                                <span class="avatar avatar-md border border-light bg-light">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/23.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fw-medium">
+                                                                Watches with Stripe
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>$1,999</td>
+                                                    <td>
+                                                        <span class="badge bg-light text-default">Watches</span>
+                                                    </td>
+                                                    <td>216</td>
+                                                    <td>Everyone</td>
+                                                    <td>Ninnan's Corporation</td>
+                                                    <td>04,Aug 2023 - 06:32PM</td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-15">
+                                                            <a href="edit-products" class="btn btn-icon btn-sm btn-info-light"><i class="ri-edit-line"></i></a>
+                                                            <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger-light product-btn"><i class="ri-delete-bin-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                        <nav aria-label="...">
+                                            <ul class="pagination mb-0">
+                                                <li class="page-item disabled">
+                                                    <span class="page-link">Previous</span>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                                <li class="page-item active" aria-current="page">
+                                                    <span class="page-link">2</span>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0);">Next</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <button class="btn btn-danger btn-wave m-1">Delete All</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Internal Product-Details JS -->
+        <script src="{% static 'assets/js/product-list.js'%}"></script>
+
+{% endblock %}

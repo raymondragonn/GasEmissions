@@ -1,0 +1,800 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Choices Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/filepond/filepond.min.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/libs/filepond-plugin-image-edit/filepond-plugin-image-edit.min.css'%}">
+
+        <!-- Choices Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/dragula/dragula.min.css'%}">
+        
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start:: row-1 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+                                        <div>
+                                            <div class="fs-15 fw-medium mb-2">Members OnBoard :</div>
+                                            <div class="avatar-list-stacked">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                </span>
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                </span>
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                </span>
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                </span>
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/4.jpg'%}" alt="img">
+                                                </span>
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                </span>
+                                                <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black fs-16 fw-semibold" href="javascript:void(0);">
+                                                    <span class="fs-16 align-middle">+</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-2 flex-wrap flex-lg-nowrap task-karbon-header">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search Here" aria-describedby="button-addon01">
+                                                <button class="btn btn-ghost-light border" type="button" id="button-addon01"><i class="ri-search-line text-muted"></i></button>
+                                            </div>
+                                            <select class="form-control kanban-sortby" data-trigger name="choices-single-default" id="choices-single-default">
+                                                <option value="">Sort By </option>
+                                                <option value="Newest">Newest</option>
+                                                <option value="Date Added">Date Added</option>
+                                                <option value="Type">Type</option>
+                                                <option value="A - Z">A - Z</option>
+                                            </select>
+                                            <button class="btn btn-primary text-nowrap btn-sm" data-bs-toggle="modal" data-bs-target="#add-board"><i class="ri-add-line me-1 fw-medium align-middle"></i>New Board</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-1 -->
+
+                    <!-- Start::row-2 -->
+                    <div class="SciFi-kanban-board">
+                        <div class="kanban-tasks-type todo">
+                            <div class="pe-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="d-block fw-medium fs-15">TODO - <span></span> 36</span>
+                                    <div>
+                                        <a aria-label="anchor" href="javascript:void(0)" class="btn btn-sm btn-outline-light btn-wave" data-bs-toggle="modal" data-bs-target="#add-task">
+                                            <i class="ri-add-line align-middle me-1 fw-medium"></i>Add Task
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kanban-tasks" id="todo-tasks">
+                                <div id="todo-tasks-draggable" data-view-btn="todo-tasks">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3 kanban-board-head">
+                                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="fw-medium mb-0">Implementation of New Pages.</h6>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fe fe-more-vertical align-middle"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-1 align-middle d-inline-block"></i>View</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line me-1 align-middle d-inline-block"></i>Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-badges"><span class="badge bg-primary-transparent">#TSKN0 - 87</span><span class="ms-1 badge bg-danger-transparent">Profile</span></div>
+                                                <div class="kanban-content mt-2">
+                                                    <div class="d-flex justify-content-between gap-2">
+                                                        <div class="fs-11 mb-1"><i class="ri-calendar-line me-1 align-middle d-inline-block op-7"></i>Due Date: 05-01-24 </div>
+                                                        <div class="fs-11"><i class="ri-progress-5-line me-1 align-middle d-inline-block op-7"></i>Status: <span class="text-warning">0% </span></div>
+                                                    </div>
+                                                    <div class="kanban-task-description op-8 mb-1">Lorem primis in faucibus orci luctus et ultrices posuere cubilia cur </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-top border-block-start-dashed">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="avatar-list-stacked">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/9.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/14.jpg'%}" alt="img">
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <a href="javascript:void(0);" class="me-2 text-secondary">
+                                                            <span class="me-1"><i class="ri-attachment-2 align-middle fw-normal"></i></span><span class="fw-medium fs-12">12</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="text-primary">
+                                                            <span class="me-1"><i class="ri-chat-1-line align-middle fw-normal"></i></span><span class="fw-medium fs-12">08</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3 kanban-board-head">
+                                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="fw-medium mb-0">Redesign E-commerce Pages.</h6>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fe fe-more-vertical align-middle"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-1 align-middle d-inline-block"></i>View</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line me-1 align-middle d-inline-block"></i>Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-badges"><span class="badge bg-primary-transparent">#TSKN0 - 62</span><span class="ms-1 badge bg-success-transparent">Designing</span></div>
+                                                <div class="kanban-content mt-2">
+                                                    <div class="d-flex justify-content-between gap-2">
+                                                        <div class="fs-11 mb-1"><i class="ri-calendar-line me-1 align-middle d-inline-block op-7"></i>Due Date: 05-01-24 </div>
+                                                        <div class="fs-11"><i class="ri-progress-5-line me-1 align-middle d-inline-block op-7"></i>Status: <span class="text-warning">0% </span></div>
+                                                    </div>
+                                                    <div class="task-image mt-2">
+                                                        <img src="{% static 'assets/images/media/media-41.jpg'%}" class="img-fluid rounded kanban-image" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-top border-block-start-dashed">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="avatar-list-stacked">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                        </span>
+                                                        <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                            +4
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="javascript:void(0);" class="me-2 text-secondary">
+                                                            <span class="me-1"><i class="ri-attachment-2 align-middle fw-normal"></i></span><span class="fw-medium fs-12">46</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="text-primary">
+                                                            <span class="me-1"><i class="ri-chat-1-line align-middle fw-normal"></i></span><span class="fw-medium fs-12">15</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid view-more-button mt-3">
+                                <button class="btn btn-primary-light btn-wave">View More</button>
+                            </div>
+                        </div>
+                        <div class="kanban-tasks-type in-progress">
+                            <div class="pe-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="d-block fw-medium fs-15">ON GOING - 25</span>
+                                    <div>
+                                        <a aria-label="anchor" href="javascript:void(0)" class="btn btn-sm btn-outline-light btn-wave" data-bs-toggle="modal" data-bs-target="#add-task">
+                                            <i class="ri-add-line align-middle me-1 fw-medium"></i>Add Task
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kanban-tasks" id="inprogress-tasks">
+                                <div id="inprogress-tasks-draggable" data-view-btn="inprogress-tasks">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3 kanban-board-head">
+                                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="fw-medium mb-0">Implemetation of Reponsive Tables</h6>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fe fe-more-vertical align-middle"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-1 align-middle d-inline-block"></i>View</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line me-1 align-middle d-inline-block"></i>Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-badges"><span class="badge bg-primary-transparent">#TSKN0 - 15 </span><span class="ms-1 badge bg-primary-transparent">Jquery</span><span class="ms-1 badge bg-danger-transparent">JS</span></div>
+                                                <div class="kanban-content mt-2">
+                                                    <div class="d-flex justify-content-between gap-2">
+                                                        <div class="fs-11 mb-1"><i class="ri-calendar-line me-1 align-middle d-inline-block op-7"></i>Due Date: 15-12-23 </div>
+                                                        <div class="fs-11"><i class="ri-progress-5-line me-1 align-middle d-inline-block op-7"></i>Status: <span class="text-warning">85% </span></div>
+                                                    </div>
+                                                    <div class="kanban-task-description op-8 mb-1">Lorem primis in faucibus orci luctus et ultrices posuere cubilia cur </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-top border-block-start-dashed">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="avatar-list-stacked">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/6.jpg'%}" alt="img">
+                                                        </span>
+                                                        <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                            +5
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="javascript:void(0);" class="me-2 text-secondary">
+                                                            <span class="me-1"><i class="ri-attachment-2 align-middle fw-normal"></i></span><span class="fw-medium fs-12">05</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="text-primary">
+                                                            <span class="me-1"><i class="ri-chat-1-line align-middle fw-normal"></i></span><span class="fw-medium fs-12">13</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3 kanban-board-head">
+                                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="fw-medium mb-0">Integrate Wireframes for New</h6>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fe fe-more-vertical align-middle"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-1 align-middle d-inline-block"></i>View</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line me-1 align-middle d-inline-block"></i>Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-badges"><span class="badge bg-light text-default ms-1">#TSKN0 - 18</span><span class="ms-1 badge bg-info-transparent">Idea</span></div>
+                                                <div class="kanban-content mt-2">
+                                                    <div class="d-flex justify-content-between gap-2">
+                                                        <div class="fs-11 mb-1"><i class="ri-calendar-line me-1 align-middle d-inline-block op-7"></i>Due Date: 14-12-23 </div>
+                                                        <div class="fs-11"><i class="ri-progress-5-line me-1 align-middle d-inline-block op-7"></i>Status: <span class="text-warning">45% </span></div>
+                                                    </div>
+                                                    <div class="kanban-task-description op-8 mb-1">Lorem primis in faucibus orci luctus et ultrices posuere cubilia cur </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-top border-block-start-dashed">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="avatar-list-stacked">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <a href="javascript:void(0);" class="me-2 text-secondary">
+                                                            <span class="me-1"><i class="ri-attachment-2 align-middle fw-normal"></i></span><span class="fw-medium fs-12">18</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="text-primary">
+                                                            <span class="me-1"><i class="ri-chat-1-line align-middle fw-normal"></i></span><span class="fw-medium fs-12">05</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid view-more-button mt-3">
+                                <button class="btn btn-primary-light btn-wave">View More</button>
+                            </div>
+                        </div>
+                        <div class="kanban-tasks-type inreview">
+                            <div class="pe-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="d-block fw-medium fs-15">IN REVIEW - 16</span>
+                                    <div>
+                                        <a aria-label="anchor" href="javascript:void(0)" class="btn btn-sm btn-outline-light btn-wave" data-bs-toggle="modal" data-bs-target="#add-task">
+                                            <i class="ri-add-line align-middle me-1 fw-medium"></i>Add Task
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kanban-tasks" id="inreview-tasks">
+                                <div id="inreview-tasks-draggable" data-view-btn="inreview-tasks">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3 kanban-board-head">
+                                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="fw-medium mb-0">Design Strategy Development.</h6>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fe fe-more-vertical align-middle"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-1 align-middle d-inline-block"></i>View</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line me-1 align-middle d-inline-block"></i>Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-badges"><span class="badge bg-primary-transparent">#TSKN0 - 154</span><span class="ms-1 badge bg-info-transparent">Retesting</span></div>
+                                                <div class="kanban-content mt-2">
+                                                    <div class="d-flex justify-content-between gap-2">
+                                                        <div class="fs-11 mb-1"><i class="ri-calendar-line me-1 align-middle d-inline-block op-7"></i>Due Date: 05-01-24 </div>
+                                                        <div class="fs-11"><i class="ri-progress-5-line me-1 align-middle d-inline-block op-7"></i>Status: <span class="text-warning">65% </span></div>
+                                                    </div>
+                                                    <div class="kanban-task-description op-8 mb-1">Lorem primis in faucibus orci luctus et ultrices posuere cubilia cur </div>
+                                                    <div class="task-image mt-2">
+                                                        <img src="{% static 'assets/images/media/media-43.jpg'%}" class="img-fluid rounded kanban-image" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-top border-block-start-dashed">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="avatar-list-stacked">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/7.jpg'%}" alt="img">
+                                                        </span>
+                                                        <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                            +3
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="javascript:void(0);" class="me-2 text-secondary">
+                                                            <span class="me-1"><i class="ri-attachment-2 align-middle fw-normal"></i></span><span class="fw-medium fs-12">25</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="text-primary">
+                                                            <span class="me-1"><i class="ri-chat-1-line align-middle fw-normal"></i></span><span class="fw-medium fs-12">06</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3 kanban-board-head">
+                                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="fw-medium mb-0">Create New Pages</h6>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fe fe-more-vertical align-middle"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-1 align-middle d-inline-block"></i>View</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line me-1 align-middle d-inline-block"></i>Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-badges"><span class="badge bg-primary-transparent">#TSKN0 - 21</span><span class="ms-1 badge bg-info-transparent">Reference</span></div>
+                                                <div class="kanban-content mt-2">
+                                                    <div class="d-flex justify-content-between gap-2">
+                                                        <div class="fs-11 mb-1"><i class="ri-calendar-line me-1 align-middle d-inline-block op-7"></i>Due Date: 14-01-24 </div>
+                                                        <div class="fs-11"><i class="ri-progress-5-line me-1 align-middle d-inline-block op-7"></i>Status: <span class="text-warning">86% </span></div>
+                                                    </div>
+                                                    <div class="kanban-task-description op-8 mb-1">Lorem primis in faucibus orci luctus et ultrices posuere cubilia cur </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-top border-block-start-dashed">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="avatar-list-stacked">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/7.jpg'%}" alt="img">
+                                                        </span>
+                                                        <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                            +3
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="javascript:void(0);" class="me-2 text-secondary">
+                                                            <span class="me-1"><i class="ri-attachment-2 align-middle fw-normal"></i></span><span class="fw-medium fs-12">154</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="text-primary">
+                                                            <span class="me-1"><i class="ri-chat-1-line align-middle fw-normal"></i></span><span class="fw-medium fs-12">0</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid view-more-button mt-3">
+                                <button class="btn btn-primary-light btn-wave">View More</button>
+                            </div>
+                        </div>
+                        <div class="kanban-tasks-type completed">
+                            <div class="pe-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="d-block fw-medium fs-15">COMPLETED - 36</span>
+                                    <div>
+                                        <a aria-label="anchor" href="javascript:void(0)" class="btn btn-sm btn-outline-light btn-wave" data-bs-toggle="modal" data-bs-target="#add-task">
+                                            <i class="ri-add-line align-middle me-1 fw-medium"></i>Add Task
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kanban-tasks" id="completed-tasks">
+                                <div id="completed-tasks-draggable" data-view-btn="completed-tasks">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3 kanban-board-head">
+                                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="fw-medium mb-0">Developing Functionality</h6>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fe fe-more-vertical align-middle"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-1 align-middle d-inline-block"></i>View</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line me-1 align-middle d-inline-block"></i>Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-badges"><span class="badge bg-primary-transparent">#TSKN0 - 36</span><span class="ms-1 badge bg-success-transparent">React</span></div>
+                                                <div class="kanban-content mt-2">
+                                                    <div class="d-flex justify-content-between gap-2">
+                                                        <div class="fs-11 mb-1"><i class="ri-calendar-line me-1 align-middle d-inline-block op-7"></i>Finished Date: 05-01-24 </div>
+                                                        <div class="fs-11"><i class="ri-progress-5-line me-1 align-middle d-inline-block op-7"></i>Status: <span class="text-warning">100% </span></div>
+                                                    </div>
+                                                    <div class="kanban-task-description op-8 mb-1">Lorem primis in faucibus orci luctus et ultrices posuere cubilia cur </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-top border-block-start-dashed">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="avatar-list-stacked">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/6.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <a href="javascript:void(0);" class="me-2 text-secondary">
+                                                            <span class="me-1"><i class="ri-attachment-2 align-middle fw-normal"></i></span><span class="fw-medium fs-12">18</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="text-primary">
+                                                            <span class="me-1"><i class="ri-chat-1-line align-middle fw-normal"></i></span><span class="fw-medium fs-12">03</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3 kanban-board-head">
+                                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="fw-medium mb-0">Error Occurrence Upon Click</h6>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fe fe-more-vertical align-middle"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-1 align-middle d-inline-block"></i>View</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line me-1 align-middle d-inline-block"></i>Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-badges"><span class="badge bg-primary-transparent">#TSKN0 - 82</span><span class="ms-1 badge bg-info-transparent">Angular</span></div>
+                                                <div class="kanban-content mt-2">
+                                                    <div class="d-flex justify-content-between gap-2">
+                                                        <div class="fs-11 mb-1"><i class="ri-calendar-line me-1 align-middle d-inline-block op-7"></i>Finished Date: 21-01-24 </div>
+                                                        <div class="fs-11"><i class="ri-progress-5-line me-1 align-middle d-inline-block op-7"></i>Status: <span class="text-warning">100% </span></div>
+                                                    </div>
+                                                    <div class="kanban-task-description op-8 mb-1">Lorem primis in faucibus orci luctus et ultrices posuere cubilia cur </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-top border-block-start-dashed">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="avatar-list-stacked">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                        </span>
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="{% static 'assets/images/faces/1.jpg'%}" alt="img">
+                                                        </span>
+                                                        <a class="avatar avatar-sm bg-primary avatar-rounded text-fixed-black" href="javascript:void(0);">
+                                                            +4
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="javascript:void(0);" class="me-2 text-secondary">
+                                                            <span class="me-1"><i class="ri-attachment-2 align-middle fw-normal"></i></span><span class="fw-medium fs-12">03</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="text-primary">
+                                                            <span class="me-1"><i class="ri-chat-1-line align-middle fw-normal"></i></span><span class="fw-medium fs-12">13</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3 kanban-board-head">
+                                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="fw-medium mb-0">Team discussion on Project</h6>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fe fe-more-vertical align-middle"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-line me-1 align-middle d-inline-block"></i>View</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-line me-1 align-middle d-inline-block"></i>Delete</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-edit-line me-1 align-middle d-inline-block"></i>Edit</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-badges"><span class="badge bg-primary-transparent">#TSKN0 - 99</span><span class="ms-1 badge bg-primary-transparent">New Project</span></div>
+                                                <div class="kanban-content mt-2">
+                                                    <div class="d-flex justify-content-between gap-2">
+                                                        <div class="fs-11 mb-1"><i class="ri-calendar-line me-1 align-middle d-inline-block op-7"></i>Finished Date: 11-01-24 </div>
+                                                        <div class="fs-11"><i class="ri-progress-5-line me-1 align-middle d-inline-block op-7"></i>Status: <span class="text-warning">100% </span></div>
+                                                    </div>
+                                                    <div class="kanban-task-description op-8 mb-1">Lorem primis in faucibus orci luctus et ultrices posuere cubilia cur </div>
+                                                    <div class="task-image mt-2">
+                                                        <img src="{% static 'assets/images/media/media-69.jpg'%}" class="img-fluid rounded kanban-image bg-light" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-top border-block-start-dashed">
+                                                <div class="avatar-list-stacked">
+                                                    <span class="avatar avatar-sm avatar-rounded">
+                                                        <img src="{% static 'assets/images/faces/4.jpg'%}" alt="img">
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <a href="javascript:void(0);" class="me-2 text-secondary">
+                                                            <span class="me-1"><i class="ri-attachment-2 align-middle fw-normal"></i></span><span class="fw-medium fs-12">38</span>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="text-primary">
+                                                            <span class="me-1"><i class="ri-chat-1-line align-middle fw-normal"></i></span><span class="fw-medium fs-12">10</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid view-more-button mt-3">
+                                <button class="btn btn-primary-light btn-wave">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-2 -->
+
+                    <!-- Start::add board modal -->
+                    <div class="modal fade" id="add-board" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Add New Board</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body px-4">
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <label for="board-title" class="form-label">Task Board Title</label>
+                                            <input type="text" class="form-control" id="board-title" placeholder="Board Title">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Add Board</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::add board modal -->
+
+                    <!-- Start::add task modal -->
+                    <div class="modal fade" id="add-task" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Add Task</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body px-4">
+                                    <div class="row gy-2">
+                                        <div class="col-xl-6">
+                                            <label for="task-name" class="form-label">Task Name</label>
+                                            <input type="text" class="form-control" id="task-name" placeholder="Task Name">
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label for="task-id" class="form-label">Task ID</label>
+                                            <input type="text" class="form-control" id="task-id" placeholder="Task ID">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label for="text-area" class="form-label">Task Description</label>
+                                            <textarea class="form-control" id="text-area" rows="2" placeholder="Write Description"></textarea>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label for="text-area" class="form-label">Task Images</label>
+                                            <input type="file" class="multiple-filepond" name="filepond" multiple data-allow-reorder="true" data-max-file-size="3MB" data-max-files="6">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label class="form-label">Assigned To</label>
+                                            <select class="form-control" name="choices-multiple-remove-button1" id="choices-multiple-remove-button1" multiple>
+                                                <option value="Choice 1">Angelina May</option>
+                                                <option value="Choice 2">Kiara advain</option>
+                                                <option value="Choice 3">Hercules Jhon</option>
+                                                <option value="Choice 4">Mayor Kim</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Target Date</label>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+                                                    <input type="text" class="form-control" id="targetDate" placeholder="Choose date and time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Tags</label>
+                                            <select class="form-control" name="choices-multiple-remove-button2" id="choices-multiple-remove-button2" multiple>
+                                                <option value="">Select Tag</option>
+                                                <option value="UI/UX">UI/UX</option>
+                                                <option value="Marketing">Marketing</option>
+                                                <option value="Finance">Finance</option>
+                                                <option value="Designing">Designing</option>
+                                                <option value="Profile">Profile</option>
+                                                <option value="Authentication">Authentication</option>
+                                                <option value="Product">Product</option>
+                                                <option value="Development">Development</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Add Task</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::add task modal -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Filepond JS -->
+        <script src="{% static 'assets/libs/filepond/filepond.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-edit/filepond-plugin-image-edit.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-crop/filepond-plugin-image-crop.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-resize/filepond-plugin-image-resize.min.js'%}"></script>
+        <script src="{% static 'assets/libs/filepond-plugin-image-transform/filepond-plugin-image-transform.min.js'%}"></script>
+
+        <!-- Flat Picker JS -->
+        <script src="{% static 'assets/libs/flatpickr/flatpickr.min.js'%}"></script>
+
+        <!-- Dragula JS -->
+        <script src="{% static 'assets/libs/dragula/dragula.min.js'%}"></script>
+        
+        <!-- Internal Task  JS -->
+        <script src="{% static 'assets/js/task-kanban-board.js'%}"></script>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+
+# Byte-compiled / optimized / DLL files
+_pycache_/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+app/__pycache__/urls.cpython-312.pyc
+app/__pycache__/admin.cpython-312.pyc
+app/__pycache__/models.cpython-312.pyc
+app/__pycache__/views.cpython-312.pyc

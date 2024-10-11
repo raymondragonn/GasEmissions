@@ -1,0 +1,850 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Leaflet Maps CSS -->
+        <link rel="stylesheet" href="{% static 'assets/libs/leaflet/leaflet.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Page Header -->
+                    <div class="mb-4 page-header-breadcrumb d-flex align-items-center justify-content-between flex-wrap gap-2 position-relative">
+                        <div class="top-left"></div>
+                        <div class="top-right"></div>
+                        <div class="bottom-left"></div>
+                        <div class="bottom-right"></div>
+                        <div>
+                            <h1 class="page-title fw-medium fs-18 mb-0">Sales</h1>
+                            <div class="">
+                                <nav>
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);" >Dashboards</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Sales</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="btn-list">
+                            <button class="btn btn-primary-light btn-wave">Update Now</button>
+                        </div>
+                    </div>
+                    <!-- Page Header Close -->
+
+                    <!-- Start:: row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-9 col-xl-12">
+                            <div class="row">
+                                <div class="col-xxl-3 col-xl-6 col-lg-12">
+                                    <div class="row">
+                                        <div class="col-xxl-12 col-xl-12 col-md-6 col-sm-12">
+                                            <div class="card custom-card">
+                                                <div class="top-left"></div>
+                                                <div class="top-right"></div>
+                                                <div class="bottom-left"></div>
+                                                <div class="bottom-right"></div>
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-start gap-3">
+                                                        <div class="mb-3">
+                                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent svg-primary">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M224,80V200a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H216A8,8,0,0,1,224,80Z" opacity="0.2"></path><path d="M216,64H176a48,48,0,0,0-96,0H40A16,16,0,0,0,24,80V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64ZM128,32a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm88,168H40V80H80V96a8,8,0,0,0,16,0V80h64V96a8,8,0,0,0,16,0V80h40Z"></path></svg>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-semibold">32,981</h5>
+                                                            <span class="d-block mb-1">Total Sales</span>
+                                                            <span class="d-block fs-12 text-success"><i class="ti ti-arrow-narrow-up"></i>0.29% This Month</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-12 col-xl-12 col-md-6 col-sm-12">
+                                            <div class="card custom-card">
+                                                <div class="top-left"></div>
+                                                <div class="top-right"></div>
+                                                <div class="bottom-left"></div>
+                                                <div class="bottom-right"></div>
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-start gap-3">
+                                                        <div class="mb-3">
+                                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent svg-primary">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M192,168a40,40,0,0,1-40,40H128V128h24A40,40,0,0,1,192,168ZM112,48a40,40,0,0,0,0,80h16V48Z" opacity="0.2"></path><path d="M152,120H136V56h8a32,32,0,0,1,32,32,8,8,0,0,0,16,0,48.05,48.05,0,0,0-48-48h-8V24a8,8,0,0,0-16,0V40h-8a48,48,0,0,0,0,96h8v64H104a32,32,0,0,1-32-32,8,8,0,0,0-16,0,48.05,48.05,0,0,0,48,48h16v16a8,8,0,0,0,16,0V216h16a48,48,0,0,0,0-96Zm-40,0a32,32,0,0,1,0-64h8v64Zm40,80H136V136h16a32,32,0,0,1,0,64Z"></path></svg>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-semibold">$14,32,145</h5>
+                                                            <span class="d-block mb-1">Total Revenue</span>
+                                                            <span class="d-block fs-12 text-success"><i class="ti ti-arrow-narrow-up"></i>1.25% This Month</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-12 col-xl-12 col-md-6 col-sm-12">
+                                            <div class="card custom-card">
+                                                <div class="top-left"></div>
+                                                <div class="top-right"></div>
+                                                <div class="bottom-left"></div>
+                                                <div class="bottom-right"></div>
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-start gap-3">
+                                                        <div class="mb-3">
+                                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent svg-primary">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Zm0,112a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" opacity="0.2"></path><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"></path></svg>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-semibold">4,678</h5>
+                                                            <span class="d-block mb-1">Page Views</span>
+                                                            <span class="d-block fs-12 text-danger"><i class="ti ti-arrow-narrow-down"></i>0.05% This Month</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-12 col-xl-12 col-md-6 col-sm-12 responsive-item">
+                                            <div class="card custom-card">
+                                                <div class="top-left"></div>
+                                                <div class="top-right"></div>
+                                                <div class="bottom-left"></div>
+                                                <div class="bottom-right"></div>
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-start gap-3">
+                                                        <div class="mb-3">
+                                                            <span class="avatar avatar-lg avatar-rounded bg-primary-transparent svg-primary">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M224,88V200a8,8,0,0,1-8,8H56a16,16,0,0,1-16-16V64A16,16,0,0,0,56,80H216A8,8,0,0,1,224,88Z" opacity="0.2"></path><path d="M216,72H56a8,8,0,0,1,0-16H192a8,8,0,0,0,0-16H56A24,24,0,0,0,32,64V192a24,24,0,0,0,24,24H216a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72Zm0,128H56a8,8,0,0,1-8-8V86.63A23.84,23.84,0,0,0,56,88H216Zm-48-60a12,12,0,1,1,12,12A12,12,0,0,1,168,140Z"></path></svg>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <h5 class="fw-semibold">$645</h5>
+                                                            <span class="d-block mb-1">Profit By Sale</span>
+                                                            <span class="d-block fs-12 text-success"><i class="ti ti-arrow-narrow-up"></i>0.18% This Month</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-9 col-xl-6 col-lg-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header justify-content-between">
+                                            <div class="card-title">
+                                                SALES STATISTICS
+                                            </div>
+                                            <div class="dropdown"> 
+                                                <a href="javascript:void(0);" class="btn btn-sm btn-primary-light btn-wave" data-bs-toggle="dropdown" aria-expanded="false">Sort By
+                                                    <i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i> 
+                                                </a> 
+                                                <ul class="dropdown-menu" role="menu"> 
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">2023</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">2022</a></li> 
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">2021</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div class="sales-stats d-flex pb-3 pt-2 border-bottom border-block-end-dashed">
+                                                <div class="row sales-stats-row">
+                                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                                        <div class="mb-1">Sales</div>
+                                                        <div class="d-flex align-items-center mb-1">
+                                                            <span class="mt-1 fs-16 fw-semibold text-primary">166</span>
+                                                            <span class="text-success"><i class="ti ti-arrow-narrow-up align-middle ms-1"></i>
+                                                            <span class="badge bg-success-transparent text-success">+0.9%</span></span>
+                                                        </div>
+                                                        <div class="fs-12">More Sales are yet to start</div>
+                                                    </div>
+                                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                                        <div class="mb-">Profit</div>
+                                                        <div class="d-flex align-items-center mb-1">
+                                                            <span class="mt-1 fs-16 fw-semibold text-primary">538</span>
+                                                            <span class="text-success"><i class="ti ti-arrow-narrow-up align-middle ms-1"></i>
+                                                            <span class="badge bg-success-transparent text-success">+0.39%</span></span>
+                                                        </div>
+                                                        <div class="fs-12">32 Completed this year</div>
+                                                    </div>
+                                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                                        <div class="mb-1 ">Growth</div>
+                                                        <div class="d-flex align-items-center mb-1">
+                                                            <span class="mt-1 fs-16 fw-semibold text-secondary">$32,124</span>
+                                                            <span class="text-danger"><i class="ti ti-arrow-narrow-up align-middle ms-1"></i>
+                                                            <span class="badge bg-danger-transparent text-danger">-0.15%</span></span>
+                                                        </div>
+                                                        <div class="fs-12">Reached yearly target</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="sales-statistics" class="p-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                RECENT ACTIVITY
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-unstyled recent-activity-list">
+                                                <li>
+                                                    <div>
+                                                        <h6 class="mb-1 fs-14">John Doe<span class="fs-11 float-end">12:47PM</span></h6>
+                                                        <span class="d-block fs-13 fw-normal">Updated profile picture</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <h6 class="mb-1 fs-14">Jane Smith<span class="fs-11 float-end">10:22AM</span></h6>
+                                                        <span class="d-block fs-13 mb-1 fw-normal">Posted a <span class="text-warning fw-semibold">new status</span></span>
+                                                        <div class="p-2 rounded-1 bg-primary-transparent fs-13">
+                                                            Enjoying the weekend vibes &#127774;
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <h6 class="mb-1 fs-14">Lauren Johnson<span class="fs-11 float-end">11:45AM</span></h6>
+                                                        <span class="d-block fs-13 fw-normal">Commented on a photo - <span class="fw-semibold text-success">"Beautiful"</span></span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <h6 class="mb-1 fs-14">Charlie Brown<span class="fs-11 float-end">04:15PM</span></h6>
+                                                        <span class="d-block fs-13 fw-normal">Shared an article</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <h6 class="mb-1 fs-14">Bob Anderson<span class="fs-11 float-end">10:54AM</span></h6>
+                                                        <span class="d-block fs-13 fw-normal">Liked a post from <span class="badge bg-secondary-transparent">John Doe</span></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">VISITORS REPORT</div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="row mb-2">
+                                                <div class="col-md-12">
+                                                    <div class="d-flex flex-xl-nowrap flex-wrap">
+                                                        <div class="avatar rounded-circle bg-primary-transparent text-primary flex-shrink-0 ">
+                                                            <i class="ti ti-trending-up fs-5"></i>
+                                                        </div>
+                                                        <div class="ms-3 flex-fill">
+                                                            <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                                                <h4 class="fw-semibold mb-2 text-primary">34%<span
+                                                                        class="fw-semibold fs-11 ms-2 d-inline-flex">last week :
+                                                                        25%</span></h4>
+                                                                <a href="javascript:void(0)" class="text-primary fs-11">Full
+                                                                    Statictics</a>
+                                                            </div>
+                                                            <p class="mb-0 fs-12">Time Spent On Site <span class="text-primary"><i
+                                                                        class="ti ti-clock ms-2 me-1 fs-11"></i>12hr 30min
+                                                                    26s</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chart-wrapper">
+                                                <div id="visitors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                TODO LIST
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-unstyled mb-0 todo-list-list">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div
+                                                            class="avatar avatar-rounded me-3 bg-primary flex-shrink-0">
+                                                            <i class="ri-survey-line fs-5"></i>
+                                                        </div>
+                                                        <div class="flex-fill">
+                                                            <p
+                                                                class="fs-14 fw-semibold d-flex align-items-center justify-content-between mb-2">
+                                                                Research Phase<a href="javascript:void(0)"
+                                                                    class="btn btn-sm btn-icon btn-outline-light btn-sm"><i
+                                                                        class="fe fe-trash-2 align-middle"></i></a></p>
+                                                            <ul class="list-unstyled todo-sublist">
+                                                                <li class="mb-2">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input form-checked-gray" type="checkbox" value="" id="primaryChecked">
+                                                                        <label class="form-check-label" for="primaryChecked">
+                                                                            Gather relevant articles
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="mb-2">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input form-checked-gray" type="checkbox" value="" id="primaryChecked1" checked="">
+                                                                        <label class="form-check-label" for="primaryChecked1">
+                                                                            Summarize key findings
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div
+                                                            class="avatar avatar-rounded me-3 bg-secondary flex-shrink-0">
+                                                            <i class="ri-lightbulb-flash-line fs-5"></i>
+                                                        </div>
+                                                        <div class="flex-fill">
+                                                            <p
+                                                                class="fs-14 fw-semibold d-flex align-items-center justify-content-between mb-2">
+                                                                Planning <a href="javascript:void(0)"
+                                                                    class="btn btn-sm btn-icon btn-outline-light btn-sm"><i
+                                                                        class="fe fe-trash-2 align-middle"></i></a></p>
+                                                            <ul class="list-unstyled todo-sublist">
+                                                                <li class="mb-2">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input form-checked-gray" type="checkbox" value="" id="primaryChecked3" checked="">
+                                                                        <label class="form-check-label" for="primaryChecked3">
+                                                                            List major milestones
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="mb-2">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input form-checked-gray" type="checkbox" value="" id="primaryChecked4">
+                                                                        <label class="form-check-label" for="primaryChecked4">
+                                                                            Allocate time for each task
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="mb-0 responsive-item">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input form-checked-gray" type="checkbox" value="" id="primaryChecked5">
+                                                                        <label class="form-check-label" for="primaryChecked5">
+                                                                            Include buffer time
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-0">
+                                                    <div class="d-flex">
+                                                        <div
+                                                            class="avatar avatar-rounded me-3 bg-primary flex-shrink-0">
+                                                            <i class="ri-settings-5-line fs-5"></i>
+                                                        </div>
+                                                        <div class="flex-fill">
+                                                            <p
+                                                                class="fs-14 fw-semibold d-flex align-items-center justify-content-between mb-2">
+                                                                Execution <a href="javascript:void(0)"
+                                                                    class="btn btn-sm btn-icon btn-outline-light btn-sm"><i
+                                                                        class="fe fe-trash-2 align-middle"></i></a></p>
+                                                            <ul class="list-unstyled todo-sublist">
+                                                                <li class="mb-2">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input form-checked-gray" type="checkbox" value="" id="primaryChecked6">
+                                                                        <label class="form-check-label" for="primaryChecked6">
+                                                                            Create an outline
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="mb-0">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input form-checked-gray" type="checkbox" value="" id="primaryChecked7" checked="">
+                                                                        <label class="form-check-label" for="primaryChecked7">
+                                                                            Write content
+                                                                        </label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-12">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-6">
+                                    <div class="card custom-card bg-primary-transparent border-0 overflow-hidden">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body pb-0">
+                                            <span class="d-block mb-1 fs-12">Male Users</span>
+                                            <h4 class="fw-semibold">13,278</h4>
+                                            <div id="male-users"></div>
+                                            <div class="svg-male">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="var(--primary-color)" data-name="Layer 1" viewBox="0 0 24 24" id="male-symbol"><path d="M20.42,4.12a1,1,0,0,0-.54-.54,1,1,0,0,0-.38-.08h-4a1,1,0,0,0,0,2h1.59l-2.4,2.4A7,7,0,1,0,16.1,9.31l2.4-2.4V8.5a1,1,0,0,0,2,0v-4A1,1,0,0,0,20.42,4.12ZM14,17A5,5,0,1,1,14,10h0A5,5,0,0,1,14,17Z"></path></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6">
+                                    <div class="card custom-card bg-secondary-transparent border-0 overflow-hidden">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body pb-0">
+                                            <span class="d-block mb-1 fs-12">Female Users</span>
+                                            <h4 class="fw-semibold">10,754</h4>
+                                            <div id="female-users"></div>
+                                            <div class="svg-female">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="rgb(var(--secondary-rgb))" data-name="Layer 1" viewBox="0 0 24 24" id="female-symbol"><path d="M19,9a7,7,0,1,0-8,6.92V18H10a1,1,0,0,0,0,2h1v1a1,1,0,0,0,2,0V20h1a1,1,0,0,0,0-2H13V15.92A7,7,0,0,0,19,9Zm-7,5a5,5,0,1,1,5-5A5,5,0,0,1,12,14Z"></path></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12 col-xl-6">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                RECENT ORDERS
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0">
+                                            <div id="recent-orders"></div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="row gy-4">
+                                                <div class="col-xl-6">
+                                                    <div class="d-flex align-items-start gap-3 flex-wrap">
+                                                        <div>
+                                                            <span class="avatar avatar-rounded bg-primary-transparent">
+                                                                <i class="ri-truck-line fs-15"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="d-block fs-13">Delivered</span>
+                                                            <span class="d-block fw-semibold fs-16">1,754</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <div class="d-flex align-items-start gap-3 flex-wrap">
+                                                        <div>
+                                                            <span class="avatar avatar-rounded bg-secondary-transparent">
+                                                                <i class="ri-close-fill fs-15"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="d-block fs-13">Cancelled</span>
+                                                            <span class="d-block fw-semibold fs-16">634</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12 col-xl-6">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header">
+                                            <div class="card-title">
+                                                TRAFFIC SOURCES
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-unstyled traffic-sources-list mb-0">
+                                                <li>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <h6 class="fs-13 mb-0">Organic Search</h6>
+                                                        <span class="d-block fw-semibold">38%</span>
+                                                    </div>
+                                                    <div class="progress progress-xs progress-animate" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-primary" style="width: 38%"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <h6 class="fs-13 mb-0">Email Marketing</h6>
+                                                        <span class="d-block fw-semibold">29%</span>
+                                                    </div>
+                                                    <div class="progress progress-xs progress-animate" role="progressbar" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-secondary" style="width: 29%"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <h6 class="fs-13 mb-0">Direct Traffic</h6>
+                                                        <span class="d-block fw-semibold">36%</span>
+                                                    </div>
+                                                    <div class="progress progress-xs progress-animate" role="progressbar" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-primary" style="width: 36%"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <h6 class="fs-13 mb-0">Social Media</h6>
+                                                        <span class="d-block fw-semibold">43%</span>
+                                                    </div>
+                                                    <div class="progress progress-xs progress-animate" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-secondary" style="width: 43%"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <h6 class="fs-13 mb-0">Offline Marketing</h6>
+                                                        <span class="d-block fw-semibold">59%</span>
+                                                    </div>
+                                                    <div class="progress progress-xs progress-animate" role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-primary" style="width: 59%"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                                        <h6 class="fs-13 mb-0">Referral</h6>
+                                                        <span class="d-block fw-semibold">45%</span>
+                                                    </div>
+                                                    <div class="progress progress-xs progress-animate" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-secondary" style="width: 45%"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-1 -->
+
+                    <!-- Start:: row-2 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">RECENT INVOICES</div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap table-borderless table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <span>
+                                                            <input class="form-check-input" type="checkbox" id="order_All" value="" aria-label="...">
+                                                        </span>
+                                                    </th>
+                                                    <th scope="col">Order Id </th>
+                                                    <th scope="col">Customer</th>
+                                                    <th scope="col">Quantity</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Ordered Date</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            <input class="form-check-input" type="checkbox" id="order_1" value="" aria-label="...">
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-primary fw-semibold">#1537890</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/15.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Ayyan Cowall</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$4320.29</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">Shipped</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-muted">25,Nov 2022</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            <input class="form-check-input" type="checkbox" id="order_2" value="" aria-label="...">
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-primary fw-semibold">#1539078</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/4.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Meisha Kerr</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$6745.99</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">Cancelled</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-muted">29,Nov 2022</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            <input class="form-check-input" type="checkbox" id="order_3" value="" aria-label="...">
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-primary fw-semibold">#1539832</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/5.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Jessica</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                    2
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$1176.89</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">Under Process</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-muted">04,Dec 2022</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            <input class="form-check-input" type="checkbox" id="order_4" value="" aria-label="...">
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-primary fw-semibold">#1539832</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/6.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Arunima A</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                    1
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$1899.99</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">Shipped</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-muted">10,Dec 2022</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>
+                                                            <input class="form-check-input" type="checkbox" id="order_5" value="" aria-label="...">
+                                                        </span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-primary fw-semibold">#1538267</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/11.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Martin Miles</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                    1
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-semibold fs-14">$1867.29</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">Pending</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="text-muted">18,Dec 2022</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border-bottom-0">
+                                                        <span>
+                                                            <input class="form-check-input" type="checkbox" id="order_6" value="" aria-label="...">
+                                                        </span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <span class="text-primary fw-semibold">#1537890</span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/13.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Khabib Hussain</div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                    1
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <span class="fw-semibold fs-14">$2439.99</span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <span class="badge bg-primary-transparent">Success</span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <span class="text-muted">24,Dec 2022</span>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <div class="hstack gap-2 fs-1">
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-success-light btn-wave"><i class="ri-download-2-line"></i></a>
+                                                            <a aria-label="anchor" href="javascript:void(0);" class="btn btn-icon btn-sm btn-info-light btn-wave"><i class="ri-edit-line"></i></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ENd:: row-2 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+
+        <!-- JSVector Maps JS -->
+        <script src="{% static 'assets/libs/jsvectormap/js/jsvectormap.min.js'%}"></script>
+
+        <!-- JSVector Maps MapsJS -->
+        <script src="{% static 'assets/libs/jsvectormap/maps/world-merc.js'%}"></script>
+
+        <!-- Sales Dashboard -->
+        <script src="{% static 'assets/js/sales-dashboard.js'%}"></script> 
+
+{% endblock %}

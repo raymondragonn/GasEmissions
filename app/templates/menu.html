@@ -1,0 +1,32 @@
+{% extends 'components/base.html' %}
+
+{% block content %}
+<div class="main-content app-content">
+    <div class="container-fluid">
+        <div class="row">
+            <h2 style="text-align: center;">Select a Country</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-4" style="text-align: center;">
+                <a href="{% url 'usa-page' %}">
+                    <img src="{% static 'images/flags/usa.png' %}" alt="USA" style="width:100px;">
+                    <p>USA</p>
+                </a>
+            </div>
+            <div class="col-xl-4" style="text-align: center;">
+                <a href="{% url 'canada-page' %}">
+                    <img src="{% static 'images/flags/canada.png' %}" alt="Canada" style="width:100px;">
+                    <p>Canada</p>
+                </a>
+            </div>
+            <div class="col-xl-4" style="text-align: center;">
+                <a href="{% url 'russia-page' %}">
+                    <img src="{% static 'images/flags/russia.png' %}" alt="Russia" style="width:100px;">
+                    <p>Russia</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,346 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header d-md-flex d-block mb-3">
+                                    <div class="h5 mb-0 d-sm-flex d-bllock align-items-center">
+                                        <div class="avatar avatar-sm">
+                                            <img src="{% static 'assets/images/brand-logos/toggle-dark.png'%}" alt="">
+                                        </div>
+                                        <div class="ms-sm-2 ms-0 mt-sm-0 mt-2">
+                                            <div class="h6 fw-medium mb-0">SHOPPING INVOICE : <span class="text-primary">#8140-2099</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto mt-md-0 mt-2">
+                                        <button class="btn btn-sm btn-secondary me-1" onclick="javascript:window.print();">Print<i class="ri-printer-line ms-1 align-middle d-inline-block"></i></button>
+                                        <button class="btn btn-sm btn-primary">Save As PDF<i class="ri-file-pdf-line ms-1 align-middle d-inline-block"></i></button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-12">
+                                            <div class="row gy-3">
+                                                <div class="col-xl-3">
+                                                    <p class="fw-medium text-muted mb-1">Invoice ID :</p>
+                                                    <p class="fs-14 mb-1">#SPTA47512151</p>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <p class="fw-medium text-muted mb-1">Date Issued :</p>
+                                                    <p class="fs-14 mb-1">11,Dec 2023 - <span class="text-muted fs-12">01:58PM</span></p>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <p class="fw-medium text-muted mb-1">Due Date :</p>
+                                                    <p class="fs-14 mb-1">18,Dec 2023</p>
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <p class="fw-medium text-muted mb-1">Due Amount :</p>
+                                                    <p class="fs-16 mb-1 fw-medium">$1,245.08</p>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                                    <p class="text-muted mb-2">
+                                                        Billing From :
+                                                    </p>
+                                                    <p class="fw-bold mb-1">
+                                                    Spruko Technologies Private Limited
+                                                    </p>
+                                                    <p class="mb-1 text-muted fs-14">
+                                                        123 Oak Lane,
+                                                    </p>
+                                                    <p class="mb-1 text-muted fs-14">
+                                                        Springfield, IL, USA, 62704451
+                                                    </p>
+                                                    <p class="mb-1 text-muted fs-14">
+                                                        sprukotrust.HMD@gmail.com
+                                                    </p>
+                                                    <p class="mb-1 text-muted fs-14">
+                                                        (245) 1111-45411
+                                                    </p>
+                                                    <p class="text-muted fs-14">For more information check for <a href="javascript:void(0);" class="text-primary fw-medium"><u>GSTIN</u></a> Details.</p>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ms-auto">
+                                                    <p class="text-muted mb-2">
+                                                        Billing To :
+                                                    </p>
+                                                    <p class="fw-bold mb-1">
+                                                        James Lucas
+                                                    </p>
+                                                    <p class="text-muted mb-1 fs-14">
+                                                        789 Maple Avenue
+                                                    </p>
+                                                    <p class="text-muted mb-1 fs-14">
+                                                        Lexington, KY, USA, 40502451
+                                                    </p>
+                                                    <p class="text-muted mb-1 fs-14">
+                                                        jameslucas6262@gmail.com
+                                                    </p>
+                                                    <p class="text-muted fs-14">
+                                                        +1 1425-1425-444
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="table-responsive">
+                                                <table class="table nowrap text-nowrap border mt-4">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>BRAND NAME</th>
+                                                            <th>DESCRIPTION</th>
+                                                            <th>QUANTITY</th>
+                                                            <th>PRICE PER UNIT</th>
+                                                            <th>TOTAL</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="fw-medium">
+                                                                    Long lengthy Chair
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="text-muted">
+                                                                    Compact stylish seating
+                                                                </div>
+                                                            </td>
+                                                            <td class="product-quantity-container">
+                                                                1
+                                                            </td>
+                                                            <td>
+                                                                $145
+                                                            </td>
+                                                            <td>
+                                                                $133
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="fw-medium">
+                                                                    Analog Watches
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="text-muted">
+                                                                    Times elegance with Watches
+                                                                </div>
+                                                            </td>
+                                                            <td class="product-quantity-container">
+                                                                1
+                                                            </td>
+                                                            <td>
+                                                                $243
+                                                            </td>
+                                                            <td>
+                                                                $220 
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="fw-medium">
+                                                                    Ceramic pot
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="text-muted">
+                                                                    Ceramic pot
+                                                                </div>
+                                                            </td>
+                                                            <td class="product-quantity-container">
+                                                            1
+                                                            </td>
+                                                            <td>
+                                                                $600
+                                                            </td>
+                                                            <td>
+                                                                $540
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="fw-medium">
+                                                                    Digital Camera
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="text-muted">
+                                                                    Prefect high-quality photography
+                                                                </div>
+                                                            </td>
+                                                            <td class="product-quantity-container">
+                                                                2
+                                                            </td>
+                                                            <td>
+                                                                $145
+                                                            </td>
+                                                            <td>
+                                                                $524
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="fw-medium">
+                                                                    Handy Bag
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="text-muted">
+                                                                    Effortlessly carry your essentials
+                                                                </div>
+                                                            </td>
+                                                            <td class="product-quantity-container">
+                                                                1
+                                                            </td>
+                                                            <td>
+                                                                $699
+                                                            </td>
+                                                            <td>
+                                                                $599
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3"></td>
+                                                            <td colspan="2">
+                                                                <table class="table table-sm text-nowrap mb-0 table-borderless">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th scope="row">
+                                                                                <p class="mb-0">Sub Total :</p>
+                                                                            </th>
+                                                                            <td>
+                                                                                <p class="mb-0 fw-medium fs-15">$5,656</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">
+                                                                                <p class="mb-0">Avail Discount :</p>
+                                                                            </th>
+                                                                            <td>
+                                                                                <p class="mb-0 fw-medium fs-15">$14.89</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">
+                                                                                <p class="mb-0">Coupon Discount <span class="text-success">(12%)</span> :</p>
+                                                                            </th>
+                                                                            <td>
+                                                                                <p class="mb-0 fw-medium fs-15">$461.15</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">
+                                                                                <p class="mb-0">Vat <span class="text-danger">(10%)</span> :</p>
+                                                                            </th>
+                                                                            <td>
+                                                                                <p class="mb-0 fw-medium fs-15">$477.00</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">
+                                                                                <p class="mb-0">Due Till Date :</p>
+                                                                            </th>
+                                                                            <td>
+                                                                                <p class="mb-0 fw-medium fs-15">$0</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">
+                                                                                <p class="mb-0 fs-14">Total :</p>
+                                                                            </th>
+                                                                            <td>
+                                                                                <p class="mb-0 fw-medium fs-16 text-success">$3,647.98</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div>
+                                                <label for="invoice-note" class="form-label">Note:</label>
+                                                <textarea class="form-control form-control-light" id="invoice-note" rows="3">Once the invoice has been verified by the accounts payable team and recorded, the only task left is to send it for approval before releasing the payment</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end">
+                                    <button class="btn btn-success">Download <i class="ri-download-2-line ms-1 align-middle"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Mode Of Payment
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-12">
+                                            <p class="fs-14 fw-medium">
+                                                Credit/Debit Card
+                                            </p>
+                                            <p>
+                                                <span class="fw-medium text-muted fs-12">Name On Card :</span> James Lucas
+                                            </p>
+                                            <p>
+                                                <span class="fw-medium text-muted fs-12">Card Number :</span> 1234 5678 9087 XXXX
+                                            </p>
+                                            <p>
+                                                <span class="fw-medium text-muted fs-12">Total Amount :</span> <span class="text-success fw-medium fs-14">$3,647.98</span>
+                                            </p>
+                                            <p>
+                                                <span class="fw-medium text-muted fs-12">Due Date :</span> 05,Jan 2023 - <span class="text-danger fs-12 fw-medium">30 days due</span>
+                                            </p>
+                                            <p>
+                                                <span class="fw-medium text-muted fs-12">Invoice Status : <span class="badge bg-warning-transparent">Pending</span></span>
+                                            </p>
+                                            <div class="alert alert-success" role="alert">
+                                                Please pay the invoice within 30 days.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+
+
+{% endblock %}

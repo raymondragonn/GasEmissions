@@ -1,0 +1,180 @@
+{% extends 'components/base.html' %} {% load static %} {% block styles %}
+
+<!-- Jsvector Maps -->
+<link rel="stylesheet" href="{% static 'assets/libs/jsvectormap/css/jsvectormap.min.css'%}" />
+<!-- Choices Css -->
+<link rel="stylesheet" href="{% static 'assets/libs/apexcharts/apexcharts.css'%}">
+<style>
+    /* Estilos para el botón "Tell me a Climate Story" */
+    button {
+        background-color: #006803; /* Verde */
+        border-bottom: black;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #45a049; /* Verde oscuro */
+        transform: scale(1.05);
+    }
+
+    button:active {
+        background-color: #3e8e41; /* Verde más oscuro */
+        transform: scale(0.95);
+    }
+</style>
+{% endblock %} {% block content %}
+
+<!-- Start::app-content -->
+<div class="main-content app-content">
+    <div class="container-fluid">
+        <!-- Start::row-1 -->
+        <div class="row">
+            <h5 style="text-align: center;">Select a province from Spain map to view details</h5>
+        </div>
+        <div class="row">
+            {% comment %}
+            <div class="col-xl-6">
+                <div class="card custom-card">
+                    <div class="top-left"></div>
+                    <div class="top-right"></div>
+                    <div class="bottom-left"></div>
+                    <div class="bottom-right"></div>
+                    <div class="card-header">
+                        <div class="card-title">Map With Lines</div>
+                    </div>
+                    <div class="card-body">
+                        <div id="lines-map"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            {% endcomment %}
+            <div class="col-xl-12" style="margin: auto; height: 80vh">
+                <!--<div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                <div class="card-header">
+                                    <div class="card-title" style="font-size: 30px">US Map</div>
+                                </div>-->
+                <div class="card-body" style="height: 100%; padding: 0">
+                    <div style="display: none" id="lines-map"></div>
+                    <div id="mexico-map" style="height: 100%; width: 100%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 id="state-title-3" style="text-align: center;">State</h1>
+            <h5  style="text-align: center;">Views per Year</h5>
+        </div>
+        <!--tabla 1-->
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="card custom-card" id="state-card">
+                    <div class="top-left"></div>
+                    <div class="top-right"></div>
+                    <div class="bottom-left"></div>
+                    <div class="bottom-right"></div>
+                    <div class="card-header" style="justify-content: space-around;">
+                        <!-- <div class="card-title" id="state-title-2">Reversed Bar Chart</div> -->
+                        <div class="card-title">Carbone Dioxide Emission</div>
+                    </div>
+                    <div class="card-body">
+                        <div id="bar-reversed"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Tabla 2-->
+            <div class="col-xl-6">
+                <div class="card custom-card" id="state-card">
+                    <div class="top-left"></div>
+                    <div class="top-right"></div>
+                    <div class="bottom-left"></div>
+                    <div class="bottom-right"></div>
+                    <div class="card-header" style="justify-content: space-around;">
+                        <!-- <div class="card-title" id="state-title-2">Reversed Bar Chart</div> -->
+                        <div class="card-title">Methane Emission</div>
+                    </div>
+                    <div class="card-body">
+                        <div id="bar-r"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 style="text-align: center;">Artificial Intelligence</h3>
+                <div>
+                    <div style="display: flex;justify-content: center;">
+                        <button onclick="ia()">Tell me a Climate Story</button>
+                    </div>
+                    <div class="row" class="card custom-card" id="state-card">
+                        <p style="text-align: -webkit-left; font-size: large;" id="ia-output"> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End::app-content -->
+
+{% endblock %} {% block scripts %}
+<script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+<!-- <script  src="{% static 'assets/libs/apexcharts/ia.js'%}"></script> -->
+<script  src="{% static 'assets/js/ia.js'%}"></script>
+
+<!-- Apex Charts JS -->
+<script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+<!--MIS SCRIPTS-->
+<script src="{% static 'assets/libs/js/funciones.min.js'%}"></script>
+<script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script
+<!-- Used In Zoomable TIme Series Chart -->
+<script src="{% static 'assets/js/dataseries.js'%}"></script>
+
+
+<!-- Internal Apex Line Charts JS -->
+<script src="{% static 'assets/js/apexcharts-line.js'%}"></script>
+
+<!-- Used In Zoomable TIme Series Chart -->
+<script src="{% static 'assets/js/dataseries.js'%}"></script>
+
+<!-- Internal Apex Bar Charts JS -->
+<script src="{% static 'assets/js/apexcharts-bar.js'%}"></script>
+<script src="{% static 'assets/js/apexcharts-scatter.js'%}"></script>
+
+<!-- JSVector Maps JS -->
+<script src="{% static 'assets/libs/jsvectormap/js/jsvectormap.min.js'%}"></script>
+
+<!-- JSVector Maps MapsJS -->
+<script src="{% static 'assets/libs/jsvectormap/maps/world-merc.js'%}"></script>
+<script src="{% static 'assets/js/us-merc-en.js'%}"></script>
+<script src="{% static 'assets/js/mexico.js'%}"></script>
+<script src="{% static 'assets/js/italy.js'%}"></script>
+<script src="{% static 'assets/js/russia.js'%}"></script>
+<script src="{% static 'assets/js/spain.js'%}"></script>
+<script src="{% static 'assets/js/canada.js'%}"></script>
+<script  src="{% static 'assets/js/jsvectormap.js'%}"></script>
+
+<!-- Apex Charts JS -->
+<script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+<!---Used In Basic Area Chart-->
+<script src="{% static 'assets/js/apexcharts-stock-prices.js'%}"></script>
+<!-- Used For Secection-Github Style Chart -->
+<script src="{% static 'assets/js/apex-github-data.js'%}"></script>
+<!-- Used For Irregular Time Series Chart -->
+<script src="{% static 'assets/js/apexcharts-irregulardata.js'%}"></script>
+<script src="{% static 'assets/libs/moment/moment.js'%}"></script>
+
+<!-- Internal Apex Area Charts JS -->
+<script src="{% static 'assets/js/apexcharts-area.js'%}"></script>
+
+\ {% endblock %}

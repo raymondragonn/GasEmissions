@@ -1,0 +1,332 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- glightbox Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/glightbox/css/glightbox.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start:: row-1 -->
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9">
+                            <div class="mb-4">
+                                <h5 class="fw-medium mb-0">Profile Settings</h5>
+                                <div class="text-muted fs-13 op-8 mb-3">
+                                    Update your profile settings
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="row mt-4 justify-content-center">
+                                        <div class="col-md-3">
+                                            <div class="nav flex-column nav-pills me-3 tab-style-7" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                <h6 class="fw-medium mb-3 text-info  fs-12 pb-1 d-inline-block">
+                                                    GENERAL
+                                                </h6>
+                                                <button class="nav-link text-start active" id="main-profile-tab" data-bs-toggle="pill" data-bs-target="#main-profile" type="button" role="tab" aria-controls="main-profile" aria-selected="true"><i class="ri-user-settings-line me-2 align-middle d-inline-block"></i>Profile Info</button>
+                                                <button class="nav-link text-start" id="man-password-tab" data-bs-toggle="pill" data-bs-target="#man-password" type="button" role="tab" aria-controls="man-password" aria-selected="false" tabindex="-1"><i class="ri-key-fill me-2 align-middle d-inline-block"></i>Change Password</button>
+                                                <button class="nav-link text-start" id="main-security-tab" data-bs-toggle="pill" data-bs-target="#main-security" type="button" role="tab" aria-controls="main-security" aria-selected="false" tabindex="-1"><i class="ri-lock-2-line me-2 align-center d-inline-block"></i>Security</button>
+                                                <button class="nav-link text-start" id="main-contacts-tab" data-bs-toggle="pill" data-bs-target="#main-contacts" type="button" role="tab" aria-controls="main-contacts" aria-selected="false" tabindex="-1"><i class="ri-contacts-book-2-line me-2 align-middle d-inline-block"></i>Contacts</button>
+                                                <button class="nav-link text-start" id="main-permissions-tab" data-bs-toggle="pill" data-bs-target="#main-permissions" type="button" role="tab" aria-controls="main-permissions" aria-selected="false"><i class="ri-door-lock-line me-2 align-middle d-inline-block"></i>Users and Permissions</button>
+                                                <button class="nav-link text-start" id="main-notifications-tab" data-bs-toggle="pill" data-bs-target="#main-notifications" type="button" role="tab" aria-controls="main-notifications" aria-selected="false" tabindex="-1"><i class="ri-notification-3-line me-2 align-center d-inline-block"></i>Notifications</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="tab-content" id="v-pills-tabContent">
+                                                <div class="tab-pane show active" id="main-profile" role="tabpanel" tabindex="0" aria-labelledby="main-profile-tab">
+                                                    <div class="mb-4 d-sm-flex align-items-center gap-1 flex-wrap">
+                                                        <span class="mb-0 me-3 avatar avatar-xxl">
+                                                            <img src="{% static 'assets/images/faces/22.jpg'%}" alt="" class="profile-img">
+                                                            <span class="badge bg-primary avatar-badge cursor-pointer">
+                                                                <input type="file" name="photo" class="position-absolute w-100 op-0 profile-change">
+                                                                <i class="fe fe-camera"></i>
+                                                            </span>
+                                                        </span>
+                                                        <div class="">
+                                                            <div class="fw-medium lh-1"> Anthony Richel</div>
+                                                            <div class="fs-12 text-muted">@anthonyrich144</div>
+                                                        </div>
+                                                        <div class="ms-auto">
+                                                            <div class="d-flex gap-2">
+                                                                <div class="upload-btn-wrapper">
+                                                                    <button class="btn btn-primary-light"><i class="fe fe-upload me-2 d-inline-block"></i>Upload Photo</button>
+                                                                    <input type="file" class="profile-change" name="myfile" />
+                                                                </div>
+                                                                <button class="btn btn-danger-light"><i class="fe fe-x me-2 d-inline-block"></i>Delete Photo</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row gy-4 mb-4">
+                                                        <div class="col-xl-6">
+                                                            <label for="first-name" class="form-label">First Name :</label>
+                                                            <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                                                        </div>
+                                                        <div class="col-xl-6">
+                                                            <label for="last-name" class="form-label">Last Name :</label>
+                                                            <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                                                        </div>
+                                                        <div class="col-xl-12">
+                                                            <label for="user-name" class="form-label">User Name :</label>
+                                                            <input type="text" class="form-control" id="user-name" placeholder="Anthony Richel">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <h6 class="fw-medium mb-3">
+                                                            About Information :
+                                                        </h6>
+                                                        <div class="col-xl-12 mb-4">
+                                                            <label for="about" class="form-label">Bio :</label>
+                                                            <textarea class="form-control" id="about" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit impedit, officiis non minima saepe voluptates a magnam enim sequi porro veniam ea suscipit dolorum vel mollitia voluptate iste nemo!</textarea>
+                                                        </div>
+                                                        <div class="col-xl-12 mb-4">
+                                                            <label for="language" class="form-label">Language :</label>
+                                                            <select class="form-control" name="language" data-trigger id="language" multiple>
+                                                            <option value="Choice 1" selected>English</option>
+                                                            <option value="Choice 2">French</option>
+                                                            <option value="Choice 3">Arabic</option>
+                                                            <option value="Choice 4">Hindi</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-xl-12">
+                                                            <label class="form-label">Country :</label>
+                                                            <select class="form-control" data-trigger name="country-select" id="country-select">
+                                                                <option value="Choice 1">Usa</option>
+                                                                <option value="Choice 2">Australia</option>
+                                                                <option value="Choice 3">Dubai</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="man-password" role="tabpanel" tabindex="0" aria-labelledby="man-password-tab">
+                                                    <div>
+                                                        <p class="fs-12 text-muted"><i class="ri-information-line me-2 align-middle d-inline-block text-info"></i>Password should be min of <b class="text-success">8 digits<sup>*</sup></b>,atleast <b class="text-success">One Capital letter<sup>*</sup></b> and <b class="text-success">One Special Character<sup>*</sup></b> included.</p>
+                                                        <div class="mb-2">
+                                                            <label for="current-password" class="form-label">Current Password</label>
+                                                            <input type="password" class="form-control" id="current-password" placeholder="Current Password">
+                                                        </div>
+                                                        <div class="mb-2">
+                                                            <label for="new-password" class="form-label">New Password</label>
+                                                            <input type="password" class="form-control" id="new-password" placeholder="New Password">
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                                                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm PAssword">
+                                                        </div>
+                                                        <div class="btn-list">
+                                                            <button class="btn btn-primary">Change Password</button>
+                                                            <button class="btn btn-primary-light">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="main-security" role="tabpanel" aria-labelledby="main-security-tab" tabindex="0">
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Authenticator</p>
+                                                            <p class="fs-12 text-muted mb-0">Authentication through apps</p>
+                                                        </div>
+                                                        <a class="text-primary fw-semibold fs-13 text-decoration-underline" href="javascript:void(0);"> 
+                                                            Setup Now
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Two-Factor Authentication</p>
+                                                            <p class="fs-12 text-muted mb-0">Enable authentication to verify that is you.</p>
+                                                        </div>
+                                                        <div class="custom-toggle-switch ms-sm-2 ms-0"> 
+                                                            <input id="two-step-01" name="toggleswitchsize" type="checkbox"> 
+                                                            <label for="two-step-01" class="label-primary mb-1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-sm-flex d-block align-items-center mb-4 justify-content-between px-2 gap-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Deactive account</p>
+                                                            <p class="fs-12 text-muted mb-0">The account will remain deactivated until you reactivate it by signing in.</p>
+                                                        </div>
+                                                        <a class="btn btn-outline-info fw-semibold fs-13" href="javascript:void(0);"> 
+                                                            Deactivate
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-sm-flex d-block align-items-center mb-4 justify-content-between px-2 gap-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Remove account</p>
+                                                            <p class="fs-12 text-muted mb-0">If you remove this, the account will no longer be visible.</p>
+                                                        </div>
+                                                        <a class="btn btn-outline-danger fw-semibold fs-13" href="javascript:void(0);"> 
+                                                            Remove
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="main-contacts" role="tabpanel" aria-labelledby="main-contacts-tab" tabindex="0">
+                                                    <label for="phone-number" class="form-label">Phone Number :</label>
+                                                    <div class="d-flex gap-2 align-items-end flex-wrap">
+                                                        <div class="flex-grow-1">
+                                                            <div class="input-group">
+                                                                <span class="input-group-text bg-primary-transparent" id="basic-addon1"><i class="ri-phone-line align-middle"></i></span>
+                                                                <input type="number" class="form-control" id="phone-number" placeholder="1100 110 011">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn btn-primary-light"><i class="ri-add-line me-2 d-inline-block"></i>Add Another Number</div>
+                                                    </div>
+                                                    <label for="mail-address1" class="form-label mt-4">Email Address :</label>
+                                                    <div class="d-flex gap-2 align-items-end flex-wrap">
+                                                        <div class="flex-grow-1">
+                                                            <div class="input-group">
+                                                                <span class="input-group-text bg-primary-transparent" id="basic-addon2"><i class="ri-mail-line align-middle"></i></span>
+                                                                <input type="text" class="form-control" id="mail-address1" placeholder="xyz@gmail.com">
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn btn-primary-light"><i class="ri-add-line me-2 d-inline-block"></i>Add Another Address</div>
+                                                    </div>
+                                                    <div class="mt-4">
+                                                        <label for="location" class="form-label">Location :</label>
+                                                        <textarea class="form-control" id="location" rows="2">H.No: 154-14/A , XYZ Street, New Town,London -512151  </textarea>
+                                                    </div>
+                                                    <div class="mt-4">
+                                                        <label for="links" class="form-label">Links :</label>
+                                                        <input type="email" class="form-control" id="links" placeholder="http://www.newsite.com">
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="main-permissions" role="tabpanel" aria-labelledby="main-permissions-tab" tabindex="0">
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Search Privacy</p>
+                                                            <p class="fs-12 text-muted mb-0">Hide your profile from searches.</p>
+                                                        </div>
+                                                        <div class="custom-toggle-switch ms-sm-2 ms-0"> 
+                                                            <input id="two-step-02" name="toggleswitchsize" type="checkbox" checked=""> 
+                                                            <label for="two-step-02" class="label-primary mb-1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Personalized Ads</p>
+                                                            <p class="fs-12 text-muted mb-0">Ads show based on your interest only</p>
+                                                        </div>
+                                                        <div class="custom-toggle-switch ms-sm-2 ms-0"> 
+                                                            <input id="two-step-03" name="toggleswitchsize" type="checkbox" checked=""> 
+                                                            <label for="two-step-03" class="label-primary mb-1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Clear Cache</p>
+                                                            <p class="fs-12 text-muted mb-0">Remove all data in the cache</p>
+                                                        </div>
+                                                        <div class="custom-toggle-switch ms-sm-2 ms-0"> 
+                                                            <input id="two-step-04" name="toggleswitchsize" type="checkbox" checked=""> 
+                                                            <label for="two-step-04" class="label-primary mb-1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="mb-4">Accessibilty :</h6>
+                                                    <div class="form-check d-flex ps-2 pe-3 gap-2 align-items-center">
+                                                        <label class="form-check-label fs-14" for="access-open1">
+                                                            Private
+                                                            <span class="fs-12 text-muted mb-0">Only people you know can access or view your profile.</span>
+                                                        </label>
+                                                        <input class="form-check-input ms-auto" type="radio" name="access-open" id="access-open1">
+                                                    </div>
+                                                    <div class="form-check d-flex ps-2 pe-3 gap-2 align-items-center mt-3">
+                                                        <label class="form-check-label fs-14" for="access-hide2">
+                                                            Public
+                                                            <span class="fs-12 text-muted mb-0">Anyone can access or view your profile.</span>
+                                                        </label>
+                                                        <input class="form-check-input ms-auto" type="radio" name="access-open" id="access-hide2" checked="">
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="main-notifications" role="tabpanel" aria-labelledby="main-notifications-tab" tabindex="0">
+                                                    <h6 class="mb-4">Email Notifications :</h6>
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Comments</p>
+                                                            <p class="fs-12 text-muted mb-0">You will receive notifications when someone comments on your post.</p>
+                                                        </div>
+                                                        <div class="custom-toggle-switch ms-sm-2 ms-0"> 
+                                                            <input id="email-comments" name="toggleswitchsize" type="checkbox" checked=""> 
+                                                            <label for="email-comments" class="label-primary mb-1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">News and Updates</p>
+                                                            <p class="fs-12 text-muted mb-0">You will receive notifications for news and any updates.</p>
+                                                        </div>
+                                                        <div class="custom-toggle-switch ms-sm-2 ms-0"> 
+                                                            <input id="email-update" name="toggleswitchsize" type="checkbox"> 
+                                                            <label for="email-update" class="label-primary mb-1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Remaiders</p>
+                                                            <p class="fs-12 text-muted mb-0">This will enable when the notification is pushed on your device</p>
+                                                        </div>
+                                                        <div class="custom-toggle-switch ms-sm-2 ms-0"> 
+                                                            <input id="email-notify" name="toggleswitchsize" type="checkbox" checked=""> 
+                                                            <label for="email-notify" class="label-primary mb-1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="mb-4">Push Notifications :</h6>
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Comments</p>
+                                                            <p class="fs-12 text-muted mb-0">You will receive notifications when someone comments on your post.</p>
+                                                        </div>
+                                                        <div class="custom-toggle-switch ms-sm-2 ms-0"> 
+                                                            <input id="push-comments" name="toggleswitchsize" type="checkbox" checked=""> 
+                                                            <label for="push-comments" class="label-primary mb-1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-sm-flex d-block align-items-top mb-4 justify-content-between px-2">
+                                                        <div>
+                                                            <p class="fs-14 mb-1 fw-medium">Remaiders</p>
+                                                            <p class="fs-12 text-muted mb-0">You will receive notifications for remainders.</p>
+                                                        </div>
+                                                        <div class="custom-toggle-switch ms-sm-2 ms-0"> 
+                                                            <input id="push-update" name="toggleswitchsize" type="checkbox"> 
+                                                            <label for="push-update" class="label-primary mb-1"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-end">
+                                    <div class="btn-list">
+                                        <button class="btn btn-primary">Save Changes</button>
+                                        <button class="btn btn-primary-light">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Gallery JS -->
+        <script src="{% static 'assets/libs/glightbox/js/glightbox.min.js'%}"></script>
+        
+        <!-- Profile-setting JS -->
+        <script src="{% static 'assets/js/profile-settings.js'%}"></script>
+        
+{% endblock %}

@@ -1,0 +1,106 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row justify-content-center">
+                        <div class="col-xl-12">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body p-5">
+                                    <div class=" text-primary h5 fw-medium mb-4">SciFi - Terms & Conditions
+                                    </div>
+                                    <div class="terms-conditions border p-3" id="terms-scroll">
+                                        <div class="mb-4 fs-14">
+                                            <p class="mb-3">
+
+                                                <span class="fw-medium text-default">If you reside in the USA, </span>the SciFi 
+                                                <a class="text-primary" href="javascript:void(0);"><u>Terms and Conditions</u></a> 
+                                                comprise the following rules, and the <a class="text-primary" href="javascript:void(0);"><u>User Agreements</u></a> encompass the specified policies. The
+                                                <a class="text-primary" href="javascript:void(0);"><u>SciFi Rules and Privacy Policies</u></a> are integrated with the conditions outlined below.
+                                            </p>
+                                            <p class="mb-0">
+                                                <span class="fw-medium text-default">If you reside outside the USA, </span>the SciFi <a class="text-primary" href="javascript:void(0);"><u>Terms and Conditions</u></a> include the following rules and <a class="text-primary" href="javascript:void(0);"><u>User Agreements</u></a> encompass the following policies. The <a class="text-primary" href="javascript:void(0);"><u>SciFi Rules and Privacy Policies</u></a> are integrated with the conditions outlined below.
+                                            </p>
+                                        </div>
+                                        <h5 class="fw-medium pb-3 text-primary"><span>Terms & Services :</span></h5>
+                                        <ol class="fs-14">
+                                            <li class="mb-4">
+                                                <p class="fw-medium mb-2 fs-14 text-primary">Variations Lorem ipsum psum primis in faucibus.</p>
+                                                <p class="mb-0 text-muted">
+                                                    Note that this agreement may be alternatively referred to as Terms of Use, User Agreement, or Terms of Service. These terms are interchangeable and denote the same type of agreement.
+                                                </p>
+                                            </li>
+                                            <li class="mb-4">
+                                                <p class="fw-medium mb-2 fs-14 text-primary"> Business Interactions, Consectetur adipisicing elit.</p>
+                                                <p class="mb-2 text-muted">
+                                                    Although not mandated by law, establishing clear terms and conditions lays the foundation for a successful business relationship. By articulating these guidelines in writing, business owners can mitigate the risk of misunderstandings with their customers.
+                                                </p>
+                                                <p class="text-muted">
+                                                    It also empowers you to determine your acceptable standards and identify behaviors that may prompt the termination of a user relationship.
+                                                </p>
+                                            </li>
+                                            <li class="mb-4">
+                                                <p class="fw-medium mb-2 fs-14 text-primary">Limitation of Liability Disclaimers.</p>
+                                                <p class="text-muted">
+                                                    The inclusion of limitation of liability disclaimers is a primary motivation for business owners to incorporate terms and conditions on their websites. When crafted reasonably and effectively, these clauses serve as a crucial safeguard, shielding your business from potential claims and lawsuits, thereby mitigating the financial impact of damages.
+                                                </p>
+                                            </li>
+                                            <li class="mb-4">
+                                                <p class="fw-medium mb-2 fs-14 text-primary">If you permit your users to share.</p>
+                                                <p class="mb-2 text-muted">
+                                                    If you enable users to share comments, photos, or leave product reviews on your website, it is advisable to include a section in your terms of service outlining their behavior expectations and specifying acceptable and unacceptable actions.
+                                                </p>
+                                                <p class="mb-2 text-muted">
+                                                    In this provision, you have the option to retain the right to monitor user-generated content shared on your website. You may take steps to remove any content that violates your guidelines. It is advisable to explicitly instruct users not to post content containing obscene language, material deemed harmful or violent, or any infringement on someone else’s copyright.
+                                                </p>
+                                            </li>
+                                            <li class="mb-0">
+                                                <p class="fw-medium mb-2 fs-14 text-primary">You can also express it more explicitly.</p>
+                                                <p class="mb-2 text-muted">
+                                                    You may explicitly state that you retain the right to suspend or delete the accounts of repeat infringers. This ensures a secure environment on your website, fostering a comfortable space for individuals to express their opinions. This is particularly crucial for the operation of a news site, blog, or forum.
+                                                </p>
+                                                <p class="mb-0 text-muted">
+                                                    From a business perspective, you may retain the right to utilize the submitted content for marketing purposes, a common practice among major retailers and eCommerce stores to showcase highly praised products. It's crucial for your customers to be informed about this intention, preventing any surprise when they see their words or photos featured in promotional materials.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="btn-list text-end">
+                                        <button class="btn btn-outline-danger btn-wave btn-w-lg">DECLINE</button>
+                                        <button class="btn btn-primary btn-wave btn-w-lg">ACCEPT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+    
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Internal Terms & Conditions JS -->
+        <script src="{% static 'assets/js/terms_conditions.js'%}"></script>
+        
+{% endblock %}

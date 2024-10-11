@@ -1,0 +1,122 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Basic TImeline Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="timeline-basic"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Multiple Colored TImeline Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="timeline-colors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Multi Series Timeline Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="timeline-multi"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Advanced Timeline Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="timeline-advanced"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Timeline-Grouped Rows</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="timeline-grouped"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Dumbbell Chart</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="timeline-dumbbell"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+
+        <!-- Used For Multiple Colored TImeline Chart -->
+        <script src="{% static 'assets/libs/moment/moment.js'%}"></script>
+        
+        <!-- Internal Apex Timeline Charts JS -->
+        <script src="{% static 'assets/js/apexcharts-timeline.js'%}"></script>
+
+{% endblock %}'%}

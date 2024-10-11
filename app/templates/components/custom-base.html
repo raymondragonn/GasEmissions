@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="dark" data-header-styles="dark" data-menu-styles="dark" data-toggled="close" data-vertical-style="default" data-card-style="style1" data-card-background="background1" >
+
+    <head>
+
+        <!-- Meta Data -->
+		<meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Description" content="SciFi - Django Premium Bootstrap 5 Admin Dashboard Template">
+        <meta name="Author" content="Spruko Technologies Private Limited">
+        <meta name="keywords" content="django, django admin, django framework, dashboard, django admin template, admin, django admin panel, django bootstrap, django and bootstrap, django bootstrap 5, dashboard template, django html, admin panel template, bootstrap admin template, admin panel django">
+        
+        <!-- TITLE -->
+		<title>SciFi - Django Premium Bootstrap 5 Admin &amp; Dashboard Template </title>
+
+        <!-- FAVICON -->
+        <link rel="icon" href="{% static 'assets/images/brand-logos/favicon.ico'%}" type="image/x-icon">
+
+        <!-- BOOTSTRAP CSS -->
+	    <link  id="style" href="{% static 'assets/libs/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+        <!-- ICONS CSS -->
+        <link href="{% static 'assets/css/icons.css'%}" rel="stylesheet">
+        
+        <!-- STYLES CSS -->
+        <link href="{% static 'assets/css/styles.css'%}" rel="stylesheet">
+
+        <!-- MAIN JS -->
+        <script src="{% static 'assets/js/authentication-main.js'%}"></script>
+        
+        {% block styles %}
+
+        {% endblock %}
+
+	</head>
+
+    {% block errorbody %}
+    
+    {% endblock %}
+
+        {% block content %}
+                        
+        {% endblock %}
+
+        <!-- SCRIPTS -->
+
+        <!-- BOOTSTRAP JS -->
+        <script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+        {% block scripts %}
+
+        {% endblock %}
+
+        <!-- END SCRIPTS -->
+
+	</body>
+</html>
+

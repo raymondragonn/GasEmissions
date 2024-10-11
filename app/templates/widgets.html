@@ -1,0 +1,2242 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Choices Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/jsvectormap/css/jsvectormap.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-9">
+                            <div class="card custom-card border-0">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body p-0">
+                                    <div class="row g-0 border border-dashed">
+                                        <div class="col-xl-3 border-end border-inline-end-dashed">
+                                            <div class="d-flex flex-wrap align-items-top p-4">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-md bg-primary-transparent">
+                                                        <i class="ti ti-package fs-18"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <h5 class="fw-medium mb-1">45,280</h5>
+                                                    <p class="text-muted mb-0 fs-12">Total Products</p>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-success-transparent"><i
+                                                        class="ri-arrow-up-s-line align-middle me-1 d-inline-block"></i>1.31%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 border-end border-inline-end-dashed">
+                                            <div class="d-flex flex-wrap align-items-top p-4">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-md bg-secondary-transparent">
+                                                        <i class="ti ti-rocket fs-18"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <h5 class="fw-medium mb-1">10,500</h5>
+                                                    <p class="text-muted mb-0 fs-12">Total Sales</p>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-danger-transparent"><i
+                                                        class="ri-arrow-down-s-line align-middle me-1"></i>1.14%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 border-end border-inline-end-dashed">
+                                            <div class="d-flex flex-wrap align-items-top p-4">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-md bg-success-transparent">
+                                                        <i class="ti ti-wallet fs-18"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <h5 class="fw-medium mb-1">$69,270</h5>
+                                                    <p class="text-muted mb-0 fs-12">Income</p>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-success-transparent"><i
+                                                        class="ri-arrow-up-s-line align-middle me-1 d-inline-block"></i>2.58%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <div class="d-flex flex-wrap align-items-top p-4">
+                                                <div class="me-3 lh-1">
+                                                    <span class="avatar avatar-md bg-warning-transparent">
+                                                        <i class="ti ti-packge-import fs-18"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <h5 class="fw-medium mb-1">12,088</h5>
+                                                    <p class="text-muted mb-0 fs-12">Total Orders</p>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-success-transparent"><i
+                                                            class="ri-arrow-up-s-line align-middle me-1 d-inline-block"></i>12.05%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xxl-3 col-xl-6 col-lg-5">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top">
+                                                <div class="flex-fill">
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between fs-14 mb-2">
+                                                        <span class="flex-fill">Bitcoin</span>
+                                                        <span class="ms-1 text-muted">BTC</span>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between">
+                                                        <h5 class="fw-medium mb-0">$11,600</h5>
+                                                        <div class="flex-fill">
+                                                            <span
+                                                                class="ms-2 badge bg-success-transparent rounded-pill">+15.67%</span>
+                                                        </div>
+                                                        <div id="btcCoin"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top">
+                                                <div class="flex-fill">
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between fs-14 mb-2">
+                                                        <span class="flex-fill">Ethereum</span>
+                                                        <span class="ms-1 text-muted">ETH</span>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between">
+                                                        <h5 class="fw-medium mb-0">$17,885</h5>
+                                                        <div class="flex-fill">
+                                                            <span
+                                                                class="ms-2 badge bg-success-transparent rounded-pill">+10.1%</span>
+                                                        </div>
+                                                        <div id="ethCoin"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top">
+                                                <div class="flex-fill">
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between fs-14 mb-2">
+                                                        <span class="flex-fill">Dash</span>
+                                                        <span class="ms-1 text-muted">DSH</span>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between">
+                                                        <h5 class="fw-medium mb-0">$18,400</h5>
+                                                        <div class="flex-fill">
+                                                            <span
+                                                                class="ms-2 badge bg-success-transparent rounded-pill">+10.8%</span>
+                                                        </div>
+                                                        <div id="dshCoin"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top">
+                                                <div class="flex-fill">
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between fs-14 mb-2">
+                                                        <span class="flex-fill">Golem</span>
+                                                        <span class="ms-1 text-muted">GLM</span>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between">
+                                                        <h5 class="fw-medium mb-0">$21,841</h5>
+                                                        <div class="flex-fill">
+                                                            <span
+                                                                class="ms-2 badge bg-success-transparent rounded-pill">+2.08%</span>
+                                                        </div>
+                                                        <div id="glmCoin"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6 col-xl-6 col-lg-7">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-header justify-content-between">
+                                            <div class="card-title">
+                                                Sales statistics
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="sales-statistics"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top justify-content-between mb-3">
+                                                <div> 
+                                                    <span class="avatar avatar-md avatar-rounded bg-primary"> 
+                                                        <i class="ti ti-users fs-16"></i> 
+                                                    </span> 
+                                                </div>
+                                                <div class="flex-fill ms-3">
+                                                    <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                                        <div>
+                                                            <p class="text-muted mb-0">Total Customers</p>
+                                                            <h5 class="fw-semibold mt-1 mb-0">22,560</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-1">
+                                                <div> <a class="text-primary text-decoration-underline" href="javascript:void(0);">View All</a>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p class="mb-0 text-success fw-semibold">+40%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top justify-content-between mb-3">
+                                                <div> 
+                                                    <span class="avatar avatar-md avatar-rounded bg-secondary"> 
+                                                        <i class="ti ti-cash fs-16"></i> 
+                                                    </span> 
+                                                </div>
+                                                <div class="flex-fill ms-3">
+                                                    <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                                        <div>
+                                                            <p class="text-muted mb-0">Total Revenue</p>
+                                                            <h5 class="fw-semibold mt-1 mb-0">5,12,245</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-1">
+                                                <div> <a class="text-primary text-decoration-underline" href="javascript:void(0);">View All</a>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p class="mb-0 text-danger fw-semibold">-3.50%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top justify-content-between mb-3">
+                                                <div> 
+                                                    <span class="avatar avatar-md avatar-rounded bg-warning"> 
+                                                        <i class="ti ti-coin fs-16"></i> 
+                                                    </span> 
+                                                </div>
+                                                <div class="flex-fill ms-3">
+                                                    <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                                        <div>
+                                                            <p class="text-muted mb-0">Total Profit</p>
+                                                            <h5 class="fw-semibold mt-1 mb-0">15,674</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-1">
+                                                <div> <a class="text-primary text-decoration-underline" href="javascript:void(0);">View All</a>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p class="mb-0 text-success fw-semibold">+2.1%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3">
+                            <div class="card custom-card bg-primary-gradient card-bgimage-none text-fixed-white">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-top flex-wrap">
+                                        <div class="flex-fill">
+                                            <h3 class="fw-semibold mb-1 text-fixed-white">$210,520.00</h3>
+                                            <p class="op-7 fw-medium mb-0 text-fixed-white">Total Balance</p>
+                                        </div>
+                                        <div>
+                                            <i class="ri-coins-line lh-1 fs-62 text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 fs-13">Compare to last Month Increased <span
+                                            class="text-success">3.69%<i
+                                                class="ri-arrow-up-s-line align-middle ms-1 d-inline-block"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">Visit By Device</div> <button type="button" class="btn btn-sm btn-light">View All</button>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <p class="mb-0 fs-13">Total Visits <span class="ms-2 text-success">+10.1%</span></p>
+                                        <h3 class="fw-medium">18,124</h3>
+                                    </div>
+                                    <ul class="list-unstyled  mb-0">
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="me-2"> <span class="avatar avatar-md avatar-rounded bg-secondary-transparent"> <i
+                                                            class="ti ti-device-mobile"></i> </span> </div>
+                                                <div class="flex-fill">
+                                                    <div class="d-flex align-items-center justify-content-between"> <span
+                                                            class="d-block fw-semibold">Android</span> <span
+                                                            class="d-block text-secondary">80%</span> </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress progress-animate progress-xs progress-bar-striped mb-2" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-striped progress-animate progress-bar-striped bg-secondary" style="width: 80%"></div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="me-2"> <span class="avatar avatar-md avatar-rounded bg-warning-transparent"> <i
+                                                            class="ti ti-device-desktop"></i> </span> </div>
+                                                <div class="flex-fill">
+                                                    <div class="d-flex align-items-center justify-content-between"> <span
+                                                            class="d-block fw-semibold">Desktop</span> <span
+                                                            class="d-block text-warning">60%</span> </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress progress-animate progress-xs progress-bar-striped mb-2" role="progressbar" aria-valuenow="60"
+                                                aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-striped progress-animate progress-bar-striped bg-warning" style="width: 60%"></div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="me-2"> <span class="avatar avatar-md avatar-rounded bg-primary-transparent"> <i
+                                                            class="ti ti-device-tablet"></i> </span> </div>
+                                                <div class="flex-fill">
+                                                    <div class="d-flex align-items-center justify-content-between"> <span
+                                                            class="d-block fw-semibold">Tablet</span> <span
+                                                            class="d-block text-primary">70%</span> </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress progress-animate progress-xs progress-bar-striped mb-2" role="progressbar" aria-valuenow="70"
+                                                aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar progress-bar-striped progress-animate progress-bar-striped bg-primary" style="width: 70%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-1 -->
+
+                    <!-- Start::row-2 -->
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
+                        </div>
+                    </div>
+                    <!-- End::row-2 -->
+
+                    <!-- Start::row-4 -->
+                    <div class="row">
+                        <div class="col-xxl-3 col-sm-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-top justify-content-between mb-4">
+                                        <div class="flex-fill d-flex align-items-top">
+                                            <div class="me-2">
+                                                <span class="avatar avatar-md text-primary border bg-light"><i
+                                                        class="ti ti-users fs-18"></i></span>
+                                            </div>
+                                            <div class="flex-fill">
+                                                <p class="fw-medium fs-14 mb-0">Total Candidates</p>
+                                                <p class="mb-0 text-muted fs-12 op-7">Magna sit elitr kasd consetetur.</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0);" data-bs-toggle="dropdown"
+                                                class="btn btn-icon btn-sm btn-light"><i class="ti ti-dots"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Action</a></li>
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Another Action</a>
+                                                </li>
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Something Else
+                                                        Here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-0">
+                                        <p class="mb-0 fs-20 fw-medium">3,460</p>
+                                        <span class="text-muted ms-2"><i
+                                                class="ti ti-trending-up align-middle text-success me-1 d-inline-block"></i>2.5%</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-fill">
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 14%"
+                                                    aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <span class="fs-12 text-muted">14% Target</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-sm-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-top justify-content-between mb-4">
+                                        <div class="flex-fill d-flex align-items-top">
+                                            <div class="me-2">
+                                                <span class="avatar avatar-md text-secondary border bg-light"><i
+                                                        class="ti ti-user-circle fs-18"></i></span>
+                                            </div>
+                                            <div class="flex-fill">
+                                                <p class="fw-medium fs-14 mb-0">Users</p>
+                                                <p class="mb-0 text-muted fs-12 op-7">Elitr at gubergren sit sed.</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0);" data-bs-toggle="dropdown"
+                                                class="btn btn-icon btn-sm btn-light"><i class="ti ti-dots"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Action</a></li>
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Another Action</a>
+                                                </li>
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Something Else
+                                                        Here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-0">
+                                        <p class="mb-0 fs-20 fw-medium">7,539</p>
+                                        <span class="text-muted ms-2"><i
+                                                class="ti ti-trending-up align-middle text-success me-1 d-inline-block"></i>3.1%</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-fill">
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 55%"
+                                                    aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <span class="fs-12 text-muted">55% Target</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-sm-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-top justify-content-between mb-4">
+                                        <div class="flex-fill d-flex align-items-top">
+                                            <div class="me-2">
+                                                <span class="avatar avatar-md text-success border bg-light"><i
+                                                        class="ti ti-view-360 fs-18"></i></span>
+                                            </div>
+                                            <div class="flex-fill">
+                                                <p class="fw-medium fs-14 mb-0">Page Views</p>
+                                                <p class="mb-0 text-muted fs-12 op-7">Sed duo ut sanctus gubergren.</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0);" data-bs-toggle="dropdown"
+                                                class="btn btn-icon btn-sm btn-light"><i class="ti ti-dots"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Action</a></li>
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Another Action</a>
+                                                </li>
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Something Else
+                                                        Here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-0">
+                                        <p class="mb-0 fs-20 fw-medium">13,693</p>
+                                        <span class="text-muted ms-2"><i
+                                                class="ti ti-trending-up align-middle text-success me-1 d-inline-block"></i>5.4%</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-fill">
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 24%"
+                                                    aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <span class="fs-12 text-muted">24% Target</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-sm-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-top justify-content-between mb-4">
+                                        <div class="flex-fill d-flex align-items-top">
+                                            <div class="me-2">
+                                                <span class="avatar avatar-md text-indigo border bg-light"><i
+                                                        class="ti ti-view-360 fs-18"></i></span>
+                                            </div>
+                                            <div class="flex-fill">
+                                                <p class="fw-medium fs-14 mb-0">Total Subscriptions</p>
+                                                <p class="mb-0 text-muted fs-12 op-7">Invidunt magna voluptua.</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0);" data-bs-toggle="dropdown"
+                                                class="btn btn-icon btn-sm btn-light"><i class="ti ti-dots"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Action</a></li>
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Another Action</a>
+                                                </li>
+                                                <li><a href="javascript:void(0);" class="dropdown-item">Something Else
+                                                        Here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-0">
+                                        <p class="mb-0 fs-20 fw-medium">4,116</p>
+                                        <span class="text-muted ms-2"><i
+                                                class="ti ti-trending-down align-middle text-danger me-1 d-inline-block"></i>3.2%</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-fill">
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-indigo" role="progressbar" style="width: 67%"
+                                                    aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <span class="fs-12 text-muted">67% Target</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-4 -->
+
+                    <!-- Start::row-5 -->
+                    <div class="row">
+                        <div class="col-xxl-5">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header pb-1">
+                                    <div class="card-title">
+                                        Users By Country
+                                    </div>
+                                </div>
+                                <div id="users-map"></div>
+                                <div class="card-body">
+                                    <div class="row mx-0">
+                                        <div class="col-xl-7">
+                                            <ul class="list-group">
+                                                <li class="list-group-item fs-13">
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between">
+                                                        <div><i
+                                                                class="ri-checkbox-blank-circle-fill text-success fs-8 me-1 align-middle d-inline-block"></i>Russia
+                                                        </div>
+                                                        <div>25,350</div>
+                                                        <div class="text-success"><i
+                                                                class="ri-arrow-up-s-line align-middle me-1 d-inline-block"></i>0.8%
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item fs-13">
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between">
+                                                        <div><i
+                                                                class="ri-checkbox-blank-circle-fill text-primary fs-8 me-1 align-middle d-inline-block"></i>Brazil
+                                                        </div>
+                                                        <div>1,290</div>
+                                                        <div class="text-success"><i
+                                                                class="ri-arrow-up-s-line align-middle me-1 d-inline-block"></i>2.90%
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item fs-13">
+                                                    <div
+                                                        class="d-flex flex-wrap align-items-center justify-content-between">
+                                                        <div><i
+                                                                class="ri-checkbox-blank-circle-fill text-danger fs-8 me-1 align-middle d-inline-block"></i>Canada
+                                                        </div>
+                                                        <div>12,150</div>
+                                                        <div class="text-success"><i
+                                                                class="ri-arrow-up-s-line align-middle me-1 d-inline-block"></i>9.05%
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-5 bg-primary-transparent mt-3 mt-xl-0">
+                                            <div class="p-3">
+                                                <div class="ms-auto fs-11"></div>
+                                                <div class="d-flex align-items-center flex-wrap">
+                                                    <span class="avatar avatar-xs avatar-rounded lh-1 me-2 bg-secondary flex-shrink-0">
+                                                        <i class="ri-user-line"></i>
+                                                    </span>
+                                                    Total Users 
+                                                    <button class="btn btn-sm btn-icon ms-auto bg-secondary-transparent text-secondary transform-arrow border-0"><i class="ti ti-chevron-right"></i></button>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <p class="fs-18 mb-0 text-primary fw-medium">4,25,510</p>
+                                                    <span class="text-muted fs-12">As compared to last Year</span>
+                                                    <span class="text-success fs-13">5.3%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">
+                                        Recent Tasks
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="javascript:void(0);" class="p-2 fs-12 text-muted"
+                                            data-bs-toggle="dropdown">
+                                            View All<i class="ri-arrow-down-s-line align-middle ms-1"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Download</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Import</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Export</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Title</th>
+                                                    <th>Assigned To</th>
+                                                    <th>Progress</th>
+                                                    <th>Status</th>
+                                                    <th>Due Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01</td>
+                                                    <td>Redesign E-commerce Pages.</td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-xs bg-primary avatar-rounded text-fixed-black"
+                                                                href="javascript:void(0);">
+                                                                +2
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                                                aria-valuemax="100" style="width: 60%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">In Progress</span>
+                                                    </td>
+                                                    <td>
+                                                        17-04-2023
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02</td>
+                                                    <td>Multipurpose Dashboard Template</td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/6.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                                                aria-valuemax="100" style="width: 0%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-warning-transparent">Pending</span>
+                                                    </td>
+                                                    <td>
+                                                        14-05-2023
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>03</td>
+                                                    <td>Documentation Project</td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/4.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/15.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-xs bg-primary avatar-rounded text-fixed-black"
+                                                                href="javascript:void(0);">
+                                                                +1
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100" style="width: 100%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Completed</span>
+                                                    </td>
+                                                    <td>
+                                                        20-04-2023
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>04</td>
+                                                    <td>HR Management Template Design</td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/5.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                                                aria-valuemax="100" style="width: 50%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">In Progress</span>
+                                                    </td>
+                                                    <td>
+                                                        29-05-2023
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>05</td>
+                                                    <td>Developing Backend</td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/1.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/9.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-xs bg-primary avatar-rounded text-fixed-black"
+                                                                href="javascript:void(0);">
+                                                                +3
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                                                aria-valuemax="100" style="width: 50%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">In Progress</span>
+                                                    </td>
+                                                    <td>
+                                                        25-05-2023
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>06</td>
+                                                    <td> Design New Dashboard Template</td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/4.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/12.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/16.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-xs bg-primary avatar-rounded text-fixed-black"
+                                                                href="javascript:void(0);">
+                                                                +3
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                                                aria-valuemax="100" style="width: 100%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Completed</span>
+                                                    </td>
+                                                    <td>
+                                                        04-05-2023
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>07</td>
+                                                    <td>Developing Backend</td>
+                                                    <td>
+                                                        <div class="avatar-list-stacked">
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/3.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/11.jpg'%}" alt="img">
+                                                            </span>
+                                                            <span class="avatar avatar-xs avatar-rounded">
+                                                                <img src="{% static 'assets/images/faces/13.jpg'%}" alt="img">
+                                                            </span>
+                                                            <a class="avatar avatar-xs bg-primary avatar-rounded text-fixed-black"
+                                                                href="javascript:void(0);">
+                                                                +1
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                                role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                                                aria-valuemax="100" style="width: 50%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">In Progress</span>
+                                                    </td>
+                                                    <td>
+                                                        24-06-2023
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xxl-6 col-lg-12">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap align-items-top mb-2">
+                                                <div class="flex-fill">
+                                                    <p class="mb-0 text-muted">Total Users</p>
+                                                </div>
+                                                <div class="ms-2">
+                                                    <span class="avatar avatar-md bg-info fs-18">
+                                                        <i class="bi bi-person-square"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="fs-5 fw-medium">7,387</span>
+                                            <span class="fs-12 text-success ms-1"><i
+                                                    class="ti ti-trending-up me-1 d-inline-block"></i>0.5%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card custom-card card-bg-secondary text-fixed-black">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-top mb-2">
+                                                <div class="flex-fill">
+                                                    <p class="mb-0 op-7">Premium Users</p>
+                                                </div>
+                                                <div class="ms-2">
+                                                    <span class="avatar avatar-md bg-secondary shadow-sm fs-18">
+                                                        <i class="bi bi-person-square"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="fs-5 fw-medium">7,387</span>
+                                            <span class="fs-12 op-7 ms-1"><i
+                                                    class="ti ti-trending-up me-1 d-inline-block"></i>0.5%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card custom-card overflow-hidden">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-0">
+                                            <div class="p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-md bg-secondary me-2">
+                                                        <i class="bi bi-receipt fs-16"></i>
+                                                    </span>
+                                                    <p class="mb-0 flex-fill text-muted">Total Revenue</p>
+                                                </div>
+                                                <span class="fs-5 fw-medium">$13,655</span>
+                                                <span class="fs-12 text-success ms-1"><i
+                                                        class="ti ti-trending-up me-1 d-inline-block"></i>3.5%</span>
+                                            </div>
+                                            <div id="totalRevenue1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <span class="avatar avatar-md bg-success me-2">
+                                                    <i class="bi bi-people fs-16"></i>
+                                                </span>
+                                                <p class="mb-0 flex-fill text-muted">Active Members</p>
+                                            </div>
+                                            <span class="fs-5 fw-medium">$13,655</span>
+                                            <span class="fs-12 text-success ms-1"><i
+                                                    class="ti ti-trending-up me-1 d-inline-block"></i>3.5%</span>
+                                            <div class="fw-normal d-flex align-items-center mb-2 mt-3">
+                                                <p class="mb-0 flex-fill">Active Candidates</p>
+                                                <span>3,274</span>
+                                            </div>
+                                            <div class="progress progress-xs mb-4">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="fw-normal d-flex align-items-center mb-2">
+                                                <p class="mb-0 flex-fill">Active Users</p>
+                                                <span>8,726</span>
+                                            </div>
+                                            <div class="progress progress-xs mb-2">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-center">
+                                            <div class="d-grid">
+                                                <a href="javascript:void(0);" class="text-primary">View Details <i
+                                                        class="ti ti-external-link"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-7 col-lg-7">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="flex-fill d-flex align-items-center">
+                                                    <div class="me-2">
+                                                        <span class="avatar rounded-2 text-bg-primary fs-20"><i
+                                                                class="bi bi-people"></i></span>
+                                                    </div>
+                                                    <div class="flex-fill">
+                                                        <p class="mb-0 ">Premium Users</p>
+                                                        <span class="text-success fs-12">7 New</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);"
+                                                        class="btn btn-icon btn-primary-light rounded-pill btn-wave transform-arrow"
+                                                        data-bs-toggle="tooltip" aria-label="View All"><i
+                                                            class="bi bi-chevron-right transform-arrow"></i></a>
+                                                </div>
+                                            </div>
+                                            <p class="mb-3 fs-5 fw-medium">1,845</p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="avatar-list-stacked">
+                                                    <a href="javascript:void(0);"
+                                                        class="avatar avatar-sm rounded-circle overflow-hidden"
+                                                        data-bs-toggle="tooltip" aria-label="Mis x matched"><img
+                                                            src="{% static 'assets/images/faces/2.jpg'%}" alt="img" class="w-100"></a>
+                                                    <a href="javascript:void(0);"
+                                                        class="avatar avatar-sm rounded-circle overflow-hidden"
+                                                        data-bs-toggle="tooltip" aria-label="Barbel Bob"><img
+                                                            src="{% static 'assets/images/faces/12.jpg'%}" alt="img" class="w-100"></a>
+                                                    <a href="javascript:void(0);"
+                                                        class="avatar avatar-sm rounded-circle overflow-hidden"
+                                                        data-bs-toggle="tooltip" aria-label="Phan Rel"><img
+                                                            src="{% static 'assets/images/faces/20.jpg'%}" alt="img" class="w-100"></a>
+                                                    <a href="javascript:void(0);"
+                                                        class="avatar avatar-sm rounded-circle overflow-hidden bg-primary text-fixed-black"
+                                                        data-bs-toggle="tooltip">+4</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-fill">
+                                                    <p class="mb-1 fs-5 fw-medium text-default">1,773</p>
+                                                    <p class="mb-0 text-muted">Active Members</p>
+                                                    <p class="mb-0 fs-11"><a href="javascript:void(0);"
+                                                            class="text-success text-decoration-underline">View All</a></p>
+                                                </div>
+                                                <div class="ms-2">
+                                                    <span class="avatar text-bg-info fs-20"><i
+                                                            class="bi bi-people-fill"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-fill">
+                                                    <p class="mb-1 fs-5 fw-medium text-default">116</p>
+                                                    <p class="mb-0 text-muted">Registrations</p>
+                                                    <p class="mb-0 fs-11"><a href="javascript:void(0);"
+                                                            class="text-success text-decoration-underline">View All</a></p>
+                                                </div>
+                                                <div class="ms-2">
+                                                    <span class="avatar text-bg-success fs-20"><i
+                                                            class="bi bi-file-earmark-text"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-5 col-lg-5">
+                            <div class="card custom-card">
+                                <div class="card-header border-bottom text-white bg-gradient p-4 custom-profile-widget">
+                                    <div class="avatar avatar-xl avatar-rounded">
+                                        <img src="{% static 'assets/images/faces/11.jpg'%}" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body text-center mt-4">
+                                    <p class="mb-0 mt-1 fs-18 fw-semibold">
+                                        Robert Samuel <i class="ti ti-circle-check text-success"></i></p>
+                                    <small class="mb-1">Employee</small>
+                                    <div class="fs-12">robertsamuel4584@gmail.com</div>
+                                    <div class="btn-list mt-4">
+                                        <div class="btn btn-sm btn-outline-warning"><i class="ti ti-user-check me-2 d-inline-block"></i>Follow</div>
+                                        <div class="btn btn-sm btn-outline-info"><i class="ti ti-message-2 me-2 d-inline-block"></i>Message</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card custom-card card-bg-warning">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div
+                                            class="card-header justify-content-between border-bottom-0 pb-2 align-items-center">
+                                            <div class="card-title">
+                                                Premium Users
+                                            </div>
+                                            <div>
+                                                <button
+                                                    class="btn btn-sm btn-icon text-bg-warning transform-arrow border-0"><i
+                                                        class="ti ti-chevron-right"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap align-items-top">
+                                                <div class="flex-fill overflow-hidden">
+                                                    <p class="mb-2 lh-1 fs-5 fw-medium">7,387</p>
+                                                    <p class="mb-0 fs-12 text-fixed-white op-7">
+                                                        <span><i class="bi bi-caret-up-fill"></i> 2.3%</span>
+                                                        <span class="op-8 fw-medium ms-1">From Last Month</span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <span class="avatar avatar-sm bg-success avatar-rounded"><i
+                                                            class="bi bi-people-fill"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-5 -->
+
+                    <!-- Start::row-6 -->
+                    <div class="row">
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card custom-card border border-primary bg-primary-transparent">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <span class="avatar avatar-md bg-primary shadow-sm mb-2">
+                                            <i class="ri-briefcase-2-line fs-16"></i>
+                                        </span>
+                                        <p class="fs-14 fw-medium mb-2">Total Sales</p>
+                                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                            <h5 class="mb-0 fw-medium">15,800</h5>
+                                            <span class="badge bg-success-transparent rounded-pill ms-1">+25.8%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card custom-card border border-secondary bg-secondary-transparent">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <span class="avatar avatar-md bg-secondary shadow-sm mb-2">
+                                            <i class="ri-bill-line fs-16"></i>
+                                        </span>
+                                        <p class="fs-14 fw-medium mb-2">Total Tax</p>
+                                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                            <h5 class="mb-0 fw-medium">$12,650</h5>
+                                            <span class="badge bg-success-transparent rounded-pill ms-1">+12.2%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card custom-card border border-info bg-info-transparent">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <span class="avatar avatar-md bg-info shadow-sm mb-2">
+                                            <i class="ri-line-chart-line fs-16"></i>
+                                        </span>
+                                        <p class="fs-14 fw-medium mb-2">Total Expenses</p>
+                                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                            <h5 class="mb-0 fw-medium">$7,566</h5>
+                                            <span class="badge bg-danger-transparent rounded-pill ms-1">-3.21%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card custom-card border border-warning bg-warning-transparent">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <span class="avatar avatar-md bg-warning shadow-sm mb-2">
+                                            <i class="ri-money-dollar-box-line fs-16"></i>
+                                        </span>
+                                        <p class="fs-14 fw-medium mb-2">Sales Profit</p>
+                                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                            <h5 class="mb-0 fw-medium">$7,474</h5>
+                                            <span class="badge bg-success-transparent rounded-pill ms-1">+36.03%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card custom-card border border-danger bg-danger-transparent">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <span class="avatar avatar-md bg-danger shadow-sm mb-2">
+                                            <i class="ri-profile-line fs-16"></i>
+                                        </span>
+                                        <p class="fs-14 fw-medium mb-2">Opex Ratio</p>
+                                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                            <h5 class="mb-0 fw-medium">32%</h5>
+                                            <span class="badge bg-success-transparent rounded-pill ms-1">+0.89%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card custom-card border border-success bg-success-transparent">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <span class="avatar avatar-md bg-success shadow-sm mb-2">
+                                            <i class="ri-wallet-2-line fs-16"></i>
+                                        </span>
+                                        <p class="fs-14 fw-medium mb-2">Total Income</p>
+                                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                            <h5 class="mb-0 fw-medium">$14,800</h5>
+                                            <span class="badge bg-success-transparent rounded-pill ms-1">+7.45%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-6 -->
+
+                    <!-- Start::row-7 -->
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">
+                                        Upcoming Events
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-sm btn-primary-light">View All</button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <nav class="nav nav-style-1 nav-pills mb-4 nav-justified" role="tablist">
+                                        <a class="nav-link px-2 active" data-bs-toggle="tab" role="tab" aria-current="page"
+                                            href="#mon" aria-selected="false" tabindex="-1">
+                                            <span class="d-block mb-1 fw-medium">09</span>
+                                            <span class="d-block mb-0 fw-medium op-7 fs-12">Mon</span>
+                                        </a>
+                                        <a class="nav-link px-2" data-bs-toggle="tab" role="tab" href="#tue"
+                                            aria-selected="false" tabindex="-1">
+                                            <span class="d-block mb-1 fw-medium">10</span>
+                                            <span class="d-block mb-0 fw-medium op-7 fs-12">Tue</span>
+                                        </a>
+                                        <a class="nav-link px-2" data-bs-toggle="tab" role="tab" href="#wed">
+                                            <span class="d-block mb-1 fw-medium">11</span>
+                                            <span class="d-block mb-0 fw-medium op-7 fs-12">Wed</span>
+                                        </a>
+                                        <a class="nav-link px-2" data-bs-toggle="tab" role="tab" href="#thu"
+                                            aria-selected="true">
+                                            <span class="d-block mb-1 fw-medium">12</span>
+                                            <span class="d-block mb-0 fw-medium op-7 fs-12">Thu</span>
+                                        </a>
+                                        <a class="nav-link px-2" data-bs-toggle="tab" role="tab" href="#fri"
+                                            aria-selected="true">
+                                            <span class="d-block mb-1 fw-medium">13</span>
+                                            <span class="d-block mb-0 fw-medium op-7 fs-12">Fri</span>
+                                        </a>
+                                        <a class="nav-link px-2" data-bs-toggle="tab" role="tab" href="#sat"
+                                            aria-selected="true">
+                                            <span class="d-block mb-1 fw-medium">14</span>
+                                            <span class="d-block mb-0 fw-medium op-7 fs-12">Sat</span>
+                                        </a>
+                                        <a class="nav-link px-2" data-bs-toggle="tab" role="tab" href="#sun"
+                                            aria-selected="true">
+                                            <span class="d-block mb-1 fw-medium">15</span>
+                                            <span class="d-block mb-0 fw-medium op-7 fs-12">Sun</span>
+                                        </a>
+                                    </nav>
+                                    <div class="tab-content pt-2 my-3">
+                                        <div class="tab-pane show active border-0 p-0" id="mon" role="tabpanel">
+                                            <ul class="list-unstyled mb-0 upcoming-events-list">
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Meeting with client</p>
+                                                            <p class="mb-0 text-muted">Video Conference</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block "></i>9:00am
+                                                                - 10:00am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Lunch with team members</p>
+                                                            <p class="mb-0 text-muted">Dolores Ait Labore Sit</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>12:00pm
+                                                                - 12:45am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">General board meeting</p>
+                                                            <p class="mb-0 text-muted">Golden PArk</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>4:00pm
+                                                                - 5:30pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Create New Registration Page</p>
+                                                            <p class="mb-0 text-muted">2UA Project</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>5:00pm
+                                                                - 5:45pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane border-0 p-0" id="tue" role="tabpanel">
+                                            <ul class="list-unstyled mb-0 upcoming-events-list">
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Meeting with client</p>
+                                                            <p class="mb-0 text-muted">Video Conference</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>9:00am
+                                                                - 10:00am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Lunch with team members</p>
+                                                            <p class="mb-0 text-muted">Dolores Ait Labore Sit</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>12:00pm
+                                                                - 12:45am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">General board meeting</p>
+                                                            <p class="mb-0 text-muted">Golden PArk</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>4:00pm
+                                                                - 5:30pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Create New Registration Page</p>
+                                                            <p class="mb-0 text-muted">2UA Project</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>5:00pm
+                                                                - 5:45pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane border-0 p-0" id="wed" role="tabpanel">
+                                            <ul class="list-unstyled mb-0 upcoming-events-list">
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Meeting with client</p>
+                                                            <p class="mb-0 text-muted">Video Conference</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>9:00am
+                                                                - 10:00am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Lunch with team members</p>
+                                                            <p class="mb-0 text-muted">Dolores Ait Labore Sit</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>12:00pm
+                                                                - 12:45am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">General board meeting</p>
+                                                            <p class="mb-0 text-muted">Golden PArk</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>4:00pm
+                                                                - 5:30pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Create New Registration Page</p>
+                                                            <p class="mb-0 text-muted">2UA Project</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>5:00pm
+                                                                - 5:45pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane border-0 p-0" id="thu" role="tabpanel">
+                                            <ul class="list-unstyled mb-0 upcoming-events-list">
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Meeting with client</p>
+                                                            <p class="mb-0 text-muted">Video Conference</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>9:00am
+                                                                - 10:00am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Lunch with team members</p>
+                                                            <p class="mb-0 text-muted">Dolores Ait Labore Sit</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>12:00pm
+                                                                - 12:45am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">General board meeting</p>
+                                                            <p class="mb-0 text-muted">Golden PArk</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>4:00pm
+                                                                - 5:30pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Create New Registration Page</p>
+                                                            <p class="mb-0 text-muted">2UA Project</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>5:00pm
+                                                                - 5:45pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane border-0 p-0" id="fri" role="tabpanel">
+                                            <ul class="list-unstyled mb-0 upcoming-events-list">
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Meeting with client</p>
+                                                            <p class="mb-0 text-muted">Video Conference</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>9:00am
+                                                                - 10:00am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Lunch with team members</p>
+                                                            <p class="mb-0 text-muted">Dolores Ait Labore Sit</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>12:00pm
+                                                                - 12:45am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">General board meeting</p>
+                                                            <p class="mb-0 text-muted">Golden PArk</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>4:00pm
+                                                                - 5:30pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Create New Registration Page</p>
+                                                            <p class="mb-0 text-muted">2UA Project</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>5:00pm
+                                                                - 5:45pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane border-0 p-0" id="sat" role="tabpanel">
+                                            <ul class="list-unstyled mb-0 upcoming-events-list">
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Meeting with client</p>
+                                                            <p class="mb-0 text-muted">Video Conference</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>9:00am
+                                                                - 10:00am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Lunch with team members</p>
+                                                            <p class="mb-0 text-muted">Dolores Ait Labore Sit</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>12:00pm
+                                                                - 12:45am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">General board meeting</p>
+                                                            <p class="mb-0 text-muted">Golden PArk</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>4:00pm
+                                                                - 5:30pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Create New Registration Page</p>
+                                                            <p class="mb-0 text-muted">2UA Project</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>5:00pm
+                                                                - 5:45pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane border-0 p-0" id="sun" role="tabpanel">
+                                            <ul class="list-unstyled mb-0 upcoming-events-list">
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Meeting with client</p>
+                                                            <p class="mb-0 text-muted">Video Conference</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>9:00am
+                                                                - 10:00am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Lunch with team members</p>
+                                                            <p class="mb-0 text-muted">Dolores Ait Labore Sit</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>12:00pm
+                                                                - 12:45am</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">General board meeting</p>
+                                                            <p class="mb-0 text-muted">Golden PArk</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>4:00pm
+                                                                - 5:30pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex align-items-top justify-conent-between">
+                                                        <div class="flex-fill">
+                                                            <p class="mb-0 fs-14">Create New Registration Page</p>
+                                                            <p class="mb-0 text-muted">2UA Project</p>
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-muted"><i
+                                                                    class="ri-time-line align-middle me-1 d-inline-block"></i>5:00pm
+                                                                - 5:45pm</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">
+                                        Timeline
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-sm btn-primary-light btn-wave">View All</button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled timeline-widget my-3">
+                                        <li class="timeline-widget-list">
+                                            <div class="d-flex align-items-top">
+                                                <div class="me-5 text-center">
+                                                    <span class="d-block fs-20 fw-medium">02</span>
+                                                    <span class="d-block fs-12 text-muted">Mon</span>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap flex-fill align-items-center justify-content-between">
+                                                    <div>
+                                                        <p
+                                                            class="mb-1 text-truncate timeline-widget-content text-wrap fs-14">
+                                                            You have an announcement</p>
+                                                        <p class="mb-0 fs-12 lh-1 text-muted">10:00AM<span
+                                                                class="badge bg-primary-transparent ms-2">Announcement</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a href="javascript:void(0);" class="p-2 fs-16 text-muted"
+                                                            data-bs-toggle="dropdown">
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item"
+                                                                    href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Another
+                                                                    action</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                    href="javascript:void(0);">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-widget-list">
+                                            <div class="d-flex align-items-top">
+                                                <div class="me-5 text-center">
+                                                    <span class="d-block fs-20 fw-medium">15</span>
+                                                    <span class="d-block fs-12 text-muted">Sun</span>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap flex-fill align-items-center justify-content-between">
+                                                    <div>
+                                                        <p
+                                                            class="mb-1 text-truncate timeline-widget-content text-wrap fs-14">
+                                                            National holiday - Vero Jayanti</p>
+                                                        <p class="mb-0 fs-12 lh-1 text-muted"><span
+                                                                class="badge bg-warning-transparent">Holiday</span></p>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a href="javascript:void(0);" class="p-2 fs-16 text-muted"
+                                                            data-bs-toggle="dropdown">
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item"
+                                                                    href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Another
+                                                                    action</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                    href="javascript:void(0);">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-widget-list">
+                                            <div class="d-flex align-items-top">
+                                                <div class="me-5 text-center">
+                                                    <span class="d-block fs-20 fw-medium">23</span>
+                                                    <span class="d-block fs-12 text-muted">Mon</span>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap flex-fill align-items-center justify-content-between">
+                                                    <div>
+                                                        <p
+                                                            class="mb-1 text-truncate timeline-widget-content text-wrap fs-14">
+                                                            John pup birthday - Team Member</p>
+                                                        <p class="mb-4 fs-12 lh-1 text-muted">09:00AM<span
+                                                                class="badge bg-success-transparent ms-2">Birthday</span>
+                                                        </p>
+                                                        <p
+                                                            class="mb-1 text-truncate timeline-widget-content text-wrap fs-14">
+                                                            Amet sed no dolor kasd</p>
+                                                        <p class="mb-0 fs-12 lh-1 text-muted">04:00PM<span
+                                                                class="badge bg-primary-transparent ms-2">Announcement</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a href="javascript:void(0);" class="p-2 fs-16 text-muted"
+                                                            data-bs-toggle="dropdown">
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item"
+                                                                    href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Another
+                                                                    action</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                    href="javascript:void(0);">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-widget-list">
+                                            <div class="d-flex align-items-top">
+                                                <div class="me-5 text-center">
+                                                    <span class="d-block fs-20 fw-medium">31</span>
+                                                    <span class="d-block fs-12 text-muted">Tue</span>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap flex-fill align-items-center justify-content-between">
+                                                    <div>
+                                                        <p
+                                                            class="mb-1 text-truncate timeline-widget-content text-wrap fs-14">
+                                                            National Holiday - Dolore Ipsum</p>
+                                                        <p class="mb-0 fs-12 lh-1 text-muted"><span
+                                                                class="badge bg-warning-transparent">Holiday</span></p>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <a href="javascript:void(0);" class="p-2 fs-16 text-muted"
+                                                            data-bs-toggle="dropdown">
+                                                            <i class="fe fe-more-vertical"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item"
+                                                                    href="javascript:void(0);">Action</a></li>
+                                                            <li><a class="dropdown-item" href="javascript:void(0);">Another
+                                                                    action</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                    href="javascript:void(0);">Something else here</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Traffic Sources
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover text-nowrap">
+                                            <thead>
+                                                <tr>
+                                                    <th>Browser</th>
+                                                    <th>Sessions</th>
+                                                    <th>Views</th>
+                                                    <th>Traffic</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <span
+                                                                class="avatar avatar-rounded avatar-sm p-2 bg-primary me-2">
+                                                                <i class="ri-google-fill fs-18 text-fixed-black"></i>
+                                                            </span>
+                                                            <div class="fw-medium">Google</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i
+                                                                class="ri-arrow-up-s-fill me-1 text-success align-middle fs-18"></i>23,379</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>16,890</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar bg-primary" role="progressbar"
+                                                                style="width: 34%" aria-valuenow="34" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <span
+                                                                class="avatar avatar-rounded avatar-sm p-2 bg-primary me-2">
+                                                                <i class="ri-safari-line fs-18 text-fixed-black"></i>
+                                                            </span>
+                                                            <div class="fw-medium">Safari</div>
+                                                        </div>
+
+                                                    </td>
+                                                    <td>
+                                                        <span><i
+                                                                class="ri-arrow-up-s-fill me-1 text-success align-middle fs-18"></i>78,973</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>29,906</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar bg-primary" role="progressbar"
+                                                                style="width: 58%" aria-valuenow="58" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <span
+                                                                class="avatar avatar-rounded avatar-sm p-2 bg-primary me-2">
+                                                                <i class="ri-opera-fill fs-18 text-fixed-black"></i>
+                                                            </span>
+                                                            <div class="fw-medium">Opera</div>
+                                                        </div>
+
+                                                    </td>
+                                                    <td>
+                                                        <span><i
+                                                                class="ri-arrow-up-s-fill me-1 text-success align-middle fs-18"></i>12,457</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>8,674</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar bg-primary" role="progressbar"
+                                                                style="width: 62%" aria-valuenow="62" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <span
+                                                                class="avatar avatar-rounded avatar-sm p-2 bg-primary me-2">
+                                                                <i class="ri-edge-fill fs-18 text-fixed-black"></i>
+                                                            </span>
+                                                            <div class="fw-medium">Edge</div>
+                                                        </div>
+
+                                                    </td>
+                                                    <td>
+                                                        <span><i
+                                                                class="ri-arrow-up-s-fill me-1 text-success align-middle fs-18"></i>8,570</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>4,980</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar bg-primary" role="progressbar"
+                                                                style="width: 71%" aria-valuenow="71" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <span
+                                                                class="avatar avatar-rounded avatar-sm p-2 bg-primary me-2">
+                                                                <i class="ri-firefox-fill fs-18 text-fixed-black"></i>
+                                                            </span>
+                                                            <div class="fw-medium">Firefox</div>
+                                                        </div>
+
+                                                    </td>
+                                                    <td>
+                                                        <span><i
+                                                                class="ri-arrow-up-s-fill me-1 text-success align-middle fs-18"></i>6,135</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>4,436</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar bg-primary" role="progressbar"
+                                                                style="width: 48%" aria-valuenow="48" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <span
+                                                                class="avatar avatar-rounded avatar-sm p-2 bg-primary me-2">
+                                                                <i class="ri-ubuntu-fill fs-18 text-fixed-black"></i>
+                                                            </span>
+                                                            <div class="fw-medium">Ubuntu</div>
+                                                        </div>
+
+                                                    </td>
+                                                    <td>
+                                                        <span><i
+                                                                class="ri-arrow-up-s-fill me-1 text-success align-middle fs-18"></i>4,789</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>2,447</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress progress-xs">
+                                                            <div class="progress-bar bg-primary" role="progressbar"
+                                                                style="width: 28%" aria-valuenow="28" aria-valuemin="0"
+                                                                aria-valuemax="100">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-7 -->
+
+                    <!-- Start::row-8 -->
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Sessions By Device</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="sessionsByDevice"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Target Report</div>
+                                    <div class="ms-auto dropdown">
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-primary-light dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Details
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Another action</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body pb-3">
+                                    <div class="mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="float-end text-primary"
+                                            fill="currentColor" width="36px" height="36px" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M11,9h4a1,1,0,0,0,0-2H13V6a1,1,0,0,0-2,0V7a3,3,0,0,0,0,6h2a1,1,0,0,1,0,2H9a1,1,0,0,0,0,2h2v1a1,1,0,0,0,2,0V17a3,3,0,0,0,0-6H11a1,1,0,0,1,0-2Zm1-8A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z" />
+                                        </svg>
+                                        <p class="text-primary fw-500 mb-2">Revenue by week</p>
+                                        <h4 class="mb-2 fw-medium">$81,225.03</h4>
+                                        <span class="text-danger me-1 fs-14"> - 1.3%<i
+                                                class="ri-arrow-down-s-fill align-middle ms-1"></i> </span>
+                                        <span class="text-muted fs-12">33% of target reached</span>
+                                    </div>
+                                    <div id="report"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">Recent Applicants</div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="views"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-8 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+        
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+
+        <!-- JSVector Maps JS -->
+        <script src="{% static 'assets/libs/jsvectormap/js/jsvectormap.min.js'%}"></script>
+
+        <!-- JSVector Maps MapsJS -->
+        <script src="{% static 'assets/libs/jsvectormap/maps/world-merc.js'%}"></script>
+        
+        <!-- Widgets JS -->
+        <script src="{% static 'assets/js/widgets.js'%}"></script>
+
+{% endblock %}

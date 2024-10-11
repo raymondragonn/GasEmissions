@@ -1,0 +1,165 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                    <div class="col-xxl-3">
+                        <div class="card custom-card">
+                        <div class="top-left"></div>
+                        <div class="top-right"></div>
+                        <div class="bottom-left"></div>
+                        <div class="bottom-right"></div>
+                            <div class="card-header justify-content-between">
+                            <div class="card-title">All Events</div>
+                            <button class="btn btn-sm btn-primary btn-wave"><i class="ri-add-line align-middle me-1 fw-medium d-inline-block"></i>Create Event</button>
+                            </div>
+                            <div class="card-body p-0">
+                                <div id="external-events" class="border-bottom p-3">
+                                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-primary-transparent">
+                                    <div class="fc-event-main text-primary"><i class="ri-calendar-line me-2 d-inline-block"></i>Calendar Events</div>
+                                    </div>
+                                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-secondary-transparent"
+                                    data-class="bg-secondary-transparent">
+                                    <div class="fc-event-main text-secondary"><i class="ri-cake-2-line me-2 d-inline-block"></i>Birthday Events</div>
+                                    </div>
+                                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-success-transparent"
+                                    data-class="bg-success-transparent text-success">
+                                    <div class="fc-event-main text-success"><i class="ri-calendar-check-line me-2 d-inline-block"></i>Holiday Calendar</div>
+                                    </div>
+                                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-info-transparent"
+                                    data-class="bg-info-transparent text-info">
+                                    <div class="fc-event-main text-info"><i class="ri-home-office-line me-2 d-inline-block"></i>Office Events</div>
+                                    </div>
+                                    <div
+                                    class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-warning-transparent"
+                                    data-class="bg-warning">
+                                    <div class="fc-event-main text-warning"><i class="ri-calendar-event-line me-2 d-inline-block"></i>Other Events</div>
+                                    </div>
+                                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-danger-transparent"
+                                    data-class="bg-danger">
+                                    <div class="fc-event-main text-danger"><i class="ri-cake-line me-2 d-inline-block"></i>Anniversary Events</div>
+                                    </div>
+                                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-teal-transparent"
+                                    data-class="bg-danger">
+                                    <div class="fc-event-main text-teal"><i class="ri-timeline-view me-2 d-inline-block"></i>Timeline Events</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card custom-card">
+                        <div class="top-left"></div>
+                        <div class="top-right"></div>
+                        <div class="bottom-left"></div>
+                        <div class="bottom-right"></div>
+                        <div class="card-body p-0 pb-2">
+                            <div class="p-3 pb-2">
+                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                <h6 class="fw-medium mb-0">
+                                Today's Events (3):
+                                </h6>
+                                <button class="btn btn-primary-light btn-sm btn-wave waves-effect waves-light">View All</button>
+                            </div>
+                            </div>
+                            <div class="p-3">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3">
+                                <div class="d-flex gap-1 align-items-center flex-wrap">
+                                    <div class="avatar avatar-md avatar-rounded flex-shrink-0 me-1 bg-primary-transparent text-primary">
+                                    <i class="ri-user-line"></i>
+                                    </div>
+                                    <div>
+                                    <div class="mb-0 fs-14 fw-medium text-primary">Client Meeting</div>
+                                    <p class="mb-0 text-muted fs-12">
+                                        Meeting with a client.
+                                    </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                    <span class="badge bg-light mb-1">10:00AM-12:00PM</span>
+                                    </div>
+                                </div>
+                                </li>
+                                <li class="mb-3">
+                                <div class="d-flex gap-1 align-items-center flex-wrap">
+                                    <div class="avatar avatar-md avatar-rounded flex-shrink-0 me-1 bg-secondary-transparent text-secondary">
+                                    <i class="ri-live-line"></i>
+                                    </div>
+                                    <div>
+                                    <div class="mb-0 fs-14 fw-medium text-primary">Team Meeting</div>
+                                    <p class="mb-0 text-muted fs-12">
+                                        Zoom Meeting with all Teams.
+                                    </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                    <span class="badge bg-light mb-1">05:30PM-08:00PM</span>
+                                    </div>
+                                </div>
+                                </li>
+                                <li>
+                                <div class="d-flex gap-1 align-items-center flex-wrap">
+                                    <div class="avatar avatar-md avatar-rounded flex-shrink-0 me-1 bg-warning-transparent text-warning">
+                                    <i class="ri-shake-hands-line"></i>
+                                    </div>
+                                    <div>
+                                    <div class="mb-0 fs-14 fw-medium text-primary">Meeting New Client</div>
+                                    <p class="mb-0 text-muted fs-12">
+                                        Meeting with a New Client.
+                                    </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                    <span class="badge bg-light mb-1">8:30PM-09:00PM</span>
+                                    </div>
+                                </div>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="px-3 d-xxl-block d-none">
+                            <img src="{% static 'assets/images/media/media-83.png'%}" alt="" class="img-fluid px-5">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        <div class="col-xxl-9">
+                            <div class="card custom-card">
+                            <div class="top-left"></div>
+                            <div class="top-right"></div>
+                            <div class="bottom-left"></div>
+                            <div class="bottom-right"></div>
+                            <div class="card-header">
+                                <div class="card-title">Full Calendar</div>
+                            </div>
+                            <div class="card-body">
+                                <div id='calendar2'></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+      
+        <!-- Moment JS -->
+        <script src="{% static 'assets/libs/moment/moment.js'%}"></script>
+
+        <!-- Fullcalendar JS -->
+        <script src="{% static 'assets/libs/fullcalendar/index.global.min.js'%}"></script>
+        <script src="{% static 'assets/js/fullcalendar.js'%}"></script>
+
+{% endblock %}

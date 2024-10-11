@@ -1,0 +1,619 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="{% static 'assets/libs/swiper/swiper-bundle.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-2 -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center flex-wrap justify-content-between gap-2">
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <div>
+                                                <span class="avatar avatar-xxl">
+                                                    <img src="{% static 'assets/images/faces/1.jpg'%}" class="img-fluid" alt="">
+                                                </span>
+                                            </div>    
+                                            <div class="ms-3">
+                                                <h4 class="fw-medium mb-0 d-flex align-items-center"><a href="javascript:void(0);"> Isabella Rose <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h4>
+                                                <a href="javascript:void(0);" class="fw-medium fs-14"><i class="bi bi-briefcase me-1"></i> Software Developer</a>
+                                                <div class="d-flex flex-wrap gap-2 align-items-center fs-11 text-muted">
+                                                    <p class="fs-11 mb-0">Ratings : </p>
+                                                    <div class="min-w-fit-content ms-2">
+                                                        <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                        <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                        <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                        <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                        <span class="text-warning"><i class="ri-star-half-line"></i></span>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                        <span>(138)</span>
+                                                        <span>Ratings</span>
+                                                    </a>
+                                                </div>
+                                                <div class="d-flex fs-14 my-3">
+                                                    <div class="popular-tags">
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-geo-alt me-2 text-primary"></i>Paris, France</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-coin me-2 text-primary"></i>Package (Yearly) : <span class="fw-medium" data-bs-toggle="tooltip" title="Current Salary">$15,000</span> - <span class="fw-medium" data-bs-toggle="tooltip" title="Expected Salary">$25,000</span></a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-briefcase me-2 text-primary"></i>2 Year Experience</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-mortarboard me-2 text-primary"></i>Graduate</a>
+                                                    </div>
+                                                </div>
+                                                <div class="popular-tags">
+                                                    <a href="javascript:void(0);" class="badge rounded-pill bg-info-transparent"><i class="bi bi-moon-stars me-1"></i>Full Time</a>
+                                                    <a href="javascript:void(0);" class="badge rounded-pill bg-danger-transparent"><i class="bi bi-clock me-1"></i> Immediate Joinee</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-list">
+                                            <a href="javascript:void(0);" class="btn btn-primary"><i class="ri-download-line me-1"></i> Download Resume</a>
+                                            <a href="javascript:void(0);" class="btn btn-icon btn-primary-light btn-wave">
+                                                <i class="ri-heart-line fs-13"></i>
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-icon btn-primary-light btn-wave">
+                                                <i class="ri-share-line"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-8">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h5 class="mb-0 fw-medium fs-22 text-primary">
+                                            Candidate Profile Information
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 candidate-edu-timeline">
+                                    <div class="p-4 border-bottom">
+                                        <h5 class="fw-medium fs-17 d-flex align-items-center gap-2"><span class="avatar bg-primary avatar-sm"><i class="ri-briefcase-line fs-14"></i></span> Career Objective :</h5>
+                                        <div class="ms-4 ps-3 fs-14">
+                                            <p class="op-9">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque dui tellus, porta vitae lacinia id, consequat a ante. Aenean et est sit amet magna convallis porta ac eu lorem. Maecenas vitae dictum dui, ut pellentesque erat.</p>
+                                            <p class="mb-0 op-9">Quisque et molestie nisi. Cras at erat nec lectus venenatis tincidunt nec non eros. In neque nisi, scelerisque in ante at, pretium gravida purus.</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h5 class="fw-medium fs-17 d-flex align-items-center gap-2"><span class="avatar bg-primary avatar-sm"><i class="ri-stack-line fs-14"></i></span> Education :</h5>
+                                        <div class="ps-5 fs-14">
+                                            <div class="row">
+                                                <div class="col-xl-6">
+                                                    <p class="fw-medium fs-14 mb-0">Bachelors of science in computer science</p>
+                                                    <div class="d-flex gap-2">
+                                                        <p class="mb-0"> LMN Institute of Technology</p>
+                                                        <p class="mb-0 text-muted"><i class="bi bi-geo-alt fs-12"></i> Banglore</p>
+                                                    </div>
+                                                    <p class="mb-4"> (2015 Mar - 2019 Apr)</p>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <p class="fw-medium fs-14 mb-0">Intermediate (MPC)</p>
+                                                    <div class="d-flex gap-2">
+                                                        <p class="mb-0">Suriyan Kendreya College</p>
+                                                        <p class="mb-0 text-muted"><i class="bi bi-geo-alt fs-12"></i> Vijayawada</p>
+                                                    </div>
+                                                    <p class="mb-0"> (2013 Mar - 2015 Apr)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h5 class="fw-medium fs-17 d-flex align-items-center gap-2"><span class="avatar bg-primary avatar-sm"><i class="ri-user-star-line fs-14"></i></span> Certifications :</h5>
+                                        <div class="ps-5 fs-14">
+                                            <div class="row">
+                                                <div class="col-xl-6">
+                                                    <p class="fw-medium fs-14 mb-0">React Development (5 Months)</p>
+                                                    <p class="mb-0"> Nexus Technologies</p>
+                                                </div>
+                                                <div class="col-xl-6">
+                                                    <p class="fw-medium fs-14 mb-0">Fullstack Development (12 Months)</p>
+                                                    <p class="mb-0"> Innovate Enterprise.Co.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h5 class="fw-medium fs-17 d-flex align-items-center gap-2"><span class="avatar bg-primary avatar-sm"><i class="ri-profile-line fa-14"></i></span> Publications :</h5>
+                                        <div class="ms-3">
+                                            <ol class="list-group border-0 list-bullets fs-14">
+                                                <li class="border-0 py-1"><span class="fw-medium">“Digital in the Modern Age,”</span>  SkTech Trends Journal, Issue 2, 2021</li>
+                                                <li class="border-0 py-1"><span class="fw-medium">“Impact of Social Media,”</span>  Quarterly, Spring Edition, June 2015</li>
+                                                <li class="border-0 py-1"><span class="fw-medium">“Machine Learning Algorithms for Analytics,”</span> proceedings, 2018</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h5 class="fw-medium fs-17 d-flex align-items-center gap-2"><span class="avatar bg-primary avatar-sm"><i class="ri-equalizer-2-line fs-14"></i></span> Activities and Interests :</h5>
+                                        <div class="ms-3">
+                                            <ol class="list-group border-0 list-bullets fs-14">
+                                                <li class="border-0 py-1">Photography</li>
+                                                <li class="border-0 py-1">Collecting Antique Things</li>
+                                                <li class="border-0 py-1">Painting</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 border-bottom">
+                                        <h5 class="fw-medium fs-17 d-flex align-items-center gap-2"><span class="avatar bg-primary avatar-sm"><i class="ri-link fs-14"></i></span> References :</h5>
+                                        <div class="ms-4 ps-3 fs-14">
+                                            <p><span class="fw-medium">Name : </span> Amelia Grace</p>
+                                            <p><span class="fw-medium">Designation : </span> UI Developer</p>
+                                            <p><span class="fw-medium">Company Name : </span> Innovatepix Co.in</p>
+                                            <p><span class="fw-medium">Mobile : </span> +91 87579444111</p>
+                                            <p><span class="fw-medium">Email : </span> agrace44@email.com</p>
+                                            <p class="mb-0"><span class="fw-medium">Location : </span> Chennai</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h5 class="mb-0 fw-medium">Experience Overview</h5>                                        
+                                    </div>
+                                </div>
+                                <div class="card-body p-0 candidate-edu-timeline">
+                                    <div class="p-4 border-bottom">
+                                        <h5 class="fw-medium fs-17 d-flex align-items-center gap-2"><span class="avatar bg-primary avatar-sm"><i class="ri-briefcase-3-line fs-14"></i></span> Experience :</h5>
+                                        <div class="ms-4 ps-3 fs-14">
+                                            <p class="fw-medium fs-14 mb-0">UI Developer (2020 Jan - 2023 Apr)</p>
+                                            <div class="d-flex gap-2">
+                                                <p>Innovatepix Co.in</p>
+                                                <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Saidapet, Chennai</p>
+                                            </div>
+                                            <p class="fw-medium mb-2">Responsibilities :</p>
+                                            <ol class="list-group border-0 list-bullets fs-14">
+                                                <li class="border-0 py-1">Collaborated with cross-functional teams to conceptualize and execute user-centered designs, incorporating market analysis, customer feedback, and usability findings.</li>
+                                                <li class="border-0 py-1">Implemented and maintained a consistent design system, ensuring uniformity across various platforms and devices.</li> 
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="card custom-card border bg-primary-transparent shadow-none">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-8">
+                                            <h5 class="fw-medium mb-0">&#128400; Was this profile a suitable for someone?</h5>
+                                        </div>
+                                        <div class="col-lg-4 text-end">
+                                            <a href="javascript:void(0);" class="btn btn-success btn-lg" role="button">
+                                                <i class="ri-share-line me-2"></i>Share Now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <div>
+                                <h4 class="fw-medium mb-0">Related Profiles</h4>
+                                <p class="fs-14">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                <div class="swiper swiper-related-jobs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card custom-card">
+                                                <div class="card-body">
+                                                    <div class="d-flex mb-3 align-items-start flex-wrap gap-2">
+                                                        <div>
+                                                            <span class="avatar avatar-lg">
+                                                                <img src="{% static 'assets/images/faces/1.jpg'%}" alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex-fill">
+                                                            <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="javascript:void(0);"> Evelyn Anna <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                            <a href="javascript:void(0);" class="fs-14"><i class="bi bi-briefcase fs-11"></i> Software Developer</a>
+                                                            <p class="mb-2 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Saidapet, Chennai</p>
+                                                            <div class="d-flex align-items-center fs-12 text-muted">
+                                                                <p class="fs-12 mb-0">Ratings : </p>
+                                                                <div class="min-w-fit-content ms-2">
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="ri-star-half-line"></i></span>
+                                                                </div>
+                                                                <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                                    <span>(138)</span>
+                                                                    <span>Ratings</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-list">
+                                                            <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                            <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                            <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popular-tags">
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-mortarboard text-primary me-1"></i> Graduate</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-moon-stars text-primary me-1"></i> flexible-shift</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-clock text-primary me-1"></i> Immediate Joinee</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-broadcast text-primary me-1"></i> Good at English</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                        <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                        <div class="popular-tags flex-grow-1">
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">HTML</a>
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">CSS</a>
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">Javascript</a>
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">Angular</a>
+                                                            <a href="javascript:void(0);" class="badge bg-primary-transparent"><i class="bi bi-plus"></i> More</a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="javascript:void(0);" class="badge badge-md bg-info-transparent" data-bs-toggle="tooltip" title="1 year bond accepted"><i class="bi bi-hand-thumbs-up me-1"></i>1 year bond accepted</a>
+                                                            <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 2 Years</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card custom-card">
+                                                <div class="card-body">
+                                                    <div class="d-flex mb-3 align-items-start flex-wrap gap-2">
+                                                        <div>
+                                                            <span class="avatar avatar-lg">
+                                                                <img src="{% static 'assets/images/faces/3.jpg'%}" alt="">
+                                                            </span>
+                                                        </div>    
+                                                        <div class="flex-fill">
+                                                            <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="javascript:void(0);"> Nitheri Morgan <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                            <a href="javascript:void(0);" class="fs-14"><i class="bi bi-briefcase fs-11"></i> Web Developer</a>
+                                                            <p class="mb-2 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Coimbatore, Chennai</p>
+                                                            <div class="d-flex align-items-center fs-12 text-muted">
+                                                                <p class="fs-12 mb-0">Ratings : </p>
+                                                                <div class="min-w-fit-content ms-2">
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="bi bi-star"></i></span>
+                                                                    <span class="text-warning"><i class="bi bi-star"></i></span>
+                                                                </div>
+                                                                <a href="javascript:void(0);" class="mb-0 ms-1 min-w-fit-content text-muted">
+                                                                    <span>(42)</span>
+                                                                    <span>Ratings</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-list">
+                                                            <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                            <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                            <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popular-tags">
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-mortarboard text-primary me-1"></i> Post Graduate</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-moon-stars text-primary me-1"></i> flexible-shift</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-clock text-primary me-1"></i> Within 15 Days</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-broadcast text-primary me-1"></i> Good at English</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                        <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                        <div class="popular-tags flex-grow-1">
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">React</a>
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">Javascript</a>
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">React Navtive</a>
+                                                            <a href="javascript:void(0);" class="badge bg-primary-transparent"><i class="bi bi-plus"></i> More</a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="javascript:void(0);" class="badge badge-md bg-info-transparent" data-bs-toggle="tooltip" title="1 year bond accepted"><i class="bi bi-hand-thumbs-up me-1"></i>2 years bond accepted</a>
+                                                            <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 4 Years</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card custom-card">
+                                                <div class="card-body">
+                                                    <div class="d-flex mb-3 align-items-start flex-wrap gap-2">
+                                                        <div>
+                                                            <span class="avatar avatar-lg">
+                                                                <img src="{% static 'assets/images/faces/21.jpg'%}" alt="">
+                                                            </span>
+                                                        </div>    
+                                                        <div class="flex-fill">
+                                                            <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="javascript:void(0);"> Natalie Miller <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                            <a href="javascript:void(0);" class="fs-14"><i class="bi bi-briefcase fs-11"></i> Python Developer</a>
+                                                            <p class="mb-2 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Rajajinagar, Bangalore</p>
+                                                            <div class="d-flex align-items-center fs-12 text-muted">
+                                                                <p class="fs-12 mb-0">Ratings : </p>
+                                                                <div class="min-w-fit-content ms-2">
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                                    <span class="text-warning"><i class="bi bi-star"></i></span>
+                                                                    <span class="text-warning"><i class="bi bi-star"></i></span>
+                                                                </div>
+                                                                <a href="javascript:void(0);" class="mb-0 ms-1 min-w-fit-content text-muted">
+                                                                    <span>(48)</span>
+                                                                    <span>Ratings</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-list">
+                                                            <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                            <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                            <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popular-tags">
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-mortarboard text-primary me-1"></i> MBA</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-moon-stars text-primary me-1"></i> flexible-shift</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-clock text-primary me-1"></i> Within 20 Days</a>
+                                                        <span class="vr align-middle me-2"></span>
+                                                        <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-broadcast text-primary me-1"></i> Avg at English</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                        <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                        <div class="popular-tags flex-grow-1">
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">Python</a>
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">Java</a>
+                                                            <a href="javascript:void(0);" class="badge bg-light text-default">React</a>
+                                                            <a href="javascript:void(0);" class="badge bg-primary-transparent"><i class="bi bi-plus"></i> More</a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 5 Years</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>      
+                        </div>
+                        <div class="col-xxl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Personal Information
+                                    </div>
+                                </div>
+                                <div class="card-body p-2">
+                                    <div class="table-responsive">
+                                        <table class="table table-responsive table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">Full Name</span> 
+                                                    </td>
+                                                    <td>: Isabella Rose </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">Email</span> 
+                                                    </td>
+                                                    <td>: isabellarose77@gmail.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">D.O.B</span> 
+                                                    </td>
+                                                    <td>: 28 Mar 2000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">Gender</span> 
+                                                    </td>
+                                                    <td>: Female</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">Age</span> 
+                                                    </td>
+                                                    <td>: 29</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">Mobile </span> 
+                                                    </td>
+                                                    <td>: +91 87544744441</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">Mother Tongue </span> 
+                                                    </td>
+                                                    <td>: Kannada</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">Marital Status </span> 
+                                                    </td>
+                                                    <td>: Unmarried</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">Blood Group </span> 
+                                                    </td>
+                                                    <td>: o +ve</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-50">
+                                                        <span class="fw-medium">Address </span> 
+                                                    </td>
+                                                    <td>: A-123,Koramangala, Bangalore - 5600044</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex align-items-center">
+                                        <p class="fs-15 mb-0 me-4 fw-medium">Social :</p>
+                                        <div class="btn-list mb-0">
+                                            <button class="btn btn-sm btn-icon btn-primary-light btn-wave waves-effect waves-light mb-xxl-0">
+                                                <i class="ri-facebook-line"></i>
+                                            </button>
+                                            <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light mb-xxl-0">
+                                                <i class="ri-twitter-x-line"></i>
+                                            </button>
+                                            <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light mb-xxl-0">
+                                                <i class="ri-instagram-line"></i>
+                                            </button>
+                                            <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light mb-xxl-0">
+                                                <i class="ri-github-line"></i>
+                                            </button>
+                                            <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light mb-xxl-0">
+                                                <i class="ri-youtube-line"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Skills
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="popular-tags">
+                                        <a href="javascript:void(0);" class="badge bg-light text-default">HTML</a>
+                                        <a href="javascript:void(0);" class="badge bg-light text-default">CSS</a>
+                                        <a href="javascript:void(0);" class="badge bg-light text-default">Javascript</a>
+                                        <a href="javascript:void(0);" class="badge bg-light text-default">Angular</a>
+                                        <a href="javascript:void(0);" class="badge bg-light text-default">React</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Tools Used
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-wrap gap-2">
+                                    <span class="avatar me-2 bg-white shadow-sm border p-1">
+                                        <img src="{% static 'assets/images/company-logos/1.png'%}" alt="">
+                                    </span>
+                                    <span class="avatar me-2 bg-white shadow-sm border p-1">
+                                        <img src="{% static 'assets/images/company-logos/2.png'%}" alt="">
+                                    </span>
+                                    <span class="avatar me-2 bg-white shadow-sm border p-1">
+                                        <img src="{% static 'assets/images/company-logos/3.png'%}" alt="">
+                                    </span>
+                                    <span class="avatar me-2 bg-white shadow-sm border p-1">
+                                        <img src="{% static 'assets/images/company-logos/4.png'%}" alt="">
+                                    </span>
+                                    <span class="avatar me-2 bg-white shadow-sm border p-1">
+                                        <img src="{% static 'assets/images/company-logos/5.png'%}" alt="">
+                                    </span>
+                                    <span class="avatar bg-white shadow-sm border p-1">
+                                        <img src="{% static 'assets/images/company-logos/6.png'%}" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Languages
+                                    </div>
+                                </div>
+                                <div class="card-body fs-14 ">
+                                    <p><span class="fw-medium">English : </span>Fluent</p>
+                                    <p><span class="fw-medium">Hindi : </span>Intermediate</p>
+                                    <p class="mb-0"><span class="fw-medium">Kannada : </span>Expert</p>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <h5 class="fw-medium mb-3">Get Up-to-date Job Alerts</h5>
+                                    <div class="fs-14">
+                                        <p>Stay ahead in your job search journey with the latest updates tailored just for you.</p>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Email Here" aria-label="blog-email" aria-describedby="blog-subscribe">
+                                            <button class="btn btn-primary" type="button" id="blog-subscribe">Subscribe</button>
+                                        </div>
+                                        <label class="form-check-label">
+                                            By Subscribing you accept to <a href="javascript:void(0);" class="text-success"><u>privacy policy</u></a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-2 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Swiper JS -->
+        <script src="{% static 'assets/libs/swiper/swiper-bundle.min.js'%}"></script>
+        
+        <!-- Candidate Details JS -->
+        <script src="{% static 'assets/js/job-candidate-details.js'%}"></script>
+
+{% endblock %}

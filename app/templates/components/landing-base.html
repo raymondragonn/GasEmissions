@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="horizontal" data-nav-style="menu-click" data-menu-position="fixed" data-theme-mode="dark" data-card-style="style1" data-card-background="background1">
+
+    <head>
+
+        <!-- Meta Data -->
+		<meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Description" content="SciFi - Django Premium Bootstrap 5 Admin Dashboard Template">
+        <meta name="Author" content="Spruko Technologies Private Limited">
+        <meta name="keywords" content="django, django admin, django framework, dashboard, django admin template, admin, django admin panel, django bootstrap, django and bootstrap, django bootstrap 5, dashboard template, django html, admin panel template, bootstrap admin template, admin panel django">
+        
+        <!-- TITLE -->
+		<title>SciFi - Django Premium Bootstrap 5 Admin &amp; Dashboard Template </title>
+
+        <!-- FAVICON -->
+        <link rel="icon" href="{% static 'assets/images/brand-logos/favicon.ico'%}" type="image/x-icon">
+
+        <!-- BOOTSTRAP CSS -->
+	    <link  id="style" href="{% static 'assets/libs/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+        <!-- ICONS CSS -->
+        <link href="{% static 'assets/css/icons.css'%}" rel="stylesheet">
+        
+        <!-- STYLES CSS -->
+        <link href="{% static 'assets/css/styles.css'%}" rel="stylesheet">
+
+        {% include 'components/layouts/landing/styles.html' %}
+        {% block styles %}
+
+        {% endblock %}
+
+	</head>
+
+    <body class="landing-body">
+
+        <!-- SWITCHER -->
+        {% include 'components/layouts/landing/switcher.html' %}
+        <!-- END SWITCHER -->
+
+        <!-- PAGE -->
+		<div class="landing-page-wrapper">
+
+            <!-- HEADER -->
+            {% include 'components/layouts/landing/header.html' %}
+            <!-- END HEADER -->
+
+            <!-- SIDEBAR -->
+            {% include 'components/layouts/landing/sidebar.html' %}
+            <!-- END SIDEBAR -->
+
+            <!-- MAIN-CONTENT -->
+
+            <div class="main-content landing-main px-0">
+
+                {% block content %}
+                    
+                {% endblock %}
+
+                <!-- FOOTER -->
+                {% include 'components/layouts/landing/footer.html' %}
+                <!-- FOOTER -->
+
+            </div> 
+            <!-- END MAIN-CONTENT -->
+
+		</div>
+        <!-- END PAGE-->
+
+        <!-- SCRIPTS -->
+        {% include 'components/layouts/landing/scripts.html' %}
+
+        {% block scripts %}
+
+        {% endblock %}
+
+        <!-- STICKY JS -->
+        <script src="{% static 'assets/js/sticky.js'%}"></script>
+
+        <!-- END SCRIPTS -->
+
+	</body>
+</html>

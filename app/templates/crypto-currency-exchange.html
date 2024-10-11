@@ -1,0 +1,361 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card currency-exchange-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body p-5 d-flex align-items-center justify-content-center">
+                                    <div class="container">
+                                        <h3 class="text-fixed-white text-center">Buy and Sell Coins without additional fees</h3>
+                                        <span class="d-block fs-16 text-fixed-white text-center op-8 mb-4">
+                                            Buy now and get +50% extra bonus Minimum pre-sale amount 100 Crypto Coin. We accept BTC crypto-currency..
+                                        </span>
+                                        <div class="p-3 mb-4 rounded currency-exchange-area">
+                                            <div class="row gy-3">
+                                                <div class="col-xxl-3 col-12">
+                                                    <input type="text" class="form-control" value="0.0453" placeholder="Enter Amount">
+                                                </div>
+                                                <div class="col-xxl-2 col-12">
+                                                    <div>
+                                                        <select class="form-control" data-trigger name="Vacancies">
+                                                            <option value="Choice 1">Bitcoin</option> 
+                                                            <option value="Choice 2">Ethereum</option> 
+                                                            <option value="Choice 3">Litecoin</option>
+                                                            <option value="Choice 4">Ripple</option>
+                                                            <option value="Choice 5">Cardano</option>
+                                                            <option value="Choice 6">Neo</option>
+                                                            <option value="Choice 7">Stellar</option>
+                                                            <option value="Choice 8">EOS</option>
+                                                            <option value="Choice 9">NEM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-2 col-12">
+                                                    <div class="fs-2 text-fixed-white text-center op-8 lh-1">
+                                                        =
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-3 col-12">
+                                                    <input type="text" class="form-control" value="1350.93" placeholder="Exchange Amount">
+                                                </div>
+                                                <div class="col-xxl-2 col-12">
+                                                    <select class="form-control" data-trigger name="Vacancies">
+                                                        <option value="Choice 1">USD</option> 
+                                                        <option value="Choice 2">Pound</option> 
+                                                        <option value="Choice 3">Rupee</option>
+                                                        <option value="Choice 4">Euro</option>
+                                                        <option value="Choice 5">Won</option>
+                                                        <option value="Choice 6">Dinar</option>
+                                                        <option value="Choice 7">Rial</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="btn btn-success btn-wave">Exchange Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                    <!-- Start:: row-2 -->
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body mb-3">
+                                    <div class="d-flex align-items-top justify-content-between mb-4 flex-wrap">
+                                        <div>
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <div class="lh-1">
+                                                    <span class="avatar avatar-rounded avatar-xs">
+                                                        <img src="{% static 'assets/images/crypto-currencies/square-color/Bitcoin.svg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <h6 class="fw-medium mb-0">Bitcoin - BTC</h6>
+                                            </div>
+                                            <span class="fs-22 d-flex align-items-center">24.3% <span class="fs-12 text-warning op-7 ms-2">+0.59<i class="ri-arrow-up-circle-line ms-1 d-inline-flex"></i></span><span class="badge bg-success-transparent fs-10 ms-2">24H</span></span>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-success fw-medium">$30.29</span>
+                                            <span class="d-block fs-14 mb-1">0.00434</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="btc-currency-chart" class="mt-1 w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body mb-3">
+                                    <div class="d-flex align-items-top justify-content-between mb-4 flex-wrap">
+                                        <div>
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <div class="lh-1">
+                                                    <span class="avatar avatar-rounded avatar-xs">
+                                                        <img src="{% static 'assets/images/crypto-currencies/square-color/Ethereum.svg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <h6 class="fw-medium mb-0">Ethereum - ETH</h6>
+                                            </div>
+                                            <span class="fs-22 d-flex align-items-center">15.25% <span class="fs-12 text-warning op-7 ms-2">+1.30<i class="ri-arrow-up-circle-line ms-1 d-inline-flex"></i></span></span>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-success fw-medium">$2,283.73</span>
+                                            <span class="d-block fs-14 mb-1">1.2923</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="eth-currency-chart" class="mt-1 w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body mb-3">
+                                    <div class="d-flex align-items-top justify-content-between mb-4 flex-wrap">
+                                        <div>
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <div class="lh-1">
+                                                    <span class="avatar avatar-rounded avatar-xs">
+                                                        <img src="{% static 'assets/images/crypto-currencies/square-color/Dash.svg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <h6 class="fw-medium mb-0">Dash - DASH</h6>
+                                            </div>
+                                            <span class="fs-22 d-flex align-items-center">15.25% <span class="fs-12 text-warning op-7 ms-2">+1.30<i class="ri-arrow-up-circle-line ms-1 d-inline-flex"></i></span></span>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-success fw-medium">$2,283.73</span>
+                                            <span class="d-block fs-14 mb-1">1.2923</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="dash-currency-chart" class="mt-1 w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body mb-3">
+                                    <div class="d-flex align-items-top justify-content-between mb-4 flex-wrap">
+                                        <div>
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <div class="lh-1">
+                                                    <span class="avatar avatar-rounded avatar-xs">
+                                                        <img src="{% static 'assets/images/crypto-currencies/square-color/Litecoin.svg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <h6 class="fw-medium mb-0">Litecoin - LTC</h6>
+                                            </div>
+                                            <span class="fs-22 d-flex align-items-center">15.25% <span class="fs-12 text-warning op-7 ms-2">+1.30<i class="ri-arrow-up-circle-line ms-1 d-inline-flex"></i></span></span>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-success fw-medium">$2,283.73</span>
+                                            <span class="d-block fs-14 mb-1">1.2923</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ltc-currency-chart" class="mt-1 w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body mb-3">
+                                    <div class="d-flex align-items-top justify-content-between mb-4 flex-wrap">
+                                        <div>
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <div class="lh-1">
+                                                    <span class="avatar avatar-rounded avatar-xs">
+                                                        <img src="{% static 'assets/images/crypto-currencies/square-color/Ripple.svg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <h6 class="fw-medium mb-0">Ripple - XRS</h6>
+                                            </div>
+                                            <span class="fs-22 d-flex align-items-center">15.25% <span class="fs-12 text-warning op-7 ms-2">+1.30<i class="ri-arrow-up-circle-line ms-1 d-inline-flex"></i></span></span>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-success fw-medium">$2,283.73</span>
+                                            <span class="d-block fs-14 mb-1">1.2923</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="xrs-currency-chart" class="mt-1 w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body mb-3">
+                                    <div class="d-flex align-items-top justify-content-between mb-4 flex-wrap">
+                                        <div>
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <div class="lh-1">
+                                                    <span class="avatar avatar-rounded avatar-xs">
+                                                        <img src="{% static 'assets/images/crypto-currencies/square-color/Golem.svg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <h6 class="fw-medium mb-0">Golem - GLM</h6>
+                                            </div>
+                                            <span class="fs-22 d-flex align-items-center">15.25% <span class="fs-12 text-warning op-7 ms-2">+1.30<i class="ri-arrow-up-circle-line ms-1 d-inline-flex"></i></span></span>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-success fw-medium">$2,283.73</span>
+                                            <span class="d-block fs-14 mb-1">1.2923</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="glm-currency-chart" class="mt-1 w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body mb-3">
+                                    <div class="d-flex align-items-top justify-content-between mb-4 flex-wrap">
+                                        <div>
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <div class="lh-1">
+                                                    <span class="avatar avatar-rounded avatar-xs">
+                                                        <img src="{% static 'assets/images/crypto-currencies/square-color/Monero.svg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <h6 class="fw-medium mb-0">Monero</h6>
+                                            </div>
+                                            <span class="fs-22 d-flex align-items-center">15.25% <span class="fs-12 text-warning op-7 ms-2">+1.30<i class="ri-arrow-up-circle-line ms-1 d-inline-flex"></i></span></span>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-success fw-medium">$2,283.73</span>
+                                            <span class="d-block fs-14 mb-1">1.2923</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="monero-currency-chart" class="mt-1 w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body mb-3">
+                                    <div class="d-flex align-items-top justify-content-between mb-4 flex-wrap">
+                                        <div>
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <div class="lh-1">
+                                                    <span class="avatar avatar-rounded avatar-xs">
+                                                        <img src="{% static 'assets/images/crypto-currencies/square-color/EOS.svg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <h6 class="fw-medium mb-0">EOS</h6>
+                                            </div>
+                                            <span class="fs-22 d-flex align-items-center">15.25% <span class="fs-12 text-warning op-7 ms-2">+1.30<i class="ri-arrow-up-circle-line ms-1 d-inline-flex"></i></span></span>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-success fw-medium">$2,283.73</span>
+                                            <span class="d-block fs-14 mb-1">1.2923</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="eos-currency-chart" class="mt-1 w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card custom-card overflow-hidden">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body mb-3">
+                                    <div class="d-flex align-items-top justify-content-between mb-4 flex-wrap">
+                                        <div>
+                                            <div class="d-flex align-items-center gap-2 mb-1">
+                                                <div class="lh-1">
+                                                    <span class="avatar avatar-rounded avatar-xs">
+                                                        <img src="{% static 'assets/images/crypto-currencies/square-color/Waves.svg'%}" alt="">
+                                                    </span>
+                                                </div>
+                                                <h6 class="fw-medium mb-0">Waves</h6>
+                                            </div>
+                                            <span class="fs-22 d-flex align-items-center">15.25% <span class="fs-12 text-warning op-7 ms-2">+1.30<i class="ri-arrow-up-circle-line ms-1 d-inline-flex"></i></span></span>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-success fw-medium">$2,283.73</span>
+                                            <span class="d-block fs-14 mb-1">1.2923</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="waves-currency-chart" class="mt-1 w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="text-center my-4">
+                                <button class="btn btn-primary-light" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm align-middle" role="status"
+                                        aria-hidden="true"></span>
+                                    Loading...
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-2 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+      
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+        
+        <!-- Crypto Currency Exchange JS -->
+        <script src="{% static 'assets/js/crypto-currency-exchange.js'%}"></script>
+
+{% endblock %}

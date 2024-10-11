@@ -1,0 +1,915 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3 pb-3">
+                                    <div class="card-title">
+                                        Contacts<span class="badge bg-light text-default rounded ms-1 fs-12 align-middle">17</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#create-contact"><i class="ri-add-line me-1 fw-medium align-middle"></i>Create Contact</button>
+                                        <button class="btn btn-success-light btn-sm">Export As CSV</button>
+                                        <div class="dropdown">
+                                            <a href="javascript:void(0);" class="btn btn-light btn-sm btn-wave waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Sort By<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Newest</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Date Added</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">A - Z</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap border-top">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                                                    </th>
+                                                    <th scope="col">Contact Name</th>
+                                                    <th scope="col">Lead Score</th>
+                                                    <th scope="col">Email</th>
+                                                    <th scope="col">Company</th>
+                                                    <th scope="col">Phone</th>
+                                                    <th scope="col">Lead Source</th>
+                                                    <th scope="col">Tags</th>
+                                                    <th scope="col">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel1" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/4.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">Alison</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>13, Jul 2023 - 6:15PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        845
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>Alison2571@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/1.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>Nexis Technologies</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>4777-54755-771</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Social Media
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-primary-transparent">Prospect</span>
+                                                            <span class="badge bg-primary-transparent">New Lead</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel2" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/12.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">Noel</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>21, Jul 2023 - 08:16AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        451
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>Noel289@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/3.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>MarbelsIntech solution</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>8741-8547-5661</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Direct mail
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-danger-transparent">Hot Lead</span>
+                                                            <span class="badge bg-primary-transparent">Customer</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel33" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/14.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">Sandy</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>14, Aug 2023 - 04:33PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        547
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>Sandy888@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/4.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>Classic Marketing</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>9874-7742-3220</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Blog Articles
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-success-transparent">Partner</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel3" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/6.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">Alexia</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>28, Aug 2023 - 09:47AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        774
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>Alexia290@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/5.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>Indusakis Services</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>1200-2520-5884</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Affiliates
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-secondary-transparent">Influencer</span>
+                                                            <span class="badge bg-light text-default">LostCustomer</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel4" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/8.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">Silvia</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>26, Sep  2023 - 01:51PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        758
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>Silvia96@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/6.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>Internatinal Indus</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>8741-4882-9871</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Organic search 
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-success-transparent">Partner</span>
+                                                            <span class="badge bg-pink-transparent">Subscriber</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel5" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/9.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">Noel Lucas</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>08, Sep 2023 - 01:52PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        164
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>noellucas471@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/7.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>Convention Prime</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>8821-5785-5742</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Social media 
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-danger-transparent">Hot Lead</span>
+                                                            <span class="badge bg-info-transparent">Referral</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel6" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/15.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">Stuart</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>06, Sep 2023 - 08:56AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        245
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>Stuart78@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/8.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>Pride Corporation</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>3582-8151-8452</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Blog Articles
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-purple-transparent">Cold Lead</span>
+                                                            <span class="badge bg-warning-transparent">Trial User</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel7" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/1.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">Myra</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>23, Oct 2023 - 09:54PM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        654
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>Myra220@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/9.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>Manish's Manufactures</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>4711-1242-0021</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Organic search
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-info-transparent">Partner</span>
+                                                            <span class="badge bg-success-transparent">Influencer</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel8" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/3.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">Juliana</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>04, Nov 2023 - 11:25AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        122
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>Juliana289@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/10.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>Travels Services</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>8451-5484-8885</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Affiliates
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-primary-transparent">New Lead</span>
+                                                            <span class="badge bg-light text-default">Lost Customer</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="crm-contact">
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel9" value="" aria-label="...">
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar  avatar-sm">
+                                                                    <img src="{% static 'assets/images/faces/9.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                                role="button" aria-controls="offcanvasExample"><span class="d-block fw-medium">George</span></a>
+                                                                <span class="d-block text-muted fs-11" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-primary" title="Last Contacted"><i class="ri-time-line me-1 align-middle"></i>14, Nov 2023 - 08:55AM</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        144
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block mb-1"><i class="ri-mail-line me-2 align-middle fs-14 text-muted"></i>George116@gmail.com</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <div class="lh-1">
+                                                                <span class="avatar avatar-sm p-1 bg-light ">
+                                                                    <img src="{% static 'assets/images/company-logos/2.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>HyraKen Technologies</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block"><i class="ri-phone-line me-2 align-middle fs-14 text-muted"></i>8744-5811-5874</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        Direct mail
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center flex-nowrap gap-1">
+                                                            <span class="badge bg-primary-transparent">New Lead</span>
+                                                            <span class="badge bg-pink-transparent">Subscriber</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-list">
+                                                            <a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                                            role="button" aria-controls="offcanvasExample" class="btn btn-sm btn-warning-light btn-icon"><i class="ri-eye-line"></i></a>
+                                                            <button class="btn btn-sm btn-info-light btn-icon"><i class="ri-pencil-line"></i></button>
+                                                            <button class="btn btn-sm btn-danger-light btn-icon contact-delete"><i class="ri-delete-bin-line"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-top-0">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            Showing 10 Entries <i class="bi bi-arrow-right ms-2 fw-medium"></i>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <nav aria-label="Page navigation" class="pagination-style-4">
+                                                <ul class="pagination mb-0">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="javascript:void(0);">
+                                                            Prev
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link text-primary" href="javascript:void(0);">
+                                                            next
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                    <!-- Start:: Contact Details Offcanvas -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExample">
+                        <div class="offcanvas-body p-0">
+                            <div class="d-sm-flex align-items-top p-4 main-profile-cover">
+                                <div>
+                                    <span class="avatar avatar-xl  online me-3">
+                                        <img src="{% static 'assets/images/faces/4.jpg'%}" alt="">
+                                    </span>
+                                </div>
+                                <div class="flex-fill main-profile-info">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="fw-bold mb-1 text-fixed-white">Alison Lia</h6>
+                                        <button type="button" class="btn-close crm-contact-close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <p class="mb-1 text-muted text-fixed-white op-7">Chief Executive Officer (C.E.O)</p>
+                                    <p class="fs-12 text-fixed-white mb-4 op-5">  
+                                        <span class="me-3"><i class="ri-building-line me-1 align-middle"></i>New York</span> 
+                                        <span><i class="ri-map-pin-line me-1 align-middle"></i>United States</span> 
+                                    </p>
+                                    <div class="d-flex mb-0">
+                                        <div class="me-4">
+                                            <p class="fw-semibold fs-20 text-fixed-white text-shadow mb-0">245</p>
+                                            <p class="mb-0 fs-11 op-5 text-fixed-white">Deals</p>
+                                        </div>
+                                        <div class="me-4">
+                                            <p class="fw-semibold fs-20 text-fixed-white text-shadow mb-0">$25.2k</p>
+                                            <p class="mb-0 fs-11 op-5 text-fixed-white">Contributions</p>
+                                        </div>
+                                        <div class="me-4">
+                                            <p class="fw-semibold fs-20 text-fixed-white text-shadow mb-0">$11.43k</p>
+                                            <p class="mb-0 fs-11 op-5 text-fixed-white">Comitted</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="p-4 border-bottom border-block-end-dashed">
+                                <div class="mb-0">
+                                    <p class="fs-15 mb-2 fw-medium">Professional Bio :</p>
+                                    <p class="text-muted fs-13 op-8 mb-0">
+                                        I am <b class="text-default">Alison Lisa,</b> a seasoned entrepreneur with over two decades of experience in the tech industry. Currently, I serve as the CEO and founder of InnovateX Solutions, a cutting-edge software development firm specializing in AI-driven solutions for businesses worldwide.
+                                    </p>
+                                </div>   
+                            </div>  
+                            <div class="p-4 border-bottom border-block-end-dashed d-flex align-items-center">
+                                <p class="fs-14 mb-0 me-4 fw-medium">Social Networks :</p>
+                                <div class="btn-list mb-0">
+                                    <button class="btn btn-sm btn-icon btn-primary-light btn-wave waves-effect waves-light mb-0">
+                                        <i class="ri-facebook-line fw-medium"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light mb-0">
+                                        <i class="ri-twitter-x-line fw-medium"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light mb-0">
+                                        <i class="ri-instagram-line fw-medium"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light mb-0">
+                                        <i class="ri-github-line fw-medium"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light mb-0">
+                                        <i class="ri-youtube-line fw-medium"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-4 border-bottom border-block-end-dashed">
+                                <p class="fs-14 mb-2 me-4 fw-medium">Contact Information :</p>
+                                <div class="">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="me-2">
+                                            <span class="avatar avatar-sm  bg-light text-muted">
+                                                <i class="ri-mail-line align-middle fs-14"></i>
+                                            </span>
+                                        </div>
+                                        <div class="fs-14">
+                                            alisonlisa4815@gmail.com
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="me-2">
+                                            <span class="avatar avatar-sm  bg-light text-muted">
+                                                <i class="ri-phone-line align-middle fs-14"></i>
+                                            </span>
+                                        </div>
+                                        <div class="fs-14">
+                                            +(222) 7471-5471
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-0">
+                                        <div class="me-2">
+                                            <span class="avatar avatar-sm  bg-light text-muted">
+                                                <i class="ri-map-pin-line align-middle fs-14"></i>
+                                            </span>
+                                        </div>
+                                        <div class="fs-14">
+                                            84/A-23 Main Street, Anytown, United States, USA, 20071
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border-bottom border-block-end-dashed">
+                                <p class="fs-14 mb-2 me-4 fw-medium">Tags :</p>
+                                <div>
+                                    <span class="badge bg-primary-transparent m-1">New Lead</span>
+                                    <span class="badge bg-primary-transparent m-1">Others</span>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <p class="fs-14 mb-2 fw-medium">Relationship Manager :
+                                    <a class="fs-14 text-primary mb-0 float-end" href="javascript:void(0);"><i class="ri-add-line me-1 align-middle"></i>Add Manager</a>
+                                </p>
+                                <div class="avatar-list-stacked">
+                                    <span class="avatar ">
+                                        <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                    </span>
+                                    <span class="avatar ">
+                                        <img src="{% static 'assets/images/faces/8.jpg'%}" alt="img">
+                                    </span>
+                                    <span class="avatar ">
+                                        <img src="{% static 'assets/images/faces/2.jpg'%}" alt="img">
+                                    </span>
+                                    <span class="avatar ">
+                                        <img src="{% static 'assets/images/faces/10.jpg'%}" alt="img">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: Contact Details Offcanvas -->
+
+                    <!-- Start:: Create Contact -->
+                    <div class="modal fade" id="create-contact" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Create Contact</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body px-4">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-12">
+                                            <div class="mb-0 text-center">
+                                                <span class="avatar avatar-xxl ">
+                                                    <img src="{% static 'assets/images/faces/9.jpg'%}" alt="" id="profile-img">
+                                                    <span class="badge rounded-pill bg-primary avatar-badge">
+                                                        <input type="file" name="photo" class="position-absolute w-100 h-100 op-0" id="profile-change">
+                                                        <i class="fe fe-camera"></i>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label for="deal-title" class="form-label">Deal Title</label>
+                                            <input type="text" class="form-control" id="deal-title" placeholder="Deal Title">
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label for="contact-lead-score" class="form-label">Lead Score</label>
+                                            <input type="number" class="form-control" id="contact-lead-score" placeholder="Lead Score">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label for="contact-mail" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="contact-mail" placeholder="Enter Email">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label for="contact-phone" class="form-label">Phone No</label>
+                                            <input type="tel" class="form-control" id="contact-phone" placeholder="Enter Phone Number">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label for="company-name" class="form-label">Company Name</label>
+                                            <input type="text" class="form-control" id="company-name" placeholder="Company Name">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label class="form-label">Lead Source</label>
+                                            <select class="form-control" name="choices-multiple-remove-button1" id="choices-multiple-remove-button1">
+                                                <option value="Choice 1">Social Media</option>
+                                                <option value="Choice 2">Direct mail</option>
+                                                <option value="Choice 3">Blog Articles</option>
+                                                <option value="Choice 4">Affiliates</option>
+                                                <option value="Choice 5">Organic search</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Last Contacted</label>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+                                                    <input type="text" class="form-control" id="targetDate" placeholder="Choose date and time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label class="form-label">Tags</label>
+                                            <select class="form-control" name="choices-multiple-remove-button2" id="choices-multiple-remove-button2" multiple>
+                                                <option value="">Select Tag</option>
+                                                <option value="Choice 1">New Lead</option>
+                                                <option value="Choice 2">Prospect</option>
+                                                <option value="Choice 3">Customer</option>
+                                                <option value="Choice 4">Hot Lead</option>
+                                                <option value="Choice 5">Partner</option>
+                                                <option value="Choice 6">LostCustomer</option>
+                                                <option value="Choice 7">Influencer</option>
+                                                <option value="Choice 8">Subscriber</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Create Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: Create Contact -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Flat Picker JS -->
+        <script src="{% static 'assets/libs/flatpickr/flatpickr.min.js'%}"></script>
+        
+        <!-- CRM Contacts JS -->
+        <script src="{% static 'assets/js/crm-contacts.js'%}"></script>
+
+{% endblock %}

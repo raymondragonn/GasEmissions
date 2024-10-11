@@ -1,0 +1,513 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between pb-3">
+                                    <div class="card-title">
+                                        Manage Invoices
+                                    </div>
+                                    <div class="d-flex">
+                                        <button class="btn btn-sm btn-primary btn-wave waves-light"><i class="ri-add-line fw-medium align-middle me-1"></i> Create Invoice</button>
+                                        <div class="dropdown ms-2">
+                                            <button class="btn btn-icon btn-secondary-light btn-sm btn-wave waves-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="ti ti-dots-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">All Invoices</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Paid Invoices</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Pending Invoices</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Overdue Invoices</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Client</th>
+                                                    <th scope="col">Invoice ID</th>
+                                                    <th scope="col">Issued Date</th>
+                                                    <th scope="col">Amount</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Due Date</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="invoice-list">
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/11.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-medium">James Lucas</p>
+                                                                <p class="mb-0 fs-11 text-muted">jameslucas2416@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="fw-medium text-primary">
+                                                            #SPK12032901
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        25,Nov 2023
+                                                    </td>
+                                                    <td>
+                                                        $212.45
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        25,Dec 2023
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm"><i class="ri-printer-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm invoice-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="invoice-list">
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/7.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-medium">Suzika Stallone</p>
+                                                                <p class="mb-0 fs-11 text-muted">suzikastallone3214@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="fw-medium text-primary">
+                                                            #SPK12032912
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        13,Nov 2023
+                                                    </td>
+                                                    <td>
+                                                        $512.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-warning-transparent">Pending</span>
+                                                    </td>
+                                                    <td>
+                                                        13,Dec 2023
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm"><i class="ri-printer-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm invoice-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="invoice-list">
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/15.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-medium">Roman Killon</p>
+                                                                <p class="mb-0 fs-11 text-muted">romankillon143@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="fw-medium text-primary">
+                                                            #SPK12032945
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        30,Nov 2023
+                                                    </td>
+                                                    <td>
+                                                        $2199.49
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">Overdue</span>
+                                                    </td>
+                                                    <td>
+                                                        30,Dec 2023
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm"><i class="ri-printer-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm invoice-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="invoice-list">
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/12.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-medium">Charlie Davieson</p>
+                                                                <p class="mb-0 fs-11 text-muted">charliedavieson@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="fw-medium text-primary">
+                                                            #SPK12032922
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        18,Nov 2023
+                                                    </td>
+                                                    <td>
+                                                        $1569.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        18,Dec 2023
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm"><i class="ri-printer-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm invoice-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="invoice-list">
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/4.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-medium">Selena Deoyl</p>
+                                                                <p class="mb-0 fs-11 text-muted">selenadeoyl114@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="fw-medium text-primary">
+                                                            #SPK12032932
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        18,Nov 2023
+                                                    </td>
+                                                    <td>
+                                                        $4,873.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">Due By 1 Day</span>
+                                                    </td>
+                                                    <td>
+                                                        18,Dec 2023
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm"><i class="ri-printer-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm invoice-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="invoice-list">
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/7.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-medium">Kiara Advensh</p>
+                                                                <p class="mb-0 fs-11 text-muted">kiaraadvensh87@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="fw-medium text-primary">
+                                                            #SPK12032978
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        02,Nov 2023
+                                                    </td>
+                                                    <td>
+                                                        $1923.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        18,Dec 2023
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm"><i class="ri-printer-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm invoice-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="invoice-list">
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/9.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-medium">Hunter Eli</p>
+                                                                <p class="mb-0 fs-11 text-muted">huntereli@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="fw-medium text-primary">
+                                                            #SPK12032919
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        15,Nov 2023
+                                                    </td>
+                                                    <td>
+                                                        $1,623.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        15,Dec 2023
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm"><i class="ri-printer-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm invoice-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="invoice-list">
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/13.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-medium">Tommy Noel</p>
+                                                                <p class="mb-0 fs-11 text-muted">Tommynoel@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="fw-medium text-primary">
+                                                            #SPK12032931
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        21,Nov 2023
+                                                    </td>
+                                                    <td>
+                                                        $3,423.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-warning-transparent">Pending</span>
+                                                    </td>
+                                                    <td>
+                                                        21,Dec 2023
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm"><i class="ri-printer-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm invoice-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="invoice-list">
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm avatar-rounded">
+                                                                    <img src="{% static 'assets/images/faces/8.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <p class="mb-0 fw-medium">Hannah</p>
+                                                                <p class="mb-0 fs-11 text-muted">hannah555@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:void(0);" class="fw-medium text-primary">
+                                                            #SPK12032958
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        15,Oct 2023
+                                                    </td>
+                                                    <td>
+                                                        $2,982.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Paid</span>
+                                                    </td>
+                                                    <td>
+                                                        15,Nov 2023
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary-light btn-icon btn-sm"><i class="ri-printer-line"></i></button>
+                                                        <button class="btn btn-danger-light btn-icon ms-1 btn-sm invoice-btn"><i class="ri-delete-bin-5-line"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-top-0">
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination mb-0 float-end">
+                                            <li class="page-item disabled">
+                                                <a class="page-link">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="javascript:void(0);">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body p-0">
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-primary-transparent text-primary mx-auto"> 
+                                            <i class="ri-calendar-check-fill fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">Total Invoices</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="548">548</span><span class="badge bg-primary fw-normal ms-2 fs-10 align-middle">
+                                                        15,487
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-success me-1 fw-medium">
+                                                            <i class="ri-arrow-up-s-line me-1 align-middle"></i>3.25%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-success-transparent text-success mx-auto"> 
+                                            <i class="ri-checkbox-circle-fill fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">Paid Invoices</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="451">451</span><span class="badge bg-success fw-normal ms-2 fs-10 align-middle">
+                                                        5,221
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-danger me-1 fw-medium">
+                                                            <i class="ri-arrow-down-s-line me-1 align-middle"></i>1.16%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-warning-transparent text-warning mx-auto"> 
+                                            <i class="ri-hourglass-fill fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12"> Pending Invoices</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="124">124</span><span class="badge bg-warning fw-normal ms-2 fs-10 align-middle">
+                                                        12,115
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-success me-1 fw-medium">
+                                                            <i class="ri-arrow-up-s-line me-1 align-middle"></i>0.25%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom gap-3 d-flex border-block-end-dashed">
+                                        <div class="task-icon-background bg-secondary-transparent text-secondary mx-auto"> 
+                                            <i class="ri-progress-5-line fs-22"></i>
+                                        </div> 
+                                        <div class="flex-fill">
+                                            <h6 class="mb-1 fs-12">Overdue Invoices</h6> 
+                                            <div class="pb-0 mt-0"> 
+                                                <div> 
+                                                    <h4 class="fs-18 fw-medium mb-2 d-flex align-items-center justify-content-between"><span class="count-up" data-count="124">124</span><span class="badge bg-secondary fw-normal ms-2 fs-10 align-middle">
+                                                        2,457
+                                                    </span> </h4> 
+                                                    <p class="text-muted fs-11 mb-0 lh-1">
+                                                        <span class="text-danger me-1 fw-medium">
+                                                            <i class="ri-arrow-down-s-line me-1 align-middle"></i>0.46%
+                                                        </span>
+                                                        <span>this month</span>
+                                                    </p>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+
+{% endblock %}

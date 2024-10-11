@@ -1,0 +1,705 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Dragula Css -->
+        <link rel="stylesheet" href="{% static 'assets/libs/dragula/dragula.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <span class="fw-medium fs-16 me-1">Deals</span><span class="badge bg-light text-default align-middle">16</span>
+                                        </div>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#create-contact"><i class="ri-add-line me-1 fw-medium align-middle"></i>New Deal</button>
+                                            <button class="btn btn-success-light btn-sm">Export As CSV</button>
+                                            <div class="dropdown">
+                                                <a href="javascript:void(0);" class="btn btn-light btn-sm btn-wave waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Sort By<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                                </a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Newest</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">Date Added</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);">A - Z</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                    <!-- Start::row-2 -->
+                    <div class="row">
+                        <div class="col-xxl-2 col-md-4">
+                            <div class="card custom-card">
+                                <div class="card-body p-3">
+                                    <div class="fw-medium fs-15 d-flex gap-2 justify-content-center align-items-center lead-discovered"><div class="dot-icon"></div>Leads Discovered</div>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap justify-content-center">
+                                        <span class="badge bg-light text-default">32 Leads</span><span class="text-primary fw-medium">$13,581</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4">
+                            <div class="card custom-card">
+                                <div class="card-body p-3">
+                                    <div class="fw-medium fs-15 d-flex gap-2 justify-content-center align-items-center lead-qualified"><div class="dot-icon"></div>Qualified Leads</div>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap justify-content-center">
+                                        <span class=" badge bg-light text-default">18 Leads</span><span class="text-primary fw-medium">$54,141</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4">
+                            <div class="card custom-card">
+                                <div class="card-body p-3">
+                                    <div class="fw-medium fs-15 d-flex gap-2 justify-content-center align-items-center contact-initiated"><div class="dot-icon"></div>Contact Initiated</div>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap justify-content-center">
+                                        <span class=" badge bg-light text-default">08 Leads</span><span class="text-primary fw-medium">$14,841</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4">
+                            <div class="card custom-card">
+                                <div class="card-body p-3">
+                                    <div class="fw-medium fs-15 d-flex gap-2 justify-content-center align-items-center need-identified"><div class="dot-icon"></div>Needs Identified</div>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap justify-content-center">
+                                        <span class=" badge bg-light text-default">58 Leads</span><span class="text-primary fw-medium">$41,842</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4">
+                            <div class="card custom-card">
+                                <div class="card-body p-3">
+                                    <div class="fw-medium fs-15 d-flex gap-2 justify-content-center align-items-center negotiation"><span class="dot-icon"></span>Negotiation</div>
+                                    <div class="d-flex align-items-center gap-2 justify-content-center">
+                                        <span class=" badge bg-light text-default">88 Leads</span><span class="text-primary fw-medium">$32,411</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4">
+                            <div class="card custom-card">
+                                <div class="card-body p-3">
+                                    <div class="fw-medium fs-15 d-flex gap-2 justify-content-center align-items-center deal-finalized"><div class="dot-icon"></div>Deal Finalized</div>
+                                    <div class="d-flex align-items-center gap-2 justify-content-center">
+                                        <span class=" badge bg-light text-default">151Leads</span><span class="text-primary fw-medium">$14,852</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-2 -->
+
+                    <!-- Start::row-3 -->
+                    <div class="row crm-deals">
+                        <div class="col-xxl-2" id="leads-discovered">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/12.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Service Upgrade</div>
+                                        </div>
+                                    </div>
+                                    <div>$3000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Nexis Technologies</a>
+                                        </div>
+                                        <div class="text-muted fs-12">15,Oct 2023 - 12:18PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/5.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Product Demo</div>
+                                        </div>
+                                    </div>
+                                    <div>$50,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">MarbelsIntech solution</a>
+                                        </div>
+                                        <div class="text-muted fs-12">18,Nov 2023 - 11:12AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/15.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Website Redesign</div>
+                                        </div>
+                                    </div>
+                                    <div>$25,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Embark Technologies</a>
+                                        </div>
+                                        <div class="text-muted fs-12">12,Aug 2023 - 10:15AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/6.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Consulting Services</div>
+                                        </div>
+                                    </div>
+                                    <div>$15,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Adam Johnson</a>
+                                        </div>
+                                        <div class="text-muted fs-12">29,Aug 2023 - 4:18PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2" id="leads-qualified">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/11.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Event Sponsorship</div>
+                                        </div>
+                                    </div>
+                                    <div>$15,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Internatinal Indus</a>
+                                        </div>
+                                        <div class="text-muted fs-12">21,Sep 2023 - 10:25AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/11.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Sales Training</div>
+                                        </div>
+                                    </div>
+                                    <div>$7,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Travels Services</a>
+                                        </div>
+                                        <div class="text-muted fs-12">10,Sep 2023 - 9:20AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/14.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Content Creation</div>
+                                        </div>
+                                    </div>
+                                    <div>$4,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Janvi Industries</a>
+                                        </div>
+                                        <div class="text-muted fs-12">25,Mar 2023 - 3:38PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2" id="contact-initiated">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/3.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">E-commerce Integration</div>
+                                        </div>
+                                    </div>
+                                    <div>$13,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Classic Marketing</a>
+                                        </div>
+                                        <div class="text-muted fs-12">15,Sep 2023 - 8:32PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/16.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Ad Campaign</div>
+                                        </div>
+                                    </div>
+                                    <div>$6,500</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Umbrella Corp</a>
+                                        </div>
+                                        <div class="text-muted fs-12">17,Oct 2023 - 10:54AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2" id="needs-identified">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/10.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Webinar Series</div>
+                                        </div>
+                                    </div>
+                                    <div>$9,500</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Convention Prime</a>
+                                        </div>
+                                        <div class="text-muted fs-12">16,Sep 2023 - 11:56AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/13.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">SEO Audit</div>
+                                        </div>
+                                    </div>
+                                    <div>$4,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Indusakis Services</a>
+                                        </div>
+                                        <div class="text-muted fs-12">27,Nov 2023 - 5:18PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/8.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Loyalty Program</div>
+                                        </div>
+                                    </div>
+                                    <div>$13,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Mankind Corp</a>
+                                        </div>
+                                        <div class="text-muted fs-12">26,Aug 2023 - 5:28AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/9.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">CRM Integration</div>
+                                        </div>
+                                    </div>
+                                    <div>$15,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Dolpin Consulting</a>
+                                        </div>
+                                        <div class="text-muted fs-12">14,Sep 2023 - 11:29PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2" id="negotiation">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/16.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Media Analytics</div>
+                                        </div>
+                                    </div>
+                                    <div>$10,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Multi Networks</a>
+                                        </div>
+                                        <div class="text-muted fs-12">18,Mar 2023 - 2:32PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded bg-light">
+                                                    <img src="{% static 'assets/images/faces/21.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Lead Nurturing Strategy</div>
+                                        </div>
+                                    </div>
+                                    <div>$5,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Globis Solutions</a>
+                                        </div>
+                                        <div class="text-muted fs-12">16,Aug 2023 - 7:53AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    PL
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Website Maintenance</div>
+                                        </div>
+                                    </div>
+                                    <div>$8,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Canvas Industries</a>
+                                        </div>
+                                        <div class="text-muted fs-12">30,Aug 2023 - 6:30AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/2.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Newsletter Campaign</div>
+                                        </div>
+                                    </div>
+                                    <div>$3,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Hiktech Solutions</a>
+                                        </div>
+                                        <div class="text-muted fs-12">12,Sep 2023 - 10:18AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/17.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Graphic Design</div>
+                                        </div>
+                                    </div>
+                                    <div>$5,000</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Premier Services</a>
+                                        </div>
+                                        <div class="text-muted fs-12">10,Aug 2023 - 10:18PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2" id="deal-finalized">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/1.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">CRM Training</div>
+                                        </div>
+                                    </div>
+                                    <div>$5,200</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Mountain Industries</a>
+                                        </div>
+                                        <div class="text-muted fs-12">15,Sep 2023 - 8:20AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex align-items-center fw-medium justify-content-center gap-1 flex-wrap">
+                                        <div class="d-flex align-items-center">
+                                            <div class="lh-1 me-1">
+                                                <span class="avatar avatar-sm avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/10.jpg'%}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="fs-14">Market Research</div>
+                                        </div>
+                                    </div>
+                                    <div>$11,500</div>
+                                    <div class="deal-description">
+                                        <div class="my-1">
+                                            <a href="javascript:void(0);" class="company-name">Skyflow Solutions</a>
+                                        </div>
+                                        <div class="text-muted fs-12">28,Oct 2023 - 9:27PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-3 -->
+
+                    <!-- Start:: New Deal -->
+                    <div class="modal fade" id="create-contact" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">New Deal</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body px-4">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-12">
+                                            <div class="mb-0 text-center">
+                                                <span class="avatar avatar-xxl avatar-rounded">
+                                                    <img src="{% static 'assets/images/faces/9.jpg'%}" alt="" id="profile-img">
+                                                    <span class="badge rounded-pill bg-primary avatar-badge">
+                                                        <input type="file" name="photo" class="position-absolute w-100 h-100 op-0" id="profile-change">
+                                                        <i class="fe fe-camera"></i>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label for="deal-name" class="form-label">Contact Name</label>
+                                            <input type="text" class="form-control" id="deal-name" placeholder="Contact Name">
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <label for="deal-lead-score" class="form-label">Deal Value</label>
+                                            <input type="number" class="form-control" id="deal-lead-score" placeholder="Deal Value">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label for="company-name" class="form-label">Company Name</label>
+                                            <input type="text" class="form-control" id="company-name" placeholder="Company Name">
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <label class="form-label">Last Contacted</label>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-text text-muted"> <i class="ri-calendar-line"></i> </div>
+                                                    <input type="text" class="form-control" id="targetDate" placeholder="Choose date and time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Create Deal</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: New Deal -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Dragula JS -->
+        <script src="{% static 'assets/libs/dragula/dragula.min.js'%}"></script>
+
+        <!-- Flat Picker JS -->
+        <script src="{% static 'assets/libs/flatpickr/flatpickr.min.js'%}"></script>
+        
+        <!-- CRM Deals JS -->
+        <script src="{% static 'assets/js/crm-deals.js'%}"></script>
+
+{% endblock %}

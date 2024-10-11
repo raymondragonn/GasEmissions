@@ -1,0 +1,1050 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- nouislider CSS -->
+        <link rel="stylesheet" href="{% static 'assets/libs/nouislider/nouislider.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-9">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12">
+                                    <div class="card custom-card border-0 shadow-none">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body p-md-0">
+                                            <div class="input-group companies-search-input">
+                                                <input type="text" class="form-control w-25" aria-label="Text input with segmented dropdown button" placeholder="Enter your keyword here">
+                                                <select class="form-select rounded-0" data-trigger name="choices-single-default" id="choices-single-default">
+                                                    <option value="">All Categories</option>
+                                                    <option value="Choice 1">Software Dveloper</option>
+                                                    <option value="Choice 2">Web Developer</option>
+                                                    <option value="Choice 3">Software Architect</option>
+                                                    <option value="Choice 4">IT Hardware</option>
+                                                    <option value="Choice 5">Network Engineer</option>
+                                                    <option value="Choice 6">Angular Developer</option>
+                                                    <option value="Choice 7">React Developer</option>
+                                                </select>
+                                                <input type="text" class="form-control w-25" aria-label="Text input with segmented dropdown button" placeholder="Search by location">
+                                                <select class="form-select rounded-0" data-trigger name="choices-single-default" id="choices-single-default1">
+                                                    <option value="Choice 1">Fresher's</option>
+                                                    <option value="Choice 2">1 Year Exp</option>
+                                                    <option value="Choice 3">2 Year Exp</option>
+                                                    <option value="Choice 4">3 Year Exp</option>
+                                                    <option value="Choice 5">4 Year Exp</option>
+                                                    <option value="Choice 6">5 Years Exp</option>
+                                                </select>
+                                                <button type="button" class="btn btn-primary"><i class="ri-search-line"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap gap-2 align-items-center">
+                                                <h5 class="fw-medium mb-0 flex-grow-1">2134 <span class="fw-normal fs-18">Candidates match your job search</span> </h5>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-outline-light border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Sort By
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Premium</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Newest</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Most Relevant</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Fresher</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Experienced</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Bond Agreement</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Flexible Shift</a></li>
+                                                        <li><a class="dropdown-item" href="javascript:void(0);">Day Shift</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                            </div>
+                                            <div class="d-flex mb-3 align-items-center flex-wrap gap-2">
+                                                <div>
+                                                    <span class="avatar avatar-lg">
+                                                        <img src="{% static 'assets/images/faces/1.jpg'%}" alt="">
+                                                    </span>
+                                                </div>    
+                                                <div>
+                                                    <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="job-candidate-details"> Kingston <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 flex-wrap">
+                                                        <a href="javascript:void(0);" class="fs-14">Software Developer</a>
+                                                        <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Saidapet, Chennai</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted flex-wrap">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line-half"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(138)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular-tags mb-2">
+                                                <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-mortarboard text-primary me-1"></i> Graduate</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-moon-stars text-primary me-1"></i> flexible-shift</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-clock text-primary me-1"></i> Immediate Joinee</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2 d-inline-block"><i class="bi bi-broadcast text-primary me-1"></i> Good at English</a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-wrap gap-3 fs-14">
+                                                <p class="mb-0 flex-grow-1"><span class="text-muted">Package (Yearly) :</span> <span class="fw-medium" data-bs-toggle="tooltip" title="Current"> $2,233</span> - <span class="fw-medium" data-bs-toggle="tooltip" title="Expected"> $5,145</span> </p>
+                                                <p class="mb-0"><span class="text-muted"> Languages :</span> <span class="fw-medium"> English, Hindi, Telugu</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                <div class="popular-tags flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">HTML</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">CSS</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Javascript</a>
+                                                    <a href="javascript:void(0);" class="badge bg-primary-transparent">More</a>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-info-transparent" data-bs-toggle="tooltip" title="1 year bond accepted"><i class="bi bi-hand-thumbs-up me-1"></i>1 year bond accepted</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 2 Years</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                            </div>
+                                            <div class="d-flex mb-3 align-items-center flex-wrap gap-2">
+                                                <div>
+                                                    <span class="avatar avatar-lg">
+                                                        <img src="{% static 'assets/images/faces/3.jpg'%}" alt="">
+                                                    </span>
+                                                </div>    
+                                                <div>
+                                                    <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="job-candidate-details"> Juliana <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 flex-wrap">
+                                                        <a href="javascript:void(0);" class="fs-14">Web Developer</a>
+                                                        <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Coimbatore, Chennai</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted flex-wrap">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="mb-0 ms-1 min-w-fit-content text-muted">
+                                                            <span>(42)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular-tags mb-2">
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-mortarboard text-primary me-1"></i> Post Graduate</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-moon-stars text-primary me-1"></i> flexible-shift</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-clock text-primary me-1"></i> Within 15 Days</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-broadcast text-primary me-1"></i> Good at English</a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-wrap gap-3 fs-14">
+                                                <p class="mb-0 flex-grow-1"><span class="text-muted">Package (Yearly) :</span> <span class="fw-medium" data-bs-toggle="tooltip" title="Current"> $2,800</span> - <span class="fw-medium" data-bs-toggle="tooltip" title="Expected"> $5,650</span> </p>
+                                                <p class="mb-0"><span class="text-muted"> Languages :</span> <span class="fw-medium"> English, Telugu</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                <div class="popular-tags flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">React</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">React Native</a>
+                                                    <a href="javascript:void(0);" class="badge bg-primary-transparent">More</a>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-info-transparent" data-bs-toggle="tooltip" title="2 years bond accepted"><i class="bi bi-hand-thumbs-up me-1"></i>2 years bond accepted</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 4 Years</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                            </div>
+                                            <div class="d-flex mb-3 align-items-center flex-wrap gap-2">
+                                                <div>
+                                                    <span class="avatar avatar-lg">
+                                                        <img src="{% static 'assets/images/faces/21.jpg'%}" alt="">
+                                                    </span>
+                                                </div>    
+                                                <div>
+                                                    <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="job-candidate-details"> Deborah <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 flex-wrap">
+                                                        <a href="javascript:void(0);" class="fs-14">Python Developer</a>
+                                                        <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Gachibowli, UAE</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted flex-wrap">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="mb-0 ms-1 min-w-fit-content text-muted">
+                                                            <span>(48)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular-tags mb-2">
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-mortarboard text-primary me-1"></i> MBA</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-moon-stars text-primary me-1"></i> Day-shift</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-clock text-primary me-1"></i> Within 20 Days</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-broadcast text-primary me-1"></i> Avg at English</a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-wrap gap-3 fs-14">
+                                                <p class="mb-0 flex-grow-1"><span class="text-muted">Package (Yearly) :</span> <span class="fw-medium" data-bs-toggle="tooltip" title="Current"> $4,260</span> - <span class="fw-medium" data-bs-toggle="tooltip" title="Expected"> $5,600</span> </p>
+                                                <p class="mb-0"><span class="text-muted"> Languages :</span> <span class="fw-medium"> English, Hindi</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                <div class="popular-tags flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Python</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Java</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">React</a>
+                                                    <a href="javascript:void(0);" class="badge bg-primary-transparent">More</a>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 5 Years</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                            </div>
+                                            <div class="d-flex mb-3 align-items-center flex-wrap gap-2">
+                                                <div>
+                                                    <span class="avatar avatar-lg">
+                                                        <img src="{% static 'assets/images/faces/13.jpg'%}" alt="">
+                                                    </span>
+                                                </div>    
+                                                <div>
+                                                    <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="job-candidate-details"> James Lucas <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 flex-wrap">
+                                                        <a href="javascript:void(0);" class="fs-14">Angular Developer</a>
+                                                        <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Gachibowli, Nellore</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted flex-wrap">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="mb-0 ms-1 min-w-fit-content text-muted">
+                                                            <span>(18)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular-tags mb-2">
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-mortarboard text-primary me-1"></i> MCA</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-moon-stars text-primary me-1"></i> flexible-shift</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-clock text-primary me-1"></i> Within 15 Days</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-broadcast text-primary me-1"></i> Fluent at English</a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-wrap gap-3 fs-14">
+                                                <p class="mb-0 flex-grow-1"><span class="text-muted">Package (Yearly) :</span> <span class="fw-medium" data-bs-toggle="tooltip" title="Current"> $2,800</span> - <span class="fw-medium" data-bs-toggle="tooltip" title="Expected"> $5,650</span> </p>
+                                                <p class="mb-0"><span class="text-muted"> Languages :</span> <span class="fw-medium"> English, Telugu</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                <div class="popular-tags flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Angular</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Advanced Java</a>
+                                                    <a href="javascript:void(0);" class="badge bg-primary-transparent">More</a>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-info-transparent" data-bs-toggle="tooltip" title="2 years bond accepted"><i class="bi bi-hand-thumbs-up me-1"></i>2 years bond accepted</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 5 Years</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                            </div>
+                                            <div class="d-flex mb-3 align-items-center flex-wrap gap-2">
+                                                <div>
+                                                    <span class="avatar avatar-lg">
+                                                        <img src="{% static 'assets/images/faces/21.jpg'%}" alt="">
+                                                    </span>
+                                                </div>    
+                                                <div>
+                                                    <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="job-candidate-details"> Robin Keith <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 flex-wrap">
+                                                        <a href="javascript:void(0);" class="fs-14">AWS Developer</a>
+                                                        <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Kukatpally, Hyderabad</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted flex-wrap">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="mb-0 ms-1 min-w-fit-content text-muted">
+                                                            <span>(13)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular-tags mb-2">
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-mortarboard text-primary me-1"></i> MBA</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-moon-stars text-primary me-1"></i> Day-shift</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-clock text-primary me-1"></i> Within 20 Days</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-broadcast text-primary me-1"></i> Good at English</a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-wrap gap-3 fs-14">
+                                                <p class="mb-0 flex-grow-1"><span class="text-muted">Package (Yearly) :</span><span class="fw-medium" data-bs-toggle="tooltip" title="Expected"> $9,120</span> </p>
+                                                <p class="mb-0"><span class="text-muted"> Languages :</span> <span class="fw-medium"> English, Hindi, Telugu</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                <div class="popular-tags flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">AWS Lambda</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Athena</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Linux</a>
+                                                    <a href="javascript:void(0);" class="badge bg-primary-transparent">More</a>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Fresher</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                            </div>
+                                            <div class="d-flex mb-3 align-items-center flex-wrap gap-2">
+                                                <div>
+                                                    <span class="avatar avatar-lg">
+                                                        <img src="{% static 'assets/images/faces/1.jpg'%}" alt="">
+                                                    </span>
+                                                </div>    
+                                                <div>
+                                                    <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="job-candidate-details"> Katrina <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 flex-wrap">
+                                                        <a href="javascript:void(0);" class="fs-14">Software Developer</a>
+                                                        <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Saidapet, Chennai</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted flex-wrap">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line-half"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ms-1 min-w-fit-content text-muted">
+                                                            <span>(138)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular-tags mb-2">
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-mortarboard text-primary me-1"></i> Graduate</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-moon-stars text-primary me-1"></i> flexible-shift</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-clock text-primary me-1"></i> Immediate Joinee</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-broadcast text-primary me-1"></i> Good at English</a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-wrap gap-3 fs-14">
+                                                <p class="mb-0 flex-grow-1"><span class="text-muted">Package (Yearly) :</span> <span class="fw-medium" data-bs-toggle="tooltip" title="Current"> $2,233</span> - <span class="fw-medium" data-bs-toggle="tooltip" title="Expected"> $5,145</span> </p>
+                                                <p class="mb-0"><span class="text-muted"> Languages :</span> <span class="fw-medium"> English, Hindi, Telugu</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                <div class="popular-tags flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">HTML</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">CSS</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Javascript</a>
+                                                    <a href="javascript:void(0);" class="badge bg-primary-transparent">More</a>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-info-transparent" data-bs-toggle="tooltip" title="1 year bond accepted"><i class="bi bi-hand-thumbs-up me-1"></i>1 year bond accepted</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 2 Years</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                            </div>
+                                            <div class="d-flex mb-3 align-items-center flex-wrap gap-2">
+                                                <div>
+                                                    <span class="avatar avatar-lg">
+                                                        <img src="{% static 'assets/images/faces/3.jpg'%}" alt="">
+                                                    </span>
+                                                </div>    
+                                                <div>
+                                                    <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="job-candidate-details"> Isabella <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 flex-wrap">
+                                                        <a href="javascript:void(0);" class="fs-14">Web Developer</a>
+                                                        <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Coimbatore, Chennai</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted flex-wrap">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="mb-0 ms-1 min-w-fit-content text-muted">
+                                                            <span>(42)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular-tags mb-2">
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-mortarboard text-primary me-1"></i> Post Graduate</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-moon-stars text-primary me-1"></i> flexible-shift</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-clock text-primary me-1"></i> Within 15 Days</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-broadcast text-primary me-1"></i> Good at English</a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-wrap gap-3 fs-14">
+                                                <p class="mb-0 flex-grow-1"><span class="text-muted">Package (Yearly) :</span> <span class="fw-medium" data-bs-toggle="tooltip" title="Current"> $2,800</span> - <span class="fw-medium" data-bs-toggle="tooltip" title="Expected"> $5,650</span> </p>
+                                                <p class="mb-0"><span class="text-muted"> Languages :</span> <span class="fw-medium"> English, Telugu</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                <div class="popular-tags flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">React</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">React Native</a>
+                                                    <a href="javascript:void(0);" class="badge bg-primary-transparent">More</a>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-info-transparent" data-bs-toggle="tooltip" title="2 years bond accepted"><i class="bi bi-hand-thumbs-up me-1"></i>2 years bond accepted</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 4 Years</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                            </div>
+                                            <div class="d-flex mb-3 align-items-center flex-wrap gap-2">
+                                                <div>
+                                                    <span class="avatar avatar-lg">
+                                                        <img src="{% static 'assets/images/faces/21.jpg'%}" alt="">
+                                                    </span>
+                                                </div>    
+                                                <div>
+                                                    <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="job-candidate-details"> Alexia <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 flex-wrap">
+                                                        <a href="javascript:void(0);" class="fs-14">Python Developer</a>
+                                                        <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Gachibowli, UAE</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted flex-wrap">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="mb-0 ms-1 min-w-fit-content text-muted">
+                                                            <span>(48)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular-tags mb-2">
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-mortarboard text-primary me-1"></i> MBA</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-moon-stars text-primary me-1"></i> Day-shift</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-clock text-primary me-1"></i> Within 20 Days</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-broadcast text-primary me-1"></i> Avg at English</a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-wrap gap-3 fs-14">
+                                                <p class="mb-0 flex-grow-1"><span class="text-muted">Package (Yearly) :</span> <span class="fw-medium" data-bs-toggle="tooltip" title="Current"> $4,260</span> - <span class="fw-medium" data-bs-toggle="tooltip" title="Expected"> $5,600</span> </p>
+                                                <p class="mb-0"><span class="text-muted"> Languages :</span> <span class="fw-medium"> English, Hindi</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                <div class="popular-tags flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Python</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Java</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">React</a>
+                                                    <a href="javascript:void(0);" class="badge bg-primary-transparent">More</a>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Exp : 5 Years</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="top-left"></div>
+                                        <div class="top-right"></div>
+                                        <div class="bottom-left"></div>
+                                        <div class="bottom-right"></div>
+                                        <div class="card-body">
+                                            <div class="btn-list float-end">
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-primary text-fixed-black" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Download Resume" title="Download Resume"><span><i class="ri-download-2-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Add to Wishlist" title="Add to Wishlist"><span><i class="ri-heart-line fs-13 align-middle"></i></span></a>
+                                                <a href="javascript:void(0);" class="avatar avatar-sm bg-light text-default border" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View Profile" title="View Profile"><span><i class="ri-eye-line fs-13 align-middle"></i></span></a>
+                                            </div>
+                                            <div class="d-flex mb-3 align-items-center flex-wrap gap-2">
+                                                <div>
+                                                    <span class="avatar avatar-lg">
+                                                        <img src="{% static 'assets/images/faces/5.jpg'%}" alt="">
+                                                    </span>
+                                                </div>    
+                                                <div>
+                                                    <h5 class="fw-medium mb-0 d-flex align-items-center"><a href="job-candidate-details">Amelia <span class="fs-13 text-success"><i class="ri-checkbox-circle-line text-success fs-13 me-1 d-inline-block"></i>Verified</span></a></h5>
+                                                    <div class="d-flex gap-2 flex-wrap">
+                                                        <a href="javascript:void(0);" class="fs-14">Java Developer</a>
+                                                        <p class="mb-0 fs-12 text-muted"><i class="bi bi-geo-alt fs-11"></i> Sydney, Australia</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center fs-12 text-muted flex-wrap">
+                                                        <p class="fs-12 mb-0">Ratings : </p>
+                                                        <div class="min-w-fit-content ms-2">
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-fill"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                            <span class="text-warning"><i class="ri-star-line"></i></span>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="mb-0 ms-1 min-w-fit-content text-muted">
+                                                            <span>(13)</span>
+                                                            <span>Ratings</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popular-tags mb-2">
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-mortarboard text-primary me-1"></i> MBA</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-moon-stars text-primary me-1"></i> Day-shift</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-clock text-primary me-1"></i> Within 20 Days</a>
+                                                <span class="vr align-middle me-2"></span>
+                                                <a href="javascript:void(0);" class="fs-13 me-2"><i class="bi bi-broadcast text-primary me-1"></i> Good at English</a>
+                                            </div>
+                                            <div class="d-flex align-items-center flex-wrap gap-3 fs-14">
+                                                <p class="mb-0 flex-grow-1"><span class="text-muted">Package (Yearly) :</span><span class="fw-medium" data-bs-toggle="tooltip" title="Expected"> $5,145</span> </p>
+                                                <p class="mb-0"><span class="text-muted"> Languages :</span> <span class="fw-medium"> English, Hindi, Telugu</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                <h6 class="mb-0 fw-medium">Skills :</h6>
+                                                <div class="popular-tags flex-grow-1">
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Java</a>
+                                                    <a href="javascript:void(0);" class="badge bg-light text-default">Core Java</a>
+                                                    <a href="javascript:void(0);" class="badge bg-primary-transparent">More</a>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-info-transparent" data-bs-toggle="tooltip" title="2 years bond accepted"><i class="bi bi-hand-thumbs-up me-1"></i>2 years bond accepted</a>
+                                                    <a href="javascript:void(0);" class="badge badge-md bg-primary-transparent"><i class="bi bi-briefcase me-1"></i>Fresher</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="pagination mb-4 justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="javascript:void(0);">
+                                        Prev
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link text-primary" href="javascript:void(0);">
+                                        next
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xxl-3">
+                            <div class="card custom-card products-navigation-card">
+                                <div class="top-left"></div>
+                                <div class="top-right"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">
+                                        Search Filter
+                                    </div>
+                                    <a href="javascript:void(0);" class="text-info fw-medium badge bg-info-transparent">
+                                        Reset All
+                                    </a>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="px-2 py-4 px-sm-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Categories</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-1" checked>
+                                                <label class="form-check-label" for="c-1">
+                                                    R &amp; D
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">3,417</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-2">
+                                                <label class="form-check-label" for="c-2">
+                                                    Finance 
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">345</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-3" checked>
+                                                <label class="form-check-label" for="c-3">
+                                                    Marketing
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">15,427</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-4" checked>
+                                                <label class="form-check-label" for="c-4">
+                                                    Transportation
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">2,457</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="c-5">
+                                                <label class="form-check-label" for="c-5">
+                                                    Telecommunications
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">1,542</span>
+                                            </div>
+                                            <div class="collapse" id="category-more">
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="c-6">
+                                                    <label class="form-check-label" for="c-6">
+                                                        Aerospace
+                                                    </label>
+                                                    <span class="badge bg-light text-default fw-500 float-end">8,466</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="c-7">
+                                                    <label class="form-check-label" for="c-7">
+                                                        Biotechnology
+                                                    </label>
+                                                    <span class="badge bg-light text-default fw-500 float-end">6,100</span>
+                                                </div>
+                                            </div>
+                                            <a class="ecommerce-more-link" data-bs-toggle="collapse" href="#category-more" role="button" aria-expanded="false" aria-controls="category-more">MORE</a>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 py-4 px-sm-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Availability</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="available-1" checked>
+                                                <label class="form-check-label" for="available-1">
+                                                    Immediate
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">512</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="available-2">
+                                                <label class="form-check-label" for="available-2">
+                                                    30 Days
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">2,186</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="available-3">
+                                                <label class="form-check-label" for="available-3">
+                                                    3 Months
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">734</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 py-4 px-sm-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Bond Agreement</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="bond-1" checked>
+                                                <label class="form-check-label" for="bond-1">
+                                                    1 Year
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">512</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="bond-2">
+                                                <label class="form-check-label" for="bond-2">
+                                                    2 Years
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">512</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="bond-3">
+                                                <label class="form-check-label" for="bond-3">
+                                                    3 Years
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">512</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 py-4 px-sm-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Languages</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="languages-1" checked>
+                                                <label class="form-check-label" for="languages-1">
+                                                    English
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">13</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="languages-2">
+                                                <label class="form-check-label" for="languages-2">
+                                                    Hindi
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">67</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="languages-3">
+                                                <label class="form-check-label" for="languages-3">
+                                                    Telugu
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">58</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 py-4 px-sm-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Job Type</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-1" checked>
+                                                <label class="form-check-label" for="j-1">
+                                                    Full Time
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">512</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-2" checked>
+                                                <label class="form-check-label" for="j-2">
+                                                    Part Time
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">2,186</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-3" checked>
+                                                <label class="form-check-label" for="j-3">
+                                                    Internship
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">734</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-4">
+                                                <label class="form-check-label" for="j-4">
+                                                    Freelancer
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">16</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="j-5">
+                                                <label class="form-check-label" for="j-5">
+                                                    Remote Job
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">1,432</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 py-4 px-sm-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Salary Range</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div id="nonlinear"></div>
+                                            <div class="d-flex mt-4 justify-content-center">
+                                                <div class="fw-medium h6 mb-0">$<span id="lower-value"></span></div>
+                                                &nbsp; -- &nbsp; 
+                                                <div class="fw-medium h6 mb-0">$<span id="upper-value"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 py-4 px-sm-4 border-bottom">
+                                        <h6 class="fw-medium mb-0">Qualification</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="q-1">
+                                                <label class="form-check-label" for="q-1">
+                                                    All Education Levels
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">16,563</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="q-2" checked>
+                                                <label class="form-check-label" for="q-2">
+                                                    10th Pass and Above
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">15,234</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="q-3">
+                                                <label class="form-check-label" for="q-3">
+                                                    12th Pass and Above
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">6,278</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="q-4" checked>
+                                                <label class="form-check-label" for="q-4">
+                                                    Diploma and Graduate
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">4,531</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="q-5">
+                                                <label class="form-check-label" for="q-5">
+                                                    Post Graduate
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">2,405</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 py-4 px-sm-4">
+                                        <h6 class="fw-medium mb-0">Skills</h6>
+                                        <div class="px-2 py-3 pb-0">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="s-1" checked>
+                                                <label class="form-check-label" for="s-1">
+                                                    HTML5
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">23,156</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="s-2" checked>
+                                                <label class="form-check-label" for="s-2">
+                                                    Javascript
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">15,632</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="s-3">
+                                                <label class="form-check-label" for="s-3">
+                                                    PHP
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">15,032</span>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="" id="s-4" checked>
+                                                <label class="form-check-label" for="s-4">
+                                                    CSS3
+                                                </label>
+                                                <span class="badge bg-light text-default fw-500 float-end">7,154</span>
+                                            </div>
+                                            <div class="collapse" id="sizes-more">
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="s-5">
+                                                    <label class="form-check-label" for="s-5">
+                                                        Bootstrap
+                                                    </label>
+                                                    <span class="badge bg-light text-default fw-500 float-end">5,946</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="s-6">
+                                                    <label class="form-check-label" for="s-6">
+                                                        Angular
+                                                    </label>
+                                                    <span class="badge bg-light text-default fw-500 float-end">3,267</span>
+                                                </div>
+                                                <div class="form-check mb-2">
+                                                    <input class="form-check-input me-2" type="checkbox" value="" id="s-7">
+                                                    <label class="form-check-label" for="s-7">
+                                                        React
+                                                    </label>
+                                                    <span class="badge bg-light text-default fw-500 float-end">578</span>
+                                                </div>
+                                            </div>
+                                            <a class="ecommerce-more-link" data-bs-toggle="collapse" href="#sizes-more" role="button" aria-expanded="false" aria-controls="sizes-more">MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End::row-1 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- noUiSlider JS -->
+        <script src="{% static 'assets/libs/nouislider/nouislider.min.js'%}"></script>
+        <script src="{% static 'assets/libs/wnumb/wNumb.min.js'%}"></script>
+        
+        <!-- Search Candidate JS -->
+        <script src="{% static 'assets/js/job-search-candidate.js'%}"></script>
+
+{% endblock %}

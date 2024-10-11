@@ -1,0 +1,10 @@
+.container path{
+    fill: brown;
+    stroke: aqua;
+    stroke-width: 2px;
+
+}
+
+.container :hover{
+    fill: black;
+}

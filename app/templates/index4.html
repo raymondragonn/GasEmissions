@@ -1,0 +1,586 @@
+{% extends 'components/base.html' %}
+{% load static %}
+
+{% block styles %}
+
+        <!-- Jsvector Maps -->
+        <link rel="stylesheet" href="{% static 'assets/libs/jsvectormap/css/jsvectormap.min.css'%}">
+
+{% endblock %}
+
+{% block content %}
+
+            <!-- Start::app-content -->
+            <div class="main-content app-content">
+                <div class="container-fluid">
+
+                    <!-- Start::row-1 -->
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card custom-card tilt">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                        <div class="mb-4">
+                                            <span class="avatar avatar-lg rounded bg-primary-transparent svg-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M224,80V200a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H216A8,8,0,0,1,224,80Z" opacity="0.2"></path><path d="M216,64H176a48,48,0,0,0-96,0H40A16,16,0,0,0,24,80V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64ZM128,32a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm88,168H40V80H80V96a8,8,0,0,0,16,0V80h64V96a8,8,0,0,0,16,0V80h40Z"></path></svg>
+                                            </span>
+                                        </div>
+                                        <div class="flex-fill">
+                                            <h5 class="fw-semibold">32,981</h5>
+                                            <span class="d-block text-muted mb-1">Total Sales</span>
+                                            <span class="d-block fs-12 text-success fw-medium"><i class="ti ti-arrow-narrow-up"></i>0.29% This Month</span>
+                                        </div>
+                                        <div id="total-sales"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card custom-card tilt">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                        <div class="mb-4">
+                                            <span class="avatar avatar-lg rounded bg-primary-transparent svg-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M192,168a40,40,0,0,1-40,40H128V128h24A40,40,0,0,1,192,168ZM112,48a40,40,0,0,0,0,80h16V48Z" opacity="0.2"></path><path d="M152,120H136V56h8a32,32,0,0,1,32,32,8,8,0,0,0,16,0,48.05,48.05,0,0,0-48-48h-8V24a8,8,0,0,0-16,0V40h-8a48,48,0,0,0,0,96h8v64H104a32,32,0,0,1-32-32,8,8,0,0,0-16,0,48.05,48.05,0,0,0,48,48h16v16a8,8,0,0,0,16,0V216h16a48,48,0,0,0,0-96Zm-40,0a32,32,0,0,1,0-64h8v64Zm40,80H136V136h16a32,32,0,0,1,0,64Z"></path></svg>
+                                            </span>
+                                        </div>
+                                        <div class="flex-fill">
+                                            <h5 class="fw-semibold">$14,32,145</h5>
+                                            <span class="d-block text-muted mb-1">Total Revenue</span>
+                                            <span class="d-block fs-12 text-success fw-medium"><i class="ti ti-arrow-narrow-up"></i>1.25% This Month</span>
+                                        </div>
+                                        <div id="total-revenue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card custom-card tilt">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                        <div class="mb-4">
+                                            <span class="avatar avatar-lg rounded bg-primary-transparent svg-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Zm0,112a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" opacity="0.2"></path><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"></path></svg>
+                                            </span>
+                                        </div>
+                                        <div class="flex-fill">
+                                            <h5 class="fw-semibold">4,678</h5>
+                                            <span class="d-block text-muted mb-1">Page Views</span>
+                                            <span class="d-block fs-12 text-danger fw-medium"><i class="ti ti-arrow-narrow-down"></i>0.05% This Month</span>
+                                        </div>
+                                        <div id="page-views"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card custom-card tilt">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                        <div class="mb-4">
+                                            <span class="avatar avatar-lg rounded bg-primary-transparent svg-primary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M224,88V200a8,8,0,0,1-8,8H56a16,16,0,0,1-16-16V64A16,16,0,0,0,56,80H216A8,8,0,0,1,224,88Z" opacity="0.2"></path><path d="M216,72H56a8,8,0,0,1,0-16H192a8,8,0,0,0,0-16H56A24,24,0,0,0,32,64V192a24,24,0,0,0,24,24H216a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72Zm0,128H56a8,8,0,0,1-8-8V86.63A23.84,23.84,0,0,0,56,88H216Zm-48-60a12,12,0,1,1,12,12A12,12,0,0,1,168,140Z"></path></svg>
+                                            </span>
+                                        </div>
+                                        <div class="flex-fill">
+                                            <h5 class="fw-semibold">$645</h5>
+                                            <span class="d-block text-muted mb-1">Profit By Sale</span>
+                                            <span class="d-block fs-12 text-success fw-medium"><i class="ti ti-arrow-narrow-up"></i>0.18% This Month</span>
+                                        </div>
+                                        <div id="profit-per-sale"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-1 -->
+
+                    <!-- Start::row-2 -->
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Website Traffic
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="website-traffic"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Sales Statistics
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div id="sales-statistics" class="p-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Profit Analysis
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="profit-analysis"></div>
+                                    <div class="d-flex align-items-start justify-content-between gap-5 mt-3">
+                                        <div class="flex-fill">
+                                            <span class="d-block mb-1 text-default">Income</span>
+                                            <div class="progress mb-3 rounded-0 p-1 border border-primary border-opacity-10" role="progressbar" aria-label="Basic example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 65%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-fixed-white">$47,289</span>
+                                            <span class="d-block text-success fs-12 fw-semibold"><i class="ti ti-trending-up me-1 align-middle"></i>21%</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start justify-content-between gap-5">
+                                        <div class="flex-fill">
+                                            <span class="d-block mb-1 text-default">Expenses</span>
+                                            <div class="progress mb-3 rounded-0 p-1 border border-primary border-opacity-10" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-secondary" style="width: 40%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block text-fixed-white">$25,783</span>
+                                            <span class="d-block text-danger fs-12 fw-semibold"><i class="ti ti-trending-up me-1 align-middle"></i>12%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End::row-2 -->
+
+                    <!-- Start:: row-3 -->
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        Top Country Sales
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="top-country-sales"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header pb-3 border-bottom">
+                                    <div class="card-title">
+                                        Recent Orders
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap table-striped table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Order ID</th>
+                                                    <th scope="col">Payment Mode</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Amount Paid</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="fw-semibold">#ORD789ABC</span></td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block fw-semibold">Rupay Card ****2783</span>
+                                                            <span class="d-block fs-12 text-muted">Card Payment</span>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge bg-primary-transparent">Completed</span></td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block fw-semibold">$1,234.78</span>
+                                                            <span class="d-block fs-12 text-muted">Nov 22,2023</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-light btn-wave">
+                                                            <i class="fe fe-eye text-muted align-middle me-1 d-inline-block"></i>
+                                                            View
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="fw-semibold">#ORD253SFW</span></td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block fw-semibold">Digital Wallet</span>
+                                                            <span class="d-block fs-12 text-muted">Online Transaction</span>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge bg-primary-transparent">Pending</span></td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block fw-semibold">$623.99</span>
+                                                            <span class="d-block fs-12 text-muted">Nov 22,2023</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-light btn-wave">
+                                                            <i class="fe fe-eye text-muted align-middle me-1 d-inline-block"></i>
+                                                            View
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="fw-semibold">#ORD356SKF</span></td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block fw-semibold">Mastro Card ****7893</span>
+                                                            <span class="d-block fs-12 text-muted">Card Payment</span>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge bg-primary-transparent">Cancelled</span></td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block fw-semibold">$1,324</span>
+                                                            <span class="d-block fs-12 text-muted">Nov 21,2023</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-light btn-wave">
+                                                            <i class="fe fe-eye text-muted align-middle me-1 d-inline-block"></i>
+                                                            View
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="fw-semibold">#ORD363ESD</span></td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block fw-semibold">Cash On Delivery</span>
+                                                            <span class="d-block fs-12 text-muted">Pay On Delivery</span>
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge bg-primary-transparent">Completed</span></td>
+                                                    <td>
+                                                        <div>
+                                                            <span class="d-block fw-semibold">$1,123.49</span>
+                                                            <span class="d-block fs-12 text-muted">Nov 20,2023</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-light btn-wave">
+                                                            <i class="fe fe-eye text-muted align-middle me-1 d-inline-block"></i>
+                                                            View
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border-bottom-0"><span class="fw-semibold">#ORD253KSE</span></td>
+                                                    <td class="border-bottom-0">
+                                                        <div>
+                                                            <span class="d-block fw-semibold">Visa Card ****2563</span>
+                                                            <span class="d-block fs-12 text-muted">Card Payment</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="border-bottom-0"><span class="badge bg-primary-transparent">Completed</span></td>
+                                                    <td class="border-bottom-0">
+                                                        <div>
+                                                            <span class="d-block fw-semibold">$1,289</span>
+                                                            <span class="d-block fs-12 text-muted">Nov 18,2023</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <button class="btn btn-sm btn-outline-light btn-wave">
+                                                            <i class="fe fe-eye text-muted align-middle me-1 d-inline-block"></i>
+                                                            View
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-3 -->
+
+                    <!-- Start:: row-4 -->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card custom-card">
+                                <div class="top-left"></div>
+                                <div class="bottom-left"></div>
+                                <div class="bottom-right"></div>
+                                <div class="top-right"></div>
+                                <div class="card-header justify-content-between">
+                                    <div class="card-title">
+                                        Products Overview
+                                    </div>
+                                    <div class="d-sm-flex">
+                                        <div class="me-3 mb-3 mb-sm-0">
+                                            <input class="form-control form-control-sm" type="text" placeholder="Search" aria-label=".form-control-sm example">
+                                        </div>
+                                        <div class="dropdown">
+                                            <a href="javascript:void(0);" class="btn btn-primary btn-sm btn-wave waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Sort By<i class="ri-arrow-down-s-line align-middle ms-1 d-inline-block"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end" role="menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0);">New</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Popular</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Relevant</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table text-nowrap table-striped table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Product Id</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Sales</th>
+                                                    <th scope="col">Revenue</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/17.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Niker College Bag</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">#1734-9743</span>
+                                                    </td>
+                                                    <td>
+                                                        $199.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Available</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">3,903</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">$67,899.24</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/14.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Dslr Camera (50mm f/1.9 HRM Lens)</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">#1234-4567</span>
+                                                    </td>
+                                                    <td>
+                                                        $1,299.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-success-transparent">Available</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">12,435</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">$3,24,781.92</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/11.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Outdoor Bomber Jacket</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">#1902-9883</span>
+                                                    </td>
+                                                    <td>
+                                                        $99.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-danger-transparent">Not Available</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">5,143</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">$76,102.76</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/ecommerce/png/5.png'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Light Yellow Teddy</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">#8745-1232</span>
+                                                    </td>
+                                                    <td>
+                                                        $79.00
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-warning-transparent">Limited Deal</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">	7,183</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">$78,211.83</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="me-2 lh-1">
+                                                                <span class="avatar avatar-sm">
+                                                                    <img src="{% static 'assets/images/ecommerce/jpg/18.jpg'%}" alt="">
+                                                                </span>
+                                                            </div>
+                                                            <div class="fs-14">Orange Smart Watch (24mm)</div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span class="fw-medium">#1962-9033</span>
+                                                    </td>
+                                                    <td>
+                                                        $199.99
+                                                    </td>
+                                                    <td>
+                                                        <span class="badge bg-primary-transparent">In Offer</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">10,287</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class="">$2,32,982.99</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-top-0">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            Showing 5 Entries <i class="bi bi-arrow-right ms-2 fw-medium"></i>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <nav aria-label="Page navigation" class="pagination-style-4">
+                                                <ul class="pagination mb-0">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="javascript:void(0);">
+                                                            Prev
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link text-primary" href="javascript:void(0);">
+                                                            next
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End:: row-4 -->
+
+                </div>
+            </div>
+            <!-- End::app-content -->
+
+{% endblock %}
+
+{% block scripts %}
+
+        <!-- Apex Charts JS -->
+        <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js'%}"></script>
+
+        <!-- JSVector Maps JS -->
+        <script src="{% static 'assets/libs/jsvectormap/js/jsvectormap.min.js'%}"></script>
+
+        <!-- JSVector Maps MapsJS -->
+        <script src="{% static 'assets/libs/jsvectormap/maps/world-merc.js'%}"></script>
+
+        <!-- Tilt JS -->
+        <script src="{% static 'assets/libs/vanilla-tilt/vanilla-tilt.min.js'%}"></script>
+
+        <!-- Ecommerce Dashboard --> 
+        <script src="{% static 'assets/js/ecommerce-dashboard.js'%}"></script>
+        
+{% endblock %}
